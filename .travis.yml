@@ -4,16 +4,15 @@ node_js:
 cache:
   directories:
   - node_modules
+script:
+  - "npm i"
+  - "npm run build"
 deploy:
+  local_dir: public
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   keep_history: true
   on:
     branch: master
-before_script:
-  - "npm i"
-script:
-  - "npm run build"
-after_success:
-  - "npm run deploy"
+
