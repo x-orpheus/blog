@@ -7,4 +7,4 @@
  - [知乎](https://www.zhihu.com/org/yun-yin-le-qian-duan-ji-zhu-tuan-dui/posts)
  - [SegmentFault](https://segmentfault.com/u/musicfe/articles)
 
-> 本博客基于 [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog) 生产
+> 本博客基于 [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog) 生成
