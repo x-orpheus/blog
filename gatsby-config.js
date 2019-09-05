@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `云音乐前端技术专栏`,
+    author: `云音乐`,
     siteUrl: `https://musicfe.dev/`,
   },
   plugins: [
