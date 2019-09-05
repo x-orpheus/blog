@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `云音乐前端技术专栏`,
+    title: `云音乐前端专栏`,
     description: `云音乐前端技术专栏`,
     author: `云音乐前端团队`,
     siteUrl: `https://musicfe.dev/`,
