@@ -58,7 +58,7 @@ module.exports = {
         short_name: `云音乐前端专栏`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#de2b1a`,
+        theme_color: `#dd001b`,
         display: `minimal-ui`,
         icon: `content/assets/logo.png`,
       },

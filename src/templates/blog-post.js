@@ -23,6 +23,7 @@ class BlogPostTemplate extends React.Component {
               style={{
                 marginTop: rhythm(1),
                 marginBottom: 0,
+                color: `#001E26`,
               }}
             >
               {post.frontmatter.title}
@@ -58,14 +59,14 @@ class BlogPostTemplate extends React.Component {
             <li>
               {previous && (
                 <Link to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
+                  ← 上一页
                 </Link>
               )}
             </li>
             <li>
               {next && (
                 <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
+                  下一页 →
                 </Link>
               )}
             </li>
@@ -92,7 +93,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY-MM-DD")
         description
       }
     }

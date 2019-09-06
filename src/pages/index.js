@@ -24,7 +24,7 @@ class BlogIndex extends React.Component {
                     marginBottom: rhythm(1 / 4),
                   }}
                 >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  <Link style={{ boxShadow: `none`, color: `#001E26` }} to={node.fields.slug}>
                     {title}
                   </Link>
                 </h3>
@@ -62,7 +62,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "YYYY-MM-DD")
             title
             description
           }
