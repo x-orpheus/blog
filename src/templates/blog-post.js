@@ -59,14 +59,14 @@ class BlogPostTemplate extends React.Component {
             <li>
               {previous && (
                 <Link to={previous.fields.slug} rel="prev">
-                  ← 上一页
+                  ← 上一篇
                 </Link>
               )}
             </li>
             <li>
               {next && (
                 <Link to={next.fields.slug} rel="next">
-                  下一页 →
+                  下一篇 →
                 </Link>
               )}
             </li>

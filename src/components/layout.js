@@ -10,8 +10,7 @@ class Layout extends React.Component {
     const header = (
       <h1
         style={{
-          ...scale(1.1),
-          fontFamily: `Montserrat, sans-serif`,
+          ...scale(1.2),
           marginTop: 0,
         }}
       >
@@ -34,6 +33,7 @@ class Layout extends React.Component {
           marginRight: `auto`,
           maxWidth: rhythm(24),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          fontFamily: `"Source Code Pro", "Noto Sans CJK SC"`
         }}
       >
         <header>{header}</header>

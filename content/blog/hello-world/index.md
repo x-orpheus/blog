@@ -14,8 +14,8 @@ description: "Hello World"
 
 `你好世界`
 
-```
-你好世界
+```bash
+echo '你好世界'
 ```
 
  - 你好世界
