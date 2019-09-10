@@ -403,7 +403,7 @@ const compose = (f, g) => x => f(g(x))
 const f = x => x + 1;
 const g = x => x * 2;
 const fg = compose(f, g);
-fg(1) //4
+fg(1) //3
 ```
 
 我们可以看到 `compose` 就实现了一个简单的功能：形成了一个全新的函数，而这个函数就是一条从 `g -> f` 的流水线。同时我们可以很轻易的发现 `compose` 其实是满足结合律的
