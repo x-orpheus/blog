@@ -1,5 +1,5 @@
 ---
-title: 简明 JavaScript 函数式编程——入门篇
+title: 快速上手亚马逊的 Serverless 服务
 date: "2019-09-12T03:06:54.463Z"
 description: "Serverless 是一种执行模型（execution model）。在这种模型中，云服务商负责通过动态地分配资源来执行一段代码。"
 ---
