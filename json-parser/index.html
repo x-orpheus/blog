@@ -1,0 +1,383 @@
+<!DOCTYPE html><html lang="zh"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.625 -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}h1{margin-left:0;margin-right:0;margin-top:2.4375rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.21875rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h2{margin-left:0;margin-right:0;margin-top:1.625rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.40625rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:hsla(0,0%,0%,0.53);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}ul{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:0.85rem;line-height:1.625rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:1rem;line-height:1.625rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:calc(0.8125rem - 1px);padding-right:0;padding-top:0;margin-bottom:0.8125rem;border-left:4px solid hsla(0,0%,0%,0.13);color:hsla(0,0%,0%,0.53);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(0.8125rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}b{font-weight:600;}strong{font-weight:600;}dt{font-weight:600;}th{font-weight:600;}li{margin-bottom:calc(0.8125rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}li > ul{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(0.8125rem / 2);}code{font-size:0.85rem;line-height:1.625rem;}kbd{font-size:0.85rem;line-height:1.625rem;}samp{font-size:0.85rem;line-height:1.625rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.08333rem;padding-right:1.08333rem;padding-top:0.8125rem;padding-bottom:calc(0.8125rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}h3,h4,h5,h6{margin-bottom:0.8125rem;margin-top:1.625rem;}ol,ul{margin-left:2.03125rem;}li>ol,li>ul{margin-left:2.03125rem;}a{color:#4078c0;text-decoration:none;}a:hover,a:active{text-decoration:underline;}</style><title data-react-helmet="true">从零实现自定义 JSON Parser | 云音乐前端专栏</title><style type="text/css">.gatsby-resp-image-image{width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;color:transparent;}</style><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#dd001b"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><meta name="generator" content="Gatsby 2.15.7"/><meta data-react-helmet="true" name="description" content="Zergling 是我们团队自研的埋点管理平台，默认的数据格式有点特殊，需要一个自定义的 json parser 来规范输入问题，总的分为词法分析和语法分析两部分"/><meta data-react-helmet="true" property="og:title" content="从零实现自定义 JSON Parser"/><meta data-react-helmet="true" property="og:description" content="Zergling 是我们团队自研的埋点管理平台，默认的数据格式有点特殊，需要一个自定义的 json parser 来规范输入问题，总的分为词法分析和语法分析两部分"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="云音乐前端团队"/><meta data-react-helmet="true" name="twitter:title" content="从零实现自定义 JSON Parser"/><meta data-react-helmet="true" name="twitter:description" content="Zergling 是我们团队自研的埋点管理平台，默认的数据格式有点特殊，需要一个自定义的 json parser 来规范输入问题，总的分为词法分析和语法分析两部分"/><style data-href="/styles.a8f6e12462010344bfaf.css">@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:200;src:local("Source Code Pro Extra Light "),local("Source Code Pro-Extra Light"),url(/static/source-code-pro-latin-200-41568fe7927570e049a6cb707930f353.woff2) format("woff2"),url(/static/source-code-pro-latin-200-568dcb298a36f14317fdcddf8eded62f.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:300;src:local("Source Code Pro Light "),local("Source Code Pro-Light"),url(/static/source-code-pro-latin-300-248b2236ba6bb9d2745a4908bc9c4568.woff2) format("woff2"),url(/static/source-code-pro-latin-300-43fcfcf552695ff0976d7d03a29835c4.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:400;src:local("Source Code Pro Regular "),local("Source Code Pro-Regular"),url(/static/source-code-pro-latin-400-1c37ab07cfefc70a85445f49737ad28a.woff2) format("woff2"),url(/static/source-code-pro-latin-400-a4a08973559a45aba173184ea065addf.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:500;src:local("Source Code Pro Medium "),local("Source Code Pro-Medium"),url(/static/source-code-pro-latin-500-67f6c1995acae33eacb1af1807c0e8c8.woff2) format("woff2"),url(/static/source-code-pro-latin-500-a39fc2de145c00ef5898c77b15c27517.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:600;src:local("Source Code Pro SemiBold "),local("Source Code Pro-SemiBold"),url(/static/source-code-pro-latin-600-bf5d453754c3bd3e0fc9bcdc979048f1.woff2) format("woff2"),url(/static/source-code-pro-latin-600-c021e440e993ff26de945242222960a6.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:700;src:local("Source Code Pro Bold "),local("Source Code Pro-Bold"),url(/static/source-code-pro-latin-700-b46da14cbd07b2f1f5ca74069d59318e.woff2) format("woff2"),url(/static/source-code-pro-latin-700-c86a17b160684a125455d36f4733ad85.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:900;src:local("Source Code Pro Black "),local("Source Code Pro-Black"),url(/static/source-code-pro-latin-900-e985b6f17d53c2780c3c49722984a52e.woff2) format("woff2"),url(/static/source-code-pro-latin-900-b0d773d996cad7ea914d35d16dd0f3ec.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:400;src:local("Noto Sans Regular "),local("Noto Sans-Regular"),url(/static/noto-sans-latin-400-175853ded2a4e2249d37c46ca0ca33c5.woff2) format("woff2"),url(/static/noto-sans-latin-400-e7ccb0aa43af9fb7fae4d1bdc23a099b.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:400;src:local("Noto Sans Regular italic"),local("Noto Sans-Regularitalic"),url(/static/noto-sans-latin-400italic-baa3ec09eb827b4f10593032d1cf2a88.woff2) format("woff2"),url(/static/noto-sans-latin-400italic-14425b1ebbce551302a950b083b6c14e.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:700;src:local("Noto Sans Bold "),local("Noto Sans-Bold"),url(/static/noto-sans-latin-700-43750a193b8ff0b4e929323a72d79301.woff2) format("woff2"),url(/static/noto-sans-latin-700-a8edfe7bbf3b01666adc30c118cc5223.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:700;src:local("Noto Sans Bold italic"),local("Noto Sans-Bolditalic"),url(/static/noto-sans-latin-700italic-bc98820a9bf62004a88ef07e012e3ce3.woff2) format("woff2"),url(/static/noto-sans-latin-700italic-0e19737ff39f96eb1ff99e463fa457a4.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><link as="script" rel="preload" href="/styles-76af1e362d17fe569922.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-9bcfc8cfa601b955c502.js"/><link as="script" rel="preload" href="/app-58c34f5daf926852a3b3.js"/><link as="script" rel="preload" href="/commons-4c7ea43baf1033607c1c.js"/><link as="script" rel="preload" href="/webpack-runtime-a8e57de1cebc497b8be8.js"/><link as="fetch" rel="preload" href="/page-data/json-parser/page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:39rem;padding:2.4375rem 1.21875rem;font-family:&quot;Source Code Pro&quot;, &quot;Noto Sans CJK SC&quot;"><header><h1 style="font-size:2.2974rem;line-height:3.25rem;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:#DD001B" href="/">云音乐前端专栏</a></h1></header><main><article><header><h1 style="margin-top:1.625rem;margin-bottom:0;color:#001E26">从零实现自定义 JSON Parser</h1><p style="font-size:0.87055rem;line-height:1.625rem;display:block;margin-bottom:1.625rem">2019-10-31</p></header><section><p><img src="https://p1.music.126.net/qE1Yxs0kk3qfv9aVS8ttyQ==/109951164457475823.png" alt="header.png"></p>
+<h3>简介</h3>
+<p>Zergling 是我们团队自研的埋点管理平台，默认的数据格式如下：</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token punctuation">{</span>
+    <span class="token string">"page"</span><span class="token punctuation">:</span> <span class="token string">"dsong|ufm"</span><span class="token punctuation">,</span> 
+    <span class="token string">"resource"</span><span class="token punctuation">:</span> <span class="token string">"song"</span><span class="token punctuation">,</span> <span class="token comment">// 歌曲</span>
+    <span class="token string">"resourceid"</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">// 资源 id</span>
+    <span class="token string">"target"</span><span class="token punctuation">:</span> <span class="token number">111</span><span class="token punctuation">,</span> <span class="token comment">// 不感兴趣</span>
+    <span class="token string">"targetid"</span><span class="token punctuation">:</span> <span class="token string">"button"</span><span class="token punctuation">,</span> 
+    <span class="token string">"reason"</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">,</span> 
+    <span class="token string">"reason_type"</span><span class="token punctuation">:</span> <span class="token string">"fixed"</span> 
+<span class="token punctuation">}</span></code></pre></div>
+<p>一种自定义 json 格式，比较不同在于：</p>
+<ol>
+<li>带注释</li>
+<li>字符串通过 <code class="language-text">|</code> 分割符，当做数组用</li>
+<li>value 为基本类型，没有 object。</li>
+</ol>
+<p>在实际过程中有一些不符合规范的地方:</p>
+<ol>
+<li>用 value 当做注释，而不用 comment
+<img src="https://p1.music.126.net/GTDZ6tpW1IBspn46k2WgUA==/109951164323598647.png"></li>
+</ol>
+<p>应该为</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">id<span class="token punctuation">:</span> <span class="token number">1111</span><span class="token punctuation">,</span> <span class="token comment">// 活动 url</span></code></pre></div>
+<ol start="2">
+<li>用 <code class="language-text">/</code> 做数组分割符，而不是 <code class="language-text">|</code>。
+<img src="https://p1.music.126.net/j-kDIS3_lMdf1XSih4S9oA==/109951164323601543.png"></li>
+</ol>
+<p>除了上述错误类型之外，还有其他错误类型。于是决定写一个自定义的 json parser 来规范输入问题。总的分为词法分析和语法分析两部分。</p>
+<h3>词法分析</h3>
+<p>词法分析主要将源码分割成很多小的子字符串变成一系列的 token.</p>
+<p>比如下面的赋值语句。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">var</span> language <span class="token operator">=</span> <span class="token string">"lox"</span><span class="token punctuation">;</span></code></pre></div>
+<p>词法分析后，输出 5 个 token 如下
+<img src="https://p1.music.126.net/0osyr10fgzMWKjRfi_r63w==/109951164323596336.png" /></p>
+<p>所以词法分析的关键就在于如何分割字符串。</p>
+<p>我们先定义 token 的数据结构 (Token.js)</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Token</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span> <span class="token punctuation">(</span><span class="token parameter">type<span class="token punctuation">,</span>value</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>type <span class="token operator">=</span> type<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">=</span> value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>再定义 Token 类型 (TokenType.js), 参考 <a href="https://github.com/antlr/grammars-v4/blob/master/javascript/JavaScriptLexer.g4">token type</a></p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> TokenType <span class="token operator">=</span> <span class="token punctuation">{</span>
+    OpenBrace<span class="token punctuation">:</span> <span class="token string">"{"</span><span class="token punctuation">,</span> <span class="token comment">// 左括号</span>
+    CloseBrace<span class="token punctuation">:</span> <span class="token string">"}"</span><span class="token punctuation">,</span> <span class="token comment">// 右括号</span>
+    StringLiteral<span class="token punctuation">:</span> <span class="token string">"StringLiteral"</span><span class="token punctuation">,</span> <span class="token comment">// 字符串类型</span>
+    BitOr<span class="token punctuation">:</span> <span class="token string">"|"</span><span class="token punctuation">,</span>
+    SingleSlash<span class="token punctuation">:</span> <span class="token string">"/"</span><span class="token punctuation">,</span>
+    <span class="token constant">COLON</span><span class="token punctuation">:</span> <span class="token string">":"</span><span class="token punctuation">,</span>
+    <span class="token constant">QUOTE</span><span class="token punctuation">:</span> <span class="token string">'"'</span><span class="token punctuation">,</span>
+    <span class="token constant">NUMBER</span><span class="token punctuation">:</span> <span class="token string">"NUMBER"</span><span class="token punctuation">,</span>
+    <span class="token constant">COMMA</span><span class="token punctuation">:</span> <span class="token string">","</span><span class="token punctuation">,</span>
+    <span class="token constant">NIL</span><span class="token punctuation">:</span> <span class="token string">"NIL"</span><span class="token punctuation">,</span> <span class="token comment">// 结束的字符</span>
+    <span class="token constant">EOF</span><span class="token punctuation">:</span> <span class="token string">"EOF"</span><span class="token punctuation">,</span> <span class="token comment">//end token</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<p>做好上面准备之后，就可以着手处理字符了。</p>
+<p>先定义一个类 Lexer (Lexer.js)</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Lexer</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span> <span class="token punctuation">(</span><span class="token parameter">input</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>input <span class="token operator">=</span> input<span class="token punctuation">;</span><span class="token comment">// 输入</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>pos <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token comment">// 指针</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>currentChar <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>input <span class="token punctuation">[</span><span class="token keyword">this</span><span class="token punctuation">.</span>pos<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>tokens <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 返回的所有 token</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>词法处理是一个个读取字符串，然后分别组装成一个 Token。我们先从简单的符号比如 <code class="language-text">{</code>,<code class="language-text">=</code>开始，如果碰到符号，我们就直接返回对应的 token。对于空白，我们就忽略。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// 获取所有的 token;</span>
+  <span class="token function">lex</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>currentChar <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>currentChar <span class="token operator">!=</span> TokenType<span class="token punctuation">.</span><span class="token constant">NIL</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">// 如果当前不是结束的字符</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">skipWhiteSpace</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">let</span> token <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
+      <span class="token keyword">switch</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>currentChar<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">case</span> <span class="token string">"{"</span><span class="token punctuation">:</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">consume</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          token <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Token</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span>OpenBrace<span class="token punctuation">,</span> TokenType<span class="token punctuation">.</span>OpenBrace<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token keyword">case</span> <span class="token string">"}"</span><span class="token punctuation">:</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">consume</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          token <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Token</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span>CloseBrace<span class="token punctuation">,</span> TokenType<span class="token punctuation">.</span>CloseBrace<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token keyword">case</span> <span class="token string">":"</span><span class="token punctuation">:</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">consume</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          token <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Token</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span><span class="token constant">COLON</span><span class="token punctuation">,</span> TokenType<span class="token punctuation">.</span><span class="token constant">COLON</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token keyword">case</span> <span class="token string">","</span><span class="token punctuation">:</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">consume</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          token <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Token</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span><span class="token constant">COMMA</span><span class="token punctuation">,</span> TokenType<span class="token punctuation">.</span><span class="token constant">COMMA</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">break</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>token<span class="token punctuation">)</span> <span class="token keyword">this</span><span class="token punctuation">.</span>tokens<span class="token punctuation">.</span><span class="token function">push</span> <span class="token punctuation">(</span>token<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>tokens<span class="token punctuation">.</span><span class="token function">push</span> <span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Token</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span><span class="token constant">EOF</span><span class="token punctuation">,</span> TokenType<span class="token punctuation">.</span><span class="token constant">EOF</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span></code></pre></div>
+<p><code class="language-text">this.skipWhiteSpace</code> 主要是处理空白，如果当前字符是空白符，我们就移动指针 <code class="language-text">pos++</code>，去判断下一个字符，直到不是空白符为止。<code class="language-text">this.consume</code> 这个函数就是用来移动指针.</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token function">skipWhiteSpace</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">isEnd</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">isSpace</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>currentChar<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">consume</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">isSpace</span> <span class="token punctuation">(</span><span class="token parameter">char</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> re <span class="token operator">=</span> <span class="token regex">/\s/gi</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> re<span class="token punctuation">.</span><span class="token function">test</span> <span class="token punctuation">(</span>char<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+  <span class="token comment">/** 获取下一个字符 */</span>
+<span class="token function">consume</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">isEnd</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>pos<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>currentChar <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>input <span class="token punctuation">[</span><span class="token keyword">this</span><span class="token punctuation">.</span>pos<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>currentChar <span class="token operator">=</span> TokenType<span class="token punctuation">.</span><span class="token constant">NIL</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 判断是否读完</span>
+<span class="token function">isEnd</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>pos <span class="token operator">></span> <span class="token keyword">this</span><span class="token punctuation">.</span>input<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>对于符号的处理直接返回 token 即可，对于字符串稍微麻烦一点。比如
+<code class="language-text">&quot;page&quot;</code> 这个我们需要读 4 个字符组合在一起。因此，当我们碰到 <code class="language-text">&quot;</code> 双引号的时候，我们就进入 getStringToken 函数来处理。</p>
+<p>(Lexer.js->lex)</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"> <span class="token keyword">case</span> <span class="token string">'"'</span><span class="token punctuation">:</span>
+      token <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getStringToken</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span></code></pre></div>
+<p>对于 <code class="language-text">getStringToken</code>。我们这里比较特别，一般的 string 没有 <code class="language-text">|</code> 这个分隔符，比如 <code class="language-text">&quot;page&quot;</code>。而我们的例子里面如 <code class="language-text">&quot;dsong|ufm&quot;</code>, 将返回 <code class="language-text">dsong</code>, <code class="language-text">|</code>, <code class="language-text">ufm</code>, 三个 token。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">  <span class="token function">getStringToken</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">let</span> buffer <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
+      <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">isLetter</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>currentChar<span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token keyword">this</span><span class="token punctuation">.</span>currentChar <span class="token operator">==</span> TokenType<span class="token punctuation">.</span>BitOr<span class="token punctuation">)</span>
+      <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>currentChar <span class="token operator">==</span> TokenType<span class="token punctuation">.</span>BitOr<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>buffer<span class="token punctuation">)</span>
+              <span class="token keyword">this</span><span class="token punctuation">.</span>tokens<span class="token punctuation">.</span><span class="token function">push</span> <span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Token</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span>StringLiteral<span class="token punctuation">,</span> buffer<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>tokens<span class="token punctuation">.</span><span class="token function">push</span> <span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Token</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span>BitOr<span class="token punctuation">,</span> TokenType<span class="token punctuation">.</span>BitOr<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          buffer <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> 
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span></code></pre></div>
+<p>对于 comment 类似，当我们碰到字符是 <code class="language-text">/</code> 的时候，我们就假设他是注释 <code class="language-text">//xxx</code>。对于 comment 就自动忽略。</p>
+<p>(Lexer.js->lex)</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">case</span> <span class="token string">"/"</span><span class="token punctuation">:</span>
+        token <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getCommentToken</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span></code></pre></div>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">  <span class="token function">getCommentToken</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 简单处理两个 /</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">match</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span>SingleSlash<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">match</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span>SingleSlash<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">isNewLine</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>currentChar<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">isEnd</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">consume</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">isNewLine</span> <span class="token punctuation">(</span><span class="token parameter">char</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> re <span class="token operator">=</span> <span class="token regex">/\r?\n/</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> re<span class="token punctuation">.</span><span class="token function">test</span> <span class="token punctuation">(</span>char<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span></code></pre></div>
+<p>接下来处理数字，类似 string, 比如 111，三个字符，我们当做一个数字。所以我们规定当字符是数字的时候，我们就进入处理 <code class="language-text">getNumberToken</code> 来处理数字。</p>
+<p>（Lexer.js->lex）</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"> <span class="token keyword">default</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">isNumber</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>currentChar<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          token <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getNumberToken</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+          <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span> <span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>currentChar<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> is not a valid type</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span></code></pre></div>
+<p>接下来处理 <code class="language-text">getNumberToken</code> 函数</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token function">getNumberToken</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> buffer <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">isNumber</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>currentChar<span class="token punctuation">)</span><span class="token operator">&amp;&amp;</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">isEnd</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      buffer <span class="token operator">+=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>currentChar<span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">consume</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>buffer<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Token</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span><span class="token constant">NUMBER</span><span class="token punctuation">,</span> buffer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">isNumber</span> <span class="token punctuation">(</span><span class="token parameter">char</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> re <span class="token operator">=</span> <span class="token regex">/\d/g</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> re<span class="token punctuation">.</span><span class="token function">test</span> <span class="token punctuation">(</span>char<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>至此，所有的我们就获得了所有的 token。</p>
+<h3>语法分析</h3>
+<p>词法分析可以解决用 value 当做注释的问题，比如 <code class="language-text">{id:&quot;活动 id&quot;}</code> 这种写法，但是无法处理 <code class="language-text">{id:&quot;page || dsong&quot;}</code> 这种。因为按照我们的逻词法处理 <code class="language-text">&quot;page || dsong&quot;</code> 会返回 <code class="language-text">page,|,|,dsong</code> 4 个 string token。
+语法分析主要是对逻辑的验证。</p>
+<p>我们先找到 <a href="https://github.com/antlr/grammars-v4/blob/master/json/JSON.g4">json 的语法定义</a>。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">grammar <span class="token constant">JSON</span><span class="token punctuation">;</span>
+
+json
+    <span class="token punctuation">:</span> value
+    <span class="token punctuation">;</span>
+
+
+value
+    <span class="token punctuation">:</span> <span class="token constant">STRING</span>
+    <span class="token operator">|</span> <span class="token constant">NUMBER</span>
+    <span class="token operator">|</span> obj
+    <span class="token operator">|</span> <span class="token string">'true'</span>
+    <span class="token operator">|</span> <span class="token string">'false'</span>
+    <span class="token punctuation">;</span>
+
+obj 
+    <span class="token punctuation">:</span> <span class="token string">"{"</span> <span class="token function">pair</span> <span class="token punctuation">(</span><span class="token punctuation">,</span>pair<span class="token punctuation">)</span><span class="token operator">*</span> <span class="token string">"}"</span>
+    <span class="token punctuation">;</span>
+
+pair
+    String<span class="token punctuation">:</span> value
+
+<span class="token constant">STRING</span>
+   <span class="token punctuation">:</span> <span class="token string">'"'</span> <span class="token punctuation">(</span><span class="token constant">ESC</span> <span class="token operator">|</span> <span class="token constant">SAFECODEPOINT</span><span class="token punctuation">)</span><span class="token operator">*</span> <span class="token string">'"'</span>
+   <span class="token punctuation">;</span>
+
+<span class="token constant">NUMBER</span>
+   <span class="token punctuation">:</span> <span class="token string">'-'</span><span class="token operator">?</span> <span class="token constant">INT</span> <span class="token punctuation">(</span><span class="token string">'.'</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token operator">-</span><span class="token number">9</span><span class="token punctuation">]</span> <span class="token operator">+</span><span class="token punctuation">)</span><span class="token operator">?</span> <span class="token constant">EXP</span><span class="token operator">?</span>
+   <span class="token punctuation">;</span></code></pre></div>
+<p>由于我们需要支持 <code class="language-text">a|b|c</code>, 所以修改一下对 string 的处理</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">value
+    <span class="token punctuation">:</span> <span class="token constant">STRING</span></code></pre></div>
+<p>改为</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">value
+    <span class="token punctuation">:</span> <span class="token constant">STRING</span> <span class="token punctuation">(</span><span class="token operator">|</span><span class="token constant">STRING</span><span class="token punctuation">)</span><span class="token operator">*</span></code></pre></div>
+<p>得到上面的语法定义之后，就是考虑如何将其转为代码。
+grammar json 这行只是定义，可以忽略。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">json
+    <span class="token punctuation">:</span> value
+    <span class="token punctuation">;</span>
+
+
+value
+    <span class="token punctuation">:</span> <span class="token constant">STRING</span>
+    <span class="token operator">|</span> <span class="token constant">NUMBER</span>
+    <span class="token operator">|</span> obj
+    <span class="token operator">|</span> <span class="token string">'true'</span>
+    <span class="token operator">|</span> <span class="token string">'false'</span>
+    <span class="token punctuation">;</span>
+<span class="token constant">NUMBER</span>
+   <span class="token punctuation">:</span> <span class="token string">'-'</span><span class="token operator">?</span> <span class="token constant">INT</span> <span class="token punctuation">(</span><span class="token string">'.'</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token operator">-</span><span class="token number">9</span><span class="token punctuation">]</span> <span class="token operator">+</span><span class="token punctuation">)</span><span class="token operator">?</span> <span class="token constant">EXP</span><span class="token operator">?</span>
+   <span class="token punctuation">;</span></code></pre></div>
+<p>这里 json 可以推导出 value, value 又可以推导出 Number 和 'true'。Number 又可以推导出其它，而 'true' 这种是基本数据类型无法再推导其他了。</p>
+<p>对于上面这种可以推导出其他的比如 json,value,Number 我们就叫做非终止符 nonterminal。</p>
+<p>'true' 这种就叫做终止符 terminal。</p>
+<p>对于 Number 和 String 右边，由于只是字符的范围限定，我们也当做 terminal 来处理。</p>
+<p>因为，将上面的语法定义转为具体代码，规则如下：</p>
+<ol>
+<li>如果是 <code class="language-text">nonterminal</code>，则对应转成函数</li>
+<li><code class="language-text">terminal</code>。 匹配当前的 token 类型是 terminal 类型，然后指针移到下一个</li>
+<li>如果是<code class="language-text">|</code>。则对应<code class="language-text">if</code> 或者 <code class="language-text">switch</code></li>
+<li>如果是 <code class="language-text">*</code> 或者 <code class="language-text">+</code>。<code class="language-text">while</code> 或者 <code class="language-text">for</code> 循环</li>
+<li>如果是问号<code class="language-text">？</code>。则转化为 <code class="language-text">if</code></li>
+</ol>
+<p>所以左边的 <code class="language-text">value,Number,json</code> 等都是函数，而右边的比如 <code class="language-text">{</code>,<code class="language-text">true</code> 都是先匹配当前 token 类型，然后获取下一个 token。</p>
+<p>我们将 json 的语法转为如下。</p>
+<p>先定义 Parser (Parser.js)，输入是一个词法分析 lexer。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">Parser</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span> <span class="token punctuation">(</span><span class="token parameter">lexer</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>lexer <span class="token operator">=</span> lexer<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>currentToken <span class="token operator">=</span> lexer<span class="token punctuation">.</span><span class="token function">getNextToken</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span></code></pre></div>
+<p>然后解析第一条规则，将 <code class="language-text">json:value</code> 都转为函数。</p>
+<p>(Paser.js)</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">  <span class="token comment">/**
+    json: value
+  */</span>
+  <span class="token function">paseJSON</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">parseValue</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span></code></pre></div>
+<p>接下来解析 value 的语法，由于 <code class="language-text">|</code> 是选择语句，我们将其转为 switch。根据当前 token 类型是对象还是 number,string, 走到不同的分支。</p>
+<p>（Parser.js->parseValue）</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">   <span class="token comment">/**
+     * value
+    : STRING (|STRING)*
+    | NUMBER
+    | obj
+    | 'true'
+    | 'false'
+    ; */</span>
+  <span class="token function">parseValue</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">switch</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>currentToken<span class="token punctuation">.</span>type<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">case</span> TokenType<span class="token punctuation">.</span>OpenBrace<span class="token punctuation">:</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">parseObject</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+      <span class="token keyword">case</span> TokenType<span class="token punctuation">.</span>StringLiteral<span class="token punctuation">:</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">parseString</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+      <span class="token keyword">case</span> TokenType<span class="token punctuation">.</span><span class="token constant">NUMBER</span><span class="token punctuation">:</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">parseNumber</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+     <span class="token keyword">case</span> TokenType<span class="token punctuation">.</span><span class="token constant">TRUE</span><span class="token punctuation">:</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+     <span class="token keyword">case</span> TokenType<span class="token punctuation">.</span><span class="token constant">FLASE</span><span class="token punctuation">:</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span></code></pre></div>
+<p>根据规则 2，terminal, 匹配当前的 token 类型，然后获取下一个 token. 所以当碰到 <code class="language-text">true</code> 和 <code class="language-text">value</code> 的时候，switch 语句改为如下。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"> <span class="token keyword">case</span> TokenType<span class="token punctuation">.</span><span class="token constant">TRUE</span><span class="token punctuation">:</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">eat</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span><span class="token constant">TRUE</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+  <span class="token keyword">case</span> TokenType<span class="token punctuation">.</span><span class="token constant">FLASE</span><span class="token punctuation">:</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">eat</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span><span class="token constant">FALSE</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span></code></pre></div>
+<p>我们定义一个 <code class="language-text">eat</code> 函数，匹配当前 token 再获取下一个，如果不符合直接抛出错误信息。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">/**match the current token and get the next */</span>
+  <span class="token function">eat</span> <span class="token punctuation">(</span><span class="token parameter">tokenType</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>currentToken<span class="token punctuation">.</span>type <span class="token operator">==</span> tokenType<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>currentToken <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>lexer<span class="token punctuation">.</span><span class="token function">getNextToken</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span> <span class="token punctuation">(</span>
+        <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">this.currentToken is </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span> <span class="token punctuation">(</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>currentToken
+        <span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> doesn't match the input </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>tokenType<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span>
+      <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span></code></pre></div>
+<p>接下来处理 <code class="language-text">parseObject</code>，它的语法是 <code class="language-text">&quot;{&quot; pair (,pair)* &quot;}</code>。</p>
+<p><code class="language-text">{</code> 是 terminal，直接 <code class="language-text">eat</code>. <code class="language-text">pair</code> 变量，直接转为函数。</p>
+<p><code class="language-text">(,pair)*</code>。根据规则 4，<code class="language-text">*</code> 转为 <code class="language-text">while</code> 语句。</p>
+<p><code class="language-text">*</code> 是正则符号表示零或者更多的情况，所以当碰到这种情况的时候，我们先判断是否匹配逗号，然后执行 <code class="language-text">parsePair</code> 函数。</p>
+<p>代码如下</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">    <span class="token comment">/**obj 
+    : "{" pair (,pair)* "}"
+    ; */</span>
+  <span class="token function">parseObject</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">eat</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span>OpenBrace<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">parsePair</span> <span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>currentToken<span class="token punctuation">.</span>type <span class="token operator">==</span> TokenType<span class="token punctuation">.</span><span class="token constant">COMMA</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">eat</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span><span class="token constant">COMMA</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">parsePair</span> <span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">eat</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span>CloseBrace<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span></code></pre></div>
+<p>解决了上面的语法转换之后，接下来的代码可以根据上面的处理转换。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">  <span class="token comment">/** String: value */</span>
+  <span class="token function">parsePair</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">eat</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span>StringLiteral<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">eat</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span><span class="token constant">COLON</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">parseValue</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+    <span class="token comment">//STRING (|STRING)*</span>
+  <span class="token function">parseString</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">eat</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span>StringLiteral<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>currentToken<span class="token punctuation">.</span>type <span class="token operator">==</span> TokenType<span class="token punctuation">.</span>BitOr<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">eat</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span>BitOr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">eat</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span>StringLiteral<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">parseNumber</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">eat</span> <span class="token punctuation">(</span>TokenType<span class="token punctuation">.</span><span class="token constant">NUMBER</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span></code></pre></div>
+<p>  至此，我们的工作已经完成。</p>
+<p>  对于开头提出的两个问题。</p>
+<p>  第一个用 <code class="language-text">value</code> 当做注释，而不用 <code class="language-text">comment</code>。这个在词法解析阶段解决。判断字符串用的是 /w/ 的正则。 而这个正则在碰到中文会抛出错误提示。</p>
+<p>  第二个用 <code class="language-text">/</code> 做数组分割符，而不是 <code class="language-text">|</code>。 这个在语法解析阶段解决。
+当解析 <code class="language-text">value: STRING (|STRING)*</code> 这条规则的时候，如果碰到的字符串后面碰到的不是 | 分隔符，则会报错。</p>
+<p>  上面的两个 test 已经覆盖，完整代码及 test case 请查看 <a href="https://github.com/xff1874/BI-JSON-Parser">github</a></p>
+<blockquote>
+<p>本文发布自 <a href="https://github.com/x-orpheus">网易云音乐前端团队</a>，欢迎自由转载，转载请保留出处。我们一直在招人，如果你恰好准备换工作，又恰好喜欢云音乐，那就 <a href="mailto:grp.music-fe@corp.netease.com">加入我们</a>！</p>
+</blockquote></section><hr style="margin-bottom:1.625rem"/></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/svrx/">← 上一篇</a></li><li></li></ul></nav></main></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-46698359-8', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/json-parser/";window.webpackCompilationHash="c94640279e5c3156870d";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-58c34f5daf926852a3b3.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-51d272fe0618a2665c13.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-9bcfc8cfa601b955c502.js"],"component---src-pages-404-js":["/component---src-pages-404-js-e9fc057fd683384561c6.js"],"component---src-pages-index-js":["/component---src-pages-index-js-b550dfa873395f120c2c.js"]};/*]]>*/</script><script src="/webpack-runtime-a8e57de1cebc497b8be8.js" async=""></script><script src="/commons-4c7ea43baf1033607c1c.js" async=""></script><script src="/app-58c34f5daf926852a3b3.js" async=""></script><script src="/component---src-templates-blog-post-js-9bcfc8cfa601b955c502.js" async=""></script><script src="/styles-76af1e362d17fe569922.js" async=""></script></body></html>
