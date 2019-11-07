@@ -1,0 +1,471 @@
+<!DOCTYPE html><html lang="zh"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.625 -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}h1{margin-left:0;margin-right:0;margin-top:2.4375rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.21875rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h2{margin-left:0;margin-right:0;margin-top:1.625rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.40625rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:hsla(0,0%,0%,0.53);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}ul{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:0.85rem;line-height:1.625rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:1rem;line-height:1.625rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:calc(0.8125rem - 1px);padding-right:0;padding-top:0;margin-bottom:0.8125rem;border-left:4px solid hsla(0,0%,0%,0.13);color:hsla(0,0%,0%,0.53);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(0.8125rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}b{font-weight:600;}strong{font-weight:600;}dt{font-weight:600;}th{font-weight:600;}li{margin-bottom:calc(0.8125rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}li > ul{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(0.8125rem / 2);}code{font-size:0.85rem;line-height:1.625rem;}kbd{font-size:0.85rem;line-height:1.625rem;}samp{font-size:0.85rem;line-height:1.625rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.08333rem;padding-right:1.08333rem;padding-top:0.8125rem;padding-bottom:calc(0.8125rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}h3,h4,h5,h6{margin-bottom:0.8125rem;margin-top:1.625rem;}ol,ul{margin-left:2.03125rem;}li>ol,li>ul{margin-left:2.03125rem;}a{color:#4078c0;text-decoration:none;}a:hover,a:active{text-decoration:underline;}</style><title data-react-helmet="true">JavaScript 中的位运算和权限设计 | 云音乐前端专栏</title><style type="text/css">.gatsby-resp-image-image{width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;color:transparent;}</style><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#dd001b"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><meta name="generator" content="Gatsby 2.15.7"/><meta data-react-helmet="true" name="description" content="先简单回顾下位运算，平时用的少，相信不少人和我一样忘的差不多了，根据位运算的特点，设计一个权限系统（添加、删除、判断等）"/><meta data-react-helmet="true" property="og:title" content="JavaScript 中的位运算和权限设计"/><meta data-react-helmet="true" property="og:description" content="先简单回顾下位运算，平时用的少，相信不少人和我一样忘的差不多了，根据位运算的特点，设计一个权限系统（添加、删除、判断等）"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="云音乐前端团队"/><meta data-react-helmet="true" name="twitter:title" content="JavaScript 中的位运算和权限设计"/><meta data-react-helmet="true" name="twitter:description" content="先简单回顾下位运算，平时用的少，相信不少人和我一样忘的差不多了，根据位运算的特点，设计一个权限系统（添加、删除、判断等）"/><style data-href="/styles.a8f6e12462010344bfaf.css">@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:200;src:local("Source Code Pro Extra Light "),local("Source Code Pro-Extra Light"),url(/static/source-code-pro-latin-200-41568fe7927570e049a6cb707930f353.woff2) format("woff2"),url(/static/source-code-pro-latin-200-568dcb298a36f14317fdcddf8eded62f.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:300;src:local("Source Code Pro Light "),local("Source Code Pro-Light"),url(/static/source-code-pro-latin-300-248b2236ba6bb9d2745a4908bc9c4568.woff2) format("woff2"),url(/static/source-code-pro-latin-300-43fcfcf552695ff0976d7d03a29835c4.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:400;src:local("Source Code Pro Regular "),local("Source Code Pro-Regular"),url(/static/source-code-pro-latin-400-1c37ab07cfefc70a85445f49737ad28a.woff2) format("woff2"),url(/static/source-code-pro-latin-400-a4a08973559a45aba173184ea065addf.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:500;src:local("Source Code Pro Medium "),local("Source Code Pro-Medium"),url(/static/source-code-pro-latin-500-67f6c1995acae33eacb1af1807c0e8c8.woff2) format("woff2"),url(/static/source-code-pro-latin-500-a39fc2de145c00ef5898c77b15c27517.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:600;src:local("Source Code Pro SemiBold "),local("Source Code Pro-SemiBold"),url(/static/source-code-pro-latin-600-bf5d453754c3bd3e0fc9bcdc979048f1.woff2) format("woff2"),url(/static/source-code-pro-latin-600-c021e440e993ff26de945242222960a6.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:700;src:local("Source Code Pro Bold "),local("Source Code Pro-Bold"),url(/static/source-code-pro-latin-700-b46da14cbd07b2f1f5ca74069d59318e.woff2) format("woff2"),url(/static/source-code-pro-latin-700-c86a17b160684a125455d36f4733ad85.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:900;src:local("Source Code Pro Black "),local("Source Code Pro-Black"),url(/static/source-code-pro-latin-900-e985b6f17d53c2780c3c49722984a52e.woff2) format("woff2"),url(/static/source-code-pro-latin-900-b0d773d996cad7ea914d35d16dd0f3ec.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:400;src:local("Noto Sans Regular "),local("Noto Sans-Regular"),url(/static/noto-sans-latin-400-175853ded2a4e2249d37c46ca0ca33c5.woff2) format("woff2"),url(/static/noto-sans-latin-400-e7ccb0aa43af9fb7fae4d1bdc23a099b.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:400;src:local("Noto Sans Regular italic"),local("Noto Sans-Regularitalic"),url(/static/noto-sans-latin-400italic-baa3ec09eb827b4f10593032d1cf2a88.woff2) format("woff2"),url(/static/noto-sans-latin-400italic-14425b1ebbce551302a950b083b6c14e.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:700;src:local("Noto Sans Bold "),local("Noto Sans-Bold"),url(/static/noto-sans-latin-700-43750a193b8ff0b4e929323a72d79301.woff2) format("woff2"),url(/static/noto-sans-latin-700-a8edfe7bbf3b01666adc30c118cc5223.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:700;src:local("Noto Sans Bold italic"),local("Noto Sans-Bolditalic"),url(/static/noto-sans-latin-700italic-bc98820a9bf62004a88ef07e012e3ce3.woff2) format("woff2"),url(/static/noto-sans-latin-700italic-0e19737ff39f96eb1ff99e463fa457a4.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><link as="script" rel="preload" href="/styles-eeb6b3524106bc4e9ff1.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-9bcfc8cfa601b955c502.js"/><link as="script" rel="preload" href="/app-58c34f5daf926852a3b3.js"/><link as="script" rel="preload" href="/commons-4c7ea43baf1033607c1c.js"/><link as="script" rel="preload" href="/webpack-runtime-a8e57de1cebc497b8be8.js"/><link as="fetch" rel="preload" href="/page-data/javascript-bitwise-operators/page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:39rem;padding:2.4375rem 1.21875rem;font-family:&quot;Source Code Pro&quot;, &quot;Noto Sans CJK SC&quot;"><header><h1 style="font-size:2.2974rem;line-height:3.25rem;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:#DD001B" href="/">云音乐前端专栏</a></h1></header><main><article><header><h1 style="margin-top:1.625rem;margin-bottom:0;color:#001E26">JavaScript 中的位运算和权限设计</h1><p style="font-size:0.87055rem;line-height:1.625rem;display:block;margin-bottom:1.625rem">2019-11-07</p></header><section><p><img src="https://p1.music.126.net/MGHz7beTyqKahbquqgsxPw==/109951164471970249.png"></p>
+<!-- TOC -->
+<ul>
+<li><a href="#1-%E5%86%85%E5%AE%B9%E6%A6%82%E8%A6%81">1. 内容概要</a></li>
+<li>
+<p><a href="#2-javascript-%E4%BD%8D%E8%BF%90%E7%AE%97">2. JavaScript 位运算</a></p>
+<ul>
+<li><a href="#21-number">2.1. Number</a></li>
+<li><a href="#22-%E4%BD%8D%E8%BF%90%E7%AE%97">2.2. 位运算</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#3-%E4%BD%8D%E8%BF%90%E7%AE%97%E5%9C%A8%E6%9D%83%E9%99%90%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8">3. 位运算在权限系统中的使用</a></p>
+<ul>
+<li><a href="#31-%E6%B7%BB%E5%8A%A0%E6%9D%83%E9%99%90">3.1. 添加权限</a></li>
+<li><a href="#32-%E6%A0%A1%E9%AA%8C%E6%9D%83%E9%99%90">3.2. 校验权限</a></li>
+<li><a href="#33-%E5%88%A0%E9%99%A4%E6%9D%83%E9%99%90">3.3. 删除权限</a></li>
+</ul>
+</li>
+<li><a href="#4-%E5%B1%80%E9%99%90%E6%80%A7%E5%92%8C%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95">4. 局限性和解决办法</a></li>
+<li><a href="#5-%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF%E5%92%8C%E9%97%AE%E9%A2%98">5. 适用场景和问题</a></li>
+<li><a href="#6-%E5%85%B6%E4%BB%96%E6%96%B9%E6%A1%88">6. 其他方案</a></li>
+<li><a href="#7-%E5%8F%82%E8%80%83">7. 参考</a></li>
+</ul>
+<!-- /TOC -->
+<h2>1. 内容概要</h2>
+<p>本文主要讨论以下两个问题：</p>
+<ul>
+<li>JavaScript 的位运算：先简单回顾下位运算，平时用的少，相信不少人和我一样忘的差不多了</li>
+<li>权限设计：根据位运算的特点，设计一个权限系统（添加、删除、判断等）</li>
+</ul>
+<h2>2. JavaScript 位运算</h2>
+<h3>2.1. Number</h3>
+<p>在讲位运算之前，首先简单看下 JavaScript 中的 Number，下文需要用到。</p>
+<p>在 JavaScript 里，数字均为<a href="https://zh.wikipedia.org/wiki/%E9%9B%99%E7%B2%BE%E5%BA%A6%E6%B5%AE%E9%BB%9E%E6%95%B8">基于 IEEE 754 标准的双精度 64 位的浮点数</a>，引用维基百科的图片，它的结构长这样：</p>
+<p><img src="https://p1.music.126.net/LXTO8xpe5ZbQkg2e8DGK9A==/109951164427153381.png"></p>
+<ul>
+<li>sign bit（符号）: 用来表示正负号</li>
+<li>exponent（指数）: 用来表示次方数</li>
+<li>mantissa（尾数）: 用来表示精确度</li>
+</ul>
+<p>也就是说一个数字的范围只能在 -(2^53 -1) 至 2^53 -1 之间。</p>
+<blockquote>
+<p>既然讲到这里，就多说一句：0.1 + 0.2 算不准的原因也在于此。浮点数用二进制表达时是无穷的，且最多 53 位，必须截断，进而产生误差。最简单的解决办法就是放大一定倍数变成整数，计算完成后再缩小。不过更稳妥的办法是使用下文将会提到的 <a href="https://mathjs.org/docs/datatypes/bignumbers.html#roundoff-errors">math.js</a> 等工具库。</p>
+</blockquote>
+<p>此外还有四种数字进制：</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// 十进制</span>
+<span class="token number">123456789</span>
+<span class="token number">0</span>
+
+<span class="token comment">// 二进制：前缀 0b，0B</span>
+<span class="token number">0b10000000000000000000000000000000</span> <span class="token comment">// 2147483648</span>
+<span class="token number">0b01111111100000000000000000000000</span> <span class="token comment">// 2139095040</span>
+<span class="token number">0B00000000011111111111111111111111</span> <span class="token comment">// 8388607</span>
+
+<span class="token comment">// 八进制：前缀 0o，0O（以前支持前缀 0）</span>
+<span class="token number">0o755</span> <span class="token comment">// 493</span>
+<span class="token number">0o644</span> <span class="token comment">// 420</span>
+
+<span class="token comment">// 十六进制：前缀 0x，0X</span>
+<span class="token number">0xFFFFFFFFFFFFFFFFF</span> <span class="token comment">// 295147905179352830000</span>
+<span class="token number">0x123456789ABCDEF</span>   <span class="token comment">// 81985529216486900</span>
+<span class="token number">0XA</span>                 <span class="token comment">// 10</span></code></pre></div>
+<p>好了，Number 就说这么多，接下来看 JavaScript 中的位运算。</p>
+<h3>2.2. 位运算</h3>
+<p>按位操作符将其操作数当作 32 位的比特序列（由 0 和 1 组成）操作，返回值依然是标准的 JavaScript 数值。JavaScript 中的按位操作符有：</p>
+<table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th align="left">用法</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">按位与（AND）</td>
+<td align="left"><code class="language-text">a &amp; b</code></td>
+<td align="left">对于每一个比特位，只有两个操作数相应的比特位都是 1 时，结果才为 1，否则为 0。</td>
+</tr>
+<tr>
+<td align="left">按位或（OR）</td>
+<td align="left"><code class="language-text">a \| b</code></td>
+<td align="left">对于每一个比特位，当两个操作数相应的比特位至少有一个 1 时，结果为 1，否则为 0。</td>
+</tr>
+<tr>
+<td align="left">按位异或（XOR）</td>
+<td align="left"><code class="language-text">a ^ b</code></td>
+<td align="left">对于每一个比特位，当两个操作数相应的比特位有且只有一个 1 时，结果为 1，否则为 0。</td>
+</tr>
+<tr>
+<td align="left">按位非（NOT）</td>
+<td align="left"><code class="language-text">~a</code></td>
+<td align="left">反转操作数的比特位，即 0 变成 1，1 变成 0。</td>
+</tr>
+<tr>
+<td align="left">左移（Left shift）</td>
+<td align="left"><code class="language-text">a &lt;&lt; b</code></td>
+<td align="left">将 a 的二进制形式向左移 b (&#x3C; 32) 比特位，右边用 0 填充。</td>
+</tr>
+<tr>
+<td align="left">有符号右移</td>
+<td align="left"><code class="language-text">a &gt;&gt; b</code></td>
+<td align="left">将 a 的二进制表示向右移 b (&#x3C; 32) 位，丢弃被移出的位。</td>
+</tr>
+<tr>
+<td align="left">无符号右移</td>
+<td align="left"><code class="language-text">a &gt;&gt;&gt; b</code></td>
+<td align="left">将 a 的二进制表示向右移 b (&#x3C; 32) 位，丢弃被移出的位，并使用 0 在左侧填充。</td>
+</tr>
+</tbody>
+</table>
+<p>下面举几个例子，主要看下 <code class="language-text">AND</code> 和 <code class="language-text">OR</code>：</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token comment"># 例子1</span>
+    A <span class="token operator">=</span> <span class="token number">10001001</span>
+    B <span class="token operator">=</span> <span class="token number">10010000</span>
+A <span class="token operator">|</span> B <span class="token operator">=</span> <span class="token number">10011001</span>
+
+<span class="token comment"># 例子2</span>
+    A <span class="token operator">=</span> <span class="token number">10001001</span>
+    C <span class="token operator">=</span> <span class="token number">10001000</span>
+A <span class="token operator">|</span> C <span class="token operator">=</span> <span class="token number">10001001</span></code></pre></div>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token comment"># 例子1</span>
+    A <span class="token operator">=</span> <span class="token number">10001001</span>
+    B <span class="token operator">=</span> <span class="token number">10010000</span>
+A <span class="token operator">&amp;</span> B <span class="token operator">=</span> <span class="token number">10000000</span>
+
+<span class="token comment"># 例子2</span>
+    A <span class="token operator">=</span> <span class="token number">10001001</span>
+    C <span class="token operator">=</span> <span class="token number">10001000</span>
+A <span class="token operator">&amp;</span> C <span class="token operator">=</span> <span class="token number">10001000</span></code></pre></div>
+<h2>3. 位运算在权限系统中的使用</h2>
+<p>传统的权限系统里，存在很多关联关系，如用户和权限的关联，用户和角色的关联。系统越大，关联关系越多，越难以维护。而引入位运算，可以巧妙的解决该问题。</p>
+<p>在讲“位运算在权限系统中的使用”之前，我们先假定两个前提，<strong>下文所有的讨论都是基于这两个前提的</strong>：</p>
+<ol>
+<li>每种权限码都是唯一的（这是显然的）</li>
+<li>所有权限码的二进制数形式，有且只有一位值为 1，其余全部为 0（<code class="language-text">2^n</code>）</li>
+</ol>
+<p>如果用户权限和权限码，全部使用二级制数字表示，再结合上面 <code class="language-text">AND</code> 和 <code class="language-text">OR</code> 的例子，分析位运算的特点，不难发现：</p>
+<ul>
+<li><code class="language-text">|</code> 可以用来赋予权限</li>
+<li><code class="language-text">&amp;</code> 可以用来校验权限</li>
+</ul>
+<p>为了讲的更明白，这里用 Linux 中的实例分析下，Linux 的文件权限分为读、写和执行，有字母和数字等多种表现形式：</p>
+<table>
+<thead>
+<tr>
+<th align="left">权限</th>
+<th align="left">字母表示</th>
+<th align="left">数字表示</th>
+<th align="left">二进制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">读</td>
+<td align="left">r</td>
+<td align="left">4</td>
+<td align="left">0b100</td>
+</tr>
+<tr>
+<td align="left">写</td>
+<td align="left">w</td>
+<td align="left">2</td>
+<td align="left">0b010</td>
+</tr>
+<tr>
+<td align="left">执行</td>
+<td align="left">x</td>
+<td align="left">1</td>
+<td align="left">0b001</td>
+</tr>
+</tbody>
+</table>
+<p>可以看到，权限用 1、2、4（也就是 <code class="language-text">2^n</code>）表示，转换为二进制后，都是只有一位是 1，其余为 0。我们通过几个例子看下，如何利用二进制的特点执行权限的添加，校验和删除。</p>
+<h3>3.1. 添加权限</h3>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">let</span> r <span class="token operator">=</span> <span class="token number">0b100</span>
+<span class="token keyword">let</span> w <span class="token operator">=</span> <span class="token number">0b010</span>
+<span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">0b001</span>
+
+<span class="token comment">// 给用户赋全部权限（使用前面讲的 | 操作）</span>
+<span class="token keyword">let</span> user <span class="token operator">=</span> r <span class="token operator">|</span> w <span class="token operator">|</span> x
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span>
+<span class="token comment">// 7</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment">// 111</span>
+
+<span class="token comment">//     r = 0b100</span>
+<span class="token comment">//     w = 0b010</span>
+<span class="token comment">//     r = 0b001</span>
+<span class="token comment">// r|w|x = 0b111</span></code></pre></div>
+<p>可以看到，执行 <code class="language-text">r | w | x</code> 后，<code class="language-text">user</code> 的三位都是 1，表明拥有了全部三个权限。</p>
+<blockquote>
+<p>Linux 下出现权限问题时，最粗暴的解决方案就是 <code class="language-text">chmod 777 xxx</code>，这里的 <code class="language-text">7</code> 就代表了：可读，可写，可执行。而三个 <code class="language-text">7</code> 分别代表：文件所有者，文件所有者所在组，所有其他用户。</p>
+</blockquote>
+<h3>3.2. 校验权限</h3>
+<p>刚才演示了权限的添加，下面演示权限校验：</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">let</span> r <span class="token operator">=</span> <span class="token number">0b100</span>
+<span class="token keyword">let</span> w <span class="token operator">=</span> <span class="token number">0b010</span>
+<span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">0b001</span>
+
+<span class="token comment">// 给用户赋 r w 两个权限</span>
+<span class="token keyword">let</span> user <span class="token operator">=</span> r <span class="token operator">|</span> w
+<span class="token comment">// user = 6</span>
+<span class="token comment">// user = 0b110 (二进制)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">(</span>user <span class="token operator">&amp;</span> r<span class="token punctuation">)</span> <span class="token operator">===</span> r<span class="token punctuation">)</span> <span class="token comment">// true  有 r 权限</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">(</span>user <span class="token operator">&amp;</span> w<span class="token punctuation">)</span> <span class="token operator">===</span> w<span class="token punctuation">)</span> <span class="token comment">// true  有 w 权限</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">(</span>user <span class="token operator">&amp;</span> x<span class="token punctuation">)</span> <span class="token operator">===</span> x<span class="token punctuation">)</span> <span class="token comment">// false 没有 x 权限</span></code></pre></div>
+<p>如前所料，通过 <code class="language-text">用户权限 &amp; 权限 code === 权限 code</code> 就可以判断出用户是否拥有该权限。</p>
+<h3>3.3. 删除权限</h3>
+<p>我们讲了用 <code class="language-text">|</code> 赋予权限，使用 <code class="language-text">&amp;</code> 判断权限，那么删除权限呢？删除权限的本质其实是<strong>将指定位置上的 1 重置为 0</strong>。上个例子里用户权限是 <code class="language-text">0b110</code>，拥有读和写两个权限，现在想删除读的权限，本质上就是将第三位的 1 重置为 0，变为 <code class="language-text">0b010</code>：</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">let</span> r <span class="token operator">=</span> <span class="token number">0b100</span>
+<span class="token keyword">let</span> w <span class="token operator">=</span> <span class="token number">0b010</span>
+<span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">0b001</span>
+
+<span class="token keyword">let</span> user <span class="token operator">=</span> <span class="token number">0b010</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">(</span>user <span class="token operator">&amp;</span> r<span class="token punctuation">)</span> <span class="token operator">===</span> r<span class="token punctuation">)</span> <span class="token comment">// false 没有 r 权限</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">(</span>user <span class="token operator">&amp;</span> w<span class="token punctuation">)</span> <span class="token operator">===</span> w<span class="token punctuation">)</span> <span class="token comment">// true  有 w 权限</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">(</span>user <span class="token operator">&amp;</span> x<span class="token punctuation">)</span> <span class="token operator">===</span> x<span class="token punctuation">)</span> <span class="token comment">// false 没有 x 权限</span></code></pre></div>
+<p>那么具体怎么操作呢？其实有两种方案，最简单的就是异或 <code class="language-text">^</code>，按照上文的介绍“当两个操作数相应的比特位有且只有一个 1 时，结果为 1，否则为 0”，所以异或其实是 toggle 操作，无则增，有则减：</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">let</span> r    <span class="token operator">=</span> <span class="token number">0b100</span>
+<span class="token keyword">let</span> w    <span class="token operator">=</span> <span class="token number">0b010</span>
+<span class="token keyword">let</span> x    <span class="token operator">=</span> <span class="token number">0b001</span>
+<span class="token keyword">let</span> user <span class="token operator">=</span> <span class="token number">0b110</span> <span class="token comment">// 有 r w 两个权限</span>
+
+<span class="token comment">// 执行异或操作，删除 r 权限</span>
+user <span class="token operator">=</span> user <span class="token operator">^</span> r
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">(</span>user <span class="token operator">&amp;</span> r<span class="token punctuation">)</span> <span class="token operator">===</span> r<span class="token punctuation">)</span> <span class="token comment">// false 没有 r 权限</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">(</span>user <span class="token operator">&amp;</span> w<span class="token punctuation">)</span> <span class="token operator">===</span> w<span class="token punctuation">)</span> <span class="token comment">// true  有 w 权限</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">(</span>user <span class="token operator">&amp;</span> x<span class="token punctuation">)</span> <span class="token operator">===</span> x<span class="token punctuation">)</span> <span class="token comment">// false 没有 x 权限</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 现在 user 是 0b010</span>
+
+<span class="token comment">// 再执行一次异或操作</span>
+user <span class="token operator">=</span> user <span class="token operator">^</span> r
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">(</span>user <span class="token operator">&amp;</span> r<span class="token punctuation">)</span> <span class="token operator">===</span> r<span class="token punctuation">)</span> <span class="token comment">// true  有 r 权限</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">(</span>user <span class="token operator">&amp;</span> w<span class="token punctuation">)</span> <span class="token operator">===</span> w<span class="token punctuation">)</span> <span class="token comment">// true  有 w 权限</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">(</span>user <span class="token operator">&amp;</span> x<span class="token punctuation">)</span> <span class="token operator">===</span> x<span class="token punctuation">)</span> <span class="token comment">// false 没有 x 权限</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 现在 user 又变回 0b110</span></code></pre></div>
+<p>那么如果单纯的想删除权限（而不是无则增，有则减）怎么办呢？答案是执行 <code class="language-text">&amp;(~code)</code>，先取反，再执行与操作：</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">let</span> r    <span class="token operator">=</span> <span class="token number">0b100</span>
+<span class="token keyword">let</span> w    <span class="token operator">=</span> <span class="token number">0b010</span>
+<span class="token keyword">let</span> x    <span class="token operator">=</span> <span class="token number">0b001</span>
+<span class="token keyword">let</span> user <span class="token operator">=</span> <span class="token number">0b110</span> <span class="token comment">// 有 r w 两个权限</span>
+
+<span class="token comment">// 删除 r 权限</span>
+user <span class="token operator">=</span> user <span class="token operator">&amp;</span> <span class="token punctuation">(</span><span class="token operator">~</span>r<span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">(</span>user <span class="token operator">&amp;</span> r<span class="token punctuation">)</span> <span class="token operator">===</span> r<span class="token punctuation">)</span> <span class="token comment">// false 没有 r 权限</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">(</span>user <span class="token operator">&amp;</span> w<span class="token punctuation">)</span> <span class="token operator">===</span> w<span class="token punctuation">)</span> <span class="token comment">// true  有 w 权限</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">(</span>user <span class="token operator">&amp;</span> x<span class="token punctuation">)</span> <span class="token operator">===</span> x<span class="token punctuation">)</span> <span class="token comment">// false 没有 x 权限</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 现在 user 是 0b010</span>
+
+<span class="token comment">// 再执行一次</span>
+user <span class="token operator">=</span> user <span class="token operator">&amp;</span> <span class="token punctuation">(</span><span class="token operator">~</span>r<span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">(</span>user <span class="token operator">&amp;</span> r<span class="token punctuation">)</span> <span class="token operator">===</span> r<span class="token punctuation">)</span> <span class="token comment">// false 没有 r 权限</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">(</span>user <span class="token operator">&amp;</span> w<span class="token punctuation">)</span> <span class="token operator">===</span> w<span class="token punctuation">)</span> <span class="token comment">// true  有 w 权限</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">(</span>user <span class="token operator">&amp;</span> x<span class="token punctuation">)</span> <span class="token operator">===</span> x<span class="token punctuation">)</span> <span class="token comment">// false 没有 x 权限</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 现在 user 还是 0b010，并不会新增</span></code></pre></div>
+<h2>4. 局限性和解决办法</h2>
+<p>前面我们回顾了 JavaScript 中的 Number 和位运算，并且了解了基于位运算的权限系统原理和 Linux 文件系统权限的实例。</p>
+<p>上述的所有都有前提条件：1、<strong>每种权限码都是唯一的</strong>；2、<strong>每个权限码的二进制数形式，有且只有一位值为 1（<code class="language-text">2^n</code>）</strong>。也就是说，权限码只能是 1, 2, 4, 8,...,1024,...而上文提到，一个数字的范围只能在 -(2^53 -1) 和 2^53 -1 之间，JavaScript 的按位操作符又是将其操作数当作 <strong>32 位</strong>比特序列的。那么同一个应用下可用的权限数就非常有限了。这也是该方案的局限性。</p>
+<p>为了突破这个限制，这里提出一个叫“权限空间”的概念，既然权限数有限，那么不妨就多开辟几个空间来存放。</p>
+<p>基于权限空间，我们定义两个格式：</p>
+<ol>
+<li><strong>权限 code</strong>，字符串，形如 <code class="language-text">index,pos</code>。其中 <code class="language-text">pos</code> 表示 32 位二进制数中 1 的位置（其余全是 0）； <code class="language-text">index</code> 表示<strong>权限空间</strong>，用于突破 JavaScript 数字位数的限制，是从 0 开始的正整数，每个权限code都要归属于一个权限空间。<code class="language-text">index</code> 和 <code class="language-text">pos</code> 使用英文逗号隔开。</li>
+<li><strong>用户权限</strong>，字符串，形如 <code class="language-text">1,16,16</code>。英文逗号分隔每一个<strong>权限空间</strong>的权限值。例如 <code class="language-text">1,16,16</code> 的意思就是，权限空间 0 的权限值是 1，权限空间 1 的权限值是 16，权限空间 2 的权限是 16。</li>
+</ol>
+<p>干说可能不好懂，直接上代码：</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// 用户的权限 code</span>
+<span class="token keyword">let</span> userCode <span class="token operator">=</span> <span class="token string">""</span>
+
+<span class="token comment">// 假设系统里有这些权限</span>
+<span class="token comment">// 纯模拟，正常情况下是按顺序的，如 0,0 0,1 0,2 ...，尽可能占满一个权限空间，再使用下一个</span>
+<span class="token keyword">const</span> permissions <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token constant">SYS_SETTING</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    value<span class="token punctuation">:</span> <span class="token string">"0,0"</span><span class="token punctuation">,</span>   <span class="token comment">// index = 0, pos = 0</span>
+    info<span class="token punctuation">:</span> <span class="token string">"系统权限"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token constant">DATA_ADMIN</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    value<span class="token punctuation">:</span> <span class="token string">"0,8"</span><span class="token punctuation">,</span>
+    info<span class="token punctuation">:</span> <span class="token string">"数据库权限"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token constant">USER_ADD</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    value<span class="token punctuation">:</span> <span class="token string">"0,22"</span><span class="token punctuation">,</span>
+    info<span class="token punctuation">:</span> <span class="token string">"用户新增权限"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token constant">USER_EDIT</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    value<span class="token punctuation">:</span> <span class="token string">"0,30"</span><span class="token punctuation">,</span>
+    info<span class="token punctuation">:</span> <span class="token string">"用户编辑权限"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token constant">USER_VIEW</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    value<span class="token punctuation">:</span> <span class="token string">"1,2"</span><span class="token punctuation">,</span>   <span class="token comment">// index = 1, pos = 2</span>
+    info<span class="token punctuation">:</span> <span class="token string">"用户查看权限"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token constant">USER_DELETE</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    value<span class="token punctuation">:</span> <span class="token string">"1,17"</span><span class="token punctuation">,</span>
+    info<span class="token punctuation">:</span> <span class="token string">"用户删除权限"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token constant">POST_ADD</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    value<span class="token punctuation">:</span> <span class="token string">"1,28"</span><span class="token punctuation">,</span>
+    info<span class="token punctuation">:</span> <span class="token string">"文章新增权限"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token constant">POST_EDIT</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    value<span class="token punctuation">:</span> <span class="token string">"2,4"</span><span class="token punctuation">,</span>
+    info<span class="token punctuation">:</span> <span class="token string">"文章编辑权限"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token constant">POST_VIEW</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    value<span class="token punctuation">:</span> <span class="token string">"2,19"</span><span class="token punctuation">,</span>
+    info<span class="token punctuation">:</span> <span class="token string">"文章查看权限"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token constant">POST_DELETE</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    value<span class="token punctuation">:</span> <span class="token string">"2,26"</span><span class="token punctuation">,</span>
+    info<span class="token punctuation">:</span> <span class="token string">"文章删除权限"</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 添加权限</span>
+<span class="token keyword">const</span> <span class="token function-variable function">addPermission</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">userCode<span class="token punctuation">,</span> permission</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> userPermission <span class="token operator">=</span> userCode <span class="token operator">?</span> userCode<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">","</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>index<span class="token punctuation">,</span> pos<span class="token punctuation">]</span> <span class="token operator">=</span> permission<span class="token punctuation">.</span>value<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">","</span><span class="token punctuation">)</span>
+
+  userPermission<span class="token punctuation">[</span>index<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span>userPermission<span class="token punctuation">[</span>index<span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">|</span> Math<span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> pos<span class="token punctuation">)</span>
+
+  <span class="token keyword">return</span> userPermission<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">","</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 删除权限</span>
+<span class="token keyword">const</span> <span class="token function-variable function">delPermission</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">userCode<span class="token punctuation">,</span> permission</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> userPermission <span class="token operator">=</span> userCode <span class="token operator">?</span> userCode<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">","</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>index<span class="token punctuation">,</span> pos<span class="token punctuation">]</span> <span class="token operator">=</span> permission<span class="token punctuation">.</span>value<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">","</span><span class="token punctuation">)</span>
+
+  userPermission<span class="token punctuation">[</span>index<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span>userPermission<span class="token punctuation">[</span>index<span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span> <span class="token punctuation">(</span><span class="token operator">~</span>Math<span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> pos<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">return</span> userPermission<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">","</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 判断是否有权限</span>
+<span class="token keyword">const</span> <span class="token function-variable function">hasPermission</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">userCode<span class="token punctuation">,</span> permission</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> userPermission <span class="token operator">=</span> userCode <span class="token operator">?</span> userCode<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">","</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>index<span class="token punctuation">,</span> pos<span class="token punctuation">]</span> <span class="token operator">=</span> permission<span class="token punctuation">.</span>value<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">","</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> permissionValue <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> pos<span class="token punctuation">)</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>userPermission<span class="token punctuation">[</span>index<span class="token punctuation">]</span> <span class="token operator">&amp;</span> permissionValue<span class="token punctuation">)</span> <span class="token operator">===</span> permissionValue
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 列出用户拥有的全部权限</span>
+<span class="token keyword">const</span> <span class="token function-variable function">listPermission</span> <span class="token operator">=</span> <span class="token parameter">userCode</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> results <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>userCode<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> results
+  <span class="token punctuation">}</span>
+
+  Object<span class="token punctuation">.</span><span class="token function">values</span><span class="token punctuation">(</span>permissions<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">permission</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">hasPermission</span><span class="token punctuation">(</span>userCode<span class="token punctuation">,</span> permission<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      results<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>permission<span class="token punctuation">.</span>info<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">return</span> results
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">log</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">userCode: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>userCode<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">" "</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">权限列表: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token function">listPermission</span><span class="token punctuation">(</span>userCode<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">"; "</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+userCode <span class="token operator">=</span> <span class="token function">addPermission</span><span class="token punctuation">(</span>userCode<span class="token punctuation">,</span> permissions<span class="token punctuation">.</span><span class="token constant">SYS_SETTING</span><span class="token punctuation">)</span>
+<span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// userCode: "1"</span>
+<span class="token comment">// 权限列表: 系统权限</span>
+
+userCode <span class="token operator">=</span> <span class="token function">addPermission</span><span class="token punctuation">(</span>userCode<span class="token punctuation">,</span> permissions<span class="token punctuation">.</span><span class="token constant">POST_EDIT</span><span class="token punctuation">)</span>
+<span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// userCode: "1,,16"</span>
+<span class="token comment">// 权限列表: 系统权限; 文章编辑权限</span>
+
+userCode <span class="token operator">=</span> <span class="token function">addPermission</span><span class="token punctuation">(</span>userCode<span class="token punctuation">,</span> permissions<span class="token punctuation">.</span><span class="token constant">USER_EDIT</span><span class="token punctuation">)</span>
+<span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// userCode: "1073741825,,16"</span>
+<span class="token comment">// 权限列表: 系统权限; 用户编辑权限; 文章编辑权限</span>
+
+userCode <span class="token operator">=</span> <span class="token function">addPermission</span><span class="token punctuation">(</span>userCode<span class="token punctuation">,</span> permissions<span class="token punctuation">.</span><span class="token constant">USER_DELETE</span><span class="token punctuation">)</span>
+<span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// userCode: "1073741825,131072,16"</span>
+<span class="token comment">// 权限列表: 系统权限; 用户编辑权限; 用户删除权限; 文章编辑权限</span>
+
+userCode <span class="token operator">=</span> <span class="token function">delPermission</span><span class="token punctuation">(</span>userCode<span class="token punctuation">,</span> permissions<span class="token punctuation">.</span><span class="token constant">USER_EDIT</span><span class="token punctuation">)</span>
+<span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// userCode: "1,131072,16"</span>
+<span class="token comment">// 权限列表: 系统权限; 用户删除权限; 文章编辑权限</span>
+
+userCode <span class="token operator">=</span> <span class="token function">delPermission</span><span class="token punctuation">(</span>userCode<span class="token punctuation">,</span> permissions<span class="token punctuation">.</span><span class="token constant">USER_EDIT</span><span class="token punctuation">)</span>
+<span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// userCode: "1,131072,16"</span>
+<span class="token comment">// 权限列表: 系统权限; 用户删除权限; 文章编辑权限</span>
+
+userCode <span class="token operator">=</span> <span class="token function">delPermission</span><span class="token punctuation">(</span>userCode<span class="token punctuation">,</span> permissions<span class="token punctuation">.</span><span class="token constant">USER_DELETE</span><span class="token punctuation">)</span>
+userCode <span class="token operator">=</span> <span class="token function">delPermission</span><span class="token punctuation">(</span>userCode<span class="token punctuation">,</span> permissions<span class="token punctuation">.</span><span class="token constant">SYS_SETTING</span><span class="token punctuation">)</span>
+userCode <span class="token operator">=</span> <span class="token function">delPermission</span><span class="token punctuation">(</span>userCode<span class="token punctuation">,</span> permissions<span class="token punctuation">.</span><span class="token constant">POST_EDIT</span><span class="token punctuation">)</span>
+<span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// userCode: "0,0,0"</span>
+<span class="token comment">// 权限列表: </span>
+
+userCode <span class="token operator">=</span> <span class="token function">addPermission</span><span class="token punctuation">(</span>userCode<span class="token punctuation">,</span> permissions<span class="token punctuation">.</span><span class="token constant">SYS_SETTING</span><span class="token punctuation">)</span>
+<span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// userCode: "1,0,0"</span>
+<span class="token comment">// 权限列表: 系统权限</span></code></pre></div>
+<p>除了通过引入<strong>权限空间</strong>的概念突破二进制运算的位数限制，还可以使用 <a href="http://mathjs.org">math.js</a> 的 <code class="language-text">bignumber</code>，直接运算超过 32 位的二进制数，具体可以看它的文档，这里就不细说了。</p>
+<h2>5. 适用场景和问题</h2>
+<p>如果按照当前使用最广泛的 <a href="https://zh.wikipedia.org/wiki/%E4%BB%A5%E8%A7%92%E8%89%B2%E7%82%BA%E5%9F%BA%E7%A4%8E%E7%9A%84%E5%AD%98%E5%8F%96%E6%8E%A7%E5%88%B6">RBAC</a> 模型设计权限系统，那么一般会有这么几个实体：应用，权限，角色，用户。用户权限可以直接来自权限，也可以来自角色：</p>
+<ul>
+<li>一个应用下有多个权限</li>
+<li>权限和角色是多对多的关系</li>
+<li>用户和角色是多对多的关系</li>
+<li>用户和权限是多对多的关系</li>
+</ul>
+<p>在此种模型下，一般会有用户与权限，用户与角色，角色与权限的对应关系表。想象一个商城后台权限管理系统，可能会有上万，甚至十几万店铺（应用），每个店铺可能会有数十个用户，角色，权限。随着业务的不断发展，刚才提到的那三张对应关系表会越来越大，越来越难以维护。</p>
+<p>而进制转换的方法则可以省略对应关系表，减少查询，节省空间。当然，省略掉对应关系不是没有坏处的，例如下面几个问题：</p>
+<ul>
+<li>如何高效的查找我的权限？</li>
+<li>如何高效的查找拥有某权限的所有用户？</li>
+<li>如何控制权限的有效期？</li>
+</ul>
+<p>所以进制转换的方案比较适合刚才提到的应用极其多，而每个应用中用户，权限，角色数量较少的场景。</p>
+<h2>6. 其他方案</h2>
+<p>除了二进制方案，当然还有其他方案可以达到类似的效果，例如直接使用一个1和0组成的字符串，权限点对应index，1表示拥有权限，0表示没有权限。举个例子：添加 0、删除 1、编辑 2，用户A拥有添加和编辑的权限，则 userCode 为 101；用户B拥有全部权限，userCode 为 111。这种方案比二进制转换简单，但是浪费空间。</p>
+<p>还有利用质数的方案，权限点全部为质数，用户权限为他所拥有的全部权限点的乘积。如：权限点是 2、3、5、7、11，用户权限是 5 * 7 * 11 = 385。这种方案麻烦的地方在于获取质数（新增权限点）和质因数分解（判断权限），权限点特别多的时候就快成 RSA 了，如果只有增删改查个别几个权限，倒是可以考虑。</p>
+<h2>7. 参考</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Numbers_and_dates">MDN：JavaScript 数字和日期</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E9%9B%99%E7%B2%BE%E5%BA%A6%E6%B5%AE%E9%BB%9E%E6%95%B8">双精度浮点类型</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators">MDN：按位操作符</a></li>
+<li><a href="https://www.jianshu.com/p/11f331d97ec2">【小知识大道理】被忽视的位运算</a></li>
+<li><a href="http://jerryzou.com/posts/do-you-really-want-use-bit-operators-in-JavaScript/">为什么不要在 JavaScript 中使用位操作符？</a></li>
+<li><a href="https://mp.weixin.qq.com/s/MKljuxfDMmopr_MrnYljGw">角色权限设计的100种解法</a></li>
+<li><a href="http://www.cnblogs.com/shijiaqi1066/p/3793894.html">权限系统与RBAC模型概述</a></li>
+<li><a href="https://blog.csdn.net/yingchunhua365/article/details/14090461">权限设计及算法</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%BB%A5%E8%A7%92%E8%89%B2%E7%82%BA%E5%9F%BA%E7%A4%8E%E7%9A%84%E5%AD%98%E5%8F%96%E6%8E%A7%E5%88%B6">基于角色的访问控制</a></li>
+</ul>
+<blockquote>
+<p>本文发布自 <a href="https://github.com/x-orpheus">网易云音乐前端团队</a>，欢迎自由转载，转载请保留出处。我们一直在招人，如果你恰好准备换工作，又恰好喜欢云音乐，那就 <a href="mailto:grp.music-fe@corp.netease.com">加入我们</a>！</p>
+</blockquote></section><hr style="margin-bottom:1.625rem"/></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/json-parser/">← 上一篇</a></li><li></li></ul></nav></main></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-46698359-8', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/javascript-bitwise-operators/";window.webpackCompilationHash="b9e6c6e4dbf94173c5e1";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-58c34f5daf926852a3b3.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-51d272fe0618a2665c13.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-9bcfc8cfa601b955c502.js"],"component---src-pages-404-js":["/component---src-pages-404-js-e9fc057fd683384561c6.js"],"component---src-pages-index-js":["/component---src-pages-index-js-b550dfa873395f120c2c.js"]};/*]]>*/</script><script src="/webpack-runtime-a8e57de1cebc497b8be8.js" async=""></script><script src="/commons-4c7ea43baf1033607c1c.js" async=""></script><script src="/app-58c34f5daf926852a3b3.js" async=""></script><script src="/component---src-templates-blog-post-js-9bcfc8cfa601b955c502.js" async=""></script><script src="/styles-eeb6b3524106bc4e9ff1.js" async=""></script></body></html>
