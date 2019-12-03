@@ -7,6 +7,7 @@ description: "长列表渲染、无限下拉也算是前端开发老生常谈的
 ![](https://p1.music.126.net/YM0Qw_a36DltlnVg7Y60dA==/109951164524578608.jpg)
 
 ## 本文主旨
+
 长列表渲染、无限下拉也算是前端开发老生常谈的问题之一了，本文将介绍一种**简洁、巧妙、高效**的方式来实现。话不多说，看下图，也许你可以发现什么？
 
 ![无限下拉示意图](https://p1.music.126.net/pJ_RZghrsOLO2UK8hlN6Pw==/109951164458290045.gif)
@@ -16,6 +17,7 @@ description: "长列表渲染、无限下拉也算是前端开发老生常谈的
 前一点很好理解，我们考虑到性能，不可能将一个长列表（甚至是一个无限下拉列表）的所有列表元素都进行渲染；而后一点，则是本文所介绍方案的核心之一！
 
 不卖关子，提前告诉你该方案的要素就是两个：
+
 * **Intersection Observer**
 * **padding**
 
@@ -25,25 +27,31 @@ description: "长列表渲染、无限下拉也算是前端开发老生常谈的
 ## 方案介绍
 
 ### Intersection Observer
+
 #### 基本概念
+
 一直以来，**检测元素的可视状态或者两个元素的相对可视状态**都不是件容易事。传统的各种方案不但复杂，而且性能成本很高，比如需要监听滚动事件，然后查询 DOM , 获取元素高度、位置，计算距离视窗高度等等。
 
 这就是 Intersection Observer 要解决的问题。它为开发人员提供一种便捷的新方法来**异步查询**元素相对于其他元素或视窗的位置，消除了昂贵的 DOM 查询和样式读取成本。
 
 
 #### 兼容性
+
 主要在 Safari 上兼容性较差，需要 12.2 及以上才兼容，不过还好，有 [polyfill](https://www.npmjs.com/package/intersection-observer)  可食用。
 
 #### 一些应用场景
+
 * 页面滚动时的懒加载实现。
 * 无限下拉（本文的实现）。
 * 监测某些广告元素的曝光情况来做相关数据统计。
 * 监测用户的滚动行为是否到达了目标位置来实现一些交互逻辑（比如视频元素滚动到隐藏位置时暂停播放）。
 
 ### padding 方案实现
+
 基本了解 Intersection Observer 之后，接下来就看下如何用 Intersection Observer + padding 来实现无限下拉。
 
 先概览下总体思路：
+
 * 监听一个固定长度列表的首尾元素是否进入视窗；
 * 更新当前页面内渲染的第一个元素对应的序号；
 * 根据上述序号，获取目标数据元素，列表内容重新渲染成对应内容；
@@ -52,6 +60,7 @@ description: "长列表渲染、无限下拉也算是前端开发老生常谈的
 **核心：利用父元素的 padding 去填充随着无限下拉而本该有的、越来越多的 DOM 元素，仅仅保留视窗区域上下一定数量的 DOM 元素来进行数据渲染**。
 
 #### 1、监听一个固定长度列表的首尾元素是否进入视窗
+
 ```js
 // 观察者创建
 this.observer = new IntersectionObserver(callback, options);
@@ -60,7 +69,9 @@ this.observer = new IntersectionObserver(callback, options);
 this.observer.observe(this.firstItem);
 this.observer.observe(this.lastItem);
 ```
+
 我们以在页面中渲染固定的 20 个列表元素为例，我们对第一个元素和最后一个元素，用 Intersection Observer 进行观察，当他们其中一个重新进入视窗时，callback 函数就会触发：
+
 ```js
 const callback = (entries) => {
     entries.forEach((entry) => {
@@ -72,9 +83,12 @@ const callback = (entries) => {
     });
 };
 ```
+
 #### 2、更新当前页面渲染的第一个元素对应的序号 (firstIndex)
+
 拿具体例子来说明，我们用一个数组来维护需要渲染到页面中的数据。数组的长度会随着不断请求新的数据而不断变大，而渲染的始终是其中一定数量的元素，比如 20 个。
 那么：
+
 * 1、最开始渲染的是数组中序号为 0 - 19 的元素，即此时对应的 firstIndex 为 0；
 
 * 2、当序号为 19 的元素（即上一步的 lastItem ）进入视窗时，我们就会往后渲染 10 个元素，即渲染序号为 10 - 29 的元素，那么此时的 firstIndex 为 10；
@@ -102,15 +116,18 @@ if (isScrollDown) {
 **总体来说，更新 firstIndex，是为了根据页面的滚动情况，知道接下来哪些数据应该被获取、渲染。**
 
 #### 3、根据上述序号，获取对应数据元素，列表重新渲染成新的内容
+
 ```js
 const renderFunction = (firstIndex) => {
     // offset = firstIndex, limit = 10 => getData
     // getData Done =>  new dataItems => render DOM
  };
 ```
+
 这一部分就是根据 firstIndex 查询数据，然后将目标数据渲染到页面上即可。
 
 #### 4、padding 调整，模拟滚动实现
+
 既然数据的更新以及 DOM 元素的更新我们已经实现了，那么无限下拉的效果以及滚动的体验，我们要如何实现呢？
 
 想象一下，抛开一切，最原始最直接最粗暴的方式无非就是我们再又获取了 10 个新的数据元素之后，再塞 10 个新的 DOM 元素到页面中去来渲染这些数据。
@@ -120,6 +137,7 @@ const renderFunction = (firstIndex) => {
 ![img](https://p1.music.126.net/pHzUHeEAfQ9DRmqGY6S23g==/109951164482823721.png)
 
 * 向下滚动
+
 ```js
 // padding的增量 = 每一个item的高度 x 新的数据项的数目
 const remPaddingsVal = itemHeight * (Math.floor(this.listSize / 2));
@@ -140,6 +158,7 @@ if (isScrollDown) {
 ![向下滚动示意图](https://p1.music.126.net/Ysl6Q9rioYbyXQ0DLCr2JA==/109951164458279864.gif)
 
 * 向上滚动
+
 ```js
 // padding的增量 = 每一个item的高度 x 新的数据项的数目
 const remPaddingsVal = itemHeight * (Math.floor(this.listSize / 2));
@@ -160,6 +179,7 @@ if (!isScrollDown) {
 ![向上滚动示意图](https://p1.music.126.net/k_UYjP6cffJ02K1aolQBow==/109951164458289551.gif)
 
 * 最后是 padding 设置更新以及相关缓存数据更新
+
 ```js
 // 容器padding重新设置
 this.updateContainerPadding({
@@ -175,10 +195,13 @@ this.updateDomDataCache({
 ```
 
 ## 思考总结
+
 #### 方案总结：
+
 利用 Intersection Observer 来监测相关元素的滚动位置，异步监听，尽可能得减少 DOM 操作，触发回调，然后去获取新的数据来更新页面元素，并且用调整容器 padding 来替代了本该越来越多的 DOM 元素，最终实现列表滚动、无限下拉。
 
 #### 相关方案的对比
+
 这里和较为有名的库 - [iScroll](https://github.com/cubiq/iscroll) 实现的无限下拉方案进行一个基本的对比，对比之前先说明下 iScroll infinite 的实现概要：
 * iScroll 通过对传统滚动事件的监听，获取滚动距离，然后：
     1. 设置父元素的 translate 来实现整体内容的上移（下移）；
@@ -189,20 +212,24 @@ this.updateDomDataCache({
     * 性能对比：我知道说到对比，你脑海中肯定一下子会想到性能问题。其实性能对比的关键就是 Intersection Observer。因为单就 padding 设置还是 translate 设置，性能方面的差距是甚小的，只是个人感觉 padding 会简洁些？而 Intersection Observer 其实抽离了所有滚动层面的相关逻辑，你不再需要对滚动距离等相应 DOM 属性进行获取，也不再需要进行一系列滚动距离相关的复杂计算，并且同步的滚动事件触发变成异步的，你也不再需要另外去做防抖之类的逻辑，这在性能方面还是有所提升的。
 
 #### 存在的缺陷：
+
 * padding 的计算依赖列表项固定的高度。
 * 这是一个同步渲染的方案，也就是目前容器 padding 的计算调整，无法计算异步获取的数据，只跟用户的滚动行为有关。这看起来与实际业务场景有些不符。解决思路：
     * 思路 1、利用 [Skeleton Screen Loading](https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a) 来同步渲染数据元素，不受数据异步获取的影响。即在数据请求还未完成时，先使用一些图片进行占位，待内容加载完成之后再进行替换。
     * 思路 2、滚动到目标位置，阻塞容器 padding 的设置（即无限下拉的发生）直至数据请求完毕，用 loading gif 提示用户加载状态，但这个方案相对复杂，你需要全面考虑用户难以预测的滚动行为来设置容器的 padding。
 
 #### 延伸拓展
+
 * 请大家思考一下，无限下拉有了，那么无限上拉基于这种方案要如何调整实现呢？
 * 如果将 Intersection Observer 用到 iScroll 里面去，原有方案可以怎样优化？
 
 #### 代码实现
+
 * [完整代码实现参考](https://github.com/Guohjia/listScroll)
 
 
 ## 参考文章
+
 * [Intersection Observer API](https://developer.mozilla.org/zh-CN/docs/Web/API/Intersection_Observer_API)
 * [IntersectionObserver’s Coming into View](https://developers.google.com/web/updates/2016/04/intersectionobserver)
 * [Infinite Scroll’ing the right way](https://medium.com/walmartlabs/infinite-scrolling-the-right-way-11b098a08815)
