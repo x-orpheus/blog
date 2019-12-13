@@ -6,6 +6,7 @@ description: "将网页保存为图片（以下简称为快照），是用户记
 
 ![banner](https://p1.music.126.net/yP4u5fw3JlrWsJdZ9VzWRw==/109951164524302284.png)
 
+> 本文作者：ggvswild
 
 ## 1. 背景
 
