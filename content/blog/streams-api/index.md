@@ -4,9 +4,6 @@ date: "2019-12-23T01:40:52.538Z"
 description: "流在开发中是一个很常见的概念。有了流，在处理大文件时就不再需要等待整个数据获取完毕后才处理数据，而是可以一段一段地拿到数据，在获得数据的同时直接解析数据。这样既可以高效利用 CPU 等资源，还减少了存放整个数据的内存占用。不过在过去，客户端 JavaScript 上都没有流的概念，而随着 Streams API 在各大浏览器上的逐步实现，我们终于可以使用原生的 API 以流的角度来看待数据了，例如从 fetch 请求上可以得到一个网络流。"
 ---
 
-
-# 从 Fetch 到 Streams —— 以流的角度处理网络请求
-
 ![Title image of Streams API by Mozilla Contributors is licensed under CC-BY-SA 2.5.
 ](https://p1.music.126.net/8tXSfhFOzIeHXxhbmTw8yg==/109951164417864261.png)
 > _[Streams API 示意图](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API)，作者 [Mozilla Contributors](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API$history)，基于 [CC-BY-SA 2.5](http://creativecommons.org/licenses/by-sa/2.5/) 协议使用。_
