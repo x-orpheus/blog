@@ -153,47 +153,50 @@ function displayBuffer(buff) {
     draw.size(svgWidth);
     const points = [];
     for (let i = 0; i < peaks.length; i += 2) {
-    const peak1 = peaks[i] || 0;
-    const peak2 = peaks[i + 1] || 0;
-    // 波峰波谷乘上系数
-    const h1 = Math.round(peak1 / absmaxHalf);
-    const h2 = Math.round(peak2 / absmaxHalf);
-    points.push([i, halfHight - h1]);
-    points.push([i, halfHight - h2]);
+        const peak1 = peaks[i] || 0;
+        const peak2 = peaks[i + 1] || 0;
+        // 波峰波谷乘上系数
+        const h1 = Math.round(peak1 / absmaxHalf);
+        const h2 = Math.round(peak2 / absmaxHalf);
+        points.push([i, halfHight - h1]);
+        points.push([i, halfHight - h2]);
     }
-
-     // 获取波峰波谷
-    function getPeaks(buffer, perSecPx) {
-        const { numberOfChannels, sampleRate, length} = buffer;
-        // 每一份的点数=44100 / 100 = 441
-        const sampleSize = ~~(sampleRate / perSecPx);
-        const first = 0;
-        const last = ~~(length / sampleSize)
-        const peaks = [];
-        // 为方便起见只取左声道
-        const chan = buffer.getChannelData(0);
-        for (let i = first; i <= last; i++) {
-            const start = i * sampleSize;
-            const end = start + sampleSize;
-            let min = 0;
-            let max = 0;
-            for (let j = start; j < end; j ++) {
-                const value = chan[j];
-                if (value > max) {
-                    max = value;
-                }
-                if (value < min) {
-                    min = value;
-                }
+    // 连接所有的波峰波谷
+    const  polyline = draw.polyline(points);
+    polyline.fill('none').stroke({ width: 1 });
+}
+// 获取波峰波谷
+function getPeaks(buffer, perSecPx) {
+    const { numberOfChannels, sampleRate, length} = buffer;
+    // 每一份的点数=44100 / 100 = 441
+    const sampleSize = ~~(sampleRate / perSecPx);
+    const first = 0;
+    const last = ~~(length / sampleSize)
+    const peaks = [];
+    // 为方便起见只取左声道
+    const chan = buffer.getChannelData(0);
+    for (let i = first; i <= last; i++) {
+        const start = i * sampleSize;
+        const end = start + sampleSize;
+        let min = 0;
+        let max = 0;
+        for (let j = start; j < end; j ++) {
+            const value = chan[j];
+            if (value > max) {
+                max = value;
+            }
+            if (value < min) {
+                min = value;
             }
         }
-        // 波峰
-        peaks[2 * i] = max;
-        // 波谷
-        peaks[2 * i + 1] = min;
     }
+    // 波峰
+    peaks[2 * i] = max;
+    // 波谷
+    peaks[2 * i + 1] = min;
     return peaks;
 }
+
 ```
 
 ## 2.3 缩放操作
