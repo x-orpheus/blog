@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[云音乐前端专栏]]></title><description><![CDATA[云音乐前端技术专栏]]></description><link>https://musicfe.dev</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 09 Jan 2020 02:16:29 GMT</lastBuildDate><item><title><![CDATA[用 Web 实现一个简易的音频编辑器]]></title><description><![CDATA[banner 前言 市面上，音频编辑软件非常多，比如 cubase、sonar 等等。虽然它们功能强大，但是在 Web 上的应用却显得心有余而力不足。因为 Web 应用的大多数资源都是存放在网络服务器中的，用 cubase…]]></description><link>https://musicfe.dev/web-audio/</link><guid isPermaLink="false">https://musicfe.dev/web-audio/</guid><pubDate>Thu, 09 Jan 2020 02:14:35 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://p1.music.126.net/RHk4QG65duQ_OVok1pjzQQ==/109951164537279076.jpg&quot; alt=&quot;banner&quot;&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[云音乐前端专栏]]></title><description><![CDATA[云音乐前端技术专栏]]></description><link>https://musicfe.dev</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 09 Jan 2020 06:09:34 GMT</lastBuildDate><item><title><![CDATA[用 Web 实现一个简易的音频编辑器]]></title><description><![CDATA[banner 前言 市面上，音频编辑软件非常多，比如 cubase、sonar 等等。虽然它们功能强大，但是在 Web 上的应用却显得心有余而力不足。因为 Web 应用的大多数资源都是存放在网络服务器中的，用 cubase…]]></description><link>https://musicfe.dev/web-audio/</link><guid isPermaLink="false">https://musicfe.dev/web-audio/</guid><pubDate>Thu, 09 Jan 2020 02:14:35 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://p1.music.126.net/RHk4QG65duQ_OVok1pjzQQ==/109951164537279076.jpg&quot; alt=&quot;banner&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;前言&lt;/h2&gt;
 &lt;p&gt;市面上，音频编辑软件非常多，比如 cubase、sonar 等等。虽然它们功能强大，但是在 Web 上的应用却显得心有余而力不足。因为 Web 应用的大多数资源都是存放在网络服务器中的，用 cubase 这些软件，首先要把音频文件下载下来，修改完之后再上传到服务器，最后还要作更新操作，操作效率极其低下。如果能让音频直接在 Web 端进行编辑并更新到服务器，则可以大大提高运营人员的工作效率。下面就为大家介绍一下如何运用 Web 技术实现高性能的音频编辑器。&lt;/p&gt;
 &lt;p&gt;本篇文章总共分为 3 章：&lt;/p&gt;
@@ -120,45 +120,47 @@ function displayBuffer(buff) {
     draw.size(svgWidth);
     const points = [];
     for (let i = 0; i &amp;lt; peaks.length; i += 2) {
-    const peak1 = peaks[i] || 0;
-    const peak2 = peaks[i + 1] || 0;
-    // 波峰波谷乘上系数
-    const h1 = Math.round(peak1 / absmaxHalf);
-    const h2 = Math.round(peak2 / absmaxHalf);
-    points.push([i, halfHight - h1]);
-    points.push([i, halfHight - h2]);
+        const peak1 = peaks[i] || 0;
+        const peak2 = peaks[i + 1] || 0;
+        // 波峰波谷乘上系数
+        const h1 = Math.round(peak1 / absmaxHalf);
+        const h2 = Math.round(peak2 / absmaxHalf);
+        points.push([i, halfHight - h1]);
+        points.push([i, halfHight - h2]);
     }
-
-     // 获取波峰波谷
-    function getPeaks(buffer, perSecPx) {
-        const { numberOfChannels, sampleRate, length} = buffer;
-        // 每一份的点数=44100 / 100 = 441
-        const sampleSize = ~~(sampleRate / perSecPx);
-        const first = 0;
-        const last = ~~(length / sampleSize)
-        const peaks = [];
-        // 为方便起见只取左声道
-        const chan = buffer.getChannelData(0);
-        for (let i = first; i &amp;lt;= last; i++) {
-            const start = i * sampleSize;
-            const end = start + sampleSize;
-            let min = 0;
-            let max = 0;
-            for (let j = start; j &amp;lt; end; j ++) {
-                const value = chan[j];
-                if (value &amp;gt; max) {
-                    max = value;
-                }
-                if (value &amp;lt; min) {
-                    min = value;
-                }
+    // 连接所有的波峰波谷
+    const  polyline = draw.polyline(points);
+    polyline.fill(&amp;#39;none&amp;#39;).stroke({ width: 1 });
+}
+// 获取波峰波谷
+function getPeaks(buffer, perSecPx) {
+    const { numberOfChannels, sampleRate, length} = buffer;
+    // 每一份的点数=44100 / 100 = 441
+    const sampleSize = ~~(sampleRate / perSecPx);
+    const first = 0;
+    const last = ~~(length / sampleSize)
+    const peaks = [];
+    // 为方便起见只取左声道
+    const chan = buffer.getChannelData(0);
+    for (let i = first; i &amp;lt;= last; i++) {
+        const start = i * sampleSize;
+        const end = start + sampleSize;
+        let min = 0;
+        let max = 0;
+        for (let j = start; j &amp;lt; end; j ++) {
+            const value = chan[j];
+            if (value &amp;gt; max) {
+                max = value;
+            }
+            if (value &amp;lt; min) {
+                min = value;
             }
         }
-        // 波峰
-        peaks[2 * i] = max;
-        // 波谷
-        peaks[2 * i + 1] = min;
     }
+    // 波峰
+    peaks[2 * i] = max;
+    // 波谷
+    peaks[2 * i + 1] = min;
     return peaks;
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;2.3 缩放操作&lt;/h2&gt;
