@@ -488,4 +488,4 @@ K8S 是划时代的，随着未来的发展微服务化，云原生化将会是�
 * 阿里云 安装 Docker: https://blog.csdn.net/longxing_123/article/details/78044840
 
 
-> 本文发布自 [网易云音乐前端团队](https://github.com/x-orpheus)，欢迎自由转载，转载请保留出处。我们一直在招人，如果你恰好准备换工作，又恰好喜欢云音乐，那就 [加入我们](mailto:grp.music-fe@corp.netease.com)！
+> 本文发布自 [网易云音乐前端团队](https://github.com/x-orpheus)，文章未经授权禁止任何形式的转载。我们一直在招人，如果你恰好准备换工作，又恰好喜欢云音乐，那就 [加入我们](mailto:grp.music-fe@corp.netease.com)！

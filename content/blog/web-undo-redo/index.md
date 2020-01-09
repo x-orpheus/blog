@@ -464,4 +464,4 @@ store.getState = (...args) => {
 * 《JavaScript设计模式》Addy Osmani著
 * [Redux Documentation](https://redux.js.org/introduction/getting-started)
 
-> 本文发布自 [网易云音乐前端团队](https://github.com/x-orpheus)，欢迎自由转载，转载请保留出处。我们对人才饥渴难耐，快来 [加入我们](mailto:grp.music-fe@corp.netease.com)！
+> 本文发布自 [网易云音乐前端团队](https://github.com/x-orpheus)，文章未经授权禁止任何形式的转载。我们对人才饥渴难耐，快来 [加入我们](mailto:grp.music-fe@corp.netease.com)！

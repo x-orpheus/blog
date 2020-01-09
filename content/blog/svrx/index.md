@@ -296,4 +296,4 @@ get('/blog')
 - [svrx 官网](https://svrx.io/) 官方使用文档、API、插件查询
 - [Github - svrx](https://github.com/svrxjs/svrx) 核心源码、讨论交流、bug report
 
-> 本文发布自 [网易云音乐前端团队](https://github.com/x-orpheus)，欢迎自由转载，转载请保留出处。我们一直在招人，如果你恰好准备换工作，又恰好喜欢云音乐，那就 [加入我们](mailto:grp.music-fe@corp.netease.com)！
+> 本文发布自 [网易云音乐前端团队](https://github.com/x-orpheus)，文章未经授权禁止任何形式的转载。我们一直在招人，如果你恰好准备换工作，又恰好喜欢云音乐，那就 [加入我们](mailto:grp.music-fe@corp.netease.com)！

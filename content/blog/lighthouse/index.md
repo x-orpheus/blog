@@ -496,4 +496,4 @@ Lighthouse 通过模拟 HTTP 的方式，计算出在特定网络条件下的资
 - [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/)
 - [Lighthouse Scoring Guide](https://developers.google.com/web/tools/lighthouse/v3/scoring)
 
-> 本文发布自 [网易云音乐前端团队](https://github.com/x-orpheus)，欢迎自由转载，转载请保留出处。我们一直在招人，如果你恰好准备换工作，又恰好喜欢云音乐，那就 [加入我们](mailto:grp.music-fe@corp.netease.com)！
+> 本文发布自 [网易云音乐前端团队](https://github.com/x-orpheus)，文章未经授权禁止任何形式的转载。我们一直在招人，如果你恰好准备换工作，又恰好喜欢云音乐，那就 [加入我们](mailto:grp.music-fe@corp.netease.com)！

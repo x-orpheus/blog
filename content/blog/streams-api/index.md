@@ -935,4 +935,4 @@ Streams API 提出已经有很长一段时间了，由于浏览器支持的原�
 - [Streams Living Standard](https://streams.spec.whatwg.org/)
 - [2016 - the year of web streams](https://jakearchibald.com/2016/streams-ftw/)
 
-> 本文发布自 [网易云音乐前端团队](https://github.com/x-orpheus)，基于 [CC BY-SA 4.0 协议](http://creativecommons.org/licenses/by-sa/4.0/) 进行许可，欢迎自由转载，转载请保留出处。我们一直在招人，如果你恰好准备换工作，又恰好喜欢云音乐，那就 [加入我们](mailto:grp.music-fe@corp.netease.com)！
+> 本文发布自 [网易云音乐前端团队](https://github.com/x-orpheus)，基于 [CC BY-SA 4.0 协议](http://creativecommons.org/licenses/by-sa/4.0/) 进行许可，文章未经授权禁止任何形式的转载。我们一直在招人，如果你恰好准备换工作，又恰好喜欢云音乐，那就 [加入我们](mailto:grp.music-fe@corp.netease.com)！

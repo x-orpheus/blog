@@ -356,4 +356,4 @@ const result = await ctx.service.project.update({
 
 在完成本文初稿的时候，大家都觉得这是一篇教大家如何开发 API 接口的教程，因为写得非常详细，基本上是到了手把手的地步。这个目的是首要的，但并不是本文真正的目的。本文的最终目的是想证明把一件事情做到极致需要花费怎样的努力，同时也顺便回答了如何提升个人能力的问题。
 
-> 本文发布自 [网易云音乐前端团队](https://github.com/x-orpheus)，可自由转载，转载请在标题标明转载并在显著位置保留出处。我们一直在招人，如果你恰好准备换工作，又恰好喜欢云音乐，那就 [加入我们](mailto:grp.music-fe@corp.netease.com)！
+> 本文发布自 [网易云音乐前端团队](https://github.com/x-orpheus)，文章未经授权禁止任何形式的转载。我们一直在招人，如果你恰好准备换工作，又恰好喜欢云音乐，那就 [加入我们](mailto:grp.music-fe@corp.netease.com)！
