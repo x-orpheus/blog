@@ -1,0 +1,335 @@
+<!DOCTYPE html><html lang="zh"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.625 -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}h1{margin-left:0;margin-right:0;margin-top:2.4375rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.21875rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h2{margin-left:0;margin-right:0;margin-top:1.625rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.40625rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:hsla(0,0%,0%,0.53);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}ul{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:0.85rem;line-height:1.625rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:1rem;line-height:1.625rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:calc(0.8125rem - 1px);padding-right:0;padding-top:0;margin-bottom:0.8125rem;border-left:4px solid hsla(0,0%,0%,0.13);color:hsla(0,0%,0%,0.53);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(0.8125rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}b{font-weight:600;}strong{font-weight:600;}dt{font-weight:600;}th{font-weight:600;}li{margin-bottom:calc(0.8125rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}li > ul{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(0.8125rem / 2);}code{font-size:0.85rem;line-height:1.625rem;}kbd{font-size:0.85rem;line-height:1.625rem;}samp{font-size:0.85rem;line-height:1.625rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.08333rem;padding-right:1.08333rem;padding-top:0.8125rem;padding-bottom:calc(0.8125rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}h3,h4,h5,h6{margin-bottom:0.8125rem;margin-top:1.625rem;}ol,ul{margin-left:2.03125rem;}li>ol,li>ul{margin-left:2.03125rem;}a{color:#4078c0;text-decoration:none;}a:hover,a:active{text-decoration:underline;}</style><title data-react-helmet="true">捕获 React 异常 | 云音乐前端专栏</title><style type="text/css">.gatsby-resp-image-image{width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;color:transparent;}</style><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#dd001b"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><meta name="generator" content="Gatsby 2.15.7"/><meta data-react-helmet="true" name="description" content="韩国某著名男子天团之前在我们平台上架了一张重磅数字专辑，本来是一件喜大普奔的好事，结果上架后投诉蜂拥而至。部分用户反馈页面打开就崩溃，紧急排查后发现真凶就是下面这段代码。"/><meta data-react-helmet="true" property="og:title" content="捕获 React 异常"/><meta data-react-helmet="true" property="og:description" content="韩国某著名男子天团之前在我们平台上架了一张重磅数字专辑，本来是一件喜大普奔的好事，结果上架后投诉蜂拥而至。部分用户反馈页面打开就崩溃，紧急排查后发现真凶就是下面这段代码。"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="云音乐前端团队"/><meta data-react-helmet="true" name="twitter:title" content="捕获 React 异常"/><meta data-react-helmet="true" name="twitter:description" content="韩国某著名男子天团之前在我们平台上架了一张重磅数字专辑，本来是一件喜大普奔的好事，结果上架后投诉蜂拥而至。部分用户反馈页面打开就崩溃，紧急排查后发现真凶就是下面这段代码。"/><style data-href="/styles.a8f6e12462010344bfaf.css">@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:200;src:local("Source Code Pro Extra Light "),local("Source Code Pro-Extra Light"),url(/static/source-code-pro-latin-200-41568fe7927570e049a6cb707930f353.woff2) format("woff2"),url(/static/source-code-pro-latin-200-568dcb298a36f14317fdcddf8eded62f.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:300;src:local("Source Code Pro Light "),local("Source Code Pro-Light"),url(/static/source-code-pro-latin-300-248b2236ba6bb9d2745a4908bc9c4568.woff2) format("woff2"),url(/static/source-code-pro-latin-300-43fcfcf552695ff0976d7d03a29835c4.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:400;src:local("Source Code Pro Regular "),local("Source Code Pro-Regular"),url(/static/source-code-pro-latin-400-1c37ab07cfefc70a85445f49737ad28a.woff2) format("woff2"),url(/static/source-code-pro-latin-400-a4a08973559a45aba173184ea065addf.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:500;src:local("Source Code Pro Medium "),local("Source Code Pro-Medium"),url(/static/source-code-pro-latin-500-67f6c1995acae33eacb1af1807c0e8c8.woff2) format("woff2"),url(/static/source-code-pro-latin-500-a39fc2de145c00ef5898c77b15c27517.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:600;src:local("Source Code Pro SemiBold "),local("Source Code Pro-SemiBold"),url(/static/source-code-pro-latin-600-bf5d453754c3bd3e0fc9bcdc979048f1.woff2) format("woff2"),url(/static/source-code-pro-latin-600-c021e440e993ff26de945242222960a6.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:700;src:local("Source Code Pro Bold "),local("Source Code Pro-Bold"),url(/static/source-code-pro-latin-700-b46da14cbd07b2f1f5ca74069d59318e.woff2) format("woff2"),url(/static/source-code-pro-latin-700-c86a17b160684a125455d36f4733ad85.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:900;src:local("Source Code Pro Black "),local("Source Code Pro-Black"),url(/static/source-code-pro-latin-900-e985b6f17d53c2780c3c49722984a52e.woff2) format("woff2"),url(/static/source-code-pro-latin-900-b0d773d996cad7ea914d35d16dd0f3ec.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:400;src:local("Noto Sans Regular "),local("Noto Sans-Regular"),url(/static/noto-sans-latin-400-175853ded2a4e2249d37c46ca0ca33c5.woff2) format("woff2"),url(/static/noto-sans-latin-400-e7ccb0aa43af9fb7fae4d1bdc23a099b.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:400;src:local("Noto Sans Regular italic"),local("Noto Sans-Regularitalic"),url(/static/noto-sans-latin-400italic-baa3ec09eb827b4f10593032d1cf2a88.woff2) format("woff2"),url(/static/noto-sans-latin-400italic-14425b1ebbce551302a950b083b6c14e.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:700;src:local("Noto Sans Bold "),local("Noto Sans-Bold"),url(/static/noto-sans-latin-700-43750a193b8ff0b4e929323a72d79301.woff2) format("woff2"),url(/static/noto-sans-latin-700-a8edfe7bbf3b01666adc30c118cc5223.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:700;src:local("Noto Sans Bold italic"),local("Noto Sans-Bolditalic"),url(/static/noto-sans-latin-700italic-bc98820a9bf62004a88ef07e012e3ce3.woff2) format("woff2"),url(/static/noto-sans-latin-700italic-0e19737ff39f96eb1ff99e463fa457a4.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><link as="script" rel="preload" href="/styles-7f0c9f09258e3216c188.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-9bcfc8cfa601b955c502.js"/><link as="script" rel="preload" href="/app-58c34f5daf926852a3b3.js"/><link as="script" rel="preload" href="/commons-4c7ea43baf1033607c1c.js"/><link as="script" rel="preload" href="/webpack-runtime-a8e57de1cebc497b8be8.js"/><link as="fetch" rel="preload" href="/page-data/catch-react-error/page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:39rem;padding:2.4375rem 1.21875rem;font-family:&quot;Source Code Pro&quot;, &quot;Noto Sans CJK SC&quot;"><header><h1 style="font-size:2.2974rem;line-height:3.25rem;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:#DD001B" href="/">云音乐前端专栏</a></h1></header><main><article><header><h1 style="margin-top:1.625rem;margin-bottom:0;color:#001E26">捕获 React 异常</h1><p style="font-size:0.87055rem;line-height:1.625rem;display:block;margin-bottom:1.625rem">2020-01-14</p></header><section><img src="https://p1.music.126.net/yQQYPREBOFr9d_1MQJfLiQ==/109951164622691316.png">
+<blockquote>
+<p>此项目为云音乐营收组稳定性工程的前端部分，本文作者 <a href="https://github.com/xff1874">章伟东</a>，项目其他参与者<a href="https://sylvenas.github.io/">赵祥涛</a></p>
+</blockquote>
+<h2>一个 bug 引发的血案</h2>
+<p>韩国某著名男子天团之前在我们平台上架了一张重磅数字专辑，本来是一件喜大普奔的好事，结果上架后投诉蜂拥而至。部分用户反馈页面打开就崩溃，紧急排查后发现真凶就是下面这段代码。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token keyword">const</span> <span class="token punctuation">{</span> data<span class="token punctuation">,</span> isCreator<span class="token punctuation">,</span> canSignOut<span class="token punctuation">,</span> canSignIn <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">;</span>
+     <span class="token keyword">const</span> <span class="token punctuation">{</span>  supportCard<span class="token punctuation">,</span> creator<span class="token punctuation">,</span> fansList<span class="token punctuation">,</span> visitorId<span class="token punctuation">,</span> memberCount <span class="token punctuation">}</span> <span class="token operator">=</span> data<span class="token punctuation">;</span>
+     <span class="token keyword">let</span> <span class="token function-variable function">getUserIcon</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">obj</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+         <span class="token keyword">if</span> <span class="token punctuation">(</span>obj<span class="token punctuation">.</span>userType <span class="token operator">==</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+             <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token operator">&lt;</span>i className<span class="token operator">=</span><span class="token string">"icn u-svg u-svg-yyr_sml"</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>obj<span class="token punctuation">.</span>authStatus <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+             <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token operator">&lt;</span>i className<span class="token operator">=</span><span class="token string">"icn u-svg u-svg-vip_sml"</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>obj<span class="token punctuation">.</span>expertTags <span class="token operator">&amp;&amp;</span> creator<span class="token punctuation">.</span>expertTags<span class="token punctuation">.</span>length <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+             <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token operator">&lt;</span>i className<span class="token operator">=</span><span class="token string">"icn u-svg u-svg-daren_sml"</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token punctuation">}</span>
+         <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span><span class="token punctuation">;</span>
+     <span class="token operator">...</span>
+  <span class="token punctuation">}</span></code></pre></div>
+<p>这行 <code class="language-text">if (obj.expertTags &amp;&amp; creator.expertTags.length )</code> 里面的 <code class="language-text">creator</code> 应该是 <code class="language-text">obj</code>，由于手滑，不小心写错了。</p>
+<p>对于上面这种情况，<code class="language-text">lint</code> 工具无法检测出来，因为 <code class="language-text">creator</code> 恰好也是一个变量，这是一个纯粹的逻辑错误。</p>
+<p>后来我们紧急修复了这个 bug，一切趋于平静。事情虽然到此为止，但是有个声音一直在我心中回响 <strong>如何避免这种事故再次发生</strong>。 对于这种错误，堵是堵不住的，那么我们就应该思考设计一种兜底机制，能够隔离这种错误，保证在页面部分组件出错的情况下，不影响整个页面。</p>
+<p><span id = "ein"></span></p>
+<h2>ErrorBoundary 介绍</h2>
+<p>从 React 16 开始，引入了 Error Boundaries 概念，它可以捕获它的<strong>子组件</strong>中产生的错误，记录错误日志，并展示降级内容，具体 <a href="https://reactjs.org/docs/error-boundaries.html">官网地址</a>。</p>
+<blockquote>
+<p>Error boundaries are React components that <strong>catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI</strong> instead of the component tree that crashed</p>
+</blockquote>
+<p>这个特性让我们眼前一亮，精神为之振奋，仿佛在黑暗中看到了一丝亮光。但是经过研究发现，<code class="language-text">ErrorBoundary</code> 只能捕获子组件的 render 错误，有一定的局限性，以下是无法处理的情况：</p>
+<ul>
+<li><a href="https://github.com/facebook/react/issues/11409">事件处理函数</a>（比如 onClick,onMouseEnter)</li>
+<li><a href="https://github.com/facebook/react/issues/11334">异步代码</a>（如 requestAnimationFrame，setTimeout,promise)</li>
+<li>服务端渲染</li>
+<li>ErrorBoundary 组件本身的错误。</li>
+</ul>
+<p><span id="jump"></span></p>
+<h3>如何创建一个 <code class="language-text">ErrorBoundary</code> 组件</h3>
+<p>只要在 <code class="language-text">React.Component</code> 组件里面添加 <code class="language-text">static getDerivedStateFromError()</code> 或者 <code class="language-text">componentDidCatch()</code> 即可。前者在错误发生时进行降级处理，后面一个函数主要是做日志记录，<a href="https://reactjs.org/docs/error-boundaries.html">官方代码</a> 如下</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">class</span> <span class="token class-name">ErrorBoundary</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span> hasError<span class="token punctuation">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">static</span> <span class="token function">getDerivedStateFromError</span><span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Update state so the next render will show the fallback UI.</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span> hasError<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">componentDidCatch</span><span class="token punctuation">(</span><span class="token parameter">error<span class="token punctuation">,</span> errorInfo</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// You can also log the error to an error reporting service</span>
+    <span class="token function">logErrorToMyService</span><span class="token punctuation">(</span>error<span class="token punctuation">,</span> errorInfo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>hasError<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// You can render any custom fallback UI</span>
+      <span class="token keyword">return</span> <span class="token operator">&lt;</span>h1<span class="token operator">></span>Something went wrong<span class="token punctuation">.</span><span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">></span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>children<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>可以看到 <code class="language-text">getDerivedStateFromError</code> 捕获子组件发生的错误，设置 <code class="language-text">hasError</code> 变量，<code class="language-text">render</code> 函数里面根据变量的值显示降级的ui。</p>
+<p>至此一个 ErrorBoundary 组件已经定义好了，使用时只要包裹一个子组件即可，如下。</p>
+<p><span id = "errorwrap"></span></p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token operator">&lt;</span>ErrorBoundary<span class="token operator">></span>
+  <span class="token operator">&lt;</span>MyWidget <span class="token operator">/</span><span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>ErrorBoundary<span class="token operator">></span></code></pre></div>
+<h3>Error Boundaries 的普遍用法。</h3>
+<p>看到 Error Boundaries 的使用方法之后，大部分团队的都会遵循官方的用法，写一个 <code class="language-text">errorBoundaryHOC</code>,然后包裹一下子组件。下面 scratch 工程的一个例子</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">errorBoundaryHOC</span><span class="token punctuation">(</span><span class="token string">'Blocks'</span><span class="token punctuation">)</span><span class="token punctuation">(</span>
+    <span class="token function">connect</span><span class="token punctuation">(</span>
+        mapStateToProps<span class="token punctuation">,</span>
+        mapDispatchToProps
+    <span class="token punctuation">)</span><span class="token punctuation">(</span>Blocks<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>其中 <code class="language-text">Blocks</code> 是一个 UI 展示组件，<code class="language-text">errorBoundaryHOC</code> 就是错误处理组件，
+具体源码可以看 <a href="https://github.com/LLK/scratch-gui/blob/develop/src/containers/blocks.jsx">这里</a></p>
+<h3>普遍用法的困境</h3>
+<p>上面的方法在 export 的时候包裹一个 <code class="language-text">errorBoundaryHOC</code>。
+对于新开发的代码，使用比较方便，但是对于已经存在的代码，会有比较大的问题。</p>
+<p>因为 export 的格式有 <a href="https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export">多种</a></p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">ClassName</span> <span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span> name1<span class="token punctuation">,</span> name2<span class="token punctuation">,</span> …<span class="token punctuation">,</span> nameN <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span> variable1 <span class="token keyword">as</span> name1<span class="token punctuation">,</span> variable2 <span class="token keyword">as</span> name2<span class="token punctuation">,</span> …<span class="token punctuation">,</span> nameN <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token operator">*</span> <span class="token keyword">as</span> name1 <span class="token keyword">from</span> …</code></pre></div>
+<p>所以如果对原有代码用 <code class="language-text">errorBoundaryHOC</code> 进行封装，会改变原有的代码结构，如果要后续不再需要封装删除也很麻烦，方案实施成本高，非常棘手。</p>
+<p>所以，我们在考虑是否有一种方法可以比较方便的处理上面的问题。</p>
+<h2>青铜时代 - BabelPlugin</h2>
+<p>在碰到上诉困境问题之后，我们的思路是：通过脚手架自动对子组件包裹错误处理组件。设计框架如下图：</p>
+<p><img src="https://p1.music.126.net/tysmu4OsQHxfA8SFMPVvlg==/109951164599347997.png"></p>
+<p>简而言之分下面几步：</p>
+<ol>
+<li>判断是否是 React 16 版本</li>
+<li>读取配置文件</li>
+<li>检测是否已经包裹了 <code class="language-text">ErrorBoundary</code> 组件。 如果没有，走 patch 流程。如果有，根据 <code class="language-text">force</code> 标签判断是否重新包裹。</li>
+<li>
+<p>走包裹组件流程（图中的 patch 流程）：</p>
+<blockquote>
+<p>a. 先引入错误处理组件</p>
+</blockquote>
+<blockquote>
+<p>b. 对子组件用 <code class="language-text">ErrorBoundary</code> 包裹</p>
+</blockquote>
+</li>
+</ol>
+<p>配置文件如下（.catch-react-error-config.json）：</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"sentinel"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"imports"</span><span class="token operator">:</span> <span class="token string">"import ServerErrorBoundary from '$components/ServerErrorBoundary'"</span><span class="token punctuation">,</span>
+    <span class="token property">"errorHandleComponent"</span><span class="token operator">:</span> <span class="token string">"ServerErrorBoundary"</span><span class="token punctuation">,</span>
+    <span class="token property">"filter"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"/actual/"</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"sourceDir"</span><span class="token operator">:</span> <span class="token string">"test/fixtures/wrapCustomComponent"</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>patch 前源代码：</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token operator">&lt;</span>CustomComponent <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>读取配置文件 patch 之后的代码为：</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">//isCatchReactError</span>
+<span class="token keyword">import</span> ServerErrorBoundary <span class="token keyword">from</span> <span class="token string">"$components/ServerErrorBoundary"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>ServerErrorBoundary isCatchReactError<span class="token operator">></span>
+        <span class="token punctuation">{</span><span class="token operator">&lt;</span>CustomComponent <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">}</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>ServerErrorBoundary<span class="token operator">></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>可以看到头部多了</p>
+<p><code class="language-text">import ServerErrorBoundary from &#39;$components/ServerErrorBoundary&#39;</code></p>
+<p>然后整个组件也被 <code class="language-text">ServerErrorBoundary</code> 包裹，<code class="language-text">isCatchReactError</code> 用来标记位，主要是下次 patch 的时候根据这个标记位做对应的更新，防止被引入多次。</p>
+<p>这个方案借助了 <a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md">babel plugin</a>，在代码编译阶段自动导入 ErrorBoundary 并批量组件包裹，核心代码：</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> babelTemplate <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"@babel/template"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> t <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"babel-types"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> visitor <span class="token operator">=</span> <span class="token punctuation">{</span>
+  Program<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 在文件头部导入 ErrorBoundary</span>
+    <span class="token function">exit</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// string 代码转换为 AST</span>
+      <span class="token keyword">const</span> impstm <span class="token operator">=</span> template<span class="token punctuation">.</span>default<span class="token punctuation">.</span><span class="token function">ast</span><span class="token punctuation">(</span>
+        <span class="token string">"import ErrorBoundary from '$components/ErrorBoundary'"</span>
+      <span class="token punctuation">)</span><span class="token punctuation">;</span>
+      path<span class="token punctuation">.</span>node<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">unshift</span><span class="token punctuation">(</span>impstm<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">/**
+   * 包裹 return jsxElement
+   * @param {*} path
+   */</span>
+  <span class="token function">ReturnStatement</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> parentFunc <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">getFunctionParent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> oldJsx <span class="token operator">=</span> path<span class="token punctuation">.</span>node<span class="token punctuation">.</span>argument<span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>
+      <span class="token operator">!</span>oldJsx <span class="token operator">||</span>
+      <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token operator">!</span>parentFunc<span class="token punctuation">.</span>node<span class="token punctuation">.</span>key <span class="token operator">||</span> parentFunc<span class="token punctuation">.</span>node<span class="token punctuation">.</span>key<span class="token punctuation">.</span>name <span class="token operator">!==</span> <span class="token string">"render"</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span>
+        oldJsx<span class="token punctuation">.</span>type <span class="token operator">!==</span> <span class="token string">"JSXElement"</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 创建被 ErrorBoundary 包裹之后的组件树</span>
+    <span class="token keyword">const</span> openingElement <span class="token operator">=</span> t<span class="token punctuation">.</span><span class="token function">JSXOpeningElement</span><span class="token punctuation">(</span>
+      t<span class="token punctuation">.</span><span class="token function">JSXIdentifier</span><span class="token punctuation">(</span><span class="token string">"ErrorBoundary"</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> closingElement <span class="token operator">=</span> t<span class="token punctuation">.</span><span class="token function">JSXClosingElement</span><span class="token punctuation">(</span>
+      t<span class="token punctuation">.</span><span class="token function">JSXIdentifier</span><span class="token punctuation">(</span><span class="token string">"ErrorBoundary"</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> newJsx <span class="token operator">=</span> t<span class="token punctuation">.</span><span class="token function">JSXElement</span><span class="token punctuation">(</span>openingElement<span class="token punctuation">,</span> closingElement<span class="token punctuation">,</span> oldJsx<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 插入新的 jxsElement, 并删除旧的</span>
+    <span class="token keyword">let</span> newReturnStm <span class="token operator">=</span> t<span class="token punctuation">.</span><span class="token function">returnStatement</span><span class="token punctuation">(</span>newJsx<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    path<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    path<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>newReturnStm<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<p>此方案的核心是对子组件用自定义组件进行包裹，只不过这个自定义组件刚好是 ErrorBoundary。如果需要，自定义组件也可以是其他组件比如 log 等。</p>
+<p>完整 GitHub 代码实现 <a href="https://github.com/xff1874/react-error-sentinel">这里</a></p>
+<p>虽然这种方式实现了错误的捕获和兜底方案，但是非常复杂，用起来也麻烦，要配置 Webpack 和 <code class="language-text">.catch-react-error-config.json</code> 还要运行脚手架，效果不令人满意。</p>
+<h2>黄金时代 - Decorator</h2>
+<p>在上述方案出来之后，很长时间都找不到一个优雅的方案，要么太难用（babelplugin）, 要么对于源码的改动太大（HOC）, 能否有更优雅的实现。</p>
+<p>于是就有了装饰器 (Decorator) 的方案。</p>
+<p>装饰器方案的源码实现用了 TypeScript，使用的时候需要配合 Babel 的插件转为 ES 的版本，具体看下面的使用说明</p>
+<p>TS 里面提供了装饰器工厂，类装饰器，方法装饰器，访问器装饰器，属性装饰器，参数装饰器等多种方式，结合项目特点，我们用了类装饰器。</p>
+<h3>类装饰器介绍</h3>
+<blockquote>
+<p>类装饰器在类声明之前被声明（紧靠着类声明）。 类装饰器应用于类构造函数，可以用来监视，修改或替换类定义。</p>
+</blockquote>
+<p>下面是一个例子。</p>
+<div class="gatsby-highlight" data-language="ts"><pre class="language-ts"><code class="language-ts"><span class="token keyword">function</span> <span class="token function">SelfDriving</span><span class="token punctuation">(</span><span class="token parameter">constructorFunction<span class="token punctuation">:</span> <span class="token builtin">Function</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'-- decorator function invoked --'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    constructorFunction<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>selfDrivable <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+@SelfDriving
+<span class="token keyword">class</span> <span class="token class-name">Car</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> _make<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token parameter">make<span class="token punctuation">:</span> <span class="token builtin">string</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>_make <span class="token operator">=</span> make<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">let</span> car<span class="token punctuation">:</span> Car <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Car</span><span class="token punctuation">(</span><span class="token string">"Nissan"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>car<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">selfDriving: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>car<span class="token punctuation">[</span><span class="token string">'selfDrivable'</span><span class="token punctuation">]</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>output:</p>
+<div class="gatsby-highlight" data-language="ts"><pre class="language-ts"><code class="language-ts"><span class="token operator">--</span> decorator <span class="token keyword">function</span> invoked <span class="token operator">--</span>
+Car <span class="token punctuation">{</span> _make<span class="token punctuation">:</span> <span class="token string">'Nissan'</span> <span class="token punctuation">}</span>
+selfDriving<span class="token punctuation">:</span> <span class="token boolean">true</span></code></pre></div>
+<p>上面代码先执行了 <code class="language-text">SelfDriving</code> 函数，然后 car 也获得了 <code class="language-text">selfDrivable</code> 属性。</p>
+<p>可以看到 Decorator 本质上是一个函数，也可以用<code class="language-text">@+函数名</code>装饰在类，方法等其他地方。 装饰器可以改变类定义，获取动态数据等。</p>
+<p>完整的 TS 教程 Decorator 请参照 <a href="https://www.tslang.cn/docs/handbook/decorators.html">官方教程</a></p>
+<p>于是我们的错误捕获方案设计如下</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx">@<span class="token function">catchreacterror</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">Test</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Button</span></span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>click me<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p><code class="language-text">catchreacterror</code> 函数的参数为 <code class="language-text">ErrorBoundary</code> 组件，用户可以使用自定义的 <code class="language-text">ErrorBoundary</code>，如果不传递则使用默认的 <code class="language-text">DefaultErrorBoundary</code> 组件；</p>
+<p><code class="language-text">catchreacterror</code> 核心代码如下：</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component<span class="token punctuation">,</span> forwardRef <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">catchreacterror</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">Boundary <span class="token operator">=</span> DefaultErrorBoundary</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token parameter">InnerComponent</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">class</span> <span class="token class-name">WrapperComponent</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+    <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> <span class="token punctuation">{</span> forwardedRef <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">;</span>
+      <span class="token keyword">return</span> <span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>Boundary<span class="token operator">></span>
+          <span class="token operator">&lt;</span>InnerComponent <span class="token punctuation">{</span><span class="token operator">...</span>this<span class="token punctuation">.</span>props<span class="token punctuation">}</span> ref<span class="token operator">=</span><span class="token punctuation">{</span>forwardedRef<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>Boundary<span class="token operator">></span>
+      <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<p>返回值为一个 HOC，使用 <code class="language-text">ErrorBoundary</code> 包裹子组件。</p>
+<h3>增加服务端渲染错误捕获</h3>
+<p>在 <a href="#ein">介绍</a> 里面提到，对于服务端渲染，官方的 <code class="language-text">ErrorBoundary</code> 并没有支持，所以对于 SSR 我们用 <code class="language-text">try/catch</code> 做了包裹：</p>
+<ol>
+<li>先判断是否是服务端 <code class="language-text">is_server</code>：</li>
+</ol>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">is_server</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token operator">!</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> window <span class="token operator">!==</span> <span class="token string">"undefined"</span> <span class="token operator">&amp;&amp;</span> window<span class="token punctuation">.</span>document<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<ol start="2">
+<li>包裹</li>
+</ol>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">is_server</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> originalRender <span class="token operator">=</span> <span class="token class-name">InnerComponent</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>render<span class="token punctuation">;</span>
+
+  <span class="token class-name">InnerComponent</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">render</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token function">originalRender</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> arguments<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> <span class="token operator">&lt;</span>div<span class="token operator">></span>Something is Wrong<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>最后，就形成了 <code class="language-text">catch-react-error</code> 这个库，方便大家捕获 React 错误。</p>
+<p><span id ="usage"></span></p>
+<h3>catch-react-error 使用说明</h3>
+<h4>1. 安装 <code class="language-text">catch-react-error</code></h4>
+<div class="gatsby-highlight" data-language="sh"><pre class="language-sh"><code class="language-sh">npm install catch-react-error</code></pre></div>
+<h4>2. 安装 ES7 Decorator babel plugin</h4>
+<div class="gatsby-highlight" data-language="sh"><pre class="language-sh"><code class="language-sh">npm install --save-dev @babel/plugin-proposal-decorators
+npm install --save-dev @babel/plugin-proposal-class-properties</code></pre></div>
+<p>添加 babel plugin</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"plugins"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">"@babel/plugin-proposal-decorators"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token property">"legacy"</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token string">"@babel/plugin-proposal-class-properties"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token property">"loose"</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h4>3. 导入 catch-react-error</h4>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">import</span> catchreacterror <span class="token keyword">from</span> <span class="token string">"catch-react-error"</span><span class="token punctuation">;</span></code></pre></div>
+<h4>4. 使用 <code class="language-text">@catchreacterror</code> Decorator</h4>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx">@<span class="token function">catchreacterror</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">Test</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Button</span></span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>click me<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p><code class="language-text">catchreacterror</code> 函数接受一个参数：<code class="language-text">ErrorBoundary</code>（不提供则默认采用 <code class="language-text">DefaultErrorBoundary</code>)</p>
+<h4>5. 使用 <code class="language-text">@catchreacterror</code> 处理 FunctionComponent</h4>
+<p>上面是对于<code class="language-text">ClassComponent</code>做的处理，但是有些人喜欢用函数组件，这里也提供使用方法，如下。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">Content</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">props<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token operator">&lt;</span>div<span class="token operator">></span><span class="token punctuation">{</span>props<span class="token punctuation">.</span>x<span class="token punctuation">.</span>length<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> SafeContent <span class="token operator">=</span> <span class="token function">catchreacterror</span><span class="token punctuation">(</span>DefaultErrorBoundary<span class="token punctuation">)</span><span class="token punctuation">(</span>Content<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"App"</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>header className<span class="token operator">=</span><span class="token string">"App-header"</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>h1<span class="token operator">></span>这是正常展示内容<span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>header<span class="token operator">></span>
+      <span class="token operator">&lt;</span>SafeContent<span class="token operator">/</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h4>6. 如何创建自己所需的 Custom Error Boundaries</h4>
+<p>参考上面 <a href="#jump">如何创建一个 <code class="language-text">ErrorBoundary</code> 组件</a>, 然后改为自己所需即可，比如在 <code class="language-text">componentDidCatch</code> 里面上报错误等。</p>
+<p>完整的 GitHub 代码在此 <a href="https://github.com/x-orpheus/catch-react-error">catch-react-error</a>。</p>
+<blockquote>
+<p>本文发布自 <a href="https://github.com/x-orpheus">网易云音乐前端团队</a>，文章未经授权禁止任何形式的转载。我们一直在招人，如果你恰好准备换工作，又恰好喜欢云音乐，那就 <a href="mailto:grp.music-fe@corp.netease.com">加入我们</a>！</p>
+</blockquote></section><hr style="margin-bottom:1.625rem"/></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/web-audio/">← 上一篇</a></li><li></li></ul></nav></main></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-46698359-8', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/catch-react-error/";window.webpackCompilationHash="45601efb758aa626694c";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-58c34f5daf926852a3b3.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-51d272fe0618a2665c13.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-9bcfc8cfa601b955c502.js"],"component---src-pages-404-js":["/component---src-pages-404-js-e9fc057fd683384561c6.js"],"component---src-pages-index-js":["/component---src-pages-index-js-b550dfa873395f120c2c.js"]};/*]]>*/</script><script src="/webpack-runtime-a8e57de1cebc497b8be8.js" async=""></script><script src="/commons-4c7ea43baf1033607c1c.js" async=""></script><script src="/app-58c34f5daf926852a3b3.js" async=""></script><script src="/component---src-templates-blog-post-js-9bcfc8cfa601b955c502.js" async=""></script><script src="/styles-7f0c9f09258e3216c188.js" async=""></script></body></html>
