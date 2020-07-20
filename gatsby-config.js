@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `云音乐前端专栏`,
-    description: `云音乐前端技术专栏`,
-    author: `云音乐前端团队`,
+    title: `云音乐大前端专栏`,
+    description: `云音乐大前端技术专栏`,
+    author: `云音乐大前端团队`,
     siteUrl: `https://musicfe.dev/`,
   },
   plugins: [
@@ -54,8 +54,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `云音乐前端专栏`,
-        short_name: `云音乐前端专栏`,
+        name: `云音乐大前端专栏`,
+        short_name: `云音乐大前端专栏`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#dd001b`,
