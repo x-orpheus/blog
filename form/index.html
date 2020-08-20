@@ -1,0 +1,436 @@
+<!DOCTYPE html><html lang="zh"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.625 -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}h1{margin-left:0;margin-right:0;margin-top:2.4375rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.21875rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h2{margin-left:0;margin-right:0;margin-top:1.625rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.40625rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:hsla(0,0%,0%,0.53);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}ul{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:0.85rem;line-height:1.625rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:1rem;line-height:1.625rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:calc(0.8125rem - 1px);padding-right:0;padding-top:0;margin-bottom:0.8125rem;border-left:4px solid hsla(0,0%,0%,0.13);color:hsla(0,0%,0%,0.53);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(0.8125rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}b{font-weight:600;}strong{font-weight:600;}dt{font-weight:600;}th{font-weight:600;}li{margin-bottom:calc(0.8125rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}li > ul{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(0.8125rem / 2);}code{font-size:0.85rem;line-height:1.625rem;}kbd{font-size:0.85rem;line-height:1.625rem;}samp{font-size:0.85rem;line-height:1.625rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.08333rem;padding-right:1.08333rem;padding-top:0.8125rem;padding-bottom:calc(0.8125rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}h3,h4,h5,h6{margin-bottom:0.8125rem;margin-top:1.625rem;}ol,ul{margin-left:2.03125rem;}li>ol,li>ul{margin-left:2.03125rem;}a{color:#4078c0;text-decoration:none;}a:hover,a:active{text-decoration:underline;}</style><title data-react-helmet="true">面向复杂场景的表单解决方案 | 云音乐大前端专栏</title><style type="text/css">.gatsby-resp-image-image{width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;color:transparent;}</style><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#dd001b"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><meta name="generator" content="Gatsby 2.15.7"/><meta data-react-helmet="true" name="description" content="表单涉及到联动、校验、布局等复杂场景，经常是开发者的需要耗费精力去解决的点，虽然传统的开发表单的方式已经足够的灵活但是依然有提效的空间，所以针对复杂的表单开发场景我们总结了一套表单开发方案"/><meta data-react-helmet="true" property="og:title" content="面向复杂场景的表单解决方案"/><meta data-react-helmet="true" property="og:description" content="表单涉及到联动、校验、布局等复杂场景，经常是开发者的需要耗费精力去解决的点，虽然传统的开发表单的方式已经足够的灵活但是依然有提效的空间，所以针对复杂的表单开发场景我们总结了一套表单开发方案"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="云音乐大前端团队"/><meta data-react-helmet="true" name="twitter:title" content="面向复杂场景的表单解决方案"/><meta data-react-helmet="true" name="twitter:description" content="表单涉及到联动、校验、布局等复杂场景，经常是开发者的需要耗费精力去解决的点，虽然传统的开发表单的方式已经足够的灵活但是依然有提效的空间，所以针对复杂的表单开发场景我们总结了一套表单开发方案"/><style data-href="/styles.a8f6e12462010344bfaf.css">@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:200;src:local("Source Code Pro Extra Light "),local("Source Code Pro-Extra Light"),url(/static/source-code-pro-latin-200-41568fe7927570e049a6cb707930f353.woff2) format("woff2"),url(/static/source-code-pro-latin-200-568dcb298a36f14317fdcddf8eded62f.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:300;src:local("Source Code Pro Light "),local("Source Code Pro-Light"),url(/static/source-code-pro-latin-300-248b2236ba6bb9d2745a4908bc9c4568.woff2) format("woff2"),url(/static/source-code-pro-latin-300-43fcfcf552695ff0976d7d03a29835c4.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:400;src:local("Source Code Pro Regular "),local("Source Code Pro-Regular"),url(/static/source-code-pro-latin-400-1c37ab07cfefc70a85445f49737ad28a.woff2) format("woff2"),url(/static/source-code-pro-latin-400-a4a08973559a45aba173184ea065addf.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:500;src:local("Source Code Pro Medium "),local("Source Code Pro-Medium"),url(/static/source-code-pro-latin-500-67f6c1995acae33eacb1af1807c0e8c8.woff2) format("woff2"),url(/static/source-code-pro-latin-500-a39fc2de145c00ef5898c77b15c27517.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:600;src:local("Source Code Pro SemiBold "),local("Source Code Pro-SemiBold"),url(/static/source-code-pro-latin-600-bf5d453754c3bd3e0fc9bcdc979048f1.woff2) format("woff2"),url(/static/source-code-pro-latin-600-c021e440e993ff26de945242222960a6.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:700;src:local("Source Code Pro Bold "),local("Source Code Pro-Bold"),url(/static/source-code-pro-latin-700-b46da14cbd07b2f1f5ca74069d59318e.woff2) format("woff2"),url(/static/source-code-pro-latin-700-c86a17b160684a125455d36f4733ad85.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:900;src:local("Source Code Pro Black "),local("Source Code Pro-Black"),url(/static/source-code-pro-latin-900-e985b6f17d53c2780c3c49722984a52e.woff2) format("woff2"),url(/static/source-code-pro-latin-900-b0d773d996cad7ea914d35d16dd0f3ec.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:400;src:local("Noto Sans Regular "),local("Noto Sans-Regular"),url(/static/noto-sans-latin-400-175853ded2a4e2249d37c46ca0ca33c5.woff2) format("woff2"),url(/static/noto-sans-latin-400-e7ccb0aa43af9fb7fae4d1bdc23a099b.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:400;src:local("Noto Sans Regular italic"),local("Noto Sans-Regularitalic"),url(/static/noto-sans-latin-400italic-baa3ec09eb827b4f10593032d1cf2a88.woff2) format("woff2"),url(/static/noto-sans-latin-400italic-14425b1ebbce551302a950b083b6c14e.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:700;src:local("Noto Sans Bold "),local("Noto Sans-Bold"),url(/static/noto-sans-latin-700-43750a193b8ff0b4e929323a72d79301.woff2) format("woff2"),url(/static/noto-sans-latin-700-a8edfe7bbf3b01666adc30c118cc5223.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:700;src:local("Noto Sans Bold italic"),local("Noto Sans-Bolditalic"),url(/static/noto-sans-latin-700italic-bc98820a9bf62004a88ef07e012e3ce3.woff2) format("woff2"),url(/static/noto-sans-latin-700italic-0e19737ff39f96eb1ff99e463fa457a4.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><link as="script" rel="preload" href="/styles-4599ec2e23ea9f0a203d.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-9bcfc8cfa601b955c502.js"/><link as="script" rel="preload" href="/app-58c34f5daf926852a3b3.js"/><link as="script" rel="preload" href="/commons-a604c75c7f1f8c807909.js"/><link as="script" rel="preload" href="/webpack-runtime-a8e57de1cebc497b8be8.js"/><link as="fetch" rel="preload" href="/page-data/form/page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:39rem;padding:2.4375rem 1.21875rem;font-family:&quot;Source Code Pro&quot;, &quot;Noto Sans CJK SC&quot;"><header><h1 style="font-size:2.2974rem;line-height:3.25rem;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:#DD001B" href="/">云音乐大前端专栏</a></h1></header><main><article><header><h1 style="margin-top:1.625rem;margin-bottom:0;color:#001E26">面向复杂场景的表单解决方案</h1><p style="font-size:0.87055rem;line-height:1.625rem;display:block;margin-bottom:1.625rem">2020-08-20</p></header><section><p><img src="https://p1.music.126.net/SU4ohKoFNTnO9UhUiZkFmg==/109951165097827439.jpg"></p>
+<blockquote>
+<p>图片来源：<a href="https://unsplash.com/">https://unsplash.com/</a></p>
+</blockquote>
+<blockquote>
+<p>本文作者：董健华</p>
+</blockquote>
+<h2>1. 背景</h2>
+<p>云音乐 B 端业务场景非常多，B 端业务相对于 C 端业务产品生命周期更长而且更注重场景的的梳理。很多时候开发 B 端业务都是拷贝之前的代码，这样增加了很多重复而且枯燥的工作量。</p>
+<p>中后台系统其实可以拆分成几个比较通用的场景：表单、表格、图表，其中表单涉及到联动、校验、布局等复杂场景，经常是开发者的需要耗费精力去解决的点。</p>
+<p>对比传统的 <a href="https://ant.design/">Ant Design</a> 表单开发开发方式，我们认为有以下问题：</p>
+<ol>
+<li>首先代码无法被序列化，而且对于一些非前端的开发者更习惯用 <code class="language-text">JSON</code> 方式描述表单，因为足够简单</li>
+<li>表单的校验并没有和校验状态做结合</li>
+<li><code class="language-text">onChange</code> 实现的联动方式在复杂的联动情况下代码会变得难以维护，容易产生很多链表式的逻辑</li>
+<li>表单有许多互斥的状态可以整理，而且我们也希望用户可以很轻易的在这些状态间进行切换</li>
+<li>对于一些比较常用而且通用的场景，例如：表单列表，也可以抽离出一套可行的方案</li>
+</ol>
+<p>所以虽然传统的表单开发方式已经足够的灵活，但是我也依然认为表单还有优化的空间，在灵活与效率上做了些权衡。</p>
+<p>外界也有比较成熟的表单解决方案，例如： <a href="https://formilyjs.org/">Formliy</a> 、 <a href="https://alibaba.github.io/form-render">FormRender</a> 。虽然解决了上面某几个点的问题，但是依然不够全面，我们需要有自己 <code class="language-text">style</code> 的方案。</p>
+<p>所以为了提高中后台开发效率，让前端能够把时间投入到更有意义的事情里，我们总结了一套面向复杂场景的表单解决方案。</p>
+<h2>2. 技术方案</h2>
+<p>在技术方案上至关重要的一环就是Schema设计，框架架构等工作都是围绕这一环去实现的，所以我会沿袭这个思路给大家做介绍。</p>
+<h3>2.1 Schema设计</h3>
+<p>表单方案基于 <code class="language-text">Ant Design</code> 开发，通过 <code class="language-text">JSON</code> 方式配置 Schema，但是并非是 <code class="language-text">JSON Schema</code>，外界很多基于 <code class="language-text">JSON Schema</code> 的配置方案，其实也有考虑过，不过 <code class="language-text">JSON Schema</code> 写起来有点麻烦，所以对 <code class="language-text">JSON Schema</code> 的转换只作为一项附加的能力。</p>
+<p>案例如下面代码所示，最简单的表单字段只要配置 <code class="language-text">key</code>、<code class="language-text">type</code> 和 <code class="language-text">ui.label</code> 就可以了：</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> schema <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        <span class="token string">"key"</span><span class="token punctuation">:</span> <span class="token string">"name"</span><span class="token punctuation">,</span>
+        <span class="token string">"type"</span><span class="token punctuation">:</span> <span class="token string">"Input"</span><span class="token punctuation">,</span>
+        <span class="token string">"ui"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">"label"</span><span class="token punctuation">:</span> <span class="token string">"姓名"</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        <span class="token string">"key"</span><span class="token punctuation">:</span> <span class="token string">"age"</span><span class="token punctuation">,</span>
+        <span class="token string">"type"</span><span class="token punctuation">:</span> <span class="token string">"InputNumber"</span><span class="token punctuation">,</span>
+        <span class="token string">"ui"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">"label"</span><span class="token punctuation">:</span> <span class="token string">"年龄"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">"props"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">"placeholder"</span><span class="token punctuation">:</span> <span class="token string">"请输入年龄"</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        <span class="token string">"key"</span><span class="token punctuation">:</span> <span class="token string">"gender"</span><span class="token punctuation">,</span>
+        <span class="token string">"type"</span><span class="token punctuation">:</span> <span class="token string">"Radio"</span><span class="token punctuation">,</span>
+        <span class="token string">"value"</span><span class="token punctuation">:</span> <span class="token string">"male"</span><span class="token punctuation">,</span>
+        <span class="token string">"ui"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            <span class="token string">"label"</span><span class="token punctuation">:</span> <span class="token string">"性别"</span>    
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">"options"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                <span class="token string">"name"</span><span class="token punctuation">:</span> <span class="token string">"男"</span><span class="token punctuation">,</span>
+                <span class="token string">"value"</span><span class="token punctuation">:</span> <span class="token string">"male"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token string">"name"</span><span class="token punctuation">:</span> <span class="token string">"女"</span><span class="token punctuation">,</span>
+                <span class="token string">"value"</span><span class="token punctuation">:</span> <span class="token string">"female"</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> formRef <span class="token operator">=</span> <span class="token function">useRef</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> <span class="token function-variable function">onSubmit</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        formRef<span class="token punctuation">.</span>current<span class="token punctuation">.</span><span class="token function">submit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">data<span class="token punctuation">:</span> any</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> <span class="token function-variable function">onReset</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        formRef<span class="token punctuation">.</span>current<span class="token punctuation">.</span><span class="token function">reset</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>XForm
+                ref<span class="token operator">=</span><span class="token punctuation">{</span>formRef<span class="token punctuation">}</span>
+                schema<span class="token operator">=</span><span class="token punctuation">{</span>schema<span class="token punctuation">}</span>
+                labelCol<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> span<span class="token punctuation">:</span> <span class="token number">6</span> <span class="token punctuation">}</span><span class="token punctuation">}</span>
+                wrapperCol<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> span<span class="token punctuation">:</span> <span class="token number">12</span> <span class="token punctuation">}</span><span class="token punctuation">}</span>
+            <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>div<span class="token operator">></span>
+                <span class="token operator">&lt;</span>Button type<span class="token operator">=</span><span class="token string">"primary"</span> onClick<span class="token operator">=</span><span class="token punctuation">{</span>onSubmit<span class="token punctuation">}</span><span class="token operator">></span>提交<span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">></span>
+                <span class="token operator">&lt;</span>Button onClick<span class="token operator">=</span><span class="token punctuation">{</span>onReset<span class="token punctuation">}</span><span class="token operator">></span>重置<span class="token operator">&lt;</span><span class="token operator">/</span>Button<span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span><span class="token operator">></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>因为方案是基于 <code class="language-text">Ant Design</code> 的 <code class="language-text">Form</code> 组件设计的，所以为了保留 <code class="language-text">Ant Design</code> 的一些特性，设计了 <code class="language-text">ui</code> 和 <code class="language-text">props</code> 两个字段分别对应 <code class="language-text">Form.Item</code> 的 <code class="language-text">props</code> 和组件的 <code class="language-text">props</code>。即使后续 <code class="language-text">Ant Design</code> 表单增加了某些功能或者特性，这套表单方案也能做到无缝支持。</p>
+<h4>2.1.1 校验方式</h4>
+<p>既然表单是基于 <code class="language-text">Ant Design</code> 实现的，那么校验也沿用了它的校验类库 <a href="https://github.com/yiminghe/async-validator">async-validator</a>，这个类库已经比较成熟而且强大，能够校验 <code class="language-text">Array</code> 和 <code class="language-text">Object</code> 等深层级的数据类型，满足复杂校验的需求，所以我们直接在这个库的基础上做调整。</p>
+<p>通过 <code class="language-text">rules</code> 字段进行配置，除了 <code class="language-text">async-validator</code> 本来就就有的特性外，还额外增加了 <code class="language-text">status</code>（校验状态）和 <code class="language-text">trigger</code>（触发条件）枚举如下：</p>
+<ul>
+<li>
+<p>status：校验状态</p>
+<ul>
+<li>error（默认）：错误</li>
+<li>warning：警告</li>
+</ul>
+</li>
+<li>
+<p>trigger：触发条件</p>
+<ul>
+<li>submit（默认）：提交时候触发</li>
+<li>change：值变化时候触发判断</li>
+<li>blur：失去焦点时候触发判断</li>
+</ul>
+</li>
+</ul>
+<p>基本使用方式如下：</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"name"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"Input"</span><span class="token punctuation">,</span>
+    <span class="token property">"ui"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"姓名"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"rules"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"required"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">"message"</span><span class="token operator">:</span> <span class="token string">"姓名必填"</span><span class="token punctuation">,</span>
+            <span class="token property">"trigger"</span><span class="token operator">:</span> <span class="token string">"blur"</span><span class="token punctuation">,</span>
+            <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"error"</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h4>2.1.2 联动方式</h4>
+<p>除了校验，联动也是比较常用的功能，传统的联动通过组件 <code class="language-text">onChange</code> 方式实现，当联动逻辑比较复杂的时候，看代码就像搜索链表一样麻烦，所以这块设计了一种 <code class="language-text">反向监听</code> 的方式，字段的所有变化都维护在字段配置本身，降低后期维护成本。</p>
+<p>通过 <code class="language-text">listeners</code> 字段进行配置，设计了 <code class="language-text">watch</code>（监听）、 <code class="language-text">condition</code>（条件）、<code class="language-text">set</code>（设置）三个字段组合实现联动功能。</p>
+<p><code class="language-text">watch</code> 记录需要监听的字段，当监听字段有任何变化的时候，会触发 <code class="language-text">condition</code> 条件的判断，只有条件判断通过才会接着触发 <code class="language-text">set</code> 设置。</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"name"</span><span class="token punctuation">,</span>
+        <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"Input"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"gender"</span><span class="token punctuation">,</span>
+        <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"Radio"</span><span class="token punctuation">,</span>
+        <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"male"</span><span class="token punctuation">,</span>
+        <span class="token property">"options"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"男"</span><span class="token punctuation">,</span>
+                <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"male"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"女"</span><span class="token punctuation">,</span>
+                <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"female"</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">"listeners"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">"watch"</span><span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">"name"</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token property">"condition"</span><span class="token operator">:</span> <span class="token string">"name.value === 'Marry'"</span><span class="token punctuation">,</span>
+                <span class="token property">"set"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"female"</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span></code></pre></div>
+<p>上述例子当名字为 Marry 的时候，性别默认调整成女。</p>
+<h4>2.1.3 表单状态</h4>
+<p>我们发现有些联动场景是为了对字段做隐藏和显示的操作，为了方便用户切换状态，将4种互斥表单状态整理成一个 <code class="language-text">status</code> 字段：</p>
+<ul>
+<li>
+<p>status：状态</p>
+<ul>
+<li>edit（默认）：编辑</li>
+<li>disabled：禁用</li>
+<li>preview：预览</li>
+<li>hidden：隐藏</li>
+</ul>
+</li>
+</ul>
+<p><code class="language-text">preview</code> 状态并不是组件本身具有的，但是预览的需求蛮多的，于是我们做了拓展，为所有基本的表单组件预置了预览的状态。即使自定义组件也会默认展示字段值，如果需要自行处理的话也提供了方案。</p>
+<p>使用方式如下：</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"edit"</span><span class="token punctuation">,</span>
+        <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"Input"</span><span class="token punctuation">,</span>
+        <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"edit"</span><span class="token punctuation">,</span>
+        <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"编辑"</span><span class="token punctuation">,</span>
+        <span class="token property">"ui"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"编辑"</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"disabled"</span><span class="token punctuation">,</span>
+        <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"Input"</span><span class="token punctuation">,</span>
+        <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"disabled"</span><span class="token punctuation">,</span>
+        <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"禁用"</span><span class="token punctuation">,</span>
+        <span class="token property">"ui"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"禁用"</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"preview"</span><span class="token punctuation">,</span>
+        <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"Input"</span><span class="token punctuation">,</span>
+        <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"preview"</span><span class="token punctuation">,</span>
+        <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"预览"</span><span class="token punctuation">,</span>
+        <span class="token property">"ui"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"预览"</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token punctuation">{</span>
+		<span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"hidden"</span><span class="token punctuation">,</span>
+        <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"Input"</span><span class="token punctuation">,</span>
+        <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"hidden"</span><span class="token punctuation">,</span>
+        <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"隐藏"</span><span class="token punctuation">,</span>
+        <span class="token property">"ui"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"隐藏"</span>
+        <span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">]</span></code></pre></div>
+<p>效果图如下：</p>
+<p><img src="https://p1.music.126.net/T4vLxwj0af-Z8Bq-MSg0kg==/109951164808489561.png"></p>
+<h4>2.1.4 Options设置</h4>
+<p>许多选择组件使用 <code class="language-text">options</code> 字段设置选项，选项有时候通过异步接口获取。考虑到异步接口的情况，设计了 4 套方案 ：</p>
+<ol>
+<li><code class="language-text">options</code> 为 <code class="language-text">Array</code> 的情况</li>
+</ol>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"type"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"Select"</span><span class="token punctuation">,</span>
+    <span class="token property">"options"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"蔬菜"</span><span class="token punctuation">,</span>
+            <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"vegetables"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"水果"</span><span class="token punctuation">,</span>
+            <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"fruit"</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre></div>
+<ol start="2">
+<li><code class="language-text">options</code> 为 <code class="language-text">string</code> 的情况，即接口链接</li>
+</ol>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"type"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"Select"</span><span class="token punctuation">,</span>
+    <span class="token property">"options"</span><span class="token operator">:</span> <span class="token string">"//api.test.com/getList"</span>
+<span class="token punctuation">}</span></code></pre></div>
+<ol start="3">
+<li><code class="language-text">options</code> 为 <code class="language-text">object</code> 的情况，<code class="language-text">action</code> 为接口链接，<code class="language-text">nameProperty</code> 配置 <code class="language-text">name</code> 字段，<code class="language-text">valueProperty</code> 配置 <code class="language-text">value</code> 字段，<code class="language-text">path</code> 为获取选项路径，<code class="language-text">watch</code> 配置监听字段</li>
+</ol>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"type"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"Select"</span><span class="token punctuation">,</span>
+    <span class="token property">"options"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"action"</span><span class="token operator">:</span> <span class="token string">"//api.test.com/getList?name=${name.value}"</span><span class="token punctuation">,</span>
+        <span class="token property">"nameProperty"</span><span class="token operator">:</span> <span class="token string">"label"</span><span class="token punctuation">,</span>
+        <span class="token property">"valueProperty"</span><span class="token operator">:</span> <span class="token string">"value"</span><span class="token punctuation">,</span>
+        <span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"data.list"</span><span class="token punctuation">,</span>
+        <span class="token property">"watch"</span><span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">"name"</span> <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<ol start="4">
+<li><code class="language-text">action</code> 为 <code class="language-text">function</code> 的情况</li>
+</ol>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token punctuation">{</span>
+    <span class="token string">"key"</span><span class="token punctuation">:</span> <span class="token string">"type"</span><span class="token punctuation">,</span>
+    <span class="token string">"type"</span><span class="token punctuation">:</span> <span class="token string">"Select"</span><span class="token punctuation">,</span>
+    <span class="token string">"options"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">"action"</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token parameter">field<span class="token punctuation">,</span> form</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">'//api.test.com/getList'</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=></span> res<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">"watch"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string">"name"</span> <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h4>2.1.5 表单列表</h4>
+<p>表单列表是一种组合类型的表单，通常有 <code class="language-text">Table</code> 和 <code class="language-text">Card</code> 两种场景，具有增加和删除功能。</p>
+<p>这种类型的表单值是以 <code class="language-text">Array</code> 的形式返回的，所以设计了 <code class="language-text">Array</code> 组件，根据 <code class="language-text">props.type</code> 对 <code class="language-text">Table</code> 和 <code class="language-text">Card</code> 形态进行切换（貌似这种情况不多），<code class="language-text">children</code> 配置子表单，使用方式如下：</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"array"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"Array"</span><span class="token punctuation">,</span>
+    <span class="token property">"ui"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"表单列表"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"props"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"Card"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"children"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"name"</span><span class="token punctuation">,</span>
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"Input"</span><span class="token punctuation">,</span>
+            <span class="token property">"ui"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"姓名"</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"age"</span><span class="token punctuation">,</span>
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"InputNumber"</span><span class="token punctuation">,</span>
+            <span class="token property">"ui"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"年龄"</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"gender"</span><span class="token punctuation">,</span>
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"Radio"</span><span class="token punctuation">,</span>
+            <span class="token property">"ui"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"性别"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">"options"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"男"</span><span class="token punctuation">,</span>
+                    <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"male"</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"女"</span><span class="token punctuation">,</span>
+                    <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"female"</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>效果图如下：</p>
+<p><img src="https://p1.music.126.net/TT4XdOVuq4-3oM0zNTChjQ==/109951164808500925.gif"></p>
+<p><img src="https://p1.music.126.net/124vG69upyx-HF72vWDwKA==/109951164808501026.gif"></p>
+<h3>2.2 框架架构</h3>
+<p><img src="https://p1.music.126.net/kEPUU17UhVf-APwuo7JzZA==/109951165097997594.png"></p>
+<p>围绕Schema设计思路，我们采用了基于分布式管理方案，将核心层和渲染层分离，字段信息维护在核心层，渲染层只负责渲染的工作，做到数据和界面代码的分离结构。</p>
+<p>核心层与渲染层之间通过 <code class="language-text">Sub/Pub</code> 方式进行通讯，渲染层通过监听核心层定义的一系列 <code class="language-text">Event</code> 事件对界面作出调整。</p>
+<p>这种数据状态的改变驱动界面的变化已经不是什么新鲜事了，在大多数框架中被广泛使用，其中优势有：</p>
+<ol>
+<li>方面各个字段之间数据与状态共享</li>
+<li>通过对事件的控制，能够合理的优化渲染次数，提高性能</li>
+<li>能够适配多框架的情况，只需复用一套核心层代码</li>
+</ol>
+<p>核心层主要由 <code class="language-text">Form</code>、<code class="language-text">Field</code>、<code class="language-text">ListenerManager</code>、<code class="language-text">Validator</code>、<code class="language-text">optionManager</code> 几部分组成如下图所示：</p>
+<p><img src="https://p1.music.126.net/3kqMDLuP3wMTtbQqZrfQ_Q==/109951165098735980.png"></p>
+<p>其中 <code class="language-text">Form</code> 是表单原型，下面承载了很多 <code class="language-text">Field</code> 字段原型，由 <code class="language-text">ListenerManager</code> 统一管理联动方面的功能，<code class="language-text">Field</code> 下具有 <code class="language-text">Validator</code> 和 <code class="language-text">OptionManager</code> 分别管理校验和 <code class="language-text">options</code> 选项功能</p>
+<h3>2.2.1 校验实现</h3>
+<p>主要还是通过 <code class="language-text">async-validator</code> 类库实现，但是依然无法满足多校验状态和多触发条件的情况，所以在这个基础上做了些拓展，封装成一个 <code class="language-text">Validator</code> 类。</p>
+<p><code class="language-text">Validator</code> 只有一个 <code class="language-text">Validator.validate</code> 方法，传递一个 <code class="language-text">trigger</code> 参数，实例化 <code class="language-text">Validator</code> 时候会去解析 <code class="language-text">rules</code> 字段，根据 <code class="language-text">trigger</code> 进行分类并创建对应的 <code class="language-text">async-validator</code> 实例。</p>
+<h3>2.2.2 联动实现</h3>
+<p><code class="language-text">ListenerManager</code> 具有 <code class="language-text">ListenerManager.add</code> 方法和 <code class="language-text">ListenerManager.trigger</code> 方法，分别用于解析并添加 <code class="language-text">listeners</code> 字段以及 <code class="language-text">Field</code> 字段发生变化时触发联动效果。</p>
+<p>具体流程是在初始化 <code class="language-text">Field</code> 时，会将 <code class="language-text">listeners</code> 字段通过 <code class="language-text">listenerManager.add</code> 方法解析信息，根据 <code class="language-text">watch</code> 中的 <code class="language-text">key</code> 值进行分类并保存在其中，当 <code class="language-text">Field</code> 信息发生变化的时候会通过 <code class="language-text">ListenerManager.trigger</code> 触发联动，判断 <code class="language-text">condition</code> 条件是否满足，如果满足即触发 <code class="language-text">set</code> 内容。</p>
+<h3>2.2.3 表单列表实现</h3>
+<p>表单列表其实是由多个 <code class="language-text">XForm</code> 实例构成，每一个自增项都是一个 <code class="language-text">XForm</code> 实例，所以联动只能在同一行上进行，不能跨行联动。</p>
+<p>当点击添加按钮的时候，会根据 <code class="language-text">children</code> 提供的 <code class="language-text">Schema</code> 模板创建一个 <code class="language-text">XForm</code> 实例：</p>
+<p><img src="https://p1.music.126.net/rHBL8e3QqlBSYXHZkwiEPg==/109951165098838719.png"></p>
+<h3>2.2.4 布局实现</h3>
+<p>除了 <code class="language-text">Ant Design</code> 的 Form 提供的三种布局方式（horizontal、vertical、inline），还需要提供一种更灵活的布局方式来满足更加复杂的情况。</p>
+<p>布局真是一个很头疼的问题，特别是 <code class="language-text">Schema</code> 在类似 <code class="language-text">JSON</code> 的结构下实现复杂的布局很容易导致 <code class="language-text">Schema</code> 嵌套层级深，这种是我们不愿意看到的。</p>
+<p>最初方案是通过网格布局实现，通过设置 <code class="language-text">Form</code> 的 <code class="language-text">row.count</code> 或者 <code class="language-text">col.count</code> 参数计算出网格的行数和列数再对字段进行分布，这种方式只适用于每行列数都一致的情况，但是这种方式难以满足每行列数不一致的情况：</p>
+<p><img src="https://p1.music.126.net/yiMCXwlaYectE7D1b31m4Q==/109951165095690437.png"></p>
+<p>所以重新设计了一个 <code class="language-text">ui.groupname</code> 的字段，同一个 <code class="language-text">groupname</code> 的字段都会被一个 <code class="language-text">div</code> 包裹住，并且 <code class="language-text">div</code> 的 <code class="language-text">className</code> 即 <code class="language-text">groupname</code> ，用户要实现复杂的布局可以自己写样式去实现，这样的方案虽然简陋，但是实用。</p>
+<h2>3. 细节设计</h2>
+<h3>3.1 忽略特定字段值</h3>
+<p>有些场景需要忽略 <code class="language-text">status</code> 为 <code class="language-text">hidden</code> 的字段的值，所以设计了一个 <code class="language-text">ignoreValues</code> 字段，字段配置有下面几种情况：</p>
+<ul>
+<li>hidden：忽略状态为 hidden 的情况</li>
+<li>preview：忽略状态为 preview 的情况</li>
+<li>disabled：忽略状态为 disabled 的情况</li>
+<li>null：忽略值为 null 的情况</li>
+<li>undefined：忽略值为 undefined 的情况</li>
+<li>falseLike：忽略值 == false 的情况</li>
+</ul>
+<p>通过配置 <code class="language-text">ignoreValues</code> 字段，提交后返回的 <code class="language-text">values</code> 就会忽略相应的字段：</p>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html">&lt;XForm schema={schema} ignoreValues={['hidden', 'null']}/></code></pre></div>
+<h3>3.2 字段解构与重组</h3>
+<p>字段解构是指把一个字段的值拆成多个字段，字段重组是指把多个字段组合成一个字段，这块的具体功能还未实现，但是已经有了初步的想法。</p>
+<p>字段解构例子如下，主要是通过 <code class="language-text">key</code> 对字段进行拆分，最终返回 <code class="language-text">values</code> 包含 <code class="language-text">startTime</code> 和 <code class="language-text">endTime</code> 两个字段：</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"[startTime, endTime]"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"RangePicker"</span><span class="token punctuation">,</span>
+    <span class="token property">"ui"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"时间选择"</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>发现许多场景需要由多个字段组合成一个字段，这种情况大多需要写自定义组件不然就是后期需要对数据进行处理，为了简化这一过程所以设计了字段重组的功能。通过 <code class="language-text">Combine</code> 组件将多个字段重组成一个字段：</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"time"</span><span class="token punctuation">,</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"Combine"</span><span class="token punctuation">,</span>
+    <span class="token property">"ui"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"时间选择"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"props"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"shape"</span><span class="token operator">:</span> <span class="token string">"{startTime, endTime, type}"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"children"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"startTime"</span><span class="token punctuation">,</span>
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"DatePicker"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"endTime"</span><span class="token punctuation">,</span>
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"DatePicker"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"type"</span><span class="token punctuation">,</span>
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"Select"</span><span class="token punctuation">,</span>
+            <span class="token property">"options"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"发行时间"</span><span class="token punctuation">,</span>
+                    <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"publishTime"</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"上线时间"</span><span class="token punctuation">,</span>
+                    <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"onlineTime"</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h2>4. 结尾</h2>
+<p>完善表单这款产品的过程也是一个博采众长的过程，我们调研了业界竞品结合自身业务需求，开发出了这款产品。上面介绍了表单方案的思路和实现方式供大家参考，非常遗憾的是我们产品还未开源，相信会在合适的时候跟大家见面。</p>
+<h2>5. 相关资料</h2>
+<ul>
+<li><a href="http://formilyjs.org/">Formily</a></li>
+<li><a href="https://alibaba.github.io/form-render/">FormRender</a></li>
+</ul>
+<blockquote>
+<p>本文发布自 <a href="https://github.com/x-orpheus">网易云音乐大前端团队</a>，文章未经授权禁止任何形式的转载。我们常年招收前端、iOS、Android，如果你准备换工作，又恰好喜欢云音乐，那就加入我们 grp.music-fe(at)corp.netease.com！</p>
+</blockquote></section><hr style="margin-bottom:1.625rem"/></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/react-fiber/">← 上一篇</a></li><li></li></ul></nav></main></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-46698359-8', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/form/";window.webpackCompilationHash="516287254ae0391224fc";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-58c34f5daf926852a3b3.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-51d272fe0618a2665c13.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-9bcfc8cfa601b955c502.js"],"component---src-pages-404-js":["/component---src-pages-404-js-e9fc057fd683384561c6.js"],"component---src-pages-index-js":["/component---src-pages-index-js-b550dfa873395f120c2c.js"]};/*]]>*/</script><script src="/webpack-runtime-a8e57de1cebc497b8be8.js" async=""></script><script src="/commons-a604c75c7f1f8c807909.js" async=""></script><script src="/app-58c34f5daf926852a3b3.js" async=""></script><script src="/component---src-templates-blog-post-js-9bcfc8cfa601b955c502.js" async=""></script><script src="/styles-4599ec2e23ea9f0a203d.js" async=""></script></body></html>
