@@ -38,6 +38,7 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
+        <div id="gitalk-container"></div>
       </div>
     )
   }
