@@ -72,6 +72,7 @@ class BlogPostTemplate extends React.Component {
             </li>
           </ul>
         </nav>
+        <div id="gitalk-container"></div>
       </Layout>
     )
   }
