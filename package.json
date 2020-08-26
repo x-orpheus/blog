@@ -10,6 +10,7 @@
   "dependencies": {
     "gatsby": "^2.15.7",
     "gatsby-image": "^2.2.17",
+    "gatsby-plugin-disqus": "^1.2.2",
     "gatsby-plugin-feed": "^2.3.11",
     "gatsby-plugin-google-analytics": "^2.1.14",
     "gatsby-plugin-manifest": "^2.2.14",

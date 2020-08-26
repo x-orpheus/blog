@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import { Disqus } from 'gatsby-plugin-disqus'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,11 +9,17 @@ import { rhythm, scale } from "../utils/typography"
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
+    const { title, siteUrl } = this.props.data.site.siteMetadata
     const { previous, next } = this.props.pageContext
 
+    const disqusConfig = {
+      url: `${siteUrl + this.props.location.pathname}`,
+      identifier: post.id,
+      title: post.frontmatter.title,
+    }
+
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title={title}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
@@ -72,7 +79,7 @@ class BlogPostTemplate extends React.Component {
             </li>
           </ul>
         </nav>
-        <div id="gitalk-container"></div>
+        <Disqus config={disqusConfig} />
       </Layout>
     )
   }
@@ -86,6 +93,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
