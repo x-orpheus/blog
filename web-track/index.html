@@ -1,0 +1,320 @@
+<!DOCTYPE html><html lang="zh"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.625 -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}h1{margin-left:0;margin-right:0;margin-top:2.4375rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.21875rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h2{margin-left:0;margin-right:0;margin-top:1.625rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.40625rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:hsla(0,0%,0%,0.53);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}ul{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:0.85rem;line-height:1.625rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:1rem;line-height:1.625rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:calc(0.8125rem - 1px);padding-right:0;padding-top:0;margin-bottom:0.8125rem;border-left:4px solid hsla(0,0%,0%,0.13);color:hsla(0,0%,0%,0.53);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(0.8125rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}b{font-weight:600;}strong{font-weight:600;}dt{font-weight:600;}th{font-weight:600;}li{margin-bottom:calc(0.8125rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}li > ul{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(0.8125rem / 2);}code{font-size:0.85rem;line-height:1.625rem;}kbd{font-size:0.85rem;line-height:1.625rem;}samp{font-size:0.85rem;line-height:1.625rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.08333rem;padding-right:1.08333rem;padding-top:0.8125rem;padding-bottom:calc(0.8125rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}h3,h4,h5,h6{margin-bottom:0.8125rem;margin-top:1.625rem;}ol,ul{margin-left:2.03125rem;}li>ol,li>ul{margin-left:2.03125rem;}a{color:#4078c0;text-decoration:none;}a:hover,a:active{text-decoration:underline;}</style><title data-react-helmet="true">前端组件化埋点的实践 | 云音乐大前端专栏</title><style type="text/css">.gatsby-resp-image-image{width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;color:transparent;}</style><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#dd001b"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><meta name="generator" content="Gatsby 2.15.7"/><meta data-react-helmet="true" name="description" content="在流量红利逐渐消失的现在，数据的采集、分析和精细化的运营显得更加重要，所以埋点在互联网产品中是很常见的，它可以更好的辅助我们去迭代、完善产品功能。"/><meta data-react-helmet="true" property="og:title" content="前端组件化埋点的实践"/><meta data-react-helmet="true" property="og:description" content="在流量红利逐渐消失的现在，数据的采集、分析和精细化的运营显得更加重要，所以埋点在互联网产品中是很常见的，它可以更好的辅助我们去迭代、完善产品功能。"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="云音乐大前端团队"/><meta data-react-helmet="true" name="twitter:title" content="前端组件化埋点的实践"/><meta data-react-helmet="true" name="twitter:description" content="在流量红利逐渐消失的现在，数据的采集、分析和精细化的运营显得更加重要，所以埋点在互联网产品中是很常见的，它可以更好的辅助我们去迭代、完善产品功能。"/><style data-href="/styles.a8f6e12462010344bfaf.css">@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:200;src:local("Source Code Pro Extra Light "),local("Source Code Pro-Extra Light"),url(/static/source-code-pro-latin-200-41568fe7927570e049a6cb707930f353.woff2) format("woff2"),url(/static/source-code-pro-latin-200-568dcb298a36f14317fdcddf8eded62f.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:300;src:local("Source Code Pro Light "),local("Source Code Pro-Light"),url(/static/source-code-pro-latin-300-248b2236ba6bb9d2745a4908bc9c4568.woff2) format("woff2"),url(/static/source-code-pro-latin-300-43fcfcf552695ff0976d7d03a29835c4.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:400;src:local("Source Code Pro Regular "),local("Source Code Pro-Regular"),url(/static/source-code-pro-latin-400-1c37ab07cfefc70a85445f49737ad28a.woff2) format("woff2"),url(/static/source-code-pro-latin-400-a4a08973559a45aba173184ea065addf.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:500;src:local("Source Code Pro Medium "),local("Source Code Pro-Medium"),url(/static/source-code-pro-latin-500-67f6c1995acae33eacb1af1807c0e8c8.woff2) format("woff2"),url(/static/source-code-pro-latin-500-a39fc2de145c00ef5898c77b15c27517.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:600;src:local("Source Code Pro SemiBold "),local("Source Code Pro-SemiBold"),url(/static/source-code-pro-latin-600-bf5d453754c3bd3e0fc9bcdc979048f1.woff2) format("woff2"),url(/static/source-code-pro-latin-600-c021e440e993ff26de945242222960a6.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:700;src:local("Source Code Pro Bold "),local("Source Code Pro-Bold"),url(/static/source-code-pro-latin-700-b46da14cbd07b2f1f5ca74069d59318e.woff2) format("woff2"),url(/static/source-code-pro-latin-700-c86a17b160684a125455d36f4733ad85.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:900;src:local("Source Code Pro Black "),local("Source Code Pro-Black"),url(/static/source-code-pro-latin-900-e985b6f17d53c2780c3c49722984a52e.woff2) format("woff2"),url(/static/source-code-pro-latin-900-b0d773d996cad7ea914d35d16dd0f3ec.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:400;src:local("Noto Sans Regular "),local("Noto Sans-Regular"),url(/static/noto-sans-latin-400-175853ded2a4e2249d37c46ca0ca33c5.woff2) format("woff2"),url(/static/noto-sans-latin-400-e7ccb0aa43af9fb7fae4d1bdc23a099b.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:400;src:local("Noto Sans Regular italic"),local("Noto Sans-Regularitalic"),url(/static/noto-sans-latin-400italic-baa3ec09eb827b4f10593032d1cf2a88.woff2) format("woff2"),url(/static/noto-sans-latin-400italic-14425b1ebbce551302a950b083b6c14e.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:700;src:local("Noto Sans Bold "),local("Noto Sans-Bold"),url(/static/noto-sans-latin-700-43750a193b8ff0b4e929323a72d79301.woff2) format("woff2"),url(/static/noto-sans-latin-700-a8edfe7bbf3b01666adc30c118cc5223.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:700;src:local("Noto Sans Bold italic"),local("Noto Sans-Bolditalic"),url(/static/noto-sans-latin-700italic-bc98820a9bf62004a88ef07e012e3ce3.woff2) format("woff2"),url(/static/noto-sans-latin-700italic-0e19737ff39f96eb1ff99e463fa457a4.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><link as="script" rel="preload" href="/styles-5791f525f4cf077cdfa6.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js"/><link as="script" rel="preload" href="/app-0c9a63a3aef9e813df5b.js"/><link as="script" rel="preload" href="/commons-8d9941e7328683a5eecb.js"/><link as="script" rel="preload" href="/webpack-runtime-2742ada98d46151d1c6f.js"/><link as="fetch" rel="preload" href="/page-data/web-track/page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:39rem;padding:2.4375rem 1.21875rem;font-family:&quot;Source Code Pro&quot;, &quot;Noto Sans CJK SC&quot;"><header><h1 style="font-size:2.2974rem;line-height:3.25rem;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:#DD001B" href="/">云音乐大前端专栏</a></h1></header><main><article><header><h1 style="margin-top:1.625rem;margin-bottom:0;color:#001E26">前端组件化埋点的实践</h1><p style="font-size:0.87055rem;line-height:1.625rem;display:block;margin-bottom:1.625rem">2020-10-30</p></header><section><p><img src="https://p1.music.126.net/sdgWwquduqdO4nUMSm2f4Q==/109951165005471367.jpg"></p>
+<blockquote>
+<p>本文作者 杨运心</p>
+</blockquote>
+<blockquote>
+<p>头图来自<a href="https://unsplash.com/@kmuza?utm_source=unsplash&#x26;utm_medium=referral&#x26;utm_content=creditCopyText">Carlos Muza</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+</blockquote>
+<h2>1、前言</h2>
+<p>开始正文前先介绍一下相关概念，熟悉的读者可以略过。</p>
+<p><strong>前端埋点</strong>：一种收集产品数据的方式，它的目的是上报相关行为数据，相关人员以数据为依据来分析产品在用户端的使用情况，根据分析出来的结果辅助产品优化、迭代。</p>
+<p><strong>BI</strong>：商业智能，公司内部做数据分析相关的部门。</p>
+<h2>2、背景</h2>
+<blockquote>
+<p>在流量红利逐渐消失的现在，数据的采集、分析和精细化的运营显得更加重要，所以埋点在互联网产品中是很常见的，它可以更好的辅助我们去迭代、完善产品功能。</p>
+</blockquote>
+<p>平时我们在完成基础的业务需求之后，还需要开发完成埋点需求。所以我们追求的是简单快捷的做好埋点工作，且不会占用我们太多的精力。但是现实却不那么美好，目前我们团队在前端埋点方面存在一些痛点：</p>
+<ul>
+<li>在构造埋点字段的时候需要根据 BI 的规则，把若干个字段拼接成一个，这样费时费力还有错误的风险；</li>
+<li>一些曝光场景下的点不好打比如：分页列表、虚拟列表；他们的的曝光埋点实现较为繁琐；</li>
+<li>逻辑复用问题：特别是曝光相关的点需要在业务代码里面做额外的处理，所以逻辑复用很困难，对现有代码的侵入也很严重；</li>
+</ul>
+<p>所以我们需要一种适合我们的埋点方案解决我们目前的问题，提升我们的开发效率，不再为埋点而困扰。</p>
+<h2>3、常见前端埋点方案</h2>
+<p>我们对目前市场上几种埋点方案进行了一些调研，常规有 3 种方案：</p>
+<p><strong>手动代码埋点</strong>：用户触发某个动作后手动上报数据</p>
+<ul>
+<li>优点：是最准确的，可以满足很多定制化的需求。</li>
+<li>缺点：埋点逻辑与业务代码耦合到一起，不利于代码维护和复用。</li>
+</ul>
+<p><strong>可视化埋点</strong>：通过可视化工具配置采集节点，指定自己想要监测的元素和属性。核心是查找 dom 然后绑定事件，业界比较有名的是 <a href="https://mixpanel.com/">Mixpanel</a></p>
+<ul>
+<li>优点：可以做到按需配置，又不会像全埋点那样产生大量的无用数据。</li>
+<li>缺点：比较难加载一些运行时参数；页面结构发生变化的时候，可能就需要进行部分重新配置。</li>
+</ul>
+<p><strong>无埋点</strong>：也叫“全埋点”，前端自动采集全部事件并上报埋点数据，在后端数据计算时过滤出有用数据</p>
+<ul>
+<li>优点：收集用户的所有端上行为，很全面。</li>
+<li>缺点：无效的数据很多、上报数据量大。</li>
+</ul>
+<h2>4、埋点方案</h2>
+<p>在调研完这些方案后，我认为上述方案并不完全适合我们，我们需要的方案是准确、快速埋点，同时把埋点的代码与业务逻辑解耦，并且我们的音街移动站可以相对平滑的迁移到我们新的埋点库上面来。结合我们目前的技术栈 React，以及现状和运营、产品侧的需求我们决定采用<strong>声明式的组件化埋点 + 缓冲队列</strong>方案，这里阐述一下我们的大致思路。</p>
+<ul>
+<li>为了解决埋点代码与业务逻辑耦合的问题，我们认为可以在视图层处理，埋点可以归纳为两大类，点击与曝光埋点。我们可以抽象出两个组件分别处理这两种场景。</li>
+<li>在一些场景下快速滑动、频繁点击会在短时间打出大量的点，造成频繁的接口调用，这在移动端是要避免的，针对这种场景我们引入了缓冲队列，产生的点位信息先进入队列，通过定时任务分批次上报数据，针对不同类型的点也可以应用不同的上报频率。</li>
+<li>目前对于一些字段采用的是人工拼接，比如 BI 定义的 _mspm2 等相关通用字段，类似这种我们完全可以在库统一处理，既不容易出错，也方便后期拓展。</li>
+<li>对于页面级曝光，我们可以在埋点库初始化后自动注册关于页面曝光的相关事件，不需要使用者关心。</li>
+<li>
+<p>以页面为维度管理埋点配置</p>
+<ul>
+<li>我们的站点是同构应用，跟我们的架构比较契合</li>
+<li>更加清晰，便于维护</li>
+<li>目前也是采用这种方案管理，迁移成本会更小</li>
+</ul>
+</li>
+</ul>
+<h2>5、关键节点</h2>
+<h3>5.1 流程梳理</h3>
+<p>这里存在一个问题，可能库还没初始化完毕，一些点已经产生了，比如曝光类的，如果这时候生成对应的点进入缓冲队列，就是属于无效的点因为没有加载到坑位信息、配置参数等，所以针对这种场景下产生的点位信息，我们新开一个队列存储，等到初始化完成再去处理;</p>
+<p>流程图：</p>
+<p><img src="https://p1.music.126.net/FRBRMaM9mHYqIE38WrHvwQ==/109951165005487881.png" alt="avatar"></p>
+<h3>5.2 点击埋点</h3>
+<p>点击埋点我们开始的思考是提供一个组件，包裹需要进行点击埋点的 <code class="language-text">dom</code> 元素，也有可能是<code class="language-text">组件</code>，然后给子元素绑定点击事件，当用户触发事件时进行埋点相关处理。 </p>
+<p>按照上述思路我们就必须绑定点击事件到 dom 上，但是我们又不想引入额外的 dom 元素，因为这会增加 dom 结构层级，给使用者带来麻烦，这样留给我们的操作空间就剩下 <code class="language-text">props.children</code> ，所以我们去递归 <code class="language-text">TrackerClick</code> 组件的 <code class="language-text">children</code>，找到最外层的dom元素，同时要求 <code class="language-text">TrackerClick</code> 下面必须有一个 <code class="language-text">container</code> 元素，按照这个思路我们进行了处理。</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">TrackerClick</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>
+    name<span class="token punctuation">,</span>
+    extra<span class="token punctuation">,</span>
+    immediate<span class="token punctuation">,</span>
+    children<span class="token punctuation">,</span>
+<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">handleClick</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        <span class="token comment">// todo append queue</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">function</span> <span class="token function">AddClickEvent</span><span class="token punctuation">(</span><span class="token parameter">ele</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> React<span class="token punctuation">.</span><span class="token function">cloneElement</span><span class="token punctuation">(</span>ele<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+            <span class="token function-variable function">onClick</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+                <span class="token keyword">const</span> originClick <span class="token operator">=</span> ele<span class="token punctuation">.</span>props<span class="token punctuation">.</span>onClick <span class="token operator">||</span> noop<span class="token punctuation">;</span>
+                <span class="token function">originClick</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>ele<span class="token punctuation">,</span> e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token function">handleClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">function</span> <span class="token function">findHtmlElement</span><span class="token punctuation">(</span><span class="token parameter">ele</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> ele<span class="token punctuation">.</span>type <span class="token operator">===</span> <span class="token string">'function'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>ele<span class="token punctuation">.</span>type<span class="token punctuation">.</span>prototype <span class="token keyword">instanceof</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                ele <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ele<span class="token punctuation">.</span>type</span><span class="token punctuation">(</span>ele<span class="token punctuation">.</span>props<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                ele <span class="token operator">=</span> ele<span class="token punctuation">.</span><span class="token function">type</span><span class="token punctuation">(</span>ele<span class="token punctuation">.</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> ele<span class="token punctuation">.</span>type <span class="token operator">===</span> <span class="token string">'string'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token function">AddClickEvent</span><span class="token punctuation">(</span>ele<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> React<span class="token punctuation">.</span><span class="token function">cloneElement</span><span class="token punctuation">(</span>ele<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+            children<span class="token punctuation">:</span> <span class="token function">findHtmlElement</span><span class="token punctuation">(</span>ele<span class="token punctuation">.</span>props<span class="token punctuation">.</span>children<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">return</span> <span class="token function">findHtmlElement</span><span class="token punctuation">(</span>React<span class="token punctuation">.</span>Children<span class="token punctuation">.</span><span class="token function">only</span><span class="token punctuation">(</span>children<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">// case1</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">TrackerClick</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>namespace.click<span class="token punctuation">'</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">></span></span><span class="token plain-text">点击</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><span class="token plain-text">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">TrackerClick</span></span><span class="token punctuation">></span></span>
+
+<span class="token comment">// case2</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">TrackerClick</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>namespace.click<span class="token punctuation">'</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">CustomerComp</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">></span></span><span class="token plain-text">点击</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">CustomerComp</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">TrackerClick</span></span><span class="token punctuation">></span></span></code></pre></div>
+<p>从使用上来说很简便，达到了我们的目的。但是经过我们的实践也发现了一些问题，比如使用者并不清楚里面的实现细节，有可能里面没有一个  <code class="language-text">container</code> 包裹，也可能使用了 <code class="language-text">React.Fragment</code> 造成一些不可预估的行为、同时也无形的增加了dom结构层级（虽然我们没有引入，但是我们在告诉用户，你最好有个 <code class="language-text">container</code> ）。</p>
+<p>我们又在反思这种方案的合理性，虽然使用上带来了便捷，但是带来了不确定性。经过讨论我们决定把绑定的工作交给组件使用者，我们只需要明确告诉他可以使用哪些方法，这是确定性的工作。使用方只需要把触发的回调绑定到对应的事件上即可。</p>
+<p>改造后如下：</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">TrackerClick</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>namespace.click<span class="token punctuation">'</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+</span><span class="token punctuation">{</span>
+    <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> handleClick <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>handleClick<span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">点击坑位</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+<span class="token punctuation">}</span><span class="token plain-text">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">TrackerClick</span></span><span class="token punctuation">></span></span></code></pre></div>
+<h3>5.3 曝光埋点</h3>
+<p>曝光对于我们来说一直是比较麻烦的，我们先来看看曝光埋点的一些要求：</p>
+<ul>
+<li>元素出现在视窗内一定的比例才算一次合法的曝光</li>
+<li>元素在视窗内停留的时长达到一定的标准才算曝光</li>
+<li>统计元素曝光时长</li>
+</ul>
+<p>站在前端的角度看实现这三点就比较复杂了，再加上一些分页、虚列表的场景就更加繁琐，带着这些问题调研了 <a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver">IntersectionObserver</a>。</p>
+<blockquote>
+<p>IntersectionObservers calculate how much of a target element overlaps (or "intersects with") the visible portion of a page, also known as the browser's "viewport"</p>
+</blockquote>
+<blockquote>
+<p><code class="language-text">IntersectionObservers</code>计算目标元素与页面可见部分的重叠程度（或 "相交"），也被称为浏览器的 "视口"。</p>
+</blockquote>
+<p><img src="https://p1.music.126.net/fJoWhGjXEYXK2tPHOkvUPg==/109951165005789725.png" alt="visiblitychange"></p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> intersectionObserver <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">IntersectionObserver</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">entries</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// If intersectionRatio is 0, the target is out of view</span>
+  <span class="token comment">// and we do not need to do anything.</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>entries<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>intersectionRatio <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Loaded new items'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 曝光阈值</span>
+    threshold<span class="token punctuation">:</span> <span class="token number">0</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// start observing</span>
+intersectionObserver<span class="token punctuation">.</span><span class="token function">observe</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.scrollerFooter'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>上面是 MDN 的一个例子，所以我们是可以知道元素什么时候进入以及什么时候离开 viewport，间接的上面三点需求我们都可以实现。</p>
+<p>经过调研，在能力方面可以满足我们的需求、兼容性方面有对应的<a href="https://www.npmjs.com/package/intersection-observer">intersection-observer polyfill</a>; 对于分页、虚列表，我们只需要关注我们需要观测的<code class="language-text">列表item</code>，所以我们需要实现一个高性能的 <code class="language-text">ReactObserver</code> 组件来提供 <code class="language-text">intersection-observer</code> 的能力并对外提供相应的回调。如何实现一个高性能的Observer此处不做赘述。</p>
+<p>下面是曝光组件绑定 dom 的两种方式</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token comment">// case1: 直接绑定dom</span>
+<span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">styleName</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>tracker-exposure<span class="token punctuation">'</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+            </span><span class="token punctuation">{</span>
+                arr<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> i</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">TrackerExposure</span></span>
+                        <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>pagination.impress<span class="token punctuation">'</span></span>
+                        <span class="token attr-name">extra</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> modulePosition<span class="token punctuation">:</span> i <span class="token operator">+</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+                    <span class="token punctuation">></span></span><span class="token plain-text">
+                        </span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> addRef <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">ref</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>addRef<span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token punctuation">{</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token punctuation">}</span><span class="token plain-text">
+                    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">TrackerExposure</span></span><span class="token punctuation">></span></span>
+                <span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">// case2: 自定义组件</span>
+<span class="token keyword">const</span> Test <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">forwardRef</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">props<span class="token punctuation">,</span> ref</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">ref</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>ref<span class="token punctuation">}</span></span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+        width<span class="token punctuation">:</span> <span class="token string">'150px'</span><span class="token punctuation">,</span>
+        height<span class="token punctuation">:</span> <span class="token string">'150px'</span><span class="token punctuation">,</span>
+        border<span class="token punctuation">:</span> <span class="token string">'1px solid gray'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">TEST</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span>
+
+<span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">styleName</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tracker-exposure<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token punctuation">{</span>
+            arr<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> i</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">TrackerExposure</span></span>
+                <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>pagination.impress<span class="token punctuation">"</span></span>
+                <span class="token attr-name">extra</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> modulePosition<span class="token punctuation">:</span> i <span class="token operator">+</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+                </span><span class="token punctuation">{</span>
+                    <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> addRef <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Test</span></span> <span class="token attr-name">ref</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>addRef<span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span>
+                <span class="token punctuation">}</span><span class="token plain-text">
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">TrackerExposure</span></span><span class="token punctuation">></span></span>
+            <span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token plain-text">
+
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>使用上我们仅提供一个 addRef 用以获取 dom 执行监听工作，其他工作都交给库来处理，曝光变得如此简单。针对上述3点要求，我们提供配置如下：</p>
+<ul>
+<li><strong>threshold</strong>： 曝光阈值，当 element 出现在视窗多少比例触发</li>
+<li><strong>viewingTime</strong>：元素曝光时长，用来判断是否是一次时长合规的曝光</li>
+<li><strong>once</strong>：是否重复打曝光埋点</li>
+</ul>
+<h3>5.4 运行时参数</h3>
+<p>一般固定的参数我们会放在config配置文件中管理，当然也有一些运行时的参数，比如 <code class="language-text">userId，modulePosition</code> 等运行时字段，针对这种场景我们提供 <code class="language-text">extra props</code> 通过组件的 <code class="language-text">props</code> 传递，在组件内部拼装，使用时只需要传入对应业务字段即可。</p>
+<h3>5.5 appendQueue</h3>
+<p>一些场景下我们没法绑定事件到dom上，比如原生的元素：<code class="language-text">audio、video</code>，以及封装层级很深的业务组件，类似这种只对外提供了回调，针对这种场景我们提供了 <code class="language-text">appendQueue</code> 方法，把点加入到缓冲队列中。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token function">appendQueue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'module.click'</span><span class="token punctuation">,</span>
+    action<span class="token punctuation">:</span> <span class="token string">'click'</span><span class="token punctuation">,</span>
+    extra<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        userId<span class="token punctuation">:</span> <span class="token string">'xxx'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
+<h3>5.6 定时任务</h3>
+<p>我们的设计是所有产生的点都会进入缓冲队列中，通过定时任务上报。目前策略是点击类上报频率 1000ms，曝光类 3000ms，当然这个间隔也不是凭空想象的，经过跟算法、BI 讨论商定出来的，兼顾了前端的需求与算法那边实时性的要求，目前这两个值也是支持配置的。</p>
+<p>关于定时任务的时间间隔，我们取点击和曝光上报频率的最大公约数，以减少执行次数。</p>
+<h3>5.7 页面曝光</h3>
+<p>我们在初始化的时候会根据配置文件中约定的字段判断是否需要处理页面曝光；</p>
+<p>页面曝光的关键是采集页面曝光的时机，浏览器的页面生命周期标准和规范才开始制定没多久，各个厂商支持的都不是很好，参考 Chrome 的页面生命周期中的 visibilitychange 事件作为采集页面曝光的时机。</p>
+<p><img src="https://p1.music.126.net/aqh41yijZVXLnazc0nHmbA==/109951164893411921.jpg" alt="page life"></p>
+<p><strong>visiblitychange</strong> 的浏览器兼容情况</p>
+<p><img src="https://p1.music.126.net/luZmKZajv1RLAyhEhIizxQ==/109951164893602993.png" alt="visiblitychange"></p>
+<h2>6、使用</h2>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">import</span> Tracker<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    TrackerExposure<span class="token punctuation">,</span>
+    appendQueue
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'music/tracker'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">generateConfig</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+    opus<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        mspm<span class="token punctuation">:</span> <span class="token string">'xxxx091781c235b0c828xxxx'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">'playstart'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        mspm<span class="token punctuation">:</span> <span class="token string">'xxxx91981c235b0c8286xxxx'</span><span class="token punctuation">,</span>
+        _resource_1_id<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+        _resource_1_type<span class="token punctuation">:</span> <span class="token string">'school'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    viewstart<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        mspm<span class="token punctuation">:</span> <span class="token string">'xxxxd091781c235b0c828xxx'</span><span class="token punctuation">,</span>
+        type<span class="token punctuation">:</span> <span class="token string">'page'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    viewend<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        mspm<span class="token punctuation">:</span> <span class="token string">'xxxx17b1b200b0c2e3xxxxxx'</span><span class="token punctuation">,</span>
+        type<span class="token punctuation">:</span> <span class="token string">'page'</span><span class="token punctuation">,</span>
+        _time<span class="token punctuation">:</span> <span class="token string">''</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> Tracker<span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span>
+    generateConfig<span class="token punctuation">,</span>
+    TrackerExposure<span class="token punctuation">,</span>
+    appendQueue
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> useEffect<span class="token punctuation">,</span> useState <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Tracker<span class="token punctuation">,</span> <span class="token punctuation">{</span> generateConfig<span class="token punctuation">,</span> TrackerExposure<span class="token punctuation">,</span> appendQueue <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./tracker.js'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">Demo</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">[</span>opusList<span class="token punctuation">,</span> setOpusList<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        Tracker<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            common<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                osVer<span class="token punctuation">:</span> <span class="token string">'xxx'</span><span class="token punctuation">,</span>
+                activityId<span class="token punctuation">:</span> <span class="token string">'xxx'</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            config<span class="token punctuation">:</span> <span class="token function">generateConfig</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// fetch opuslist</span>
+        <span class="token function">setOpusList</span><span class="token punctuation">(</span>opus<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> <span class="token function-variable function">handleStart</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        <span class="token function">appendQueue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            name<span class="token punctuation">:</span> <span class="token string">'playstart'</span><span class="token punctuation">,</span>
+            action<span class="token punctuation">:</span> <span class="token string">'playstart'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token punctuation">{</span>
+            opusList<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">opus</span> <span class="token operator">=></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">TrackerExposure</span></span> 
+                    <span class="token attr-name">start</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>opus<span class="token punctuation">"</span></span>
+                    <span class="token attr-name">startExtra</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>opusId<span class="token punctuation">:</span> opus<span class="token punctuation">.</span>id<span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+                    <span class="token attr-name">threshold</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token number">0.5</span><span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+                </span><span class="token punctuation">{</span>
+                    <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> addRef <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">ref</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>addRef<span class="token punctuation">}</span></span> <span class="token punctuation">></span></span><span class="token punctuation">{</span>opus<span class="token punctuation">.</span>name<span class="token punctuation">}</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+                <span class="token punctuation">}</span><span class="token plain-text">
+            </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">TrackerExposure</span></span><span class="token punctuation">></span></span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Player</span></span> <span class="token attr-name">onStart</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>handleStart<span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span></span><span class="token punctuation">></span></span><span class="token plain-text">;
+}</span></code></pre></div>
+<h2>7、总结</h2>
+<p>我们在音街移动站中进行了迁移、在多个运营活动中进行了使用，达到了我们预期的目标；在提效方面，埋点库把费时的部分处理了，我们需要做的就是从埋点平台把坑位信息放入配置文件，业务开发的时候使用对应的组件就可以了，几乎没有太大的成本，且对于代码复用和维护来说也达到了目的。</p>
+<p>在使用过程中发现对于点击类埋点 appendQueue 使用频率远高于 TrackerClick 组件，因为大部分元素的点击事件都有他自己的回调函数，但是我们使用 TrackerClick 的初衷是埋点代码和业务代码解耦，这个也要根据实际场景去选择。</p>
+<h2>8、参考资料</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver">MDN/IntersectionObserver</a></li>
+<li><a href="https://github.com/researchgate/react-intersection-observer">react-intersection-observer</a></li>
+<li><a href="https://developers.google.com/web/updates/2018/07/page-lifecycle-api#managing-cross-browsers-differences">page-lifecycle</a></li>
+</ul>
+<blockquote>
+<p>本文发布自 <a href="https://github.com/x-orpheus">网易云音乐大前端团队</a>，文章未经授权禁止任何形式的转载。我们常年招收前端、iOS、Android，如果你准备换工作，又恰好喜欢云音乐，那就加入我们 grp.music-fe(at)corp.netease.com！</p>
+</blockquote></section><hr style="margin-bottom:1.625rem"/></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/widgetkit/">← 上一篇</a></li><li></li></ul></nav><div id="disqus_thread"></div></main></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-46698359-8', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/web-track/";window.webpackCompilationHash="6a20cb0446a11ddb38c0";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-0c9a63a3aef9e813df5b.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-51d272fe0618a2665c13.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js"],"component---src-pages-404-js":["/component---src-pages-404-js-e9fc057fd683384561c6.js"],"component---src-pages-index-js":["/component---src-pages-index-js-48dc264068dece189e1b.js"]};/*]]>*/</script><script src="/webpack-runtime-2742ada98d46151d1c6f.js" async=""></script><script src="/commons-8d9941e7328683a5eecb.js" async=""></script><script src="/app-0c9a63a3aef9e813df5b.js" async=""></script><script src="/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js" async=""></script><script src="/styles-5791f525f4cf077cdfa6.js" async=""></script></body></html>
