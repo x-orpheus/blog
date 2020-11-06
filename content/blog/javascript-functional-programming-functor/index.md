@@ -10,7 +10,7 @@ description: 当你开始学习函数式编程的时候，你肯定听说过“�
 
 > 本文作者：[赵祥涛](https://github.com/sylvenas)
 
-[上一章](https://juejin.im/post/6844904034260910094)中介绍了 `Functor(函子)` 的概念，简单来说，就是把一个 “value” 填装进 “Box” 中，继而可以使用 `map` 方法映射变换 Box 中的值：`Box(1).map(x => x+1)`。本章我们在继续在 `Box` 的基础上继续扩展其他更强大的理念，从[纯函数](https://en.wikipedia.org/wiki/Pure_function)与[副作用](https://en.wikipedia.org/wiki/Side_effect_(computer_science))的概念及用途作为承上启下的开端，继续巩固 `Functor` 的概念以及接下来将要介绍的 `Applicative Functor` 的引子。
+[上一章](https://musicfe.dev/javascript-functional-programming-advance/)中介绍了 `Functor(函子)` 的概念，简单来说，就是把一个 “value” 填装进 “Box” 中，继而可以使用 `map` 方法映射变换 Box 中的值：`Box(1).map(x => x+1)`。本章我们在继续在 `Box` 的基础上继续扩展其他更强大的理念，从[纯函数](https://en.wikipedia.org/wiki/Pure_function)与[副作用](https://en.wikipedia.org/wiki/Side_effect_(computer_science))的概念及用途作为承上启下的开端，继续巩固 `Functor` 的概念以及接下来将要介绍的 `Applicative Functor` 的引子。
 
 函数式编程中纯函数是一个及其重要的概念，甚至可以说是函数组合的基础。你可能已经听过类似的言论：“纯函数是引用透明( Referential Transparency )的”，“纯函数是无副作用( Side Effect )的”，“纯函数没有共享状态( Shared State )”。下面简单介绍下纯函数。
 
