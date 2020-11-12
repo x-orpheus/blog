@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[云音乐大前端专栏]]></title><description><![CDATA[云音乐大前端技术专栏]]></description><link>https://musicfe.dev</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 06 Nov 2020 02:13:01 GMT</lastBuildDate><item><title><![CDATA[函数式编程进阶：应用函子]]></title><description><![CDATA[pipeline & function compose 图片来源: https://unsplash.com/photos/FqYMtQpE77E 本文作者：赵祥涛 上一章中介绍了  的概念，简单来说，就是把一个 “value” 填装进 “Box…]]></description><link>https://musicfe.dev/javascript-functional-programming-functor/</link><guid isPermaLink="false">https://musicfe.dev/javascript-functional-programming-functor/</guid><pubDate>Fri, 06 Nov 2020 02:00:18 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4602192261/a2a1/eb82/07ae/9ebb494ff96b26c7ae6ab0366663da51.png&quot; alt=&quot;pipeline &amp;#x26; function compose&quot;&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[云音乐大前端专栏]]></title><description><![CDATA[云音乐大前端技术专栏]]></description><link>https://musicfe.dev</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 12 Nov 2020 02:08:47 GMT</lastBuildDate><item><title><![CDATA[React Native 优化实践之拆包与预热]]></title><description><![CDATA[本文作者：段家顺 背景 随着 React Native 技术在业务中广泛的应用，一些比较重要的功能也开始采用 React Native 的技术方案来实现，这就给 React Native…]]></description><link>https://musicfe.dev/rn-optimize/</link><guid isPermaLink="false">https://musicfe.dev/rn-optimize/</guid><pubDate>Thu, 12 Nov 2020 02:06:39 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4443775191/fead/6fcd/4a67/a2c756750ad407db0e01031e4c86297b.jpeg&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文作者：&lt;a href=&quot;http://github.com/djs66256&quot;&gt;段家顺&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;背景&lt;/h2&gt;
+&lt;p&gt;随着 React Native 技术在业务中广泛的应用，一些比较重要的功能也开始采用 React Native 的技术方案来实现，这就给 React Native 页面的打开速度提出了更高的要求，因为打开速度是影响用户跳出率的重要原因之一。&lt;/p&gt;
+&lt;h2&gt;拆包&lt;/h2&gt;
+&lt;p&gt;对于 React Native 打开速度优化，业界比较通用的方案也就是预热+拆分基础包，减少容器初始化时间和基础库加载时间。&lt;/p&gt;
+&lt;p&gt;对 React Native 进行拆包可以依赖于官方提供的工具进行，但是官方提供的能力是 JS 内部的一个拆分加载，如果我们需要做容器预热，则无法使用官方的加载方案，而需要我们从客户端原本的逻辑中进行改造为多步加载。&lt;/p&gt;
+&lt;p&gt;我们需要对 React Native 的逻辑进行改造，就需要对 React Native 初始化逻辑有所了解。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4443729917/0f17/16ea/e095/45880a8c4249f192de2c9a7de8eaf710.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;上图是一个大致的过程，这里我们对比较关键的几个步骤进行简单的说明。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;RCTBridge 在实例化之后，会首先准备好 JS 运行线程和原生模块。&lt;/li&gt;
+&lt;li&gt;然后会创建一个 JSExcutor ，这个执行器决定了 JS 执行环境是客户端还是远程调试（安卓可以是自己定制的执行器，比如 V8）。&lt;/li&gt;
+&lt;li&gt;加载源码（ bundle ），这个根据来源不同可能是从本地加载，也可能通过 url 从远端加载。&lt;/li&gt;
+&lt;li&gt;由于初始化 JS 执行器和代码是并行触发的，这里需要一个栅栏同步两者结果，之后开始将代码放入执行器执行（ JS 代码运行）。&lt;/li&gt;
+&lt;li&gt;在此之后，客户端会监听垂直同步信号（该信号的作用是在页面发生变更的时候，需要重新刷新页面）。&lt;/li&gt;
+&lt;li&gt;此时 RootView 收到 JS 加载完成的通知，开始触发 RunApp 逻辑，该逻辑就是启动前端的 app 注册表中对应的应用。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;整个流程比较长，但是分工还是相当明确的，此次拆包改造的地方也非常明确。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4443729912/23fd/2ae4/c6e5/96067529a651525698c32454810118f3.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;上图中绿色框内就是我们此次改造的点，这里从实现简单与当前需求的角度出发，将加载代码设计为串行加载，如果需要进一步优化，加载过程也可以进行并发设计。&lt;/p&gt;
+&lt;p&gt;这里我们对加载能力进行一次抽象，加载一段代码定义为一个&lt;code class=&quot;language-text&quot;&gt;SourceLoader&lt;/code&gt;，那么一个拆包 bridge 就相当于有一个加载器列表，对应于 bridge 上的属性就非常简单。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;objc&quot;&gt;&lt;pre class=&quot;language-objc&quot;&gt;&lt;code class=&quot;language-objc&quot;&gt;@property (nonatomic, strong) NSArray&amp;lt;id&amp;lt;RCTBridgeSourceLoaderProtocol&amp;gt;&amp;gt; *preloadSourceLoaders;  // 预加载的加载器
+- (void)preloadSourceWithCompletion:(void(^)(NSError *error))completion; // 触发预加载加载器
+
+@property (nonatomic, strong) NSArray&amp;lt;id&amp;lt;RCTBridgeSourceLoaderProtocol&amp;gt;&amp;gt; *sourceLoaders;  // 非预加载加载器
+- (void)loadSourceWithCompletion:(void(^)(NSError *error))completion;  // 触发非预加载器
+
+- (void)loadAllSourcesWithCompletion:(void(^)(NSError *error))completion;  // 先加载预加载代码，再加载非预加载代码&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;这里有一个需要注意的点是，我们需要启动一个垂直同步信号监听，为了性能考虑，需要在预热容器加载到真正视图的时候才能开启，所以这里对加载器增加一个标记，只有加载到该加载器之后才能开启监听。&lt;/p&gt;
+&lt;p&gt;经过这样的改造，我们的 React Native 就已经支持了多包分布加载了。我们就可以把一些基础功能的 JS 代码打包进应用内部，也减少一些包大小。&lt;/p&gt;
+&lt;h2&gt;容器预热&lt;/h2&gt;
+&lt;p&gt;只有分包加载并不能对加载速度有太大的影响，而真正的优化点是容器的预热。预热可以将很多准备工作先做了，在业务加载的时候只会触发加载业务代码与渲染页面。&lt;/p&gt;
+&lt;p&gt;受限于手机性能的局限，以及一些苹果官方的策略，我们不太可能无限制的去使用该能力，所以这里按3个方面来看预热。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;预热触发时机&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;目前预热触发的时机主要有下面3个点&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;冷启动&lt;/li&gt;
+&lt;li&gt;热启动&lt;/li&gt;
+&lt;li&gt;容器复用之后&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在这些时机触发之后，再延迟一定时间（5秒），进行创建预热实例。延迟一会的原因是这些时机大概率都是在做一些 CPU 密集型任务，如果此时再加入创建预热容器这种非必须的任务，反而可能影响主业务的一些性能。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;预热容器销毁&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;目前销毁的时机主要有下面2个&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;内存警告&lt;/li&gt;
+&lt;li&gt;进入后台&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;进入后台销毁的目的主要是为了降低后台运行的内存，虽然这点内存占比不大，但是目前苹果对后台运行的策略还是比较严格的，所以我们尽量减少存在的影响。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;预热的场景化&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;由于 React Native 这种能力在我们的业务中并不负责主要场景，可能大部分用户都不会使用到 React Native ，而我们对全量用户进行无差别的开启预热功能，也不是一种最优的方式。目前我们还没有能力对用户场景进行机器学习这样的智能化分析，那么这次就对一些场景做一下简单的归类：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3天内没有使用过 React Native 能力，则认为该用户后续也不会使用该能力&lt;/li&gt;
+&lt;li&gt;3天内没有由于内存警告而销毁的记录&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;当前应用启动周期内：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;预加载失败3次，则该周期内不再启用预加载&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;容器预热的关键点是在不影响用户其他体验的时候，尽可能的提高预热的命中率，目前做的一些策略都比较简单，后续如果要优化，就需要深入业务场景中。&lt;/p&gt;
+&lt;h2&gt;效果&lt;/h2&gt;
+&lt;p&gt;当开启拆包和预热能力后，商城页面包大小从整包 1.1M 减少为 856K，页面打开时长在 iOS 里由 450ms 减少到 200ms 左右，在安卓里由 4500ms 减少到 2500ms ，双端的优化效果都非常明显，说明我们的优化方案是非常有效的。&lt;/p&gt;
+&lt;h2&gt;总结&lt;/h2&gt;
+&lt;p&gt;此次 React Native 的优化分为拆包和预热两部分，各自能力独立，并分别进行 AB 控制，最大可能保证稳定性。后续将会深入业务场景去做一些优化策略。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文发布自 &lt;a href=&quot;https://github.com/x-orpheus&quot;&gt;网易云音乐大前端团队&lt;/a&gt;，文章未经授权禁止任何形式的转载。我们常年招收前端、iOS、Android，如果你准备换工作，又恰好喜欢云音乐，那就加入我们 grp.music-fe(at)corp.netease.com！&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[函数式编程进阶：应用函子]]></title><description><![CDATA[pipeline & function compose 图片来源: https://unsplash.com/photos/FqYMtQpE77E 本文作者：赵祥涛 上一章中介绍了  的概念，简单来说，就是把一个 “value” 填装进 “Box…]]></description><link>https://musicfe.dev/javascript-functional-programming-functor/</link><guid isPermaLink="false">https://musicfe.dev/javascript-functional-programming-functor/</guid><pubDate>Fri, 06 Nov 2020 02:00:18 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4602192261/a2a1/eb82/07ae/9ebb494ff96b26c7ae6ab0366663da51.png&quot; alt=&quot;pipeline &amp;#x26; function compose&quot;&gt;&lt;/p&gt;
 &lt;p&gt;图片来源: &lt;a href=&quot;https://unsplash.com/photos/FqYMtQpE77E&quot;&gt;https://unsplash.com/photos/FqYMtQpE77E&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;本文作者：&lt;a href=&quot;https://github.com/sylvenas&quot;&gt;赵祥涛&lt;/a&gt;&lt;/p&gt;
