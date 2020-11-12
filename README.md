@@ -7,7 +7,7 @@
  
 <img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/3881306725/baf3/9b3f/8a43/32f140ca8cb32d06a3882e585f983104.jpg" width="300" />
 
- - [掘金](https://juejin.im/user/5cd23730f265da03576edbf1/posts)
+ - [掘金](https://juejin.im/user/4265760847567016/posts)
  - [知乎](https://www.zhihu.com/org/yun-yin-le-qian-duan-ji-zhu-tuan-dui/posts)
  - [SegmentFault](https://segmentfault.com/u/musicfe/articles)
 
