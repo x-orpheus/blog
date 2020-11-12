@@ -1,5 +1,5 @@
 ---
-title: React Native 优化实践之拆包与预热
+title: 云音乐 React Native 优化实践之拆包与预热
 date: 2020-11-12T02:06:39.932Z
 description: 随着 React Native 技术在云音乐业务中广泛的应用，一些比较重要的功能也开始采用 React Native 的方案来进行了，这就给 React Native 页面的打开速度提出了更高的要求，本次优化采用拆包与预热方案，让我们来看看是如何实现的吧。
 ---
