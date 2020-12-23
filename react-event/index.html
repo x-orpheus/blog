@@ -1,0 +1,233 @@
+<!DOCTYPE html><html lang="zh"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.625 -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}h1{margin-left:0;margin-right:0;margin-top:2.4375rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.21875rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h2{margin-left:0;margin-right:0;margin-top:1.625rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.40625rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:hsla(0,0%,0%,0.53);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}ul{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:0.85rem;line-height:1.625rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:1rem;line-height:1.625rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:calc(0.8125rem - 1px);padding-right:0;padding-top:0;margin-bottom:0.8125rem;border-left:4px solid hsla(0,0%,0%,0.13);color:hsla(0,0%,0%,0.53);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(0.8125rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}b{font-weight:600;}strong{font-weight:600;}dt{font-weight:600;}th{font-weight:600;}li{margin-bottom:calc(0.8125rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}li > ul{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(0.8125rem / 2);}code{font-size:0.85rem;line-height:1.625rem;}kbd{font-size:0.85rem;line-height:1.625rem;}samp{font-size:0.85rem;line-height:1.625rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.08333rem;padding-right:1.08333rem;padding-top:0.8125rem;padding-bottom:calc(0.8125rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}h3,h4,h5,h6{margin-bottom:0.8125rem;margin-top:1.625rem;}ol,ul{margin-left:2.03125rem;}li>ol,li>ul{margin-left:2.03125rem;}a{color:#4078c0;text-decoration:none;}a:hover,a:active{text-decoration:underline;}</style><title data-react-helmet="true">React 事件系统工作原理 | 云音乐大前端专栏</title><style type="text/css">.gatsby-resp-image-image{width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;color:transparent;}</style><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#dd001b"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><meta name="generator" content="Gatsby 2.15.7"/><meta data-react-helmet="true" name="description" content="React 为我们提供了一套虚拟的事件系统，这套虚拟事件系统是如何工作的，笔者对源码做了一次梳理，整理了下面的文档供大家参考。"/><meta data-react-helmet="true" property="og:title" content="React 事件系统工作原理"/><meta data-react-helmet="true" property="og:description" content="React 为我们提供了一套虚拟的事件系统，这套虚拟事件系统是如何工作的，笔者对源码做了一次梳理，整理了下面的文档供大家参考。"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="云音乐大前端团队"/><meta data-react-helmet="true" name="twitter:title" content="React 事件系统工作原理"/><meta data-react-helmet="true" name="twitter:description" content="React 为我们提供了一套虚拟的事件系统，这套虚拟事件系统是如何工作的，笔者对源码做了一次梳理，整理了下面的文档供大家参考。"/><style data-href="/styles.a8f6e12462010344bfaf.css">@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:200;src:local("Source Code Pro Extra Light "),local("Source Code Pro-Extra Light"),url(/static/source-code-pro-latin-200-41568fe7927570e049a6cb707930f353.woff2) format("woff2"),url(/static/source-code-pro-latin-200-568dcb298a36f14317fdcddf8eded62f.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:300;src:local("Source Code Pro Light "),local("Source Code Pro-Light"),url(/static/source-code-pro-latin-300-248b2236ba6bb9d2745a4908bc9c4568.woff2) format("woff2"),url(/static/source-code-pro-latin-300-43fcfcf552695ff0976d7d03a29835c4.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:400;src:local("Source Code Pro Regular "),local("Source Code Pro-Regular"),url(/static/source-code-pro-latin-400-1c37ab07cfefc70a85445f49737ad28a.woff2) format("woff2"),url(/static/source-code-pro-latin-400-a4a08973559a45aba173184ea065addf.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:500;src:local("Source Code Pro Medium "),local("Source Code Pro-Medium"),url(/static/source-code-pro-latin-500-67f6c1995acae33eacb1af1807c0e8c8.woff2) format("woff2"),url(/static/source-code-pro-latin-500-a39fc2de145c00ef5898c77b15c27517.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:600;src:local("Source Code Pro SemiBold "),local("Source Code Pro-SemiBold"),url(/static/source-code-pro-latin-600-bf5d453754c3bd3e0fc9bcdc979048f1.woff2) format("woff2"),url(/static/source-code-pro-latin-600-c021e440e993ff26de945242222960a6.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:700;src:local("Source Code Pro Bold "),local("Source Code Pro-Bold"),url(/static/source-code-pro-latin-700-b46da14cbd07b2f1f5ca74069d59318e.woff2) format("woff2"),url(/static/source-code-pro-latin-700-c86a17b160684a125455d36f4733ad85.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:900;src:local("Source Code Pro Black "),local("Source Code Pro-Black"),url(/static/source-code-pro-latin-900-e985b6f17d53c2780c3c49722984a52e.woff2) format("woff2"),url(/static/source-code-pro-latin-900-b0d773d996cad7ea914d35d16dd0f3ec.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:400;src:local("Noto Sans Regular "),local("Noto Sans-Regular"),url(/static/noto-sans-latin-400-175853ded2a4e2249d37c46ca0ca33c5.woff2) format("woff2"),url(/static/noto-sans-latin-400-e7ccb0aa43af9fb7fae4d1bdc23a099b.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:400;src:local("Noto Sans Regular italic"),local("Noto Sans-Regularitalic"),url(/static/noto-sans-latin-400italic-baa3ec09eb827b4f10593032d1cf2a88.woff2) format("woff2"),url(/static/noto-sans-latin-400italic-14425b1ebbce551302a950b083b6c14e.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:700;src:local("Noto Sans Bold "),local("Noto Sans-Bold"),url(/static/noto-sans-latin-700-43750a193b8ff0b4e929323a72d79301.woff2) format("woff2"),url(/static/noto-sans-latin-700-a8edfe7bbf3b01666adc30c118cc5223.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:700;src:local("Noto Sans Bold italic"),local("Noto Sans-Bolditalic"),url(/static/noto-sans-latin-700italic-bc98820a9bf62004a88ef07e012e3ce3.woff2) format("woff2"),url(/static/noto-sans-latin-700italic-0e19737ff39f96eb1ff99e463fa457a4.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><link as="script" rel="preload" href="/styles-03417d09ece67ceb8f9b.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js"/><link as="script" rel="preload" href="/app-0c9a63a3aef9e813df5b.js"/><link as="script" rel="preload" href="/commons-8d9941e7328683a5eecb.js"/><link as="script" rel="preload" href="/webpack-runtime-2742ada98d46151d1c6f.js"/><link as="fetch" rel="preload" href="/page-data/react-event/page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:39rem;padding:2.4375rem 1.21875rem;font-family:&quot;Source Code Pro&quot;, &quot;Noto Sans CJK SC&quot;"><header><h1 style="font-size:2.2974rem;line-height:3.25rem;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:#DD001B" href="/">云音乐大前端专栏</a></h1></header><main><article><header><h1 style="margin-top:1.625rem;margin-bottom:0;color:#001E26">React 事件系统工作原理</h1><p style="font-size:0.87055rem;line-height:1.625rem;display:block;margin-bottom:1.625rem">2020-12-23</p></header><section><p><img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/5186641256/8d69/190f/7d79/98731dc290d0adeff4679b8ec9664bba.jpg" alt="题图"></p>
+<blockquote>
+<p>本文作者: <a href="https://www.zhihu.com/people/li-quan-wei-41">江水</a></p>
+</blockquote>
+<h2>前言</h2>
+<p>React 为我们提供了一套虚拟的事件系统，这套虚拟事件系统是如何工作的，笔者对源码做了一次梳理，整理了下面的文档供大家参考。</p>
+<p>在 <a href="https://reactjs.org/docs/events.html">React事件介绍</a> 中介绍了合成事件对象以及为什么提供合成事件对象，主要原因是因为 React 想实现一个全浏览器的框架， 为了实现这种目标就需要提供全浏览器一致性的事件系统，以此抹平不同浏览器的差异。</p>
+<p>合成事件对象很有意思，一开始听名字会觉得很奇怪，看到英文名更奇怪 <code class="language-text">SyntheticEvent</code>， 实际上合成事件的意思就是使用原生事件合成一个 React 事件， 例如使用原生<code class="language-text">click</code>事件合成了<code class="language-text">onClick</code>事件，使用原生<code class="language-text">mouseout</code>事件合成了<code class="language-text">onMouseLeave</code>事件，原生事件和合成事件类型大部分都是一一对应，只有涉及到兼容性问题时我们才需要使用不对应的事件合成。合成事件并不是 React 的首创，在 iOS 上遇到的 300ms 问题而引入的 fastclick 就使用了 touch 事件合成了 click 事件，也算一种合成事件的应用。</p>
+<p>了解了 React 事件是合成事件之后我们看待事件的角度就会有所不同， 例如我们经常在代码中写的这种代码</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&lt;button onClick={handleClick}&gt;
+  Activate Lasers
+&lt;/button&gt;</code></pre></div>
+<p>我们已经知道这个<code class="language-text">onClick</code>只是一个合成事件而不是原生事件， 那这段时间究竟发生了什么？ 原生事件和合成事件是如何对应起来的？</p>
+<p>上面的代码看起来很简洁，实际上 React 事件系统工作机制比起上面要复杂的多，脏活累活全都在底层处理了， 简直框架劳模。其工作原理大体上分为两个阶段</p>
+<ol>
+<li>事件绑定</li>
+<li>事件触发</li>
+</ol>
+<p>下面就一起来看下这两个阶段究竟是如何工作的， 这里主要从源码层分析，并以 16.13 源码中内容为基准。</p>
+<h2>1. React 是如何绑定事件的 ?</h2>
+<p>React 既然提供了合成事件，就需要知道合成事件与原生事件是如何对应起来的，这个对应关系存放在 React 事件插件中<code class="language-text">EventPlugin</code>， 事件插件可以认为是 React 将不同的合成事件处理函数封装成了一个模块，每个模块只处理自己对应的合成事件，这样不同类型的事件种类就可以在代码上解耦，例如针对<code class="language-text">onChange</code>事件有一个单独的<code class="language-text">LegacyChangeEventPlugin</code>插件来处理，针对<code class="language-text">onMouseEnter</code>，  <code class="language-text">onMouseLeave</code> 使用 <code class="language-text">LegacyEnterLeaveEventPlugin</code> 插件来处理。</p>
+<p>为了知道合成事件与原生事件的对应关系，React 在一开始就将事件插件全部加载进来， 这部分逻辑在 <a href="https://github.com/facebook/react/blob/v16.13.1/packages/react-dom/src/client/ReactDOMClientInjection.js#L56">ReactDOMClientInjection</a> 代码如下</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token function">injectEventPluginsByName</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    SimpleEventPlugin<span class="token punctuation">:</span> LegacySimpleEventPlugin<span class="token punctuation">,</span>
+    EnterLeaveEventPlugin<span class="token punctuation">:</span> LegacyEnterLeaveEventPlugin<span class="token punctuation">,</span>
+    ChangeEventPlugin<span class="token punctuation">:</span> LegacyChangeEventPlugin<span class="token punctuation">,</span>
+    SelectEventPlugin<span class="token punctuation">:</span> LegacySelectEventPlugin<span class="token punctuation">,</span>
+    BeforeInputEventPlugin<span class="token punctuation">:</span> LegacyBeforeInputEventPlugin
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>注册完上述插件后， <a href="https://github.com/facebook/react/blob/v16.13.1/packages/legacy-events/EventPluginRegistry.js">EventPluginRegistry</a> (老版本代码里这个模块唤作<code class="language-text">EventPluginHub</code>)这个模块里就初始化好了一些全局对象，有几个对象比较重要，可以单独说一下。</p>
+<p>第一个对象是 <strong>registrationNameModule</strong>， 它包含了 React 事件到它对应的 plugin 的映射， 大致长下面这样，它包含了 React 所支持的所有事件类型，这个对象最大的作用是判断一个组件的 prop 是否是事件类型，这在处理原生组件的 props 时候将会用到，如果一个 prop 在这个对象中才会被当做事件处理。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token punctuation">{</span>
+    onBlur<span class="token punctuation">:</span> SimpleEventPlugin<span class="token punctuation">,</span>
+    onClick<span class="token punctuation">:</span> SimpleEventPlugin<span class="token punctuation">,</span>
+    onClickCapture<span class="token punctuation">:</span> SimpleEventPlugin<span class="token punctuation">,</span>
+    onChange<span class="token punctuation">:</span> ChangeEventPlugin<span class="token punctuation">,</span>
+    onChangeCapture<span class="token punctuation">:</span> ChangeEventPlugin<span class="token punctuation">,</span>
+    onMouseEnter<span class="token punctuation">:</span> EnterLeaveEventPlugin<span class="token punctuation">,</span>
+    onMouseLeave<span class="token punctuation">:</span> EnterLeaveEventPlugin<span class="token punctuation">,</span>
+    <span class="token operator">...</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>第二个对象是 <strong>registrationNameDependencies</strong>， 这个对象长下面几个样子</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token punctuation">{</span>
+    onBlur<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'blur'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    onClick<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'click'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    onClickCapture<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'click'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    onChange<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'blur'</span><span class="token punctuation">,</span> <span class="token string">'change'</span><span class="token punctuation">,</span> <span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token string">'focus'</span><span class="token punctuation">,</span> <span class="token string">'input'</span><span class="token punctuation">,</span> <span class="token string">'keydown'</span><span class="token punctuation">,</span> <span class="token string">'keyup'</span><span class="token punctuation">,</span> <span class="token string">'selectionchange'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    onMouseEnter<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'mouseout'</span><span class="token punctuation">,</span> <span class="token string">'mouseover'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    onMouseLeave<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'mouseout'</span><span class="token punctuation">,</span> <span class="token string">'mouseover'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token operator">...</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>这个对象即是一开始我们说到的合成事件到原生事件的映射，对于<code class="language-text">onClick</code> 和 <code class="language-text">onClickCapture</code>事件， 只依赖原生<code class="language-text">click</code>事件。但是对于 <code class="language-text">onMouseLeave</code>它却是依赖了两个<code class="language-text">mouseout</code>， <code class="language-text">mouseover</code>， 这说明这个事件是 React 使用 <code class="language-text">mouseout</code> 和 <code class="language-text">mouseover</code> 模拟合成的。正是因为这种行为，使得 React 能够合成一些哪怕浏览器不支持的事件供我们代码里使用。</p>
+<p>第三个对象是 <strong>plugins</strong>， 这个对象就是上面注册的所有插件列表。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">plugins <span class="token operator">=</span> <span class="token punctuation">[</span>LegacySimpleEventPlugin<span class="token punctuation">,</span> LegacyEnterLeaveEventPlugin<span class="token punctuation">,</span> <span class="token operator">...</span><span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre></div>
+<p>看完上面这些信息后我们再反过头来看下一个普通的<code class="language-text">EventPlugin</code>长什么样子。一个 plugin 就是一个对象， 这个对象包含了下面两个属性</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// event plugin</span>
+<span class="token punctuation">{</span>
+  eventTypes<span class="token punctuation">,</span> <span class="token comment">// 一个数组，包含了所有合成事件相关的信息，包括其对应的原生事件关系</span>
+  extractEvents<span class="token punctuation">:</span> <span class="token comment">// 一个函数，当原生事件触发时执行这个函数</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>了解上面这这些信息对我们分析 React 事件工作原理将会很有帮助，下面开始进入事件绑定阶段。</p>
+<ol>
+<li>React 执行 diff 操作，标记出哪些 <strong>DOM 类型</strong> 的节点需要添加或者更新。</li>
+</ol>
+<p><img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4800330750/b724/a082/d390/beae89013e9dc9bfc6f140c8b3c0e8f6.png"></p>
+<ol start="2">
+<li>当检测到需要创建一个节点或者更新一个节点时， 使用 <strong>registrationNameModule</strong> 查看一个 prop 是不是一个事件类型，如果是则执行下一步。</li>
+</ol>
+<p><img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4800583640/cd74/1213/cc37/86fe42a94ebcbb0d71d82628387b224f.png"></p>
+<ol start="4">
+<li>通过 <strong>registrationNameDependencies</strong> 检查这个 React 事件依赖了哪些<strong>原生事件类型</strong>。</li>
+</ol>
+<p><img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/5094697349/9f49/82c0/a6b2/2d9e66e6e0d5dabf5bf80c37a8cf472a.png"></p>
+<ol start="5">
+<li>检查这些一个或多个原生事件类型有没有注册过，如果有则忽略。</li>
+</ol>
+<p><img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/5094708393/9963/abca/589a/0f3be5efc574c1fc0c34dec18a275fa2.png"></p>
+<ol start="6">
+<li>如果这个原生事件类型没有注册过，则注册这个原生事件到 <code class="language-text">document</code> 上，回调为React提供的<a href="https://github.com/facebook/react/blob/v16.13.1/packages/react-dom/src/events/DOMLegacyEventPluginSystem.js#L267">dispatchEvent</a>函数。</li>
+</ol>
+<p><img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/5094724930/4839/6226/8180/5a2070ecd5dfd0fafc94647b49da3b43.png"></p>
+<p>上面的阶段说明:</p>
+<ol>
+<li>我们将所有事件类型都注册到 <code class="language-text">document</code> 上。</li>
+<li>所有原生事件的 listener 都是<code class="language-text">dispatchEvent</code>函数。</li>
+<li>同一个类型的事件 React 只会绑定一次原生事件，例如无论我们写了多少个<code class="language-text">onClick</code>， 最终反应在 DOM 事件上只会有一个<code class="language-text">listener</code>。</li>
+<li>React 并没有将我们业务逻辑里的<code class="language-text">listener</code>绑在原生事件上，也没有去维护一个类似<code class="language-text">eventlistenermap</code>的东西存放我们的<code class="language-text">listener</code>。</li>
+</ol>
+<p>由 3，4 条规则可以得出，我们业务逻辑的<code class="language-text">listener</code>和实际 DOM 事件压根就没关系，React 只是会确保这个原生事件能够被它自己捕捉到，后续由 React 来派发我们的事件回调，当我们页面发生较大的切换时候，React 可以什么都不做，从而免去了去操作<code class="language-text">removeEventListener</code>或者同步<code class="language-text">eventlistenermap</code>的操作，所以其执行效率将会大大提高，相当于全局给我们做了一次事件委托，即便是渲染大列表，也不用开发者关心事件绑定问题。</p>
+<h2>2. React 是如何触发事件的?</h2>
+<p>我们知道由于所有类型种类的事件都是绑定为React的 <code class="language-text">dispatchEvent</code> 函数，所以就能在全局处理一些通用行为，下面就是整个行为过程。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">dispatchEventForLegacyPluginEventSystem</span><span class="token punctuation">(</span>
+  <span class="token parameter">topLevelType<span class="token punctuation">:</span> DOMTopLevelEventType<span class="token punctuation">,</span>
+  eventSystemFlags<span class="token punctuation">:</span> EventSystemFlags<span class="token punctuation">,</span>
+  nativeEvent<span class="token punctuation">:</span> AnyNativeEvent<span class="token punctuation">,</span>
+  targetInst<span class="token punctuation">:</span> <span class="token keyword">null</span> <span class="token operator">|</span> Fiber<span class="token punctuation">,</span></span>
+<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> bookKeeping <span class="token operator">=</span> <span class="token function">getTopLevelCallbackBookKeeping</span><span class="token punctuation">(</span>
+    topLevelType<span class="token punctuation">,</span>
+    nativeEvent<span class="token punctuation">,</span>
+    targetInst<span class="token punctuation">,</span>
+    eventSystemFlags
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">try</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Event queue being processed in the same cycle allows</span>
+    <span class="token comment">// `preventDefault`.</span>
+    <span class="token function">batchedEventUpdates</span><span class="token punctuation">(</span>handleTopLevel<span class="token punctuation">,</span> bookKeeping<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+    <span class="token function">releaseTopLevelCallbackBookKeeping</span><span class="token punctuation">(</span>bookKeeping<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p><code class="language-text">bookKeeping</code>为事件执行时组件的层级关系存储，也就是如果在事件执行过程中发生组件结构变更，并不会影响事件的触发流程。</p>
+<p>整个触发事件流程如下:</p>
+<ol>
+<li>任意一个事件触发，执行 <code class="language-text">dispatchEvent</code> 函数。</li>
+<li><code class="language-text">dispatchEvent</code> 执行 <code class="language-text">batchedEventUpdates(handleTopLevel)</code>， <a href="https://github.com/facebook/react/blob/v16.13.1/packages/react-reconciler/src/ReactFiberWorkLoop.js#L1150">batchedEventUpdates</a> 会打开批量渲染开关并调用 <code class="language-text">handleTopLevel</code>。</li>
+<li><a href="https://github.com/facebook/react/blob/v16.13.1/packages/react-dom/src/events/DOMLegacyEventPluginSystem.js#L220">handleTopLevel</a> 会依次执行 <strong>plugins</strong> 里所有的事件插件。</li>
+<li>如果一个插件检测到自己需要处理的事件类型时，则处理该事件。</li>
+</ol>
+<p>对于大部分事件而言其处理逻辑如下，也即 <code class="language-text">LegacySimpleEventPlugin</code> 插件做的工作</p>
+<ol>
+<li>通过原生事件类型决定使用哪个合成事件类型（原生 event 的封装对象，例如 <code class="language-text">SyntheticMouseEvent</code>) 。</li>
+<li>如果对象池里有这个类型的实例，则取出这个实例，覆盖其属性，作为本次派发的事件对象（事件对象复用），若没有则新建一个实例。</li>
+</ol>
+<p><img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4800772358/cb23/499c/0f53/b6be5e7f3ca9b26174fadb9380ca9561.png"></p>
+<ol start="3">
+<li>从点击的原生事件中找到对应 DOM 节点，从 DOM 节点中找到一个最近的React组件实例， 从而找到了一条由这个实例父节点不断向上组成的链， 这个链就是我们要触发合成事件的链，(只包含原生类型组件， <code class="language-text">div</code>， <code class="language-text">a</code> 这种原生组件)。</li>
+</ol>
+<p><img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/5095016994/ad90/0556/823d/b4ea1e5d50903358f226d11b289b24ed.png"></p>
+<ol start="4">
+<li>反向触发这条链，父-> 子，模拟捕获阶段，触发所有 props 中含有 <code class="language-text">onClickCapture</code> 的实例。</li>
+</ol>
+<p><img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/5095025806/0f50/abbc/5d67/0d143b068f21bbafb49c5089476657e7.png"></p>
+<ol start="5">
+<li>正向触发这条链，子-> 父，模拟冒泡阶段，触发所有 props 中含有 <code class="language-text">onClick</code> 的实例。</li>
+</ol>
+<p><img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/5095033054/15cf/567e/5504/4c5e82a1c65aaf393d43993588842a32.png"></p>
+<p>这几个阶段说明了下面的现象:</p>
+<ol>
+<li>React 的合成事件只能在事件周期内使用，因为这个对象很可能被其他阶段复用， 如果想持久化需要手动调用<code class="language-text">event.persist()</code> 告诉 React 这个对象需要持久化。( React17 中被废弃)</li>
+<li>React 的冒泡和捕获并不是真正 DOM 级别的冒泡和捕获</li>
+<li>React 会在一个原生事件里触发所有相关节点的 <code class="language-text">onClick</code> 事件， 在执行这些<code class="language-text">onClick</code>之前 React 会打开批量渲染开关，这个开关会将所有的<code class="language-text">setState</code>变成异步函数。</li>
+<li>事件只针对原生组件生效，自定义组件不会触发 <code class="language-text">onClick</code>。</li>
+</ol>
+<h2>3. 从React 的事件系统中我们学到了什么</h2>
+<ol>
+<li>React16 将原生事件都绑定在 <code class="language-text">document</code> 上.</li>
+</ol>
+<p>这点很好理解，React的事件实际上都是在<code class="language-text">document</code>上触发的。</p>
+<ol start="2">
+<li>我们收到的 event 对象为 React 合成事件， event 对象在事件之外不可以使用</li>
+</ol>
+<p>所以下面就是错误用法</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">onClick</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>， <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<ol start="3">
+<li>React 会在派发事件时打开批量更新， 此时所有的 <code class="language-text">setState</code> 都会变成异步。</li>
+</ol>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">onClick</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>a<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 1</span>
+    <span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>a<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 2</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        <span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>a<span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 3</span>
+        <span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>a<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 4</span>
+    <span class="token punctuation">}</span>， <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>此时 1， 2 在事件内所以是异步的，二者只会触发一次 render 操作，3， 4 是同步的，3，4 分别都会触发一次 render。</p>
+<ol start="4">
+<li>React <code class="language-text">onClick</code>/<code class="language-text">onClickCapture</code>， 实际上都发生在原生事件的冒泡阶段。</li>
+</ol>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span>， console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">null</span>， <span class="token string">'native'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">onClickCapture</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'capture'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">&lt;</span>div onClickCapture<span class="token operator">=</span><span class="token punctuation">{</span>onClickCapture<span class="token punctuation">}</span><span class="token operator">/</span><span class="token operator">></span></code></pre></div>
+<p>这里我们虽然使用了<code class="language-text">onClickCapture</code>， 但实际上对原生事件而言依然是冒泡，所以 React 16 中实际上就不支持绑定捕获事件。</p>
+<ol start="5">
+<li>由于所有事件都注册到顶层事件上，所以多实个 <code class="language-text">ReactDOM.render</code> 会存在冲突。</li>
+</ol>
+<p>如果我们渲染一个子树使用另一个版本的 React 实例创建， 那么即使在子树中调用了 <code class="language-text">e.stopPropagatio</code> 事件依然会传播。所以多版本的 React 在事件上存在冲突。</p>
+<p><strong>最后我们就可以轻松理解 React 事件系统的架构图了</strong></p>
+<p><img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/5095097288/1f71/b28e/6bf2/315796acd6fc1a0807cccc30ad25ea41.png"></p>
+<h2>4. React 17 中事件系统有哪些新特性</h2>
+<p>React 17 目前已经发布了， 官方称之为没有新特性的更新， 对于使用者而言没有提供类似 Hooks 这样爆炸的特性，也没有 Fiber 这样的重大重构，而是积攒了大量 Bugfix，修复了之前存在的诸多缺陷。其中变化最大的就数对事件系统的改造了。</p>
+<p>下面是笔者列举的一些事件相关的特性更新</p>
+<h3>调整将顶层事件绑在container上，ReactDOM.render(app， container);</h3>
+<p><img src="https://reactjs.org/static/bb4b10114882a50090b8ff61b3c4d0fd/31868/react_17_delegation.png" alt="react_17_delegation"></p>
+<p>将顶层事件绑定在 <code class="language-text">container</code> 上而不是 <code class="language-text">document</code> 上能够解决我们遇到的多版本共存问题，对微前端方案是个重大利好。</p>
+<h3>对齐原生浏览器事件</h3>
+<p>React 17 中终于支持了原生捕获事件的支持， 对齐了浏览器原生标准。</p>
+<p>同时<code class="language-text">onScroll</code> 事件不再进行事件冒泡。</p>
+<p><code class="language-text">onFocus</code> 和 <code class="language-text">onBlur</code> 使用原生 <code class="language-text">focusin</code>， <code class="language-text">focusout</code> 合成。</p>
+<blockquote>
+<p>Aligning with Browsers
+We’ve made a couple of smaller changes related to the event system:
+The onScroll event no longer bubbles to prevent common confusion.
+React onFocus and onBlur events have switched to using the native focusin and focusout events under the hood， which more closely match React’s existing behavior and sometimes provide extra information.
+Capture phase events (e.g. onClickCapture) now use real browser capture phase listeners.</p>
+</blockquote>
+<h3>取消事件复用</h3>
+<p><img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/4787039040/4767/5b08/8a09/466e5a5070defa58a1746209185647d8.png"></p>
+<p>官方的解释是事件对象的复用在现代浏览器上性能已经提高的不明显了，反而还很容易让人用错，所以干脆就放弃这个优化。</p>
+<p><em>参考</em></p>
+<ol>
+<li><a href="https://reactjs.org/docs/events.html">https://reactjs.org/docs/events.html</a></li>
+<li><a href="https://reactjs.org/docs/handling-events.html">https://reactjs.org/docs/handling-events.html</a></li>
+<li><a href="https://github.com/facebook/react">https://github.com/facebook/react</a></li>
+</ol>
+<blockquote>
+<p>本文发布自 <a href="https://github.com/x-orpheus">网易云音乐大前端团队</a>，文章未经授权禁止任何形式的转载。我们常年招收前端、iOS、Android，如果你准备换工作，又恰好喜欢云音乐，那就加入我们 grp.music-fe(at)corp.netease.com！</p>
+</blockquote></section><hr style="margin-bottom:1.625rem"/></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/react-fiber-2/">← 上一篇</a></li><li></li></ul></nav><div id="disqus_thread"></div></main></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-46698359-8', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/react-event/";window.webpackCompilationHash="e62a7e4a2c1043c5601c";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-0c9a63a3aef9e813df5b.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-51d272fe0618a2665c13.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js"],"component---src-pages-404-js":["/component---src-pages-404-js-e9fc057fd683384561c6.js"],"component---src-pages-index-js":["/component---src-pages-index-js-48dc264068dece189e1b.js"]};/*]]>*/</script><script src="/webpack-runtime-2742ada98d46151d1c6f.js" async=""></script><script src="/commons-8d9941e7328683a5eecb.js" async=""></script><script src="/app-0c9a63a3aef9e813df5b.js" async=""></script><script src="/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js" async=""></script><script src="/styles-03417d09ece67ceb8f9b.js" async=""></script></body></html>
