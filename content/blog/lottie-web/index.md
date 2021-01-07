@@ -1,8 +1,8 @@
-```
+---
 title: 剖析 lottie-web 动画实现原理
 date: 2021-01-07T02:23:01.219Z
 description: lottie-web 可以帮我们实现非常炫酷的动画效果，那么它是如何实现的呢？笔者对动画实现和原理做了一次梳理，整理了下面的文档供大家参考。
-```
+---
 
 ![BodyMovin](https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/5427398960/6ea4/342f/5239/3494fa4d71eca344f28e4354798f99ab.png)
 
