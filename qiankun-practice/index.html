@@ -1,0 +1,279 @@
+<!DOCTYPE html><html lang="zh"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.625 -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}h1{margin-left:0;margin-right:0;margin-top:2.4375rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.21875rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h2{margin-left:0;margin-right:0;margin-top:1.625rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.40625rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:hsla(0,0%,0%,0.53);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}ul{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:0.85rem;line-height:1.625rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:1rem;line-height:1.625rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:calc(0.8125rem - 1px);padding-right:0;padding-top:0;margin-bottom:0.8125rem;border-left:4px solid hsla(0,0%,0%,0.13);color:hsla(0,0%,0%,0.53);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(0.8125rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}b{font-weight:600;}strong{font-weight:600;}dt{font-weight:600;}th{font-weight:600;}li{margin-bottom:calc(0.8125rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}li > ul{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(0.8125rem / 2);}code{font-size:0.85rem;line-height:1.625rem;}kbd{font-size:0.85rem;line-height:1.625rem;}samp{font-size:0.85rem;line-height:1.625rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.08333rem;padding-right:1.08333rem;padding-top:0.8125rem;padding-bottom:calc(0.8125rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}h3,h4,h5,h6{margin-bottom:0.8125rem;margin-top:1.625rem;}ol,ul{margin-left:2.03125rem;}li>ol,li>ul{margin-left:2.03125rem;}a{color:#4078c0;text-decoration:none;}a:hover,a:active{text-decoration:underline;}</style><title data-react-helmet="true">基于 qiankun 的微前端应用实践 | 云音乐大前端专栏</title><style type="text/css">.gatsby-resp-image-image{width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;color:transparent;}</style><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#dd001b"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><meta name="generator" content="Gatsby 2.15.7"/><meta data-react-helmet="true" name="description" content="本文通过云音乐广告合约系统的微前端落地来介绍 qiankun 的应用实践"/><meta data-react-helmet="true" property="og:title" content="基于 qiankun 的微前端应用实践"/><meta data-react-helmet="true" property="og:description" content="本文通过云音乐广告合约系统的微前端落地来介绍 qiankun 的应用实践"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="云音乐大前端团队"/><meta data-react-helmet="true" name="twitter:title" content="基于 qiankun 的微前端应用实践"/><meta data-react-helmet="true" name="twitter:description" content="本文通过云音乐广告合约系统的微前端落地来介绍 qiankun 的应用实践"/><style data-href="/styles.a8f6e12462010344bfaf.css">@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:200;src:local("Source Code Pro Extra Light "),local("Source Code Pro-Extra Light"),url(/static/source-code-pro-latin-200-41568fe7927570e049a6cb707930f353.woff2) format("woff2"),url(/static/source-code-pro-latin-200-568dcb298a36f14317fdcddf8eded62f.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:300;src:local("Source Code Pro Light "),local("Source Code Pro-Light"),url(/static/source-code-pro-latin-300-248b2236ba6bb9d2745a4908bc9c4568.woff2) format("woff2"),url(/static/source-code-pro-latin-300-43fcfcf552695ff0976d7d03a29835c4.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:400;src:local("Source Code Pro Regular "),local("Source Code Pro-Regular"),url(/static/source-code-pro-latin-400-1c37ab07cfefc70a85445f49737ad28a.woff2) format("woff2"),url(/static/source-code-pro-latin-400-a4a08973559a45aba173184ea065addf.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:500;src:local("Source Code Pro Medium "),local("Source Code Pro-Medium"),url(/static/source-code-pro-latin-500-67f6c1995acae33eacb1af1807c0e8c8.woff2) format("woff2"),url(/static/source-code-pro-latin-500-a39fc2de145c00ef5898c77b15c27517.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:600;src:local("Source Code Pro SemiBold "),local("Source Code Pro-SemiBold"),url(/static/source-code-pro-latin-600-bf5d453754c3bd3e0fc9bcdc979048f1.woff2) format("woff2"),url(/static/source-code-pro-latin-600-c021e440e993ff26de945242222960a6.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:700;src:local("Source Code Pro Bold "),local("Source Code Pro-Bold"),url(/static/source-code-pro-latin-700-b46da14cbd07b2f1f5ca74069d59318e.woff2) format("woff2"),url(/static/source-code-pro-latin-700-c86a17b160684a125455d36f4733ad85.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:900;src:local("Source Code Pro Black "),local("Source Code Pro-Black"),url(/static/source-code-pro-latin-900-e985b6f17d53c2780c3c49722984a52e.woff2) format("woff2"),url(/static/source-code-pro-latin-900-b0d773d996cad7ea914d35d16dd0f3ec.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:400;src:local("Noto Sans Regular "),local("Noto Sans-Regular"),url(/static/noto-sans-latin-400-175853ded2a4e2249d37c46ca0ca33c5.woff2) format("woff2"),url(/static/noto-sans-latin-400-e7ccb0aa43af9fb7fae4d1bdc23a099b.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:400;src:local("Noto Sans Regular italic"),local("Noto Sans-Regularitalic"),url(/static/noto-sans-latin-400italic-baa3ec09eb827b4f10593032d1cf2a88.woff2) format("woff2"),url(/static/noto-sans-latin-400italic-14425b1ebbce551302a950b083b6c14e.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:700;src:local("Noto Sans Bold "),local("Noto Sans-Bold"),url(/static/noto-sans-latin-700-43750a193b8ff0b4e929323a72d79301.woff2) format("woff2"),url(/static/noto-sans-latin-700-a8edfe7bbf3b01666adc30c118cc5223.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:700;src:local("Noto Sans Bold italic"),local("Noto Sans-Bolditalic"),url(/static/noto-sans-latin-700italic-bc98820a9bf62004a88ef07e012e3ce3.woff2) format("woff2"),url(/static/noto-sans-latin-700italic-0e19737ff39f96eb1ff99e463fa457a4.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><link as="script" rel="preload" href="/styles-a2a2744aed10e1415afc.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js"/><link as="script" rel="preload" href="/app-0c9a63a3aef9e813df5b.js"/><link as="script" rel="preload" href="/commons-8d9941e7328683a5eecb.js"/><link as="script" rel="preload" href="/webpack-runtime-2742ada98d46151d1c6f.js"/><link as="fetch" rel="preload" href="/page-data/qiankun-practice/page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:39rem;padding:2.4375rem 1.21875rem;font-family:&quot;Source Code Pro&quot;, &quot;Noto Sans CJK SC&quot;"><header><h1 style="font-size:2.2974rem;line-height:3.25rem;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:#DD001B" href="/">云音乐大前端专栏</a></h1></header><main><article><header><h1 style="margin-top:1.625rem;margin-bottom:0;color:#001E26">基于 qiankun 的微前端应用实践</h1><p style="font-size:0.87055rem;line-height:1.625rem;display:block;margin-bottom:1.625rem">2021-03-11</p></header><section><p><img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/7840022886/a56d/0d31/2f29/59ccfc6c03a345d57a0f4c132504815a.jpg"></p>
+<blockquote>
+<p>本文作者：张延卿</p>
+</blockquote>
+<h2>业务背景</h2>
+<p>云音乐广告 Dsp（需求方平台）平台分为合约平台（Vue 框架）和竞价平台（React 框架），因历史原因框架选型未能统一，最近来了新需求，需要同时在两个平台增加一样的模块，因为都是 Dsp 平台，后期这样的需求可能会很多，所以考虑到组件复用以及降低维护成本，在想怎么统一技术栈，把 React 系统塞到 Vue 项目中进行呈现。</p>
+<p><img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/5628081081/cee2/ea4b/acbe/671fbacddfbd3a3fca861eaf3dbcd07b.png" alt="项目应用结构"></p>
+<blockquote>
+<p>系统是传统的左右布局，左侧侧边栏展示菜单栏，头部导航展示基础信息，应用内容全部填充到蓝色的内容区。</p>
+</blockquote>
+<p>说实话，第一反应我直接想嵌套 iframe ，但是应用过 iframe 技术的，大家都知道它的痛：</p>
+<ul>
+<li>
+<p><strong>浏览器历史栈问题前进 / 后退</strong><div style="margin-top:5px" />
+无论你在 iframe 里潜行了多深，你退一步就是一万步，这个体验真的很难受</p>
+  <div style="margin-top:5px" />
+</li>
+<li>
+<p><strong>应用通信</strong><div style="margin-top:5px" >
+有时候主应用可能只想知道子系统的 URL 参数，但是 iframe 应用跟它不同源，你就得想点其他办法去获取参数了，我们最常用的就是 <code class="language-text">postMessage</code> 了</p>
+  <div style="margin-top:5px">
+</li>
+<li><strong>缓存</strong><div style="margin-top:5px" />
+<code class="language-text">iframe</code> 应用更新上线后，打开系统会发现系统命中缓存显示旧内容，需要用时间戳方案解决或强制刷新</li>
+</ul>
+<p><br/>另外就是使用 MPA + 路由分发，当用户访问页面时，由 Nginx 等负责根据路由分发到不同的业务应用，由各个业务应用完成资源的组装后返回给浏览器，这种方式就需要把界面、导航都做成类似的样子。</br></p>
+<div style="margin-top:5px" />
+<ul>
+<li>
+<p><strong>优点</strong>：</p>
+<ul>
+<li>多框架开发；</li>
+<li>独立部署运行；</li>
+<li>应用之间完全隔离。</li>
+</ul>
+</li>
+<li>
+<p><strong>缺点</strong>：</p>
+<ul>
+<li>体验差，每个独立应用加载时间较长；</li>
+<li>因为完全隔离，导致在导航、顶部这些通用的地方改动大，复用性变的很差。</li>
+</ul>
+</li>
+</ul>
+<p><br/> 还有就是目前比较主流的几种微前端方案：<div style="margin-top:5px" /></br></p>
+<ul>
+<li><strong>基座模式</strong>：主要基于路由分发，由一个基座应用监听路由，按照路由规则去加载不同的应用，以实现应用间解耦</li>
+<li><strong>EMP</strong>：Webpack5 Module Federation，去中心化的微前端方案，可以在实现应用隔离的基础上，轻松实现应用间的资源共享和通信；</li>
+</ul>
+<blockquote>
+<p>总的来说，iframe 主要用于简单并且性能要求不高的第三方系统；MPA 无论在实现成本和体验上面都不能满足当前业务需求；基座模式和 EMP 都是不错的选择，因 qiankun 在业内使用比较广，较为成熟，最后还是选择了 qiankun</p>
+</blockquote>
+<h2>乾坤（qiankun）</h2>
+<p><a href="https://github.com/umijs/qiankun">qiankun</a>（乾坤）是由蚂蚁金服推出的基于<a href="https://github.com/single-spa/single-spa">Single-Spa</a>实现的前端微服务框架，本质上还是<strong>路由分发式</strong>的服务框架，不同于原本 Single-Spa 采用 JS Entry 加载子应用的方案，qiankun 采用 HTML Entry 方式进行了替代优化。</p>
+<p><strong><code class="language-text">JS Entry</code>的使用限制要求</strong>：</p>
+<ul>
+<li>限制一个 JS 入口文件</li>
+<li>图片、CSS 等静态资源需要打包到 JS 里</li>
+<li>Code Splitting 无法应用</li>
+</ul>
+<p><br/>对比 JS Entry， HTML Entry 使用就方便太多了，项目配置给定入口文件后，qiankun 会自行 Fetch 请求资源，解析出 JS 和 CSS 文件资源后，插入到给定的容器中，完美～</br></p>
+<p><img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/5628082051/3440/71e0/d39b/12c8d79871a48baf448b287690cd356c.png" alt="HTML Entry"></p>
+<blockquote>
+<p>JS Entry 的方式通常是子应用将资源打成一个 Entry Script， 类似 Single-Spa 的 <a href="https://github.com/joeldenning/simple-single-spa-webpack-example/blob/master/src/root-application/root-application.js">例子</a>；<div style="margin-top:5px" />
+HTML Entry 则是使用 HTML 格式进行子应用资源的组织，主应用通过 Fetch html 的方式获取子应用的静态资源，同时将 HTML Document 作为子节点塞到主应用的容器中。可读性和维护性更高，更接近最后页面挂载后的效果，也不存在需要双向转义的问题。</p>
+</blockquote>
+<h2>方案实践</h2>
+<p>由于 Vue 项目已经开发完成，我们需要在原始项目中进行改造，很明显选定 Vue 项目作为基座应用，新需求开发采用 Create React App 搭建 React 子应用，接下来我们看一下具体实现</p>
+<h3>基座应用改造</h3>
+<p>基座（main）采用是的 vue-cli 搭建的，我们保持其原本的代码结构和逻辑不变，在此基础上单独为子应用提供一个挂载的容器 DIV，同样填充在相同的内容展示区域。</p>
+<p>qiankun 只需要在基座应用中引入，为了方便管理，我们新增目录，命名为 micro ，标识目录里面是微前端改造代码，进行全局配置初始化，改造如下：</p>
+<p><strong>路由配置文件 app.js</strong></p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// 路由配置</span>
+<span class="token keyword">const</span> apps <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'ReactMicroApp'</span><span class="token punctuation">,</span>
+    entry<span class="token punctuation">:</span> <span class="token string">'//localhost:10100'</span><span class="token punctuation">,</span>
+    container<span class="token punctuation">:</span> <span class="token string">'#frame'</span><span class="token punctuation">,</span>
+    activeRule<span class="token punctuation">:</span> <span class="token string">'/react'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre></div>
+<p><strong>应用配置注册函数</strong></p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> registerMicroApps<span class="token punctuation">,</span> start <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"qiankun"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> apps <span class="token keyword">from</span> <span class="token string">"./apps"</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 注册子应用函数，包装成高阶函数，方便后期如果有参数注入修改app配置</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">registerApp</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">registerMicroApps</span><span class="token punctuation">(</span>apps<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 导出 qiankun 的启动函数</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> start<span class="token punctuation">;</span></code></pre></div>
+<p><strong>Layout 组件</strong></p>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>app-main<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>transition</span> <span class="token attr-name">v-show</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>$route.name<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>fade-transform<span class="token punctuation">"</span></span> <span class="token attr-name">mode</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>out-in<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token comment">&lt;!-- 主应用渲染区，用于挂载主应用路由触发的组件 --></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>router-view</span> <span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>transition</span><span class="token punctuation">></span></span>
+
+  <span class="token comment">&lt;!-- 子应用渲染区，用于挂载子应用节点 --></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>frame<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">></span></span></code></pre></div>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> startQiankun<span class="token punctuation">,</span> <span class="token punctuation">{</span> registerApp <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"../../../micro"</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">"AppMain"</span><span class="token punctuation">,</span>
+  <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 初始化配置</span>
+    <span class="token function">registerApp</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">startQiankun</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<p>这里会用到 qiankun 的两个重要的 API ：</p>
+<ul>
+<li>registerMicroApps</li>
+<li>start</li>
+</ul>
+<blockquote>
+<p>注意点：我们选择在 mounted 生命周期中进行初始化配置，是为了保证挂载容器一定存在</p>
+</blockquote>
+<p>我们来通过图示具体理解一下 qiankun 注册子应用的过程：
+<img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/5628082531/0bb0/355e/ea97/c2266e7406ae62828d0db5a1ba9ec583.png" alt="启动流程图"></p>
+<ul>
+<li>依赖注入后，会先初始化标识变量参数 <code class="language-text">xx_QIANKUN__</code>，用于子应用判断所处环境等</li>
+<li>
+<p>当 qiankun 会通过 <code class="language-text">activeRule</code> 的规则来判断是否激活子应用</p>
+<ul>
+<li><code class="language-text">activeRule</code> 为字符串时，以路由拦截方式进行自主拦截</li>
+<li><code class="language-text">activeRule</code> 为函数时，根据函数返回值判断是否激活</li>
+</ul>
+</li>
+</ul>
+<!---->
+<ul>
+<li>当激活子应用时，会通过 HTML-Entry 来解析子应用静态资源地址，挂载到对应容器上</li>
+<li>创建沙箱环境，查找子应用生命周期函数，初始化子应用</li>
+</ul>
+<h2>打造 qiankun 子应用</h2>
+<p>我们基于 Create React App 创建一个 React 项目应用，由上述的流程描述，我们知道子应用得向外暴露一系列生命周期函数供 qiankun 调用，在 index.js 文件中进行改造：</p>
+<p><strong>增加 public-path.js 文件</strong></p>
+<p>    目录外层添加 <code class="language-text">public-path.js</code> 文件，当子应用挂载在主应用下时，如果我们的一些静态资源沿用了 <code class="language-text">publicPath=/</code> 的配置，我们拿到的域名将会是主应用域名，这个时候就会造成资源加载出错，好在 Webpack 提供了修改方法，如下：</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>__POWERED_BY_QIANKUN__<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  __webpack_public_path__ <span class="token operator">=</span> window<span class="token punctuation">.</span>__INJECTED_PUBLIC_PATH_BY_QIANKUN__<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p><strong>路由 base 设置</strong></p>
+<p>    因为通常来说，主应用会拦截浏览器路由变化以激活加载子应用。比如，上述的代码里我们的路由配置，激活规则写了 <code class="language-text">activeRule: /react</code>，这是什么意思呢？这意味着，当浏览器 <code class="language-text">pathname</code> 匹配到 <code class="language-text">/react</code> 时，会激活子应用，但是如果我们的子应用路由配置是下面这样的：</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Router</span></span><span class="token punctuation">></span></span><span class="token plain-text">     
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Route</span></span> <span class="token attr-name">exact</span> <span class="token attr-name">path</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/<span class="token punctuation">"</span></span> <span class="token attr-name">component</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>Home<span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Route</span></span> <span class="token attr-name">path</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/list<span class="token punctuation">"</span></span> <span class="token attr-name">component</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>List<span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token plain-text">  
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Router</span></span><span class="token punctuation">></span></span>      </code></pre></div>
+<p>我们怎么实现域名 <code class="language-text">/react</code> 能正确加载对应的组件呢？大家一定经历过用域名二级目录访问的需求，这里是一样的，我们判断是否在 qiankun 环境下，调整下 base 即可，如下：</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">const</span> <span class="token constant">BASE_NAME</span> <span class="token operator">=</span> window<span class="token punctuation">.</span>__POWERED_BY_QIANKUN__ <span class="token operator">?</span> <span class="token string">"/react"</span> <span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">;</span>
+<span class="token operator">...</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Router</span></span> <span class="token attr-name">base</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token constant">BASE_NAME</span><span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+...
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Router</span></span><span class="token punctuation">></span></span>     </code></pre></div>
+<p><strong>增加生命周期函数</strong></p>
+<p>    子应用的入口文件加入生命周期函数初始化，方便主应用调用资源完成后按应用名称调用子应用的生命周期</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">/**
+ * bootstrap 只会在微应用初始化的时候调用一次，下次微应用重新进入时会直接调用 mount 钩子，不会再重复触发 bootstrap。
+ * 通常我们可以在这里做一些全局变量的初始化，比如不会在 unmount 阶段被销毁的应用级别的缓存等。
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">bootstrap</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"bootstraped"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * 应用每次进入都会调用 mount 方法，通常我们在这里触发应用的渲染方法
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">mount</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"mount"</span><span class="token punctuation">,</span> props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">render</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * 应用每次切出/卸载 会调用的方法，通常在这里我们会卸载微应用的应用实例
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">unmount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"unmount"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  ReactDOM<span class="token punctuation">.</span><span class="token function">unmountComponentAtNode</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"root"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<blockquote>
+<p>注意：所有的生明周期函数都必须是 Promise</p>
+</blockquote>
+<p><strong>修改打包配置</strong></p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">webpack</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token parameter">config</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token comment">// 微应用的包名，这里与主应用中注册的微应用名称一致</span>
+    config<span class="token punctuation">.</span>output<span class="token punctuation">.</span>library <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">ReactMicroApp</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+    <span class="token comment">// 将你的 library 暴露为所有的模块定义下都可运行的方式</span>
+    config<span class="token punctuation">.</span>output<span class="token punctuation">.</span>libraryTarget <span class="token operator">=</span> <span class="token string">"umd"</span><span class="token punctuation">;</span>
+    <span class="token comment">// 按需加载相关，设置为 webpackJsonp_ReactMicroApp 即可</span>
+    config<span class="token punctuation">.</span>output<span class="token punctuation">.</span>jsonpFunction <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">webpackJsonp_ReactMicroApp</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+
+    config<span class="token punctuation">.</span>resolve<span class="token punctuation">.</span>alias <span class="token operator">=</span> <span class="token punctuation">{</span>
+      <span class="token operator">...</span>config<span class="token punctuation">.</span>resolve<span class="token punctuation">.</span>alias<span class="token punctuation">,</span>
+      <span class="token string">"@"</span><span class="token punctuation">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">"src"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> config<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function-variable function">devServer</span><span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">configFunction</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">proxy<span class="token punctuation">,</span> allowedHost</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token function">configFunction</span><span class="token punctuation">(</span>proxy<span class="token punctuation">,</span> allowedHost<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">// 关闭主机检查，使微应用可以被 fetch</span>
+      config<span class="token punctuation">.</span>disableHostCheck <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+      <span class="token comment">// 配置跨域请求头，解决开发环境的跨域问题</span>
+      config<span class="token punctuation">.</span>headers <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token string">"Access-Control-Allow-Origin"</span><span class="token punctuation">:</span> <span class="token string">"*"</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token comment">// 配置 history 模式</span>
+      config<span class="token punctuation">.</span>historyApiFallback <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">return</span> config<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<blockquote>
+<p>注意：配置的修改为了达到两个目的，一个是暴露生命周期函数给主应用调用，第二点是允许跨域访问，修改的注意点可以参考代码的注释。</p>
+</blockquote>
+<ul>
+<li><strong>暴露生命周期</strong>： UMD 可以让 qiankun 按应用名称匹配到生命周期函数</li>
+<li><strong>跨域配置</strong>： 主应用是通过 Fetch 获取资源，所以为了解决跨域问题，必须设置允许跨域访问</li>
+</ul>
+<blockquote>
+<p>小结：跳转流程梳理，在主应用 router 中定义子应用跳转 path ，如下图，在调用组件 mounted 生命周期中使用 qiankun 暴露的 <code class="language-text">loadMicroApp</code> 方法加载子应用，跳转到子应用定义的路由，同时使用 <code class="language-text">addGlobalUncaughtErrorHandler</code> 和 <code class="language-text">removeGlobalUncaughtErrorHandler</code> 监听并处理异常情况（例如子应用加载失败），当子应用监听到跳转路由时，加载子应用（上述 <code class="language-text">&lt;Router&gt;</code> 组件中）定义的 component，完成主应用到子应用的跳转。</p>
+</blockquote>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token punctuation">{</span>
+    path<span class="token punctuation">:</span> <span class="token string">'/xxx'</span><span class="token punctuation">,</span>
+    component<span class="token punctuation">:</span> Layout<span class="token punctuation">,</span>
+    children<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        path<span class="token punctuation">:</span> <span class="token string">'/xxx'</span><span class="token punctuation">,</span>
+        <span class="token function-variable function">component</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'@/micro/app/react'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        meta<span class="token punctuation">:</span> <span class="token punctuation">{</span> title<span class="token punctuation">:</span> <span class="token string">'xxx'</span><span class="token punctuation">,</span> icon<span class="token punctuation">:</span> <span class="token string">'user'</span> <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre></div>
+<h2>项目中遇到的问题</h2>
+<p>1、<strong>子应用未成功加载</strong> </p>
+<p>   如果项目启动完成后，发现子应用系统没有加载，我们应该打开控制台分析原因：</p>
+<ul>
+<li>控制台无报错：子应用未激活，检查激活规则配置是否正确</li>
+<li><a href="https://qiankun.umijs.org/faq#application-died-in-status-not_mounted-target-container-with-container-not-existed-after-xxx-mounted">挂载容器未找到</a>：检查容器 DIV 是否在 qiankun  <strong>start</strong> 时一定存在，如不能保证需设法在 DOM 挂载后执行。</li>
+</ul>
+<p><br/>2、<strong>基座应用路由模式</strong></br></p>
+<p>   基座应用项目是 hash 模式路由，这种情况下子应用的路由模式必须跟主应用保持一致，否则会加载异常。原因很简单，假设子应用采用 history 模式，每次切换路由都会改变 pathname，这个时候很难再通过激活规则去匹配到子应用，造成子应用 unmount</p>
+<p>3、<strong>CSS 样式错乱</strong> </p>
+<p>   由于默认情况下 qiankun 并不会开启 CSS 沙箱进行样式隔离，当主应用和子应用产生样式错乱时，我们可以启用 <code class="language-text">{ strictStyleIsolation: true }</code> 配置开启严格隔离样式，这个时候会用 Shadow Dom 节点包裹子应用，相信大家看到这个也很熟悉，和微信小程序中页面和自定义组件的样式隔离方案一致。</p>
+<p>4、<strong>另外，在接入过程中，总结了几个需要注意的点</strong></p>
+<ul>
+<li>虽然 qiankun 支持 jQuery，但对多页应用的老项目接入不是很友好，需要每个页面都修改，成本也很高，这类老项目接入还是比较推荐 iframe ；</li>
+<li>因为 qiankun 的方式，是通过 HTML-Entry 抽取 JS 文件和 DOM 结构的，实际上和主应用共用的是同一个 Document，如果子应用和主应用同时定义了相同事件，会互相影响，如，用 <code class="language-text">onClick</code> 或 <code class="language-text">addEventListener</code> 给 <code class="language-text">&lt;body&gt;</code>添加了一个点击事件，JS 沙箱并不能消除它的影响，还得靠平时的代码规范</li>
+<li>部署上有点繁琐，需要手动解决跨域问题</li>
+</ul>
+<p><br/>5、<strong>未来可能需要考虑一些问题</strong></br></p>
+<ul>
+<li><strong>公用组件依赖复用</strong>：项目中避免不了的比如请求库的封装，我可能并不想在子应用中再写一套同样的请求封装代码</li>
+<li><strong>自动化注入</strong>：每一个子应用改造的过程其实也是挺麻烦的事情，但是其实大多的工作都是标准化流程，在考虑通过脚本自动注册子应用，实现自动化</li>
+</ul>
+<h2>总结</h2>
+<p>其实写下来整个项目，最大的感受 qiankun 的开箱可用性非常强，需要更改的项目配置基本很少，当然遇到的一些坑点也肯定是踩过才能更清晰。</p>
+<p>如果文章有什么问题或者错误，欢迎指正交流，谢谢！</p>
+<blockquote>
+<p>本文发布自 <a href="https://github.com/x-orpheus">网易云音乐大前端团队</a>，文章未经授权禁止任何形式的转载。我们常年招收前端、iOS、Android，如果你准备换工作，又恰好喜欢云音乐，那就加入我们 grp.music-fe (at) corp.netease.com！</p>
+</blockquote></section><hr style="margin-bottom:1.625rem"/></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/web-unit-test/">← 上一篇</a></li><li></li></ul></nav><div id="disqus_thread"></div></main></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-46698359-8', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/qiankun-practice/";window.webpackCompilationHash="749c8336880cff8e6411";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-0c9a63a3aef9e813df5b.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-51d272fe0618a2665c13.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js"],"component---src-pages-404-js":["/component---src-pages-404-js-e9fc057fd683384561c6.js"],"component---src-pages-index-js":["/component---src-pages-index-js-48dc264068dece189e1b.js"]};/*]]>*/</script><script src="/webpack-runtime-2742ada98d46151d1c6f.js" async=""></script><script src="/commons-8d9941e7328683a5eecb.js" async=""></script><script src="/app-0c9a63a3aef9e813df5b.js" async=""></script><script src="/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js" async=""></script><script src="/styles-a2a2744aed10e1415afc.js" async=""></script></body></html>
