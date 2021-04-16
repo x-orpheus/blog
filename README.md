@@ -1,7 +1,7 @@
 网易云音乐大前端团队专栏
 ---
 
-> 我们常年招收前端、iOS、Android，如果你准备换工作，又恰好喜欢云音乐，那就加入我们吧 grp.music-fe(at)corp.netease.com！
+> 我们常年招收前端、iOS、Android，如果你准备换工作，又恰好喜欢云音乐，那就 [加入](mailto:grp.music-fe@corp.netease.com) 我们吧！
 
 
 这里做归档，发布平台：
