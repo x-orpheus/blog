@@ -1,0 +1,459 @@
+<!DOCTYPE html><html lang="zh"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.625 -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}h1{margin-left:0;margin-right:0;margin-top:2.4375rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.21875rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h2{margin-left:0;margin-right:0;margin-top:1.625rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.40625rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:hsla(0,0%,0%,0.53);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}ul{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:0.85rem;line-height:1.625rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:1rem;line-height:1.625rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:calc(0.8125rem - 1px);padding-right:0;padding-top:0;margin-bottom:0.8125rem;border-left:4px solid hsla(0,0%,0%,0.13);color:hsla(0,0%,0%,0.53);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(0.8125rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}b{font-weight:600;}strong{font-weight:600;}dt{font-weight:600;}th{font-weight:600;}li{margin-bottom:calc(0.8125rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}li > ul{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(0.8125rem / 2);}code{font-size:0.85rem;line-height:1.625rem;}kbd{font-size:0.85rem;line-height:1.625rem;}samp{font-size:0.85rem;line-height:1.625rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.08333rem;padding-right:1.08333rem;padding-top:0.8125rem;padding-bottom:calc(0.8125rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}h3,h4,h5,h6{margin-bottom:0.8125rem;margin-top:1.625rem;}ol,ul{margin-left:2.03125rem;}li>ol,li>ul{margin-left:2.03125rem;}a{color:#4078c0;text-decoration:none;}a:hover,a:active{text-decoration:underline;}</style><title data-react-helmet="true">AGP 升级之旅 | 云音乐大前端专栏</title><style type="text/css">.gatsby-resp-image-image{width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;color:transparent;}</style><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#dd001b"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><meta name="generator" content="Gatsby 2.15.7"/><meta data-react-helmet="true" name="description" content="本文将介绍 AGP 由 3.5.0 升级到 4.1.3 的适配过程，对遇到的问题进行分析，并给出相应的解决方案。"/><meta data-react-helmet="true" property="og:title" content="AGP 升级之旅"/><meta data-react-helmet="true" property="og:description" content="本文将介绍 AGP 由 3.5.0 升级到 4.1.3 的适配过程，对遇到的问题进行分析，并给出相应的解决方案。"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="云音乐大前端团队"/><meta data-react-helmet="true" name="twitter:title" content="AGP 升级之旅"/><meta data-react-helmet="true" name="twitter:description" content="本文将介绍 AGP 由 3.5.0 升级到 4.1.3 的适配过程，对遇到的问题进行分析，并给出相应的解决方案。"/><style data-href="/styles.a8f6e12462010344bfaf.css">@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:200;src:local("Source Code Pro Extra Light "),local("Source Code Pro-Extra Light"),url(/static/source-code-pro-latin-200-41568fe7927570e049a6cb707930f353.woff2) format("woff2"),url(/static/source-code-pro-latin-200-568dcb298a36f14317fdcddf8eded62f.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:300;src:local("Source Code Pro Light "),local("Source Code Pro-Light"),url(/static/source-code-pro-latin-300-248b2236ba6bb9d2745a4908bc9c4568.woff2) format("woff2"),url(/static/source-code-pro-latin-300-43fcfcf552695ff0976d7d03a29835c4.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:400;src:local("Source Code Pro Regular "),local("Source Code Pro-Regular"),url(/static/source-code-pro-latin-400-1c37ab07cfefc70a85445f49737ad28a.woff2) format("woff2"),url(/static/source-code-pro-latin-400-a4a08973559a45aba173184ea065addf.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:500;src:local("Source Code Pro Medium "),local("Source Code Pro-Medium"),url(/static/source-code-pro-latin-500-67f6c1995acae33eacb1af1807c0e8c8.woff2) format("woff2"),url(/static/source-code-pro-latin-500-a39fc2de145c00ef5898c77b15c27517.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:600;src:local("Source Code Pro SemiBold "),local("Source Code Pro-SemiBold"),url(/static/source-code-pro-latin-600-bf5d453754c3bd3e0fc9bcdc979048f1.woff2) format("woff2"),url(/static/source-code-pro-latin-600-c021e440e993ff26de945242222960a6.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:700;src:local("Source Code Pro Bold "),local("Source Code Pro-Bold"),url(/static/source-code-pro-latin-700-b46da14cbd07b2f1f5ca74069d59318e.woff2) format("woff2"),url(/static/source-code-pro-latin-700-c86a17b160684a125455d36f4733ad85.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:900;src:local("Source Code Pro Black "),local("Source Code Pro-Black"),url(/static/source-code-pro-latin-900-e985b6f17d53c2780c3c49722984a52e.woff2) format("woff2"),url(/static/source-code-pro-latin-900-b0d773d996cad7ea914d35d16dd0f3ec.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:400;src:local("Noto Sans Regular "),local("Noto Sans-Regular"),url(/static/noto-sans-latin-400-175853ded2a4e2249d37c46ca0ca33c5.woff2) format("woff2"),url(/static/noto-sans-latin-400-e7ccb0aa43af9fb7fae4d1bdc23a099b.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:400;src:local("Noto Sans Regular italic"),local("Noto Sans-Regularitalic"),url(/static/noto-sans-latin-400italic-baa3ec09eb827b4f10593032d1cf2a88.woff2) format("woff2"),url(/static/noto-sans-latin-400italic-14425b1ebbce551302a950b083b6c14e.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:700;src:local("Noto Sans Bold "),local("Noto Sans-Bold"),url(/static/noto-sans-latin-700-43750a193b8ff0b4e929323a72d79301.woff2) format("woff2"),url(/static/noto-sans-latin-700-a8edfe7bbf3b01666adc30c118cc5223.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:700;src:local("Noto Sans Bold italic"),local("Noto Sans-Bolditalic"),url(/static/noto-sans-latin-700italic-bc98820a9bf62004a88ef07e012e3ce3.woff2) format("woff2"),url(/static/noto-sans-latin-700italic-0e19737ff39f96eb1ff99e463fa457a4.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><link as="script" rel="preload" href="/styles-fb89df136351dec2a665.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js"/><link as="script" rel="preload" href="/app-0c9a63a3aef9e813df5b.js"/><link as="script" rel="preload" href="/commons-8d9941e7328683a5eecb.js"/><link as="script" rel="preload" href="/webpack-runtime-2742ada98d46151d1c6f.js"/><link as="fetch" rel="preload" href="/page-data/agp-upgrade/page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:39rem;padding:2.4375rem 1.21875rem;font-family:&quot;Source Code Pro&quot;, &quot;Noto Sans CJK SC&quot;"><header><h1 style="font-size:2.2974rem;line-height:3.25rem;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:#DD001B" href="/">云音乐大前端专栏</a></h1></header><main><article><header><h1 style="margin-top:1.625rem;margin-bottom:0;color:#001E26">AGP 升级之旅</h1><p style="font-size:0.87055rem;line-height:1.625rem;display:block;margin-bottom:1.625rem">2021-09-02</p></header><section><p><img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/9711204442/1312/1fa0/ebb3/be3eb242c45c5d08a514927483f3f201.jpg"></p>
+<blockquote>
+<p>本文作者：履坎(xjy2061)</p>
+</blockquote>
+<h2>起源</h2>
+<p>近期，由于引入的新工具依赖 Android Gradle Plugin（后面都简写为 AGP）4.1 或以上版本，而项目当前使用的 AGP 版本为 3.5.0，需进行升级。考虑到一些第三方库尚未对最新的 AGP 4.2 版本提供支持，决定将 AGP 升级到 4.1 中的最高版本 4.1.3，遂开启了本次 AGP 升级之旅。</p>
+<h2>依据官方文档适配</h2>
+<p>升级的第一步当然是阅读官方 <a href="https://developer.android.com/studio/releases/gradle-plugin">Android Gradle 插件版本说明</a> 文档，根据文档所列版本变更进行适配。</p>
+<h3>AGP 3.6 适配</h3>
+<p>AGP 3.6 引入了如下行为变更：</p>
+<blockquote>
+<p>默认情况下，原生库以未压缩的形式打包</p>
+</blockquote>
+<p>该变更使原生库（native library）以未压缩方式打包，会增加 APK 大小，带来的收益有限，且部分收益依赖 Google Play，如评估后认为弊大于利，可在 <code class="language-text">AndroidManifest.xml</code> 中添加如下配置改为压缩原生库：</p>
+<div class="gatsby-highlight" data-language="xml"><pre class="language-xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>application</span>
+    <span class="token attr-name"><span class="token namespace">android:</span>extractNativeLibs</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span>
+    <span class="token attr-name">...</span> <span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>application</span><span class="token punctuation">></span></span></code></pre></div>
+<h3>AGP 4.0 适配</h3>
+<p>AGP 4.0 引入了如下新特性：</p>
+<blockquote>
+<p>依赖项元数据</p>
+</blockquote>
+<p>该变更会将应用依赖项的元数据进行压缩加密后存储于 APK 签名块中，Google Play 会使用这些依赖项来做问题提醒，收益有限，但会增加 APK 大小，如 App 不在 Google Play 上架，可在 <code class="language-text">build.gradle</code> 中添加如下配置来关闭这个特性：</p>
+<div class="gatsby-highlight" data-language="groovy"><pre class="language-groovy"><code class="language-groovy">android <span class="token punctuation">{</span>
+    dependenciesInfo <span class="token punctuation">{</span>
+        <span class="token comment">// Disables dependency metadata when building APKs.</span>
+        includeInApk <span class="token operator">=</span> <span class="token boolean">false</span>
+        <span class="token comment">// Disables dependency metadata when building Android App Bundles.</span>
+        includeInBundle <span class="token operator">=</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3>AGP 4.1 适配</h3>
+<p>AGP 4.1 引入了如下行为变更：</p>
+<blockquote>
+<p>从库项目中的 BuildConfig 类中移除了版本属性</p>
+</blockquote>
+<p>该变更从库模块（library module）的 <code class="language-text">BuildConfig</code> 类中删除了 <code class="language-text">VERSION_NAME</code> 和 <code class="language-text">VERSION_CODE</code> 字段。一般而言在库模块中获取版本号是希望获取 App 的版本号，而库模块中的 <code class="language-text">BuildConfig.VERSION_NAME</code> 和 <code class="language-text">BuildConfig.VERSION_CODE</code> 为库模块自身的版本号，此时不应该使用库模块中的这 2 个字段，可用如下代码来在库模块中获取 App 的版本号：</p>
+<div class="gatsby-highlight" data-language="kotlin"><pre class="language-kotlin"><code class="language-kotlin"><span class="token keyword">private</span> <span class="token keyword">var</span> appVersionName<span class="token operator">:</span> String <span class="token operator">=</span> <span class="token string">""</span>
+<span class="token keyword">private</span> <span class="token keyword">var</span> appVersionCode<span class="token operator">:</span> Int <span class="token operator">=</span> <span class="token number">0</span>
+
+<span class="token keyword">fun</span> <span class="token function">getAppVersionName</span><span class="token punctuation">(</span>context<span class="token operator">:</span> Context<span class="token punctuation">)</span><span class="token operator">:</span> String <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>appVersionName<span class="token punctuation">.</span><span class="token function">isNotEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">return</span> appVersionName
+  <span class="token keyword">return</span> runCatching <span class="token punctuation">{</span>
+    context<span class="token punctuation">.</span>packageManager<span class="token punctuation">.</span><span class="token function">getPackageInfo</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span>packageName<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span>versionName<span class="token punctuation">.</span><span class="token function">also</span> <span class="token punctuation">{</span>
+      appVersionName <span class="token operator">=</span> it
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">.</span><span class="token function">getOrDefault</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">fun</span> <span class="token function">getAppVersionCode</span><span class="token punctuation">(</span>context<span class="token operator">:</span> Context<span class="token punctuation">)</span><span class="token operator">:</span> Int <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>appVersionCode <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">return</span> appVersionCode
+  <span class="token keyword">return</span> runCatching <span class="token punctuation">{</span>
+    PackageInfoCompat<span class="token punctuation">.</span><span class="token function">getLongVersionCode</span><span class="token punctuation">(</span>
+      context<span class="token punctuation">.</span>packageManager<span class="token punctuation">.</span><span class="token function">getPackageInfo</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span>packageName<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">also</span> <span class="token punctuation">{</span> appVersionCode <span class="token operator">=</span> it <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">.</span><span class="token function">getOrDefault</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h2>遇到的问题</h2>
+<p>按官方文档适配后，不出意料地还是遇到了不少问题，这些问题部分由未在官方文档中明确指出的行为变更导致，部分由不规范做法命中了新版 AGP 更严格的限制导致，下面介绍这些问题的表现、原因分析和解决方案。</p>
+<h3><code class="language-text">BuildConfig.APPLICATION_ID</code> 找不到</h3>
+<p>我们的部分组件库模块中使用了 <code class="language-text">BuildConfig.APPLICATION_ID</code> 字段，编译时出现 <strong>Unresolved reference</strong> 错误。</p>
+<p>原因是库模块中的 <code class="language-text">BuildConfig.APPLICATION_ID</code> 字段名存在歧义，其值是库模块的包名，并不是应用的包名，因此该字段从 AGP 3.5 开始被废弃，替换为 <code class="language-text">LIBRARY_PACKAGE_NAME</code> 字段，且从 AGP 4.0 开始被彻底删除。</p>
+<p>我们原来在 App 模块中的部分代码使用 <code class="language-text">APPLICATION_ID</code> 获取 App 包名，在后面的组件化拆分过程中将 App 模块中的代码抽取到组件库时，为避免错误地用库模块的包名作为 App 包名，应该同步修改获取 App 包名方式，但遗漏了，没有修改，导致本次 AGP 升级后编译失败。</p>
+<p>针对这个问题，将库模块中获取 App 包名方式改为使用 <code class="language-text">Context.getPackageName()</code> 方法即可。</p>
+<h3>R 和 ProGuard mapping 文件找不到</h3>
+<p>我们会备份构建发布包时产生的 R 和 ProGuard mapping 文件以备后面需要时使用，升级后备份失败。</p>
+<p>这是因为从 AGP 3.6 开始，构建产物中这 2 个文件的路径会改变：</p>
+<ul>
+<li><code class="language-text">R.txt</code>：<code class="language-text">build/intermediates/symbols/${variant.dirName}/R.txt</code> -> <code class="language-text">build/intermediates/runtime_symbol_list/${variant.name}/R.txt</code></li>
+<li><code class="language-text">mapping.txt</code>：<code class="language-text">build/outputs/mapping/${variant.dirName}/mapping.txt</code> -> <code class="language-text">build/outputs/mapping/${variant.name}/mapping.txt</code></li>
+</ul>
+<p>其中 <code class="language-text">${variant.dirName}</code> 为 <code class="language-text">$flavor/$buildType</code>（例如 full/release），<code class="language-text">${variant.name}</code> 为 <code class="language-text">$flavor${buildType.capitalize()}</code>（例如 fullRelease）。</p>
+<p>可按如下方式将备份逻辑中的文件路径修改为上述新路径来解决这个问题：</p>
+<div class="gatsby-highlight" data-language="groovy"><pre class="language-groovy"><code class="language-groovy">afterEvaluate <span class="token punctuation">{</span>
+    android<span class="token operator">.</span>applicationVariants<span class="token operator">.</span>all <span class="token punctuation">{</span> variant <span class="token operator">-></span>
+        <span class="token keyword">def</span> variantName <span class="token operator">=</span> variant<span class="token operator">.</span>name
+        <span class="token keyword">def</span> variantCapName <span class="token operator">=</span> variant<span class="token operator">.</span>name<span class="token operator">.</span><span class="token function">capitalize</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">def</span> assembleTask <span class="token operator">=</span> tasks<span class="token operator">.</span><span class="token function">findByName</span><span class="token punctuation">(</span><span class="token string gstring">"assemble<span class="token expression"><span class="token punctuation">$</span><span class="token punctuation">{</span>variantCapName<span class="token punctuation">}</span></span>"</span><span class="token punctuation">)</span>
+        assembleTask<span class="token operator">.</span>doLast <span class="token punctuation">{</span>
+            copy <span class="token punctuation">{</span>
+                from <span class="token string gstring">"<span class="token expression"><span class="token punctuation">$</span><span class="token punctuation">{</span>buildDir<span class="token punctuation">}</span></span>/outputs/mapping/<span class="token expression"><span class="token punctuation">$</span><span class="token punctuation">{</span>variantName<span class="token punctuation">}</span></span>/mapping.txt"</span>
+                from <span class="token string gstring">"<span class="token expression"><span class="token punctuation">$</span><span class="token punctuation">{</span>buildDir<span class="token punctuation">}</span></span>/intermediates/runtime_symbol_list/<span class="token expression"><span class="token punctuation">$</span><span class="token punctuation">{</span>variantName<span class="token punctuation">}</span></span>/R.txt"</span>
+                into backPath
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3>固定资源 id 失效</h3>
+<p>为避免 App 升级覆盖安装后可能出现 inflate 通知等 <code class="language-text">RemoteView</code> 时，由于通过资源 id 找到错误的资源文件，导致崩溃的问题，我们在构建时进行了固定资源 id 处理，使部分资源文件的 id 在多次构建之间始终不变，升级后这部分资源 id 发生了变化。</p>
+<p>原固定资源 id 的实现方式是在 <code class="language-text">afterEvaluate</code> 后，使用 <code class="language-text">tasks.findByName</code> 方法获取 <code class="language-text">process${variant.name.capitalize()}Resouces</code>（例如 processFullReleaseResources）任务对象，然后在 AGP 3.5 以前使用调 <code class="language-text">getAaptOptions</code> 方法，在 AGP 3.5 中使用反射的方式获取任务对象中的 <code class="language-text">aaptOptions</code> 属性对象，然后向其 <code class="language-text">additionalParameters</code> 属性对象添加 <code class="language-text">--stable-ids</code> 参数及对应的资源 id 配置文件路径值。但在 AGP 4.1 中，处理资源任务类不再有 <code class="language-text">aaptOptions</code> 属性，导致固定失效。</p>
+<p>对于 AGP 4.1，可换成如下直接设置 <code class="language-text">android.aaptOptions.additionalParameters</code> 的方式来固定资源 id：</p>
+<div class="gatsby-highlight" data-language="groovy"><pre class="language-groovy"><code class="language-groovy">afterEvaluate <span class="token punctuation">{</span>
+    <span class="token keyword">def</span> additionalParams <span class="token operator">=</span> android<span class="token operator">.</span>aaptOptions<span class="token operator">.</span>additionalParameters
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>additionalParams <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        additionalParams <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token operator">&lt;</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        android<span class="token operator">.</span>aaptOptions<span class="token operator">.</span>additionalParameters <span class="token operator">=</span> additionalParams
+    <span class="token punctuation">}</span>
+    <span class="token keyword">def</span> index <span class="token operator">=</span> additionalParams<span class="token operator">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string gstring">"--stable-ids"</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">></span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        additionalParams<span class="token operator">.</span><span class="token function">removeAt</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span>
+        additionalParams<span class="token operator">.</span><span class="token function">removeAt</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    additionalParams<span class="token operator">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string gstring">"--stable-ids"</span><span class="token punctuation">)</span>
+    additionalParams<span class="token operator">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string gstring">"<span class="token expression"><span class="token punctuation">$</span><span class="token punctuation">{</span>your stable ids file path<span class="token punctuation">}</span></span>"</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3>Manifest 文件修改失败</h3>
+<p>我们会在构建过程中修改 <code class="language-text">AndroidManifest.xml</code> 文件加入额外信息，升级后修改失败。</p>
+<p>在分析本次升级包含的各版本 AGP 构建日志后，发现 AGP 4.1 针对 Manifest 处理新增了 <code class="language-text">process${variant.name.capitalize()}ManifestForPackage</code>（例如 processFullReleaseManifestForPackage）任务，该任务在原 Manifest 处理任务 <code class="language-text">process${variant.name.capitalize()}Manifest</code>（例如 processFullReleaseManifest）后执行，其产物[1]跟原任务不同。而原来向 Manifest 添加额外信息的方式是在原 Manifest 处理任务执行后，执行自定义 Manifest 处理任务 <code class="language-text">cmProcess${variant.name.capitalize()}Manifest</code>（例如 cmProcessFullReleaseManifest），向原 Manifest 处理任务的产物[2]写入信息。升级后，如果 2 个处理 Manifest 的任务都命中了缓存（执行状态为 <code class="language-text">FROM-CACHE</code>），那么最终 APK 内的 Manifest 文件中的额外信息会是以前编译写入的旧信息。</p>
+<p>[1]: processFullReleaseManifestForPackage 任务的产物为 build/intermediates/packaged_manifests/fullRelease/AndroidManifest.xml</p>
+<p>[2]: processFullReleaseManifest 任务的产物为 build/intermediates/merged_manifests/fullRelease/AndroidManifest.xml</p>
+<p>因此，写入信息的方式应如下图所示，改为在新增的 Manifest 处理任务执行后，向其产物文件写入信息。</p>
+<p><img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/10010555695/7fb6/47aa/53ef/521b1da29dbcc6ee86d00ae556fb9e08.png"></p>
+<h3>Transform 插件执行失败</h3>
+<p>我们在构建过程中加入了一些 Transform 插件，升级后其中一个使用 ASM 进行代码插桩的插件在执行时出现如下错误：</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Execution failed for task &#39;:app:transformClassesWithxxx&#39;.
+&gt; java.lang.ArrayIndexOutOfBoundsException (no error message)</code></pre></div>
+<p>上面错误提示中的异常也可能是 <code class="language-text">java.lang.IllegalArgumentException: Invalid opcode 169</code>。</p>
+<p>为找到异常的具体来源，加入 <code class="language-text">--stacktrace</code> 参数重新构建，定位异常由插件中引入的第三方库 Hunter 触发。这个插件运行时使用的 ASM 是 AGP 自带的，AGP 3.5 使用的是 ASM 6，而从 AGP 3.6 开始使用的是 ASM 7，应该是引入的 Hunter 在 ASM 7 上存在缺陷，导致升级后出现异常。</p>
+<p>考虑到 Hunter 只是对使用 ASM 的 Transform 做了些简单封装，且这个插件实现的功能比较简单，所以采用移除 Hunter 重新实现的方式解决这个问题。</p>
+<h3>Cannot change dependencies of dependency configuration</h3>
+<p>我们使用了 <code class="language-text">resolutionStrategy.dependencySubstitution</code> 来实现组件库源码切换，升级后，如果将组件库切成了源码，在 Android Studio 中点击 Run 按钮构建时会出现如题错误。</p>
+<p>在排查问题的过程中发现在命令行中执行 <code class="language-text">./gradlew assembleRelease</code> 能构建成功，而通过 Android Studio Run 构建与上述命令行构建的区别仅仅是所执行的任务前增加了模块前缀（<code class="language-text">:app:assembleRelease</code>）。从这个区别出发，最终找到问题的原因是在 <code class="language-text">gradle.properties</code> 中开启了 <code class="language-text">org.gradle.configureondemand</code> 这个孵化中的特性，使 gradle 只配置跟请求的任务相关的 project，导致以指定 module 方式执行任务时，切为源码的 project 没有配置。</p>
+<p>关闭 <code class="language-text">org.gradle.configureondemand</code> 特性即可解决这个问题。</p>
+<h3>Entry name 'xxx' collided</h3>
+<p>升级后构建，在执行打包任务 <code class="language-text">package${variant.name.capitalize()}</code>（例如 packageFullRelease） 时会出现如题错误。</p>
+<p>由官方文档可知 AGP 3.6 引入了如下新功能：</p>
+<blockquote>
+<p>新的默认打包工具</p>
+</blockquote>
+<p>该功能会在构建 debug 版时，使用新打包工具 zipflinger 来构建 APK，且从 AGP 4.1 开始，构建 release 版时也会使用这个新打包工具。</p>
+<p>错误发生在打包生成 APK 的任务中，很容易联想到跟上述新功能有关。使用官方文档提供的方式，在 <code class="language-text">gradle.properties</code> 文件中添加 <code class="language-text">android.useNewApkCreator=false</code> 配置恢复使用旧打包工具后，可以成功构建。但生成的 APK 中缺失 Java 资源文件，导致运行时出现各种问题（如 OkHttp 缺少 publicsuffixes.gz 文件，导致请求一直不返回）。</p>
+<p>现在解决问题的方向有 2 个：解决 Java 资源文件缺失问题和解决如题构建错误。为解决这些问题，需要先分析问题产生的原因，通过调试 AGP 构建过程，分析 AGP 源码，发现打包任务对应的实现类为 <code class="language-text">PackageApplication</code>，主要实现逻辑在其父类 <code class="language-text">PackageAndroidArtifact</code> 中，向 APK 文件写入 Android 和 Java 资源文件的调用过程如下图所示：</p>
+<p><img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/10141121598/3bd4/19fd/6ee7/d5c3db719a78a8cfbedfef96f08cff8b.png"></p>
+<p><code class="language-text">updateSingleEntryJars</code> 方法写入 asset 文件，<code class="language-text">addFiles</code> 方法写入其他 Android 资源文件和 Java 资源文件。调 <code class="language-text">writeZip</code> 之前会根据 <code class="language-text">android.useNewApkCreator</code> 配置决定使用哪个打包工具，值为 <code class="language-text">true</code> 用 <code class="language-text">ApkFlinger</code>，否则用 <code class="language-text">ApkZFileCreator</code>，<code class="language-text">android.useNewApkCreator</code> 默认值为 <code class="language-text">true</code>。</p>
+<p>如通过配置使用旧打包工具 <code class="language-text">ApkZFileCreator</code>，它会用 <code class="language-text">ZFile</code> 读资源缩减后生成的文件[3]，以及混淆后生成的文件[4]，将其中的 Android 和 Java 资源文件写入到 APK 文件中。</p>
+<p>[3]: <code class="language-text">build/intermediates/shrunk_processed_res/${varient.name}/resources-$flavor-$buildType-stripped.ap_</code>（例如 build/intermediates/shrunk<em>processed</em>res/fullRelease/resources-full-release-stripped.ap_）</p>
+<p>[4]: <code class="language-text">build/intermediates/shrunk_java_res/${varient.name}/shrunkJavaRes.jar</code>（例如 build/intermediates/shrunk<em>java</em>res/fullRelease/shrunkJavaRes.jar），如关闭了 R8，则是 <code class="language-text">build/intermediates/shrunk_jar/${varient.name}/minified.jar</code>（例如 build/intermediates/shrunk_jar/fullRelease/minified.jar）</p>
+<p>下面的源码片段展示了写入的主要逻辑，分为如下 3 步：</p>
+<ol>
+<li>创建 <code class="language-text">ZFile</code> 对象，读取 zip 文件将 central directory 中的每项加入到 <code class="language-text">entries</code> 中</li>
+<li>遍历 <code class="language-text">ZFile</code> 中的 <code class="language-text">entries</code>，将压缩的资源文件合并到 APK 文件中</li>
+<li>
+<p>遍历 <code class="language-text">ZFile</code> 中的 <code class="language-text">entries</code>，将非压缩的资源文件写入到 APK 文件中</p>
+<div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token comment">// ApkZFileCreator.java</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">writeZip</span><span class="token punctuation">(</span>
+<span class="token class-name">File</span> zip<span class="token punctuation">,</span> <span class="token annotation punctuation">@Nullable</span> <span class="token class-name">Function</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">></span></span> transform<span class="token punctuation">,</span> <span class="token annotation punctuation">@Nullable</span> <span class="token class-name">Predicate</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">></span></span> isIgnored<span class="token punctuation">)</span>
+<span class="token keyword">throws</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+<span class="token comment">// ...</span>
+<span class="token keyword">try</span> <span class="token punctuation">{</span>
+<span class="token class-name">ZFile</span> toMerge <span class="token operator">=</span> closer<span class="token punctuation">.</span><span class="token function">register</span><span class="token punctuation">(</span><span class="token class-name">ZFile</span><span class="token punctuation">.</span><span class="token function">openReadWrite</span><span class="token punctuation">(</span>zip<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// ...</span>
+<span class="token class-name">Predicate</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">></span></span> noMergePredicate <span class="token operator">=</span>
+    v <span class="token operator">-></span> ignorePredicate<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span> <span class="token operator">||</span> noCompressPredicate<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">this</span><span class="token punctuation">.</span>zip<span class="token punctuation">.</span><span class="token function">mergeFrom</span><span class="token punctuation">(</span>toMerge<span class="token punctuation">,</span> noMergePredicate<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name">StoredEntry</span> toMergeEntry <span class="token operator">:</span> toMerge<span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token class-name">String</span> path <span class="token operator">=</span> toMergeEntry<span class="token punctuation">.</span><span class="token function">getCentralDirectoryHeader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>noCompressPredicate<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>ignorePredicate<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// ...</span>
+    <span class="token keyword">try</span> <span class="token punctuation">(</span><span class="token class-name">InputStream</span> ignoredData <span class="token operator">=</span> toMergeEntry<span class="token punctuation">.</span><span class="token keyword">open</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>zip<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>path<span class="token punctuation">,</span> ignoredData<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Throwable</span> t<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">throw</span> closer<span class="token punctuation">.</span><span class="token function">rethrow</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+closer<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+</li>
+</ol>
+<p>// ZFile.java
+private void readData() throws IOException {
+// ...
+readEocd();
+readCentralDirectory();
+// ...
+if (directoryEntry != null) {
+// ...
+for (StoredEntry entry : directory.getEntries().values()) {
+// ...
+entries.put(entry.getCentralDirectoryHeader().getName(), mapEntry);
+//...
+}</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">directoryStartOffset = directoryEntry.getStart();</code></pre></div>
+<p>  } else {
+// ...
+}
+// ...
+}</p>
+<p>public void mergeFrom(ZFile src, Predicate<String> ignoreFilter) throws IOException {
+// ...
+for (StoredEntry fromEntry : src.entries()) {
+if (ignoreFilter.apply(fromEntry.getCentralDirectoryHeader().getName())) {
+continue;
+}
+// ...
+}
+}</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">在调试过程中发现读取 `minified.jar` 文件创建的 `ZFile` 中的 `entries` 中没有 Java 资源文件，而在前面 `IncrementalSplitterRunnable.execute` 中调 `PackageAndroidArtifact.getChangedJavaResources` 获取改变的 Java 资源文件时，使用 `ZipCentralDirectory` 能正常读取到 Java 资源文件，说明 `ZFile` 存在缺陷。
+
+上述 Java 资源文件缺失的问题是在关闭 R8 时出现的，后面开启 R8 测试正常，新建 demo 工程测试，无论是否开启 R8 都正常。因此，可得到如下结论：
+* 如 `ZFile` 注释中所述，它不是通用的 zip 工具类，对 zip 格式和不支持的特性有严格的要求；它在某些特殊条件下存在限制，可能会出现读取文件缺失等问题
+* 由于旧打包工具使用了 `ZFile` 可能导致存在生成的 APk 缺失 Java 资源文件等问题，且已被官方废弃，不应该再使用
+
+现在解决问题的方向回到解决如题构建错误上来，新打包工具 `ApkFlinger` 写入 Android 或 Java 资源文件的调用过程如下图所示：
+
+![](https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/10141128289/7139/d9f8/eab8/b8a85e7b1f0e80964837f98a6e83aa76.png)
+
+从如下源码片段可看到，在 `ZipArchive.writeSource` 中会调 `validateName` 检查写入的 entry 名称的有效性，如果当前 zip 文件的 central directory 中已存在相同名字的内容，则抛出 `IllegalStateException` 异常，提示如题错误。
+````java
+// ZipArchive.java
+private void writeSource(@NonNull Source source) throws IOException {
+    // ...
+    validateName(source);
+    // ...
+}
+
+private void validateName(@NonNull Source source) {
+    byte[] nameBytes = source.getNameBytes();
+    String name = source.getName();
+    if (nameBytes.length &gt; Ints.USHRT_MAX) {
+        throw new IllegalStateException(
+                String.format(&quot;Name &#39;%s&#39; is more than %d bytes&quot;, name, Ints.USHRT_MAX));
+    }
+
+    if (cd.contains(name)) {
+        throw new IllegalStateException(String.format(&quot;Entry name &#39;%s&#39; collided&quot;, name));
+    }
+}</code></pre></div>
+<p>从源码和调试结果来看，出现如题错误的原因一般是某些不规范的做法使 jar 文件中存在同名的 Android 资源文件，我们遇到的 2 例为：</p>
+<ul>
+<li>某个第三方库的 aar 中存在 asset 文件，同时其 classes.jar 中也存在相同的 asset 文件</li>
+<li>某个第三方库将另外一个第三方库的 aar 文件当做普通 jar 文件依赖，导致其 classes.jar 中存在 <code class="language-text">AndroidManifest.xml</code> 文件</li>
+</ul>
+<p>知道问题的原因后，可根据提示的文件名在 <code class="language-text">shrunkJavaRes.jar</code> 或 <code class="language-text">minified.jar</code> 中找到对应的文件，然后根据文件中的信息（如 <code class="language-text">AndroidManifest.xml</code> 中的包名）定位到工程中的具体位置，再做相应的修改即可。</p>
+<h3>so 文件没有 strip</h3>
+<p>升级后，构建生成的 APK 中的 so 文件没有 strip，使用 ndk 中的 nm 工具[5]（在 macOS 中也可用系统自带的 nm）查看，发现符号表和调试信息依然存在。</p>
+<p>[5]: <code class="language-text">toolchains/aarch64-linux-android-4.9/prebuilt/$HOST_TAG/aarch64-linux-android/bin/nm</code>，<code class="language-text">HOST_TAG</code> 在不同操作系统中的值不同，在 macOS 中为 darwin-x86<em>64，在 Windows 中为 windows-x86</em>64</p>
+<p>分析构建日志后发现 <code class="language-text">strip${variant.name.capitalize()}Symbols</code>（例如 stripFullReleaseSymbols）任务有执行，接着分析 AGP 源码，调试构建过程，发现该任务通过 <code class="language-text">StripDebugSymbolsRunnable</code> 对 so 进行 strip，从如下源码片段可看到其主要逻辑为：</p>
+<ol>
+<li>调 <code class="language-text">SymbolStripExecutableFinder.stripToolExecutableFile</code> 获取 ndk 中的 strip 工具路径</li>
+<li>如果没有找到工具，则直接拷贝 so 到目标位置并返回</li>
+<li>
+<p>调用这个工具对 so 进行 strip 并输出到目标位置</p>
+<div class="gatsby-highlight" data-language="kotlin"><pre class="language-kotlin"><code class="language-kotlin"><span class="token keyword">private</span> <span class="token keyword">class</span> StripDebugSymbolsRunnable <span class="token annotation builtin">@Inject</span> <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token keyword">val</span> params<span class="token operator">:</span> Params<span class="token punctuation">)</span><span class="token operator">:</span> Runnable <span class="token punctuation">{</span>
+
+<span class="token keyword">override</span> <span class="token keyword">fun</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// ...</span>
+    <span class="token keyword">val</span> exe <span class="token operator">=</span>
+        params<span class="token punctuation">.</span>stripToolFinder<span class="token punctuation">.</span><span class="token function">stripToolExecutableFile</span><span class="token punctuation">(</span>params<span class="token punctuation">.</span>input<span class="token punctuation">,</span> params<span class="token punctuation">.</span>abi<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            UnstrippedLibs<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>params<span class="token punctuation">.</span>input<span class="token punctuation">.</span>name<span class="token punctuation">)</span>
+            logger<span class="token punctuation">.</span><span class="token function">verbose</span><span class="token punctuation">(</span><span class="token string">"<span class="token interpolation variable">$it</span> Packaging it as is."</span><span class="token punctuation">)</span>
+            <span class="token keyword">return</span><span class="token label symbol">@stripToolExecutableFile</span> <span class="token keyword">null</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>exe <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">||</span> params<span class="token punctuation">.</span>justCopyInput<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// ...</span>
+        FileUtils<span class="token punctuation">.</span><span class="token function">copyFile</span><span class="token punctuation">(</span>params<span class="token punctuation">.</span>input<span class="token punctuation">,</span> params<span class="token punctuation">.</span>output<span class="token punctuation">)</span>
+        <span class="token keyword">return</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">val</span> builder <span class="token operator">=</span> <span class="token function">ProcessInfoBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    builder<span class="token punctuation">.</span><span class="token function">setExecutable</span><span class="token punctuation">(</span>exe<span class="token punctuation">)</span>
+    <span class="token comment">// ...</span>
+    <span class="token keyword">val</span> result <span class="token operator">=</span>
+        params<span class="token punctuation">.</span>processExecutor<span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span>
+            builder<span class="token punctuation">.</span><span class="token function">createProcess</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">LoggedProcessOutputHandler</span><span class="token punctuation">(</span>logger<span class="token punctuation">)</span>
+        <span class="token punctuation">)</span>
+    <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// ...</span>
+<span class="token punctuation">}</span></code></pre></div>
+</li>
+</ol>
+<p>因此，so 没被 strip 的原因应该是没找到 ndk 中的 strip 工具。进一步分析源码可知 <code class="language-text">SymbolStripExecutableFinder</code> 通过 <code class="language-text">NdkHandler</code> 提供的 ndk 信息找 strip 工具路径，而 <code class="language-text">NdkHandler</code> 通过 <code class="language-text">NdkLocator.findNdkPathImpl</code> 这个顶层函数找 ndk 路径，所以 so 能否被 strip 最终取决于能否找到 ndk 路径。查找 ndk 主要逻辑如下：</p>
+<div class="gatsby-highlight" data-language="kotlin"><pre class="language-kotlin"><code class="language-kotlin"><span class="token keyword">const</span> <span class="token keyword">val</span> ANDROID_GRADLE_PLUGIN_FIXED_DEFAULT_NDK_VERSION <span class="token operator">=</span> <span class="token string">"21.1.6352462"</span>
+
+<span class="token keyword">private</span> <span class="token keyword">fun</span> <span class="token function">findNdkPathImpl</span><span class="token punctuation">(</span>
+    userSettings<span class="token operator">:</span> NdkLocatorKey<span class="token punctuation">,</span>
+    getNdkSourceProperties<span class="token operator">:</span> <span class="token punctuation">(</span>File<span class="token punctuation">)</span> <span class="token operator">-></span> SdkSourceProperties<span class="token operator">?</span><span class="token punctuation">,</span>
+    sdkHandler<span class="token operator">:</span> SdkHandler<span class="token operator">?</span>
+<span class="token punctuation">)</span><span class="token operator">:</span> NdkLocatorRecord<span class="token operator">?</span> <span class="token punctuation">{</span>
+    <span class="token function">with</span><span class="token punctuation">(</span>userSettings<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// ...</span>
+        <span class="token keyword">val</span> revisionFromNdkVersion <span class="token operator">=</span>
+            <span class="token function">parseRevision</span><span class="token punctuation">(</span><span class="token function">getNdkVersionOrDefault</span><span class="token punctuation">(</span>ndkVersionFromDsl<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">?:</span> <span class="token keyword">return</span> <span class="token keyword">null</span>
+        
+        <span class="token comment">// If android.ndkPath value is present then use it.</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>ndkPathFromDsl<span class="token punctuation">.</span><span class="token function">isNullOrBlank</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// ...</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// If ndk.dir value is present then use it.</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>ndkDirProperty<span class="token punctuation">.</span><span class="token function">isNullOrBlank</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// ...</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// ...</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>sdkFolder <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// If a folder exists under $SDK/ndk/$ndkVersion then use it.</span>
+            <span class="token keyword">val</span> versionedNdkPath <span class="token operator">=</span> <span class="token function">File</span><span class="token punctuation">(</span><span class="token function">File</span><span class="token punctuation">(</span>sdkFolder<span class="token punctuation">,</span> FD_NDK_SIDE_BY_SIDE<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">"<span class="token interpolation variable">$revisionFromNdkVersion</span>"</span><span class="token punctuation">)</span>
+            <span class="token keyword">val</span> sideBySideRevision <span class="token operator">=</span> <span class="token function">getNdkFolderRevision</span><span class="token punctuation">(</span>versionedNdkPath<span class="token punctuation">)</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>sideBySideRevision <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token function">NdkLocatorRecord</span><span class="token punctuation">(</span>versionedNdkPath<span class="token punctuation">,</span> sideBySideRevision<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token comment">// If $SDK/ndk-bundle exists and matches the requested version then use it.</span>
+            <span class="token keyword">val</span> ndkBundlePath <span class="token operator">=</span> <span class="token function">File</span><span class="token punctuation">(</span>sdkFolder<span class="token punctuation">,</span> FD_NDK<span class="token punctuation">)</span>
+            <span class="token keyword">val</span> bundleRevision <span class="token operator">=</span> <span class="token function">getNdkFolderRevision</span><span class="token punctuation">(</span>ndkBundlePath<span class="token punctuation">)</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>bundleRevision <span class="token operator">!=</span> <span class="token keyword">null</span> <span class="token operator">&amp;&amp;</span> bundleRevision <span class="token operator">==</span> revisionFromNdkVersion<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token function">NdkLocatorRecord</span><span class="token punctuation">(</span>ndkBundlePath<span class="token punctuation">,</span> bundleRevision<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// ...</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">private</span> <span class="token keyword">fun</span> <span class="token function">getNdkVersionOrDefault</span><span class="token punctuation">(</span>ndkVersionFromDsl <span class="token operator">:</span> String<span class="token operator">?</span><span class="token punctuation">)</span> <span class="token operator">=</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>ndkVersionFromDsl<span class="token punctuation">.</span><span class="token function">isNullOrBlank</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// ...</span>
+        ANDROID_GRADLE_PLUGIN_FIXED_DEFAULT_NDK_VERSION
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        ndkVersionFromDsl
+    <span class="token punctuation">}</span></code></pre></div>
+<p>上面源码片段对应的主要查找流程如下图所示：</p>
+<p><img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/10155827125/cdc0/b9e1/5bcb/6fcd66f4dad22b9f3c047ca1bccfb028.png"></p>
+<p>根据上述 ndk 查找逻辑，可以知道 so 没被 strip 的根本原因是我们没有在 <code class="language-text">build.gradle</code> 中配置 <code class="language-text">android.ndkPath</code> 和 <code class="language-text">android.ndkVersion</code>，在打包机上打包时也不存在 <code class="language-text">local.properties</code> 文件，也就不存在 <code class="language-text">ndk.dir</code> 属性，打包机上安装的 ndk 版本也不是 AGP 指定的默认版本 <code class="language-text">21.1.6352462</code>，导致找不到 ndk 路径。</p>
+<p>虽然找到了原因，但还是有个疑问：为什么升级之前能正常 strip？为了寻找答案，再来看看 AGP 3.5 查找 ndk 的方式，其主要逻辑如下：</p>
+<div class="gatsby-highlight" data-language="kotlin"><pre class="language-kotlin"><code class="language-kotlin"><span class="token keyword">private</span> <span class="token keyword">fun</span> <span class="token function">findNdkPathImpl</span><span class="token punctuation">(</span>
+    ndkDirProperty<span class="token operator">:</span> String<span class="token operator">?</span><span class="token punctuation">,</span>
+    androidNdkHomeEnvironmentVariable<span class="token operator">:</span> String<span class="token operator">?</span><span class="token punctuation">,</span>
+    sdkFolder<span class="token operator">:</span> File<span class="token operator">?</span><span class="token punctuation">,</span>
+    ndkVersionFromDsl<span class="token operator">:</span> String<span class="token operator">?</span><span class="token punctuation">,</span>
+    getNdkVersionedFolderNames<span class="token operator">:</span> <span class="token punctuation">(</span>File<span class="token punctuation">)</span> <span class="token operator">-></span> List<span class="token operator">&lt;</span>String<span class="token operator">></span><span class="token punctuation">,</span>
+    getNdkSourceProperties<span class="token operator">:</span> <span class="token punctuation">(</span>File<span class="token punctuation">)</span> <span class="token operator">-></span> SdkSourceProperties<span class="token operator">?</span>
+<span class="token punctuation">)</span><span class="token operator">:</span> File<span class="token operator">?</span> <span class="token punctuation">{</span>
+    <span class="token comment">// ...</span>
+    <span class="token keyword">val</span> foundLocations <span class="token operator">=</span> mutableListOf<span class="token operator">&lt;</span>Location<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>ndkDirProperty <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        foundLocations <span class="token operator">+=</span> <span class="token function">Location</span><span class="token punctuation">(</span>NDK_DIR_LOCATION<span class="token punctuation">,</span> <span class="token function">File</span><span class="token punctuation">(</span>ndkDirProperty<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>androidNdkHomeEnvironmentVariable <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        foundLocations <span class="token operator">+=</span> <span class="token function">Location</span><span class="token punctuation">(</span>
+            ANDROID_NDK_HOME_LOCATION<span class="token punctuation">,</span>
+            <span class="token function">File</span><span class="token punctuation">(</span>androidNdkHomeEnvironmentVariable<span class="token punctuation">)</span>
+        <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>sdkFolder <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        foundLocations <span class="token operator">+=</span> <span class="token function">Location</span><span class="token punctuation">(</span>NDK_BUNDLE_FOLDER_LOCATION<span class="token punctuation">,</span> <span class="token function">File</span><span class="token punctuation">(</span>sdkFolder<span class="token punctuation">,</span> FD_NDK<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// ...</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>sdkFolder <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">val</span> versionRoot <span class="token operator">=</span> <span class="token function">File</span><span class="token punctuation">(</span>sdkFolder<span class="token punctuation">,</span> FD_NDK_SIDE_BY_SIDE<span class="token punctuation">)</span>
+        foundLocations <span class="token operator">+=</span> <span class="token function">getNdkVersionedFolderNames</span><span class="token punctuation">(</span>versionRoot<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">map</span> <span class="token punctuation">{</span> version <span class="token operator">-></span>
+                <span class="token function">Location</span><span class="token punctuation">(</span>
+                    NDK_VERSIONED_FOLDER_LOCATION<span class="token punctuation">,</span>
+                    <span class="token function">File</span><span class="token punctuation">(</span>versionRoot<span class="token punctuation">,</span> version<span class="token punctuation">)</span>
+                <span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// ...</span>
+    <span class="token keyword">val</span> versionedLocations <span class="token operator">=</span> foundLocations
+        <span class="token punctuation">.</span><span class="token function">mapNotNull</span> <span class="token punctuation">{</span> location <span class="token operator">-></span>
+            <span class="token comment">// ...</span>
+        <span class="token punctuation">}</span>
+        <span class="token punctuation">.</span><span class="token function">sortedWith</span><span class="token punctuation">(</span><span class="token function">compareBy</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token operator">-</span>it<span class="token punctuation">.</span>first<span class="token punctuation">.</span>type<span class="token punctuation">.</span>ordinal <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> it<span class="token punctuation">.</span>second<span class="token punctuation">.</span>revision <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">asReversed</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token comment">// ...</span>
+    <span class="token keyword">val</span> highest <span class="token operator">=</span> versionedLocations<span class="token punctuation">.</span><span class="token function">firstOrNull</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>highest <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// ...</span>
+        <span class="token keyword">return</span> <span class="token keyword">null</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// ...</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>ndkVersionFromDslRevision <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// If the user specified ndk.dir then it must be used. It must also match the version</span>
+        <span class="token comment">// supplied in build.gradle.</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>ndkDirProperty <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">val</span> ndkDirLocation <span class="token operator">=</span> versionedLocations<span class="token punctuation">.</span><span class="token function">find</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>location<span class="token punctuation">,</span> _<span class="token punctuation">)</span> <span class="token operator">-></span>
+                location<span class="token punctuation">.</span>type <span class="token operator">==</span> NDK_DIR_LOCATION
+            <span class="token punctuation">}</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>ndkDirLocation <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// ...</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                <span class="token keyword">val</span> <span class="token punctuation">(</span>location<span class="token punctuation">,</span> version<span class="token punctuation">)</span> <span class="token operator">=</span> ndkDirLocation
+                <span class="token comment">// ...</span>
+                <span class="token keyword">return</span> location<span class="token punctuation">.</span>ndkRoot
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// If not ndk.dir then take the version that matches the requested NDK version</span>
+        <span class="token keyword">val</span> matchingLocations <span class="token operator">=</span> versionedLocations
+            <span class="token punctuation">.</span><span class="token function">filter</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>_<span class="token punctuation">,</span> sourceProperties<span class="token punctuation">)</span> <span class="token operator">-></span>
+                <span class="token function">isAcceptableNdkVersion</span><span class="token punctuation">(</span>sourceProperties<span class="token punctuation">.</span>revision<span class="token punctuation">,</span> ndkVersionFromDslRevision<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+            <span class="token punctuation">.</span><span class="token function">toList</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>matchingLocations<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// ...</span>
+            <span class="token keyword">return</span> highest<span class="token punctuation">.</span>first<span class="token punctuation">.</span>ndkRoot
+        <span class="token punctuation">}</span>
+        <span class="token comment">// ...</span>
+        <span class="token keyword">val</span> foundNdkRoot <span class="token operator">=</span> matchingLocations<span class="token punctuation">.</span><span class="token function">first</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>first<span class="token punctuation">.</span>ndkRoot
+        <span class="token comment">// ...</span>
+        <span class="token keyword">return</span> foundNdkRoot
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token comment">// If the user specified ndk.dir then it must be used.</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>ndkDirProperty <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">val</span> ndkDirLocation <span class="token operator">=</span>
+                versionedLocations<span class="token punctuation">.</span><span class="token function">find</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>location<span class="token punctuation">,</span> _<span class="token punctuation">)</span> <span class="token operator">-></span>
+                    location<span class="token punctuation">.</span>type <span class="token operator">==</span> NDK_DIR_LOCATION
+                <span class="token punctuation">}</span>
+            <span class="token comment">// ...</span>
+            <span class="token keyword">val</span> <span class="token punctuation">(</span>location<span class="token punctuation">,</span> version<span class="token punctuation">)</span> <span class="token operator">=</span> ndkDirLocation
+            <span class="token comment">// ...</span>
+            <span class="token keyword">return</span> location<span class="token punctuation">.</span>ndkRoot
+        <span class="token punctuation">}</span>
+        <span class="token comment">// ...</span>
+        <span class="token keyword">return</span> highest<span class="token punctuation">.</span>first<span class="token punctuation">.</span>ndkRoot
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>对应的大致流程如下图所示：</p>
+<p><img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/10155528344/65e2/c8ad/e9b8/8ec0d854f3f032974380767444d8a8bb.png"></p>
+<p>可以看到在 AGP 3.5 中，如果没有配置 ndk 路径和版本，会取 ndk 目录中的最高版本，只要 ndk 目录中存在一个版本就能找到，所以升级前没问题。AGP 3.6 和 4.0 的查找逻辑跟 AGP 3.5 类似，只不过增加了在 <code class="language-text">android.ndkVersion</code> 未配置时取 AGP 内置的默认版本逻辑，AGP 3.6 的默认版本为 <code class="language-text">20.0.5594570</code>，AGP 4.0 的默认版本为 <code class="language-text">21.0.6113669</code>。</p>
+<p>通过上面的分析找到问题原因后，解决方式就呼之欲出了，为具备更广泛的适应性，可采用配置 <code class="language-text">android.ndkVersion</code> 将 ndk 版本设置为跟打包机一致的方式来解决问题。</p>
+<h2>小结</h2>
+<p>本文介绍了 AGP 升级（3.5 到 4.1）过程，对所遇问题提供了原因分析和解决方式。虽然本次升级的初衷不是优化构建，但升级后，我们的构建速度提升了约 36%，包大小减少了约 5M。希望本文能够帮助需要升级的读者顺利完成升级，享受到官方对构建工具持续优化的成果。</p>
+<p>至此，本次 AGP 升级之旅已到终点，而我们的开发之旅还将继续。</p>
+<h2>参考资料</h2>
+<ul>
+<li><a href="https://developer.android.com/studio/releases/gradle-plugin">Android Gradle 插件版本说明</a></li>
+<li><a href="https://docs.gradle.org/current/userguide/multi_project_configuration_and_execution.html#sec:configuration_on_demand">Configuration on demand</a></li>
+<li>AGP 源码</li>
+</ul>
+<blockquote>
+<p>本文发布自 <a href="https://github.com/x-orpheus">网易云音乐大前端团队</a>，文章未经授权禁止任何形式的转载。我们常年招收前端、iOS、Android，如果你准备换工作，又恰好喜欢云音乐，那就加入我们 grp.music-fe(at)corp.netease.com！</p>
+</blockquote></section><hr style="margin-bottom:1.625rem"/></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/android-exception/">← 上一篇</a></li><li></li></ul></nav><div id="disqus_thread"></div></main></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-46698359-8', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/agp-upgrade/";window.webpackCompilationHash="1ce281eb9f98984c720e";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-0c9a63a3aef9e813df5b.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-51d272fe0618a2665c13.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js"],"component---src-pages-404-js":["/component---src-pages-404-js-e9fc057fd683384561c6.js"],"component---src-pages-index-js":["/component---src-pages-index-js-48dc264068dece189e1b.js"]};/*]]>*/</script><script src="/webpack-runtime-2742ada98d46151d1c6f.js" async=""></script><script src="/commons-8d9941e7328683a5eecb.js" async=""></script><script src="/app-0c9a63a3aef9e813df5b.js" async=""></script><script src="/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js" async=""></script><script src="/styles-fb89df136351dec2a665.js" async=""></script></body></html>
