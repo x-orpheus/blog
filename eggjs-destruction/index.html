@@ -1,0 +1,404 @@
+<!DOCTYPE html><html lang="zh"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.625 -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}h1{margin-left:0;margin-right:0;margin-top:2.4375rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.21875rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h2{margin-left:0;margin-right:0;margin-top:1.625rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.40625rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:hsla(0,0%,0%,0.53);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}ul{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:0.85rem;line-height:1.625rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:1rem;line-height:1.625rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:calc(0.8125rem - 1px);padding-right:0;padding-top:0;margin-bottom:0.8125rem;border-left:4px solid hsla(0,0%,0%,0.13);color:hsla(0,0%,0%,0.53);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(0.8125rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}b{font-weight:600;}strong{font-weight:600;}dt{font-weight:600;}th{font-weight:600;}li{margin-bottom:calc(0.8125rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}li > ul{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(0.8125rem / 2);}code{font-size:0.85rem;line-height:1.625rem;}kbd{font-size:0.85rem;line-height:1.625rem;}samp{font-size:0.85rem;line-height:1.625rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.08333rem;padding-right:1.08333rem;padding-top:0.8125rem;padding-bottom:calc(0.8125rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}h3,h4,h5,h6{margin-bottom:0.8125rem;margin-top:1.625rem;}ol,ul{margin-left:2.03125rem;}li>ol,li>ul{margin-left:2.03125rem;}a{color:#4078c0;text-decoration:none;}a:hover,a:active{text-decoration:underline;}</style><title data-react-helmet="true">Eggjs 入门解构 | 云音乐大前端专栏</title><style type="text/css">.gatsby-resp-image-image{width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;color:transparent;}</style><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#dd001b"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><meta name="generator" content="Gatsby 2.15.7"/><meta data-react-helmet="true" name="description" content="Eggjs虽然提供了入门教程，但是有大量的约定俗成，对于理解上有一定的成本和门槛。本文以快速入门的例子通过不同的角度进行解读，阐述相关编程思想，希望能帮助大家能更好的掌握这一框架"/><meta data-react-helmet="true" property="og:title" content="Eggjs 入门解构"/><meta data-react-helmet="true" property="og:description" content="Eggjs虽然提供了入门教程，但是有大量的约定俗成，对于理解上有一定的成本和门槛。本文以快速入门的例子通过不同的角度进行解读，阐述相关编程思想，希望能帮助大家能更好的掌握这一框架"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="云音乐大前端团队"/><meta data-react-helmet="true" name="twitter:title" content="Eggjs 入门解构"/><meta data-react-helmet="true" name="twitter:description" content="Eggjs虽然提供了入门教程，但是有大量的约定俗成，对于理解上有一定的成本和门槛。本文以快速入门的例子通过不同的角度进行解读，阐述相关编程思想，希望能帮助大家能更好的掌握这一框架"/><style data-href="/styles.a8f6e12462010344bfaf.css">@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:200;src:local("Source Code Pro Extra Light "),local("Source Code Pro-Extra Light"),url(/static/source-code-pro-latin-200-41568fe7927570e049a6cb707930f353.woff2) format("woff2"),url(/static/source-code-pro-latin-200-568dcb298a36f14317fdcddf8eded62f.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:300;src:local("Source Code Pro Light "),local("Source Code Pro-Light"),url(/static/source-code-pro-latin-300-248b2236ba6bb9d2745a4908bc9c4568.woff2) format("woff2"),url(/static/source-code-pro-latin-300-43fcfcf552695ff0976d7d03a29835c4.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:400;src:local("Source Code Pro Regular "),local("Source Code Pro-Regular"),url(/static/source-code-pro-latin-400-1c37ab07cfefc70a85445f49737ad28a.woff2) format("woff2"),url(/static/source-code-pro-latin-400-a4a08973559a45aba173184ea065addf.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:500;src:local("Source Code Pro Medium "),local("Source Code Pro-Medium"),url(/static/source-code-pro-latin-500-67f6c1995acae33eacb1af1807c0e8c8.woff2) format("woff2"),url(/static/source-code-pro-latin-500-a39fc2de145c00ef5898c77b15c27517.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:600;src:local("Source Code Pro SemiBold "),local("Source Code Pro-SemiBold"),url(/static/source-code-pro-latin-600-bf5d453754c3bd3e0fc9bcdc979048f1.woff2) format("woff2"),url(/static/source-code-pro-latin-600-c021e440e993ff26de945242222960a6.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:700;src:local("Source Code Pro Bold "),local("Source Code Pro-Bold"),url(/static/source-code-pro-latin-700-b46da14cbd07b2f1f5ca74069d59318e.woff2) format("woff2"),url(/static/source-code-pro-latin-700-c86a17b160684a125455d36f4733ad85.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:900;src:local("Source Code Pro Black "),local("Source Code Pro-Black"),url(/static/source-code-pro-latin-900-e985b6f17d53c2780c3c49722984a52e.woff2) format("woff2"),url(/static/source-code-pro-latin-900-b0d773d996cad7ea914d35d16dd0f3ec.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:400;src:local("Noto Sans Regular "),local("Noto Sans-Regular"),url(/static/noto-sans-latin-400-175853ded2a4e2249d37c46ca0ca33c5.woff2) format("woff2"),url(/static/noto-sans-latin-400-e7ccb0aa43af9fb7fae4d1bdc23a099b.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:400;src:local("Noto Sans Regular italic"),local("Noto Sans-Regularitalic"),url(/static/noto-sans-latin-400italic-baa3ec09eb827b4f10593032d1cf2a88.woff2) format("woff2"),url(/static/noto-sans-latin-400italic-14425b1ebbce551302a950b083b6c14e.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:700;src:local("Noto Sans Bold "),local("Noto Sans-Bold"),url(/static/noto-sans-latin-700-43750a193b8ff0b4e929323a72d79301.woff2) format("woff2"),url(/static/noto-sans-latin-700-a8edfe7bbf3b01666adc30c118cc5223.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:700;src:local("Noto Sans Bold italic"),local("Noto Sans-Bolditalic"),url(/static/noto-sans-latin-700italic-bc98820a9bf62004a88ef07e012e3ce3.woff2) format("woff2"),url(/static/noto-sans-latin-700italic-0e19737ff39f96eb1ff99e463fa457a4.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><link as="script" rel="preload" href="/styles-342a1cab92fcc49c71b0.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js"/><link as="script" rel="preload" href="/app-0c9a63a3aef9e813df5b.js"/><link as="script" rel="preload" href="/commons-8d9941e7328683a5eecb.js"/><link as="script" rel="preload" href="/webpack-runtime-2742ada98d46151d1c6f.js"/><link as="fetch" rel="preload" href="/page-data/eggjs-destruction/page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:39rem;padding:2.4375rem 1.21875rem;font-family:&quot;Source Code Pro&quot;, &quot;Noto Sans CJK SC&quot;"><header><h1 style="font-size:2.2974rem;line-height:3.25rem;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:#DD001B" href="/">云音乐大前端专栏</a></h1></header><main><article><header><h1 style="margin-top:1.625rem;margin-bottom:0;color:#001E26">Eggjs 入门解构</h1><p style="font-size:0.87055rem;line-height:1.625rem;display:block;margin-bottom:1.625rem">2021-12-02</p></header><section><p><img src="https://zos.alipayobjects.com/rmsportal/JFKAMfmPehWfhBPdCjrw.svg" alt="Eggjs_logo"></p>
+<p>阅读本文前，请先浏览<a href="https://eggjs.org/zh-cn/intro/quickstart.html">Eggjs 官方例子</a>和 了解<a href="https://koajs.com/">Koajs</a></p>
+<blockquote>
+<p>本文作者：<a href="https://www.zhihu.com/people/huo-hai-jin-xing-shi">东东章</a></p>
+</blockquote>
+<h2>开始</h2>
+<p><img src="https://cloud.githubusercontent.com/assets/227713/22960991/812999bc-f37d-11e6-8bd5-a96ca37d0ff2.png" alt="例子"></p>
+<p>官方给了这样一个例子，手动搭建 Hacker News。</p>
+<p>当我们看到这个页面的时候，不要着急往下看教程。 先自我思考下如何实现这个页面，要用到哪些技术：</p>
+<ol>
+<li>路由处理。我们需要一个角色处理接受 <code class="language-text">/news</code> 请求，除此之外，一般还有 <code class="language-text">/</code> 默认首页，也就是说至少 2 个 URL。</li>
+<li>页面展示。这里可以用模板，也可以直接自己拼接 HTML 元素。nodejs 模板有<a href="https://pugjs.org/api/getting-started.html">Pug</a>，<a href="https://ejs.co/">EJS</a>，<a href="https://handlebarsjs.com/">Handlebarsjs</a>等多个模板。</li>
+<li>取数问题。有一个角色处理请求并拿到返回的数据。</li>
+<li>合并数据。将模板和取到的数据结合起来，显示最终的结果。</li>
+</ol>
+<h2>MVC</h2>
+<p>在服务端有个很经典的 MVC 设计模式来解决这类问题。</p>
+<p><img src="https://developer.mozilla.org/en-US/docs/Glossary/MVC/model-view-controller-light-blue.png" alt="mvc"></p>
+<ol>
+<li>Modal: 管理数据和业务逻辑。通常细分为 service (业务逻辑) 和 dao (数据库管理) 两层。</li>
+<li>View： 布局和页面展示。</li>
+<li>Controller：将相关请求路由到对应的 Modal 和 View。</li>
+</ol>
+<p>下面以<code class="language-text">Java Spring MVC</code>为例</p>
+<div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@Controller</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">GreetingController</span> <span class="token punctuation">{</span>
+
+	<span class="token annotation punctuation">@GetMapping</span><span class="token punctuation">(</span><span class="token string">"/greeting"</span><span class="token punctuation">)</span>
+	<span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">greeting</span><span class="token punctuation">(</span><span class="token annotation punctuation">@RequestParam</span><span class="token punctuation">(</span>name<span class="token operator">=</span><span class="token string">"ownerId"</span><span class="token punctuation">,</span> required<span class="token operator">=</span><span class="token boolean">false</span><span class="token punctuation">,</span> defaultValue<span class="token operator">=</span><span class="token string">"World"</span><span class="token punctuation">)</span> <span class="token class-name">String</span> ownerId<span class="token punctuation">,</span> <span class="token class-name">Model</span> model<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">String</span> name <span class="token operator">=</span> ownerService<span class="token punctuation">.</span><span class="token function">findOwner</span><span class="token punctuation">(</span>ownerId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		model<span class="token punctuation">.</span><span class="token function">addAttribute</span><span class="token punctuation">(</span><span class="token string">"name"</span><span class="token punctuation">,</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">return</span> <span class="token string">"greeting"</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span></code></pre></div>
+<p>模板<code class="language-text">greeting.html</code></p>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name"><span class="token namespace">th:</span>text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">'</span>Hello, ' + ${name} + '!'<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span></code></pre></div>
+<ol>
+<li>首先用注解 <code class="language-text">@Controller</code> 定义了一个 <code class="language-text">GreetingController</code> 类。</li>
+<li><code class="language-text">@GetMapping(&quot;/greeting&quot;)</code> 接受了 <code class="language-text">/greeting</code>，并交给 <code class="language-text">public String greeting</code> 处理，这块属于 Controller 层。</li>
+<li><code class="language-text">String name = ownerService.findOwner(ownerId);model.addAttribute(&quot;name&quot;, name);</code> 获取数据，属于 Modal 层。</li>
+<li><code class="language-text">return &quot;greeting&quot;;</code> 返回对应模板 (View 层)，然后与取得数据结合形成最终结果。</li>
+</ol>
+<p>有了上面的经验之后，接下来 我们将目光转向 Eggjs。我们可以根据上面的 MVC 架构，完成给出的例子。</p>
+<p>因为实际上是有两个页面，一个是<code class="language-text">/news</code>, 另外一个是<code class="language-text">/</code>, 我们首先从首页<code class="language-text">/</code>的开始。</p>
+<p>先定义一个 Controller.</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// app/controller/home.js</span>
+
+<span class="token keyword">const</span> Controller <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'egg'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>Controller<span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">HomeController</span> <span class="token keyword">extends</span> <span class="token class-name">Controller</span> <span class="token punctuation">{</span>
+  <span class="token keyword">async</span> <span class="token function">index</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>ctx<span class="token punctuation">.</span>body <span class="token operator">=</span> <span class="token string">'Hello world'</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> HomeController<span class="token punctuation">;</span></code></pre></div>
+<p>用 CJS 的标准先引入框架的 Controller，定义一个了<code class="language-text">HomeController</code>类，并有方法<code class="language-text">index</code>。</p>
+<p>类已经定义好，接下来就是实例化阶段。</p>
+<p>如果熟悉 Koajs 的开发，一般会用 new 关键字</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> Koa <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'koa'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Koa</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>如果熟悉 Java 开发，一般会用注解来实例化，比如下面的 person 用了<code class="language-text">@Autowired</code> 这个注解来实现自动实例化 。</p>
+<div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Customer</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Autowired</span>                               
+    <span class="token keyword">private</span> <span class="token class-name">Person</span> person<span class="token punctuation">;</span>                   
+    <span class="token keyword">private</span> <span class="token keyword">int</span> type<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>从上面的例子看，发现注解不但能处理请求，同时也能实例对象，非常方便。</p>
+<p>ES7 里面有个也有类似的概念装饰器 <a href="https://github.com/tc39/proposal-decorators">Decorators</a>，然后配合 <a href="https://jkchao.github.io/typescript-book-chinese/tips/metadata.html">reflect-metadata</a>实现类似效果，这也是当前 Node 框架的标配做法。</p>
+<p>然而，因为种种原因，Eggjs 即没有让你自己直接 new 一个实例，也没有用装饰器方法，而是自己实现了一套实例初始化规则：</p>
+<blockquote>
+<p>它会读取当前的文件，然后根据文件名初始化一个实例，最后绑定到内置基础对象上。</p>
+</blockquote>
+<p>比如上面的<code class="language-text">app/controller/home.js</code>, 会产生一个 home 实例。因为是 Controller 角色，所以会绑定到 contoller 这个内置对象上。同时 contoller 对象也是内置 app 对象的一部分，更多的内置对象可以看<a href="https://eggjs.org/zh-cn/basics/objects.html">这里</a>。</p>
+<p>总的来说，基本上所有的实例化对象都被绑定到 app 和 ctx 两个内置对象上了，访问规则为<code class="language-text">this.(app|ctx).类型(controller|service...).自己定义的文件名.方法名</code>。</p>
+<p>请求方面，Eggjs 用一个 router 对象来处理</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// app/router.js</span>
+module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token parameter">app</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> router<span class="token punctuation">,</span> controller <span class="token punctuation">}</span> <span class="token operator">=</span> app<span class="token punctuation">;</span>
+  router<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> controller<span class="token punctuation">.</span>home<span class="token punctuation">.</span>index<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<p>上面的代码指 router 将 / 请求交由 home 实例的 index 方法处理。</p>
+<p>文件目录规则也是按照约定放置</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">egg<span class="token operator">-</span>example
+├── app
+│   ├── controller
+│   │   └── home<span class="token punctuation">.</span>js
+│   └── router<span class="token punctuation">.</span>js
+├── config
+│   └── config<span class="token punctuation">.</span>default<span class="token punctuation">.</span>js
+└── <span class="token keyword">package</span><span class="token punctuation">.</span>json</code></pre></div>
+<p>app 目录放置了所有与其相关的子元素目录。</p>
+<p>至此，我们完成了首页的工作，接下来考虑 /news 列表页。</p>
+<h3>列表页</h3>
+<p>同理，我们先定义 MVC 里面的 C，然后处理剩下两个角色。</p>
+<p>有了上面的经验，我们先创建一个 NewsController 类的 list 方法，然后在 router.js 添加对 /news 的处理，指定到对应的方法，如下。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// app/controller/news.js</span>
+<span class="token keyword">const</span> Controller <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'egg'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>Controller<span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">NewsController</span> <span class="token keyword">extends</span> <span class="token class-name">Controller</span> <span class="token punctuation">{</span>
+  <span class="token keyword">async</span> <span class="token function">list</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> dataList <span class="token operator">=</span> <span class="token punctuation">{</span>
+      list<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> title<span class="token punctuation">:</span> <span class="token string">'this is news 1'</span><span class="token punctuation">,</span> url<span class="token punctuation">:</span> <span class="token string">'/news/1'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> title<span class="token punctuation">:</span> <span class="token string">'this is news 2'</span><span class="token punctuation">,</span> url<span class="token punctuation">:</span> <span class="token string">'/news/2'</span> <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span>ctx<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token string">'news/list.tpl'</span><span class="token punctuation">,</span> dataList<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> NewsController<span class="token punctuation">;</span></code></pre></div>
+<p>数据 dataList 先写死，后续用 service 替换。
+<code class="language-text">this.ctx.render(&#39;news/list.tpl&#39;, dataList)</code>这里是模板与数据的结合。</p>
+<p><code class="language-text">news/list.tpl</code>属于 view，根据上面我们所知的命名规范，完整目录路径应该是<code class="language-text">app/view/news/list.tpl</code></p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// app/router.js 添加了/news请求路径，指定news对象的list对象处理</span>
+module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token parameter">app</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> router<span class="token punctuation">,</span> controller <span class="token punctuation">}</span> <span class="token operator">=</span> app<span class="token punctuation">;</span>
+  router<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> controller<span class="token punctuation">.</span>home<span class="token punctuation">.</span>index<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  router<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/news'</span><span class="token punctuation">,</span> controller<span class="token punctuation">.</span>news<span class="token punctuation">.</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<h3>模板渲染。</h3>
+<p>根据 MVC 模型，现在我们已经有了 C，剩下就是 M 和 V，M 数据已经写死，先处理 View。</p>
+<p>之前说过，nodejs 模板有<a href="https://pugjs.org/api/getting-started.html">Pug</a>,<a href="https://ejs.co/">Ejs</a>，<a href="https://handlebarsjs.com/">handlebarsjs</a>,<a href="https://mozilla.github.io/nunjucks/">Nunjucks</a>等多种。</p>
+<p>有时候在项目中要根据情况来从多个模板选择具体某个，因此需要框架做到：</p>
+<ol>
+<li>声明多个模板类型。</li>
+<li>配置具体使用某个模板。</li>
+</ol>
+<p>为了更好的管理，声明和使用要分开，配置一般放在 config 目录下，所以有了<code class="language-text">config/plugin.js</code>和<code class="language-text">config/config.default.js</code>。前者做定义，后者具体配置。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// config/plugin.js 声明了2个view模板</span>
+exports<span class="token punctuation">.</span>nunjucks <span class="token operator">=</span> <span class="token punctuation">{</span>
+  enable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token keyword">package</span><span class="token punctuation">:</span> <span class="token string">'egg-view-nunjucks'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+exports<span class="token punctuation">.</span>ejs <span class="token operator">=</span> <span class="token punctuation">{</span>
+  enable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token keyword">package</span><span class="token punctuation">:</span> <span class="token string">'egg-view-ejs'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// config/config.default.js 具体配置使用某个模板。</span>
+exports<span class="token punctuation">.</span>view <span class="token operator">=</span> <span class="token punctuation">{</span>
+  defaultViewEngine<span class="token punctuation">:</span> <span class="token string">'nunjucks'</span><span class="token punctuation">,</span>
+  mapping<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'.tpl'</span><span class="token punctuation">:</span> <span class="token string">'nunjucks'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<p>然后写一个<code class="language-text">nunjucks</code>的具体模板的具体内容如下</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// app/view/news/list.tpl</span>
+<span class="token operator">&lt;</span>html<span class="token operator">></span>
+  <span class="token operator">&lt;</span>head<span class="token operator">></span>
+    <span class="token operator">&lt;</span>title<span class="token operator">></span>Hacker News<span class="token operator">&lt;</span><span class="token operator">/</span>title<span class="token operator">></span>
+    <span class="token operator">&lt;</span>link rel<span class="token operator">=</span><span class="token string">"stylesheet"</span> href<span class="token operator">=</span><span class="token string">"/public/css/news.css"</span> <span class="token operator">/</span><span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>head<span class="token operator">></span>
+  <span class="token operator">&lt;</span>body<span class="token operator">></span>
+    <span class="token operator">&lt;</span>ul <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"news-view view"</span><span class="token operator">></span>
+      <span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">for</span> item <span class="token keyword">in</span> list <span class="token operator">%</span><span class="token punctuation">}</span>
+        <span class="token operator">&lt;</span>li <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"item"</span><span class="token operator">></span>
+          <span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"{{ item.url }}"</span><span class="token operator">></span><span class="token punctuation">{</span><span class="token punctuation">{</span> item<span class="token punctuation">.</span>title <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">></span>
+      <span class="token punctuation">{</span><span class="token operator">%</span> endfor <span class="token operator">%</span><span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">></span></code></pre></div>
+<p>下面处理 service，取名为 news.js 文件路径参照上面，放在 app 目录的子目录 service 下面。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// app/service/news.js </span>
+<span class="token keyword">const</span> Service <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'egg'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>Service<span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">NewsService</span> <span class="token keyword">extends</span> <span class="token class-name">Service</span> <span class="token punctuation">{</span>
+  <span class="token keyword">async</span> <span class="token function">list</span><span class="token punctuation">(</span><span class="token parameter">page <span class="token operator">=</span> <span class="token number">1</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// read config</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> serverUrl<span class="token punctuation">,</span> pageSize <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>config<span class="token punctuation">.</span>news<span class="token punctuation">;</span>
+
+    <span class="token comment">// use build-in http client to GET hacker-news api</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> data<span class="token punctuation">:</span> idList <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span>ctx<span class="token punctuation">.</span><span class="token function">curl</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>serverUrl<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/topstories.json</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        orderBy<span class="token punctuation">:</span> <span class="token string">'"$key"'</span><span class="token punctuation">,</span>
+        startAt<span class="token punctuation">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">"</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>pageSize <span class="token operator">*</span> <span class="token punctuation">(</span>page <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">"</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+        endAt<span class="token punctuation">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">"</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>pageSize <span class="token operator">*</span> page <span class="token operator">-</span> <span class="token number">1</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">"</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      dataType<span class="token punctuation">:</span> <span class="token string">'json'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// parallel GET detail</span>
+    <span class="token keyword">const</span> newsList <span class="token operator">=</span> <span class="token keyword">await</span> Promise<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span>
+      Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>idList<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">key</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> url <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>serverUrl<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/item/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>idList<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">.json</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>ctx<span class="token punctuation">.</span><span class="token function">curl</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> <span class="token punctuation">{</span> dataType<span class="token punctuation">:</span> <span class="token string">'json'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> newsList<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=></span> res<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> NewsService<span class="token punctuation">;</span></code></pre></div>
+<p><code class="language-text">const { serverUrl, pageSize } = this.config.news;</code> 这行有 2 个分页参数，具体应该配置在哪里？</p>
+<p>根据我们上面的经验，<code class="language-text">config.default.js</code>配置了具体模板使用参数，因此这里就是一个比较合适的地方。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// config/config.default.js</span>
+<span class="token comment">// 添加 news 的配置项</span>
+exports<span class="token punctuation">.</span>news <span class="token operator">=</span> <span class="token punctuation">{</span>
+  pageSize<span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+  serverUrl<span class="token punctuation">:</span> <span class="token string">'https://hacker-news.firebaseio.com/v0'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<p>service 有了，现在是把固定写死的数据改为动态取数的模式，修改对应的如下</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// app/controller/news.js</span>
+<span class="token keyword">const</span> Controller <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'egg'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>Controller<span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">NewsController</span> <span class="token keyword">extends</span> <span class="token class-name">Controller</span> <span class="token punctuation">{</span>
+  <span class="token keyword">async</span> <span class="token function">list</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> ctx <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>ctx<span class="token punctuation">;</span>
+    <span class="token keyword">const</span> page <span class="token operator">=</span> ctx<span class="token punctuation">.</span>query<span class="token punctuation">.</span>page <span class="token operator">||</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> newsList <span class="token operator">=</span> <span class="token keyword">await</span> ctx<span class="token punctuation">.</span>service<span class="token punctuation">.</span>news<span class="token punctuation">.</span><span class="token function">list</span><span class="token punctuation">(</span>page<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">await</span> ctx<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token string">'news/list.tpl'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> list<span class="token punctuation">:</span> newsList <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> NewsController<span class="token punctuation">;</span></code></pre></div>
+<p>这行<code class="language-text">ctx.service.news.list(page)</code>, 可以发现 service 不是像 controller 一样绑定在 app 上，而是 ctx 上，这是有意为之，具体看<a href="https://github.com/eggjs/egg/issues/2453">讨论</a></p>
+<p>至此，基本上完成了我们的整个页面。</p>
+<h3>目录结构</h3>
+<p>当我们完成上面的工作之后，看一下完整的目录规范</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">egg<span class="token operator">-</span>project
+├── <span class="token keyword">package</span><span class="token punctuation">.</span>json
+├── app<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+├── agent<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+├── app
+<span class="token operator">|</span>   ├── router<span class="token punctuation">.</span>js
+│   ├── controller
+│   <span class="token operator">|</span>   └── home<span class="token punctuation">.</span>js
+│   ├── <span class="token function">service</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+│   <span class="token operator">|</span>   └── user<span class="token punctuation">.</span>js
+│   ├── <span class="token function">middleware</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+│   <span class="token operator">|</span>   └── response_time<span class="token punctuation">.</span>js
+│   ├── <span class="token function">schedule</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+│   <span class="token operator">|</span>   └── my_task<span class="token punctuation">.</span>js
+│   ├── <span class="token keyword">public</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+│   <span class="token operator">|</span>   └── reset<span class="token punctuation">.</span>css
+│   ├── <span class="token function">view</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+│   <span class="token operator">|</span>   └── home<span class="token punctuation">.</span>tpl
+│   └── <span class="token function">extend</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+│       ├── helper<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+│       ├── request<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+│       ├── response<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+│       ├── context<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+│       ├── application<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+│       └── agent<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+├── config
+<span class="token operator">|</span>   ├── plugin<span class="token punctuation">.</span>js
+<span class="token operator">|</span>   ├── config<span class="token punctuation">.</span>default<span class="token punctuation">.</span>js
+│   ├── config<span class="token punctuation">.</span>prod<span class="token punctuation">.</span>js
+<span class="token operator">|</span>   ├── config<span class="token punctuation">.</span>test<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+<span class="token operator">|</span>   ├── config<span class="token punctuation">.</span>local<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+<span class="token operator">|</span>   └── config<span class="token punctuation">.</span>unittest<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+└── test
+    ├── middleware
+    <span class="token operator">|</span>   └── response_time<span class="token punctuation">.</span>test<span class="token punctuation">.</span>js
+    └── controller
+        └── home<span class="token punctuation">.</span>test<span class="token punctuation">.</span>js</code></pre></div>
+<p>第一次看到这个的时候，会有一些困扰，为什么有了 app 目录，还有 agent.js 和 app.js， schedule 目录又是什么， config 目录下面一大堆东西是什么。</p>
+<p>先说 config 目录，
+plugin.js 之前说过是定义插件的。</p>
+<p>下面一堆 config.xxx.js 到底是个什么东东？</p>
+<p>我们先看下普通 webpack 的配置，一般有三个文件。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">scripts
+├── webpack<span class="token punctuation">.</span>common<span class="token punctuation">.</span>js
+├── webpack<span class="token punctuation">.</span>dev<span class="token punctuation">.</span>js
+└── webpack<span class="token punctuation">.</span>prod<span class="token punctuation">.</span>js</code></pre></div>
+<p>在 webpack.dev.js 和 webpack.prod.js 里面，我们通过 webpack-merge <strong>手动</strong>合并 webpack.common.js 。</p>
+<p>而在 Eggjs 里面会<strong>自动</strong>合并 config.default.js, 这在开始的时候确实让人困扰，比如当你环境是 prod 时候，config.prod.js 会自动合并 config.default.js。</p>
+<p>环境通过<code class="language-text">EGG_SERVER_ENV=prod npm start</code>指定，更多说明参见<a href="https://eggjs.org/zh-cn/basics/config.html">配置</a></p>
+<p>app 目录下面 router.js, controller,service,view 等目录已经清楚，middleware 目录放置的是 Koajs 的中间件，extend 目录是对<a href="https://eggjs.org/zh-cn/basics/extend.html">原生对象</a>的扩展，我们一些常用的方法一般会放在 util.js 文件中，这里对应的是 helper.js。</p>
+<p>接下来说下 app.js , agent.js 和 app/schedule ，这三者的关系。</p>
+<p>当我们在本地开发阶，一般只会起一个实例，通常用<code class="language-text">node app.js</code> 启动。
+但是我们在部署的时候，一般会有多个，通常用 pm2 来管理，如<code class="language-text">pm2 start app.js</code>。一个实例对应一个进程。</p>
+<p>而 Eggjs 自己实现了一套多进程管理方式，分别有 Master、Agent、Worker 三个角色。</p>
+<p>Master: 数量 1，性能稳定，不做具体工作，负责其他两者的管理工作，类似 pm2 。</p>
+<p>Agent: 数量 1, 性能稳定，一些后端工作，比如长连接监听后端配置，然后做一些通知。</p>
+<p>Worker: 性能不稳定，数量多个 (默认核数)，业务代码跑这个上面。</p>
+<p>那上面 app.js (包括 app 目录) 等就是跑在 worker 进程下，会有多个。
+agent.js 跑在 Agent 进程下。</p>
+<p>以本人电脑<code class="language-text">MacBook Pro (13-inch, M1, 2020)</code>为例，这电脑有 8 核，所以基本上会有 8 个 worker 进程，一个 agent 和一个 master 进程。</p>
+<p>下图可以看得更清晰，可以看到起了 8 个<code class="language-text">app_worker.js</code>, 一个<code class="language-text">agent_work.js</code>, 还有一个 master 进程
+<img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/11313742054/8626/0016/9f76/ade08e2bf57fb423f5af7e0925b6eccc.png" alt="egg_progress"></p>
+<p>那 schedule 又是什么呢？这里是 worker 进程执行定时任务。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// app/schedule/force_refresh.js</span>
+exports<span class="token punctuation">.</span>schedule <span class="token operator">=</span> <span class="token punctuation">{</span>
+  interval<span class="token punctuation">:</span> <span class="token string">'10m'</span><span class="token punctuation">,</span>
+  type<span class="token punctuation">:</span> <span class="token string">'all'</span><span class="token punctuation">,</span> <span class="token comment">// 所有worker进程，8个都会执行</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+exports<span class="token punctuation">.</span>schedule <span class="token operator">=</span> <span class="token punctuation">{</span>
+  interval<span class="token punctuation">:</span> <span class="token string">'10s'</span><span class="token punctuation">,</span>
+  type<span class="token punctuation">:</span> <span class="token string">'worker'</span><span class="token punctuation">,</span> <span class="token comment">// 每台机器上只有一个 worker 会执行定时任务，每次执行定时任务的 worker 随机。</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<p>schedule 和 agent.js 根据自己需要来判断 具体使用哪种。</p>
+<p>上面是<code class="language-text">Eggjs</code>多进程的简单分析，具体可以看<a href="https://eggjs.org/zh-cn/core/cluster-and-ipc.html">这里</a></p>
+<h3>插件</h3>
+<p>如果现在让你设计一个插件系统，要求插件之间有依赖关系，要有环境判断，要有开关控制插件启动，该如何设计？</p>
+<p>我们首先想到的是依赖处理，这块前端已经非常成熟，可以借助 npm，来进行依赖管理。</p>
+<p>另外像环境判断等一些参数，可以参考第三方库例如 browserslist，在 package.json 添加一个字段配置，也可以专门新建一个.xxxxrc 配置。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">//package.json 写法</span>
+<span class="token punctuation">{</span>
+  <span class="token string">"private"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string">"dependencies"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">"autoprefixer"</span><span class="token punctuation">:</span> <span class="token string">"^6.5.4"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">"browserslist"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token string">"last 1 version"</span><span class="token punctuation">,</span>
+    <span class="token string">"> 1%"</span><span class="token punctuation">,</span>
+    <span class="token string">"IE 10"</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre></div>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">//.browserslistrc</span>
+
+# Browsers that we support
+last <span class="token number">1</span> version
+<span class="token operator">></span> <span class="token number">1</span><span class="token operator">%</span>
+<span class="token constant">IE</span> <span class="token number">10</span> # sorry</code></pre></div>
+<p>由此，我们可以定义自己的配置如下</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">//package.json</span>
+<span class="token punctuation">{</span>
+	myplugin<span class="token punctuation">:</span><span class="token punctuation">{</span>
+		env<span class="token punctuation">:</span><span class="token string">"dev"</span><span class="token punctuation">,</span>
+		others<span class="token punctuation">:</span><span class="token string">"xxx"</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Eggjs 的插件也是这样设计的</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token punctuation">{</span>
+  <span class="token string">"eggPlugin"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">"env"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string">"local"</span><span class="token punctuation">,</span> <span class="token string">"test"</span><span class="token punctuation">,</span> <span class="token string">"unittest"</span><span class="token punctuation">,</span> <span class="token string">"prod"</span> <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>但是 Eggjs 对于依赖管理，名字都自己做了处理，导致看上去比较冗余。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">//package.json</span>
+<span class="token punctuation">{</span>
+  <span class="token string">"eggPlugin"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">"name"</span><span class="token punctuation">:</span> <span class="token string">"rpc"</span><span class="token punctuation">,</span>
+    <span class="token string">"dependencies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string">"registry"</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">"optionalDependencies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string">"vip"</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">"env"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string">"local"</span><span class="token punctuation">,</span> <span class="token string">"test"</span><span class="token punctuation">,</span> <span class="token string">"unittest"</span><span class="token punctuation">,</span> <span class="token string">"prod"</span> <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>所有的一些都写在 eggPlugin 的配置里面，包括插件名字，依赖等，而不是利用 package.json 已有的字段和能力。这也是开始的时候比较困惑的地方。</p>
+<p>官方给出的解释是:</p>
+<blockquote>
+<p><a href="https://eggjs.org/zh-cn/advanced/plugin.html">首先 Egg 插件不仅仅支持 npm 包，还支持通过目录来找插件</a></p>
+</blockquote>
+<p>现在可以通过 yarn 的 workspace 和 lerna 这种 monorepo 的方式，更好的管理插件。</p>
+<p>看一下插件的目录和内容，其实是简化版应用。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token punctuation">.</span> egg<span class="token operator">-</span>hello
+├── <span class="token keyword">package</span><span class="token punctuation">.</span>json
+├── app<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+├── agent<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+├── app
+│   ├── <span class="token function">extend</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+│   <span class="token operator">|</span>   ├── helper<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+│   <span class="token operator">|</span>   ├── request<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+│   <span class="token operator">|</span>   ├── response<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+│   <span class="token operator">|</span>   ├── context<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+│   <span class="token operator">|</span>   ├── application<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+│   <span class="token operator">|</span>   └── agent<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+│   ├── <span class="token function">service</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+│   └── <span class="token function">middleware</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+│       └── mw<span class="token punctuation">.</span>js
+├── config
+<span class="token operator">|</span>   ├── config<span class="token punctuation">.</span>default<span class="token punctuation">.</span>js
+│   ├── config<span class="token punctuation">.</span>prod<span class="token punctuation">.</span>js
+<span class="token operator">|</span>   ├── config<span class="token punctuation">.</span>test<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+<span class="token operator">|</span>   ├── config<span class="token punctuation">.</span>local<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+<span class="token operator">|</span>   └── config<span class="token punctuation">.</span>unittest<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选<span class="token punctuation">)</span>
+└── test
+    └── middleware
+        └── mw<span class="token punctuation">.</span>test<span class="token punctuation">.</span>js</code></pre></div>
+<ol>
+<li>去掉了 router 和 controller。这部分之前说过主要处理请求，进行转发，而插件的定义是增强的中间件，所以没必要。</li>
+<li>去掉了 plugin.js。 这个文件的主要作用就是引入或开启其他插件。框架已经做了这部分工作，这里就没必要。</li>
+</ol>
+<p>由于插件是一个小型应用，因为会存在插件中和框架重复的情况，因此 Eggjs 的加载顺序是 <strong>插件 &#x3C; 框架 &#x3C; 应用</strong>。</p>
+<p>比如 插件有个 config.default.js，框架也有 config.default.js，应用也有 config.default.js。</p>
+<p>最后会合并成一个 config.default.js, 执行顺序为</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">let</span> finalConfig<span class="token operator">=</span> Objeact<span class="token punctuation">.</span><span class="token function">assign</span><span class="token punctuation">(</span>插件的config<span class="token punctuation">,</span>框架的config，应用的config<span class="token punctuation">)</span></code></pre></div>
+<h2>总结</h2>
+<p>Eggjs 的出现和框架设计带有自身的特点和时代的因素，
+本文作为入门的一个解读，希望能帮助大家能够更好的掌握这个框架。</p>
+<blockquote>
+<p>本文发布自 <a href="https://github.com/x-orpheus">网易云音乐大前端团队</a>，文章未经授权禁止任何形式的转载。我们常年招收前端、iOS、Android，如果你准备换工作，又恰好喜欢云音乐，那就加入我们 grp.music-fe(at)corp.netease.com！</p>
+</blockquote></section><hr style="margin-bottom:1.625rem"/></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/android-privacy/">← 上一篇</a></li><li></li></ul></nav><div id="disqus_thread"></div></main></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-46698359-8', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/eggjs-destruction/";window.webpackCompilationHash="93dc93a4d7b7440fdbd5";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-0c9a63a3aef9e813df5b.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-51d272fe0618a2665c13.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js"],"component---src-pages-404-js":["/component---src-pages-404-js-e9fc057fd683384561c6.js"],"component---src-pages-index-js":["/component---src-pages-index-js-48dc264068dece189e1b.js"]};/*]]>*/</script><script src="/webpack-runtime-2742ada98d46151d1c6f.js" async=""></script><script src="/commons-8d9941e7328683a5eecb.js" async=""></script><script src="/app-0c9a63a3aef9e813df5b.js" async=""></script><script src="/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js" async=""></script><script src="/styles-342a1cab92fcc49c71b0.js" async=""></script></body></html>
