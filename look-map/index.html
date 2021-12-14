@@ -1,0 +1,297 @@
+<!DOCTYPE html><html lang="zh"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.625 -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}h1{margin-left:0;margin-right:0;margin-top:2.4375rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.21875rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h2{margin-left:0;margin-right:0;margin-top:1.625rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.40625rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:hsla(0,0%,0%,0.53);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}ul{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:0.85rem;line-height:1.625rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:1rem;line-height:1.625rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:calc(0.8125rem - 1px);padding-right:0;padding-top:0;margin-bottom:0.8125rem;border-left:4px solid hsla(0,0%,0%,0.13);color:hsla(0,0%,0%,0.53);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(0.8125rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}b{font-weight:600;}strong{font-weight:600;}dt{font-weight:600;}th{font-weight:600;}li{margin-bottom:calc(0.8125rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}li > ul{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(0.8125rem / 2);}code{font-size:0.85rem;line-height:1.625rem;}kbd{font-size:0.85rem;line-height:1.625rem;}samp{font-size:0.85rem;line-height:1.625rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.08333rem;padding-right:1.08333rem;padding-top:0.8125rem;padding-bottom:calc(0.8125rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}h3,h4,h5,h6{margin-bottom:0.8125rem;margin-top:1.625rem;}ol,ul{margin-left:2.03125rem;}li>ol,li>ul{margin-left:2.03125rem;}a{color:#4078c0;text-decoration:none;}a:hover,a:active{text-decoration:underline;}</style><title data-react-helmet="true">LOOK直播活动地图生成器方案 | 云音乐大前端专栏</title><style type="text/css">.gatsby-resp-image-image{width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;color:transparent;}</style><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#dd001b"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><meta name="generator" content="Gatsby 2.15.7"/><meta data-react-helmet="true" name="description" content="在最近的活动开发中，笔者完成了一款大富翁的游戏。其技术细节暂且忽略，在这里主要想探讨下地图绘制的问题。在整个地图中，有很多的组成路径的方格以及作为房产的方格，如果一个个手动去调整位置，工作量是很大的。因此需要一个方案能够帮助我们快速确定方格在地图中的位置。下面便是笔者所采用的方法。"/><meta data-react-helmet="true" property="og:title" content="LOOK直播活动地图生成器方案"/><meta data-react-helmet="true" property="og:description" content="在最近的活动开发中，笔者完成了一款大富翁的游戏。其技术细节暂且忽略，在这里主要想探讨下地图绘制的问题。在整个地图中，有很多的组成路径的方格以及作为房产的方格，如果一个个手动去调整位置，工作量是很大的。因此需要一个方案能够帮助我们快速确定方格在地图中的位置。下面便是笔者所采用的方法。"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="云音乐大前端团队"/><meta data-react-helmet="true" name="twitter:title" content="LOOK直播活动地图生成器方案"/><meta data-react-helmet="true" name="twitter:description" content="在最近的活动开发中，笔者完成了一款大富翁的游戏。其技术细节暂且忽略，在这里主要想探讨下地图绘制的问题。在整个地图中，有很多的组成路径的方格以及作为房产的方格，如果一个个手动去调整位置，工作量是很大的。因此需要一个方案能够帮助我们快速确定方格在地图中的位置。下面便是笔者所采用的方法。"/><style data-href="/styles.a8f6e12462010344bfaf.css">@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:200;src:local("Source Code Pro Extra Light "),local("Source Code Pro-Extra Light"),url(/static/source-code-pro-latin-200-41568fe7927570e049a6cb707930f353.woff2) format("woff2"),url(/static/source-code-pro-latin-200-568dcb298a36f14317fdcddf8eded62f.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:300;src:local("Source Code Pro Light "),local("Source Code Pro-Light"),url(/static/source-code-pro-latin-300-248b2236ba6bb9d2745a4908bc9c4568.woff2) format("woff2"),url(/static/source-code-pro-latin-300-43fcfcf552695ff0976d7d03a29835c4.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:400;src:local("Source Code Pro Regular "),local("Source Code Pro-Regular"),url(/static/source-code-pro-latin-400-1c37ab07cfefc70a85445f49737ad28a.woff2) format("woff2"),url(/static/source-code-pro-latin-400-a4a08973559a45aba173184ea065addf.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:500;src:local("Source Code Pro Medium "),local("Source Code Pro-Medium"),url(/static/source-code-pro-latin-500-67f6c1995acae33eacb1af1807c0e8c8.woff2) format("woff2"),url(/static/source-code-pro-latin-500-a39fc2de145c00ef5898c77b15c27517.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:600;src:local("Source Code Pro SemiBold "),local("Source Code Pro-SemiBold"),url(/static/source-code-pro-latin-600-bf5d453754c3bd3e0fc9bcdc979048f1.woff2) format("woff2"),url(/static/source-code-pro-latin-600-c021e440e993ff26de945242222960a6.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:700;src:local("Source Code Pro Bold "),local("Source Code Pro-Bold"),url(/static/source-code-pro-latin-700-b46da14cbd07b2f1f5ca74069d59318e.woff2) format("woff2"),url(/static/source-code-pro-latin-700-c86a17b160684a125455d36f4733ad85.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:900;src:local("Source Code Pro Black "),local("Source Code Pro-Black"),url(/static/source-code-pro-latin-900-e985b6f17d53c2780c3c49722984a52e.woff2) format("woff2"),url(/static/source-code-pro-latin-900-b0d773d996cad7ea914d35d16dd0f3ec.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:400;src:local("Noto Sans Regular "),local("Noto Sans-Regular"),url(/static/noto-sans-latin-400-175853ded2a4e2249d37c46ca0ca33c5.woff2) format("woff2"),url(/static/noto-sans-latin-400-e7ccb0aa43af9fb7fae4d1bdc23a099b.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:400;src:local("Noto Sans Regular italic"),local("Noto Sans-Regularitalic"),url(/static/noto-sans-latin-400italic-baa3ec09eb827b4f10593032d1cf2a88.woff2) format("woff2"),url(/static/noto-sans-latin-400italic-14425b1ebbce551302a950b083b6c14e.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:700;src:local("Noto Sans Bold "),local("Noto Sans-Bold"),url(/static/noto-sans-latin-700-43750a193b8ff0b4e929323a72d79301.woff2) format("woff2"),url(/static/noto-sans-latin-700-a8edfe7bbf3b01666adc30c118cc5223.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:700;src:local("Noto Sans Bold italic"),local("Noto Sans-Bolditalic"),url(/static/noto-sans-latin-700italic-bc98820a9bf62004a88ef07e012e3ce3.woff2) format("woff2"),url(/static/noto-sans-latin-700italic-0e19737ff39f96eb1ff99e463fa457a4.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><link as="script" rel="preload" href="/styles-2cb2146178afb4fd3e15.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js"/><link as="script" rel="preload" href="/app-0c9a63a3aef9e813df5b.js"/><link as="script" rel="preload" href="/commons-8d9941e7328683a5eecb.js"/><link as="script" rel="preload" href="/webpack-runtime-2742ada98d46151d1c6f.js"/><link as="fetch" rel="preload" href="/page-data/look-map/page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:39rem;padding:2.4375rem 1.21875rem;font-family:&quot;Source Code Pro&quot;, &quot;Noto Sans CJK SC&quot;"><header><h1 style="font-size:2.2974rem;line-height:3.25rem;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:#DD001B" href="/">云音乐大前端专栏</a></h1></header><main><article><header><h1 style="margin-top:1.625rem;margin-bottom:0;color:#001E26">LOOK直播活动地图生成器方案</h1><p style="font-size:0.87055rem;line-height:1.625rem;display:block;margin-bottom:1.625rem">2021-12-14</p></header><section><p><img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/11314782411/aa23/8c55/030f/b193b7a40121f440cbc0c882a2ccc51a.png" alt="大富翁"></p>
+<blockquote>
+<p>本文作者：李一笑</p>
+</blockquote>
+<p>对于前端而言，与视觉稿打交道是必不可少的，因为我们需要对照着视觉稿来确定元素的位置、大小等信息。如果是比较简单的页面，手动调整每个元素所带来的工作量尚且可以接受；然而当视觉稿中素材数量较大时，手动调整每个元素便不再是个可以接受的策略了。</p>
+<p>在最近的活动开发中，笔者就刚好碰到了这个问题。这次活动开发需要完成一款大富翁游戏，而作为一款大富翁游戏，地图自然是必不可少的。在整个地图中，有很多的不同种类的方格，如果一个个手动去调整位置，工作量是很大的。那么有没有一种方案能够帮助我们快速确定方格的位置和种类呢？下面便是笔者所采用的方法。</p>
+<h1>方案简述</h1>
+<h2>位点图</h2>
+<p>首先，我们需要视觉同学提供一张特殊的图片，称之为位点图。</p>
+<p>这张图片要满足以下几个要求：</p>
+<ol>
+<li>在每个方格左上角的位置，放置一个 1px 的像素点，不同类型的方格用不同颜色表示。</li>
+<li>底色为纯色：便于区分背景和方格。</li>
+<li>大小和地图背景图大小一致：便于从图中读出的坐标可以直接使用。</li>
+</ol>
+<p><img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/11314785756/3999/eaa5/0eeb/98e463a2330058e0a2c9053d98b55352.png" alt="bitmap"></p>
+<p>上图为一个示例，在每个路径方格左上角的位置都有一个 1px 的像素点。为了看起来明显一点，这里用红色的圆点来表示。在实际情况中，不同的点由于方格种类不同，颜色也是不同的。</p>
+<p><img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/11327600419/9124/3f24/8311/43f1a0ac8935fc02161f6b10e8f5670b.png" alt="bitmap2"></p>
+<p>上图中用黑色边框标出了素材图的轮廓。可以看到，红色圆点和每个路径方格是一一对应的关系。</p>
+<h2>读取位点图</h2>
+<p>在上面的位点图中，所有方格的位置和种类信息都被标注了出来。我们接下来要做的，便是将这些信息读取出来，并生成一份 json 文件来供我们后续使用。</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">const</span> JImp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'jimp'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> nodepath <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">parseImg</span><span class="token punctuation">(</span><span class="token parameter">filename</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    JImp<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span>filename<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> image</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> <span class="token punctuation">{</span> width<span class="token punctuation">,</span> height <span class="token punctuation">}</span> <span class="token operator">=</span> image<span class="token punctuation">.</span>bitmap<span class="token punctuation">;</span>
+
+        <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 图片左上角像素点的颜色, 也就是背景图的颜色</span>
+        <span class="token keyword">const</span> mask <span class="token operator">=</span> image<span class="token punctuation">.</span><span class="token function">getPixelColor</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 筛选出非 mask 位置点</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> y <span class="token operator">&lt;</span> height<span class="token punctuation">;</span> <span class="token operator">++</span>y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> x <span class="token operator">&lt;</span> width<span class="token punctuation">;</span> <span class="token operator">++</span>x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">const</span> color <span class="token operator">=</span> image<span class="token punctuation">.</span><span class="token function">getPixelColor</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>mask <span class="token operator">!==</span> color<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    result<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                        <span class="token comment">// x y 坐标</span>
+                        x<span class="token punctuation">,</span>
+                        y<span class="token punctuation">,</span>
+                        <span class="token comment">// 方格种类</span>
+                        type<span class="token punctuation">:</span> color<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// 输出</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            <span class="token comment">// 路径</span>
+            path<span class="token punctuation">:</span> result<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">parseImg</span><span class="token punctuation">(</span><span class="token string">'bitmap.png'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>在这里我们使用了 <code class="language-text">jimp</code> 用于图像处理，通过它我们能够去扫描这张图片中每个像素点的颜色和位置。</p>
+<p>至此我们得到了包含所有方格位置和种类信息的 json 文件：</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+    <span class="token property">"path"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+            <span class="token property">"x"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            <span class="token property">"y"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token comment">// ...</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>其中，x y 为方格左上角的坐标；type 为方格种类，值为颜色值，代表不同种类的地图方格。</p>
+<h2>通路连通算法</h2>
+<p>对于我们的项目而言，只确定路径点是不够的，还需要将这些点连接成一个完整的通路。为此，我们需要找到一条由这些点构成的最短连接路径。</p>
+<p>代码如下：</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">function</span> <span class="token function">takePath</span><span class="token punctuation">(</span><span class="token parameter">point<span class="token punctuation">,</span> points</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> candidate <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        <span class="token comment">// 按照距离从小到大排序</span>
+        <span class="token keyword">const</span> pp <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>points<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">i</span><span class="token punctuation">)</span> <span class="token operator">=></span> i <span class="token operator">!==</span> point<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">const</span> <span class="token punctuation">[</span>one<span class="token punctuation">,</span> two<span class="token punctuation">]</span> <span class="token operator">=</span> pp<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">measureLen</span><span class="token punctuation">(</span>point<span class="token punctuation">,</span> a<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token function">measureLen</span><span class="token punctuation">(</span>point<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>one<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// 如果两个距离 比较小，则穷举两个路线，选择最短连通图路径。</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>two <span class="token operator">&amp;&amp;</span> <span class="token function">measureLen</span><span class="token punctuation">(</span>one<span class="token punctuation">,</span> two<span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">20000</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token punctuation">[</span>one<span class="token punctuation">,</span> two<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span>one<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> min <span class="token operator">=</span> <span class="token number">Infinity</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> minPath <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> candidate<span class="token punctuation">.</span>length<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 递归找出最小路径</span>
+        <span class="token keyword">const</span> subpath <span class="token operator">=</span> <span class="token function">takePath</span><span class="token punctuation">(</span>candidate<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token function">removeItem</span><span class="token punctuation">(</span>points<span class="token punctuation">,</span> candidate<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>point<span class="token punctuation">,</span> subpath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 测量路径总长度</span>
+        <span class="token keyword">const</span> distance <span class="token operator">=</span> <span class="token function">measurePathDistance</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>distance <span class="token operator">&lt;</span> min<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            min <span class="token operator">=</span> distance<span class="token punctuation">;</span>
+            minPath <span class="token operator">=</span> subpath<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>point<span class="token punctuation">,</span> minPath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>到这里，我们已经完成了所有的准备工作，可以开始绘制地图了。在绘制地图时，我们只需要先读取 json 文件，再根据 json 文件内的坐标信息和种类信息来放置对应素材即可。</p>
+<h1>方案优化</h1>
+<p>上述方案能够解决我们的问题，但仍有一些不太方便的地方：</p>
+<ol>
+<li>只有 1px 的像素点太小了，肉眼无法辨别。不管是视觉同学还是开发同学，如果点错了位置就很难排查。</li>
+<li>位点图中包含的信息还是太少了，颜色仅仅对应种类，我们希望能够包含更多的信息，比如点之间的排列顺序、方格的大小等。</li>
+</ol>
+<h2>像素点合并</h2>
+<p>对于第一个问题，我们可以让视觉同学在画图的时候，将 1px 的像素点扩大成一个肉眼足够辨识的区域。<strong>需要注意两个区域之间不要有重叠。</strong></p>
+<p><img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/11327612311/76f0/bcba/1acf/0abfc03451a7aac37d687b28a584a881.jpg" alt="bitmap3"></p>
+<p>这时候就要求我们对代码做一些调整。在之前的代码中，当我们扫描到某个颜色与背景色不同的点时，会直接记录其坐标和颜色信息；现在当我们扫描到某个颜色与背景色不同的点时，还需要进行一次区域合并，将所有相邻且相同颜色的点都纳入进来。</p>
+<p>区域合并的思路借鉴了下图像处理的区域生长算法。区域生长算法的思路是以一个像素点为起点，将该点周围符合条件的点纳入进来，之后再以新纳入的点为起点，向新起点相邻的点扩张，直到所有符合条件条件的点都被纳入进来。这样就完成了一次区域合并。不断重复该过程，直到整个图像中所有的点都被扫描完毕。</p>
+<p>我们的思路和区域生长算法非常类似：</p>
+<ol>
+<li>
+<p>依次扫描图像中的像素点，当扫描到颜色与背景色不同的点时，记录下该点的坐标和颜色。</p>
+<p><img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/11327616110/5c78/8d22/7490/b6e53e04dbff485113cce09efe067eb1.png" alt="步骤1.png"></p>
+</li>
+<li>
+<p>之后扫描与该点相邻的 8 个点，将这些点打上”已扫描“的标记。筛选出其中颜色与背景色不同且尚未被扫描过的点，放入待扫描的队列中。</p>
+<p><img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/11327615330/5bd7/c9e7/a7e0/cce4aa97d07c881639cc1b1ea10c067f.png" alt="步骤2.png"></p>
+</li>
+<li>从待扫描队列中取出下一个需要扫描的点，重复步骤 1 和步骤 2。</li>
+<li>
+<p>直到待扫描的队列为空时，我们就扫描完了一整个有颜色的区域。区域合并完毕。</p>
+<p><img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/11327616119/a661/cb39/5b41/2137e14930e567914edb554d5db93af0.png" alt="步骤3.png"></p>
+</li>
+</ol>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">const</span> JImp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'jimp'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> image <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> maskColor <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 判断两个颜色是否为相同颜色 -> 为了处理图像颜色有误差的情况, 不采用相等来判断</span>
+<span class="token keyword">const</span> <span class="token function-variable function">isDifferentColor</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">color1<span class="token punctuation">,</span> color2</span><span class="token punctuation">)</span> <span class="token operator">=></span> Math<span class="token punctuation">.</span><span class="token function">abs</span><span class="token punctuation">(</span>color1 <span class="token operator">-</span> color2<span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">0xf000ff</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 判断是(x,y)是否超出边界</span>
+<span class="token keyword">const</span> <span class="token function-variable function">isWithinImage</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> x<span class="token punctuation">,</span> y <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> x <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> x <span class="token operator">&lt;</span> image<span class="token punctuation">.</span>width <span class="token operator">&amp;&amp;</span> y <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> y <span class="token operator">&lt;</span> image<span class="token punctuation">.</span>height<span class="token punctuation">;</span>
+
+<span class="token comment">// 选择数量最多的颜色</span>
+<span class="token keyword">const</span> <span class="token function-variable function">selectMostColor</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">dotColors</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span> <span class="token comment">/* ... */</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 选取左上角的坐标</span>
+<span class="token keyword">const</span> <span class="token function-variable function">selectTopLeftDot</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">reginDots</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span> <span class="token comment">/* ... */</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 区域合并</span>
+<span class="token keyword">const</span> <span class="token function-variable function">reginMerge</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> x<span class="token punctuation">,</span> y <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> color <span class="token operator">=</span> image<span class="token punctuation">.</span><span class="token function">getPixelColor</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 扫描过的点</span>
+    <span class="token keyword">const</span> reginDots <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> color <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token comment">// 所有扫描过的点的颜色 -> 扫描完成后, 选择最多的色值作为这一区域的颜色</span>
+    <span class="token keyword">const</span> dotColors <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    dotColors<span class="token punctuation">[</span>color<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> reginDots<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> <span class="token punctuation">{</span> x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> color <span class="token punctuation">}</span> <span class="token operator">=</span> reginDots<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 朝临近的八个个方向生长</span>
+        <span class="token keyword">const</span> seeds <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+            <span class="token keyword">const</span> candinates <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token comment">/* 左、右、上、下、左上、左下、右上、右下 */</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+            <span class="token keyword">return</span> candinates
+                <span class="token comment">// 去除超出边界的点</span>
+                <span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>isWithinImage<span class="token punctuation">)</span>
+                <span class="token comment">// 获取每个点的颜色</span>
+                <span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> x<span class="token punctuation">,</span> y <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span><span class="token punctuation">{</span> x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> color<span class="token punctuation">:</span> image<span class="token punctuation">.</span><span class="token function">getPixelColor</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+                <span class="token comment">// 去除和背景色颜色相近的点</span>
+                <span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">isDifferentColor</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>color<span class="token punctuation">,</span> maskColor<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> seed <span class="token keyword">of</span> seeds<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">const</span> <span class="token punctuation">{</span> x<span class="token punctuation">:</span> seedX<span class="token punctuation">,</span> y<span class="token punctuation">:</span> seedY<span class="token punctuation">,</span> color<span class="token punctuation">:</span> seedColor <span class="token punctuation">}</span> <span class="token operator">=</span> seed<span class="token punctuation">;</span>
+
+            <span class="token comment">// 将这些点添加到 reginDots, 作为下次扫描的边界</span>
+            reginDots<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>seed<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 将该点设置为背景色, 避免重复扫描</span>
+            image<span class="token punctuation">.</span><span class="token function">setPixelColor</span><span class="token punctuation">(</span>maskColor<span class="token punctuation">,</span> seedX<span class="token punctuation">,</span> seedY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 该点颜色为没有扫描到的新颜色, 将颜色增加到 dotColors 中</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>dotColors<span class="token punctuation">[</span>seedColor<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                dotColors<span class="token punctuation">[</span>seedColor<span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                <span class="token comment">// 颜色为旧颜色, 增加颜色的 count 值</span>
+                dotColors<span class="token punctuation">[</span>seedColor<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 扫描完成后, 选择数量最多的色值作为区域的颜色</span>
+    <span class="token keyword">const</span> targetColor <span class="token operator">=</span> <span class="token function">selectMostColor</span><span class="token punctuation">(</span>dotColors<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 选择最左上角的坐标作为当前区域的坐标</span>
+    <span class="token keyword">const</span> topLeftDot <span class="token operator">=</span> <span class="token function">selectTopLeftDot</span><span class="token punctuation">(</span>reginDots<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        <span class="token operator">...</span>topLeftDot<span class="token punctuation">,</span>
+        color<span class="token punctuation">:</span> targetColor<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">parseBitmap</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">filename</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    JImp<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span>filename<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> img</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">const</span> <span class="token punctuation">{</span> width<span class="token punctuation">,</span> height <span class="token punctuation">}</span> <span class="token operator">=</span> image<span class="token punctuation">.</span>bitmap<span class="token punctuation">;</span>
+        <span class="token comment">// 背景颜色</span>
+        maskColor <span class="token operator">=</span> image<span class="token punctuation">.</span><span class="token function">getPixelColor</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        image <span class="token operator">=</span> img<span class="token punctuation">;</span>
+
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> y <span class="token operator">&lt;</span> height<span class="token punctuation">;</span> <span class="token operator">++</span>y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> x <span class="token operator">&lt;</span> width<span class="token punctuation">;</span> <span class="token operator">++</span>x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">const</span> color <span class="token operator">=</span> image<span class="token punctuation">.</span><span class="token function">getPixelColor</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+                <span class="token comment">// 颜色不相近</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isDifferentColor</span><span class="token punctuation">(</span>color<span class="token punctuation">,</span> maskColor<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token comment">// 开启种子生长程序, 依次扫描所有临近的色块</span>
+                    result<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token function">reginMerge</span><span class="token punctuation">(</span><span class="token punctuation">{</span> x<span class="token punctuation">,</span> y <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<h2>颜色包含额外信息</h2>
+<p>在之前的方案中，我们都是使用颜色值来表示种类，但实际上颜色值所能包含的信息还有很多。</p>
+<p>一个颜色值可以用 rgba 来表示，因此我们可以让 r、g、b、a 分别代表不同的信息，如 r 代表种类、g 代表宽度、b 代表高度、a 代表顺序。虽然 rgba 每个的数量都有限（r、g、b 的范围为 0-255，a 的范围为 0-99），但基本足够我们使用了。</p>
+<p><img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/11327624948/83ec/0ede/6c09/fef26a061fdf34f48287b74f8c5e658b.png" alt="rgba.png"></p>
+<p>当然，你甚至可以再进一步，让每个数字都表示一种信息，不过这样每种信息的范围就比较小，只有 0-9。</p>
+<h1>总结</h1>
+<p>对于素材量较少的场景，前端可以直接从视觉稿中确认素材信息；当素材量很多时，直接从视觉稿中确认素材信息的工作量就变得非常大，因此我们使用了位点图来辅助我们获取素材信息。</p>
+<p><img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/11953061566/fef9/e3f0/7ec7/a35430850a7548e8ced1ae7a83fba0bb.png" alt="无标题-2021-09-28-1450.png"></p>
+<p>地图就是这样一种典型的场景，在上面的例子中，我们已经通过从位点图中读出的信息成功绘制了地图。我们的步骤如下：</p>
+<ol>
+<li>
+<p>视觉同学提供位点图，作为承载信息的载体，它需要满足以下三个要求：</p>
+<ol>
+<li>大小和地图背景图大小一致：便于我们从图中读出的坐标可以直接使用。</li>
+<li>底色为纯色：便于区分背景和方格。</li>
+<li>在每个方格左上角的位置，放置一个方格，不同颜色的方格表示不同类型。</li>
+</ol>
+</li>
+<li>通过 <code class="language-text">jimp</code> 扫描图片上每个像素点的颜色，从而生成一份包含各个方格位置和种类的 json。</li>
+<li>绘制地图时，先读取 json 文件，再根据 json 文件内的坐标信息和种类信息来放置素材。</li>
+</ol>
+<p><img src="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/11327629851/2606/cbd9/b90a/2dddd96f14fd810f1aea197ad0318386.gif" alt="gif.gif"></p>
+<p>上述方案并非完美无缺的，在这里我们主要对于位点图进行了改进，改进方案分为两方面：</p>
+<ol>
+<li>由于 1px 的像素点对肉眼来说过小，视觉同学画图以及我们调试的时候，都十分不方便。因此我们将像素点扩大为一个区域，在扫描时，对相邻的相同颜色的像素点进行合并。</li>
+<li>让颜色的 rgba 分别对应一种信息，扩充位点图中的颜色值能够给我们提供的信息。</li>
+</ol>
+<p>我们在这里只着重讲解了获取地图信息的部分，至于如何绘制地图则不在本篇的叙述范围之内。在我的项目中使用了 pixi.js 作为引擎来渲染，完整项目可以参考<a href="https://codesandbox.io/s/empty-cherry-lqdzn?file=/scripts/bitmap.js">这里</a>，在此不做赘述。</p>
+<h1>FAQ</h1>
+<ul>
+<li>
+<p>在位点图上，直接使用颜色块的大小作为路径方格的宽高可以不？</p>
+<p>当然可以。但这种情况是有局限性的，当我们的素材很多且彼此重叠的时候，如果依然用方块大小作为宽高，那么在位点图上的方块就会彼此重叠，影响我们读取位置信息。</p>
+</li>
+<li>
+<p>如何处理有损图的情况？</p>
+<p>有损图中，图形边缘处的颜色和中心的颜色会略微有所差异。因此需要增加一个判断函数，只有扫描到的点的颜色与背景色的差值大于某个数字后，才认为是不同颜色的点，并开始区域合并。同时要注意在位点图中方块的颜色尽量选取与背景色色值相差较大的颜色。</p>
+<p>这个判断函数，就是我们上面代码中的 isDifferentColor 函数。</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">const</span> <span class="token function-variable function">isDifferentColor</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">color1<span class="token punctuation">,</span> color2</span><span class="token punctuation">)</span> <span class="token operator">=></span> Math<span class="token punctuation">.</span><span class="token function">abs</span><span class="token punctuation">(</span>color1 <span class="token operator">-</span> color2<span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">0xf000ff</span><span class="token punctuation">;</span></code></pre></div>
+</li>
+<li>
+<p>判断两个颜色不相等的 <code class="language-text">0xf000ff</code> 是怎么来的？</p>
+<p>随便定的。这个和图片里包含颜色有关系，如果你的背景色和图片上点的颜色非常相近的话，这个值就需要小一点；如果背景色和图上点的颜色相差比较大，这个值就可以大一点。</p>
+</li>
+</ul>
+<h1>参考资料</h1>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/89488964">https://zhuanlan.zhihu.com/p/89488964</a></li>
+<li><a href="https://codeantenna.com/a/B5fEty3uiP">https://codeantenna.com/a/B5fEty3uiP</a></li>
+</ul></section><hr style="margin-bottom:1.625rem"/></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/eggjs-destruction/">← 上一篇</a></li><li></li></ul></nav><div id="disqus_thread"></div></main></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-46698359-8', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/look-map/";window.webpackCompilationHash="2f3c6da872df888e5c74";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-0c9a63a3aef9e813df5b.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-51d272fe0618a2665c13.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js"],"component---src-pages-404-js":["/component---src-pages-404-js-e9fc057fd683384561c6.js"],"component---src-pages-index-js":["/component---src-pages-index-js-48dc264068dece189e1b.js"]};/*]]>*/</script><script src="/webpack-runtime-2742ada98d46151d1c6f.js" async=""></script><script src="/commons-8d9941e7328683a5eecb.js" async=""></script><script src="/app-0c9a63a3aef9e813df5b.js" async=""></script><script src="/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js" async=""></script><script src="/styles-2cb2146178afb4fd3e15.js" async=""></script></body></html>
