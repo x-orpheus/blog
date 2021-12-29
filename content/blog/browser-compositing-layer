@@ -1,0 +1,174 @@
+---
+title: 浏览器渲染魔法之合成层
+date: 2021-12-29T03:46:24.217Z
+description: 浏览器渲染的原理是前端的必修课，今天我们就来聊聊浏览器渲染中合成层的概念，本文将介绍什么是合成层，以及它的一些特性和平常开发中的注意点·
+---
+
+![题图](https://p6.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12020638903/849c/7a22/58e5/b04e2fcf79ccc2261fd5f6c03db811b6.jpg)
+
+> 图片来源：<https://unsplash.com/photos/npxXWgQ33ZQ>
+
+> 本文作者：唐雪荣
+
+## 1. 前言
+
+浏览器与前端开发的关系不言而喻，而了解浏览器的渲染原理，可以帮助我们提升页面性能，解决一些渲染上的问题。最近在开发一个移动端 H5 页面的时候，就遇到一个奇怪的问题，有一个榜单页面在最新版本 IOS 手机上切换 tab 的时候，左上角的倒计时出现闪烁，我们来看一些效果。
+
+![tab切换](https://p5.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12084993482/d5c5/af5d/194e/006978258c0a96e00fdc25222e4a84f2.gif)
+
+大概的代码结构
+
+![tab代码](https://p6.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12085311935/29da/22f6/65e7/525472e0f5a683774e3513c00aaa7913.png)
+
+通过插件查看了一下 DOM 结构正常，样式也和其他手机上一致，那问题出在哪里呢？我想大概率是最新版本 IOS 浏览器渲染的问题。说到这种渲染问题，我第一时间想到的就是用 GPU 渲染提升为合成层试试，于是我给倒计时的 DOM 加上了简短的一行代码  `will-change:transform`，问题顺利解决，倒计时模块的渲染不在受其他内容的影响。为啥加了这段代码就是用 GPU 渲染，并且提升为`合成层`呢？以及`合成层`是什么？让我们一起来看看吧。
+
+## 2. 浏览器渲染流程
+
+在讨论`合成层`之前我们先简单了解一下浏览器渲染，浏览器常见的渲染引擎有 Webkit/Gecko 等，他们的主要渲染流程基本相同，这里主要讨论一下 WebKit 简化的渲染流程。
+
+![渲染流程](https://p5.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12068753623/17d0/ee47/228b/22a33b66cddc183399e0752d943fbb6b.png)
+
+*   浏览器下载并解析 HTML。
+*   处理 `CSS` 构建 `CSSOM` 树，生成 `DOM` 树。
+*   `DOM` 与 `CSSOM` 合并成一个 `Render` 树。
+*   有了 `Render Tree`，浏览器可以知道各个节点的 `CSS` 定义以及他们的从属关系，从而去计算出每个节点在屏幕中的位置，生成一个足够大的画布来容纳所有元素。
+*   根据浏览器提供各层的信息合成图层，显示到屏幕上。
+
+本文的主角`合成层`就出现在最后一步流程中，这些合成图层中一些特殊的图层被认为是合成层（Compositing Layers），我们来具体看看它的由来吧。
+
+## 3. 关于合成层
+
+### 3.1 什么是合成层（Compositing Layer）
+
+首先合成就是将页面的各个部分分成多个层、单独`光栅化`（浏览器根据文档的结构、每个元素的样式、页面的几何形状和绘制顺序转换为屏幕上的像素的过程）它们并在合成器线程中合成为一个页面的技术。
+
+![合成过程](https://p5.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12070825024/1114/dd77/f693/b53399ff55239f1325754a72112b889f.gif)
+
+如何去观察页面的图层结构呢，您需要在 `Chrome` 开发工具中打开自定义菜单，然后在 More tools 中选择 Layers 选项。
+
+![打开图层](https://p6.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12020649991/747c/fb0f/6474/b494bea962f8ae8b7d2402eeab02e8be.png)
+
+这样你就可以观察页面的图层结构了，具体可以看[demo](https://7uyvw.csb.app/)。
+
+![图层结构](https://p5.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12020657160/fe02/dfa8/cc0f/2f947185db975bf4f25ba2a433c37e5a.jpg)
+
+一般来说，拥有一些特定属性的渲染层，会被浏览器自动提升为合成层。合成层拥有单独的图层（GraphicsLayer），和其他图层之间无不影响。而其它不是合成层的渲染层，则和第一个拥有图层的父层共用一个，也就是普通文档流中的内容，我们看一些常见的提升为合成层的属性。
+
+*   设置 `transform: translateZ(0)`，注意它必须是 `translateZ`，因为它使用 GPU 来计算 `perspective distortion`（透视失真）。`perspective` 在 3D 设计中是一个重要的属性，有兴趣的同学可以看[这份资料](https://developer.apple.com/library/archive/documentation/InternetWeb/Conceptual/SafariVisualEffectsProgGuide/Using2Dand3DTransforms/Using2Dand3DTransforms.html)了解一下。如果你使用 `translateX` 或 `translateY`，元素将会被绘制在普通文档流中 [demo](https://q9y9h.csb.app/)。
+*   [backface-visibility: hidden](https://developer.mozilla.org/zh-CN/docs/Web/CSS/backface-visibility) 指定当元素背面朝向观察者时是否可见 [demo](https://yib9l.csb.app/)。
+*   `will-change` 该属性告诉浏览器该元素会有哪些变化，这样浏览器可以提前做好对应的优化准备工作。当该属性的值为 opacity、transform、top、left、bottom、right 时 [demo](https://obbob.csb.app/)。
+*   `video`、`canvas`、`iframe` 等元素。
+
+### 3.2 关于隐式合成
+
+隐式合成就是特定场景下，存在会被默认提升为合成层的情况。具体我们可以再看一下之前图层结构的 [demo](https://codesandbox.io/s/epic-water-7uyvw?file=/index.html)，只要我们把 B 和 C 的 `z-index` 交换一下你就会发现 B 被隐式的提升为合成层了。
+
+![隐式合成](https://p6.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12020659703/0272/1f8d/32a0/61d14ee7c356b8e60befe8dc9e06d2ed.png)
+
+![隐式合成](https://p6.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12020665492/279a/f251/9d08/d8472ca88a6a6dde511c104ed9296bee.jpg)
+
+只是`z-index`导致的么如果我们再调整一些 B 的位置，保证 B 和 C、D 没有交集，那么你会发现这次 B 并没有被隐式提升为合成层了。
+
+![不被隐式合成](https://p6.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12020670166/2b81/7d23/dfc1/1f42d27a09e51a12748729277da128e1.jpg)
+
+所以引用 [CSS GPU Animation](https://www.smashingmagazine.com/2016/12/gpu-animation-doing-it-right/) 中关于隐式合成的描述那就是：
+
+> This is called implicit compositing: One or more non-composited elements that should appear above a composited one in the stacking order are promoted to composite layers — i.e. painted to separate images that are then sent to the GPU.
+> 一个或多个非合成元素应出现在堆叠顺序上的合成元素之上，会被提升为合成层。
+
+### 3.3 层压缩与层爆炸
+
+按我们刚刚说的例子，如果在堆叠顺序底部有一个合成元素，那是不是会导致大量堆叠顺序上的元素被提升为合成层？其实大部分情况下，我们在开发过程中并不会去关注层合成的问题，那么我们刚刚说的情况就会有发生的可能性。当这些不符合预期的合成层达到一定量级时，就会发生`层爆炸`，这会导致你的页面占用大量的内存资源，带来一些无法预期的情况。例如当 `WKWebView` （ `WKWebView` 是多进程组件，这意味着会从 APP 内存中分离内存到单独的进程中）的内存超过系统分配给它的内存的时候，浏览器就会崩溃白屏，但是 APP 不会 `crash`。这是我们不想看到的情况，面对这个问题浏览器也有相对应的一些解决方案，如果多个渲染层同一个合成层重叠时，这些渲染层会被压缩到一个图层中，以防止由于重叠原因导致出现的`层爆炸`。
+我们来看下面这段代码
+
+![层压缩](https://p6.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12020673292/0a2b/32d0/3108/b6d3e1bba26cfcb48ee3f436e5edebf3.png)
+
+B、C、D 本来都应该被提升为合成层，但是由于发生层压缩，它们会渲染在一个图层里面。
+
+![层压缩](https://p5.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12020675705/829f/b899/136a/e369026717e2fe849d4030c57700e5cb.jpg)
+
+近几年浏览器在这块的优化做的越来越好，比如我们来看一个[CSS3 硬件加速也有坑](https://div.io/topic/1348)文章中提供的一个有趣的 [demo](http://fouber.github.io/test/layer/)。页面中包含了一个 h1 标题，它对 `transform` 应用了 `animation` 动画，所以被提升为合成层。由于 `animation transform` 的特殊性（动态交叠不确定），隐式合成在不需要交叠的情况下也能发生，就导致了页面中所有 `z-index` 高于它的节点所对应的渲染层全部提升为合成层，最终让这个页面整整产生了几千个合成层。然后当我在自己电脑上测试这个例子的时候突然发现几千个合成层消失了，页面格外流畅。Why ？我的浏览器版本是 Chrome 96，我找了一下谷歌的历史包，最终测试发现这个问题在 Chrome 94 Releases 版本被优化了。
+
+谷歌浏览器 93 Releases 版本
+
+![animation transform](https://p5.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12020680267/f5c0/a048/b73e/38e46fa67e12ef92c32a947e1982a939.jpg)
+
+谷歌浏览器 96 Releases 版本
+
+![animation transform](https://p6.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12020683100/a7d7/4e8c/b9cf/0ae79642545d70625b7511ecc2b4629c.jpg)
+
+翻看了一下 `Chrome 94` 的更新[日志](https://chromereleases.googleblog.com/2021/09/stable-channel-update-for-desktop\_21.html)，其中提到一条修复内容：
+
+> [1238944](https://bugs.chromium.org/p/chromium/issues/detail?id=1238944) Medium CVE-2021-37966 : Inappropriate implementation in Compositing. Reported by Mohit Raj (shadow2639)  on 2021-08-11
+
+> 修复合成中不正确现象
+
+因为对应 issues 没有权限访问，有兴趣的同学可以深究一下。`层压缩`的存在并不代表我们可以肆无忌惮的去提升合成层，特别在一些对于渲染速度要求高的页面，或者本身加载速度慢的页面，我们就应该关注一下页面的层级结构，简化绘制的复杂度，提高页面的性能。
+
+## 4. 合成层的利弊
+
+渲染层的提示带来的好处：
+
+*   开启硬件加速，合成层的位图会交由 `GPU` 合成，相比 `CPU` 处理要快。
+*   合成层发生 `repaint` 的时候，不会影响其他图层。
+*   对于 `transform` 和 `opacity` 效果，不会触发 `layout` 和 `paint`。
+
+当然合成层也存在一些问题：
+
+*   如果我们把所有渲染工作都交给 `GPU`，在现有的优化下，它会导致渲染内存占用比大幅度提升，反而出现负面的效果。
+*   另外隐式合成容易产生大量我们意料之外的合成层，过大的内存占用，会让页面变的卡顿，性能优化适得其反。
+
+## 5. 总结
+
+### 5.1 使用 transform 和 opacity 来实现动画
+
+在我们日常开发中经常会实现一些动画，有时候我们可能会选择改变 top/left 去实现，那么这个节点的渲染会发生在普通文档流中。而使用 `transform` 和 `opacity` 实现动画能够让节点被放置到一个独立合成层中进行渲染绘制，动画不会影响其他图层，并且 GPU 渲染相比 CPU 能够更快，这会让你的动画变的更加流畅，我们来看看他们的区别。
+
+通过 `left` 来实现动画：
+
+![left](https://p5.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12020719648/eb83/9fbe/eafd/443943088d3880b96287efed8bdb6006.gif)
+
+通过 `transform` 来实现动画：
+
+![transform](https://p6.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12020722082/7234/6d3c/e60e/7f1d140da9f5f68cd883f949f8aac7e1.gif)
+
+可以看到通过 `transform` 来实现动画，页面的 `fps` 能够稳定在 60 左右，而通过 `left` 来实现存在波动，`fps` 大概稳定在 30 左右，这会影响你的用户体验指标。
+
+注：查看帧率的界面唤醒方法
+
+![帧率](https://p5.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12020731459/f9f5/3f58/43ee/3167fb8aab671b5ab6385d84b72d17a6.jpg)
+
+如果你无法确定使用这个属性是否合理，在你将任何 CSS 属性用于实现动画之前，你可以在 [csstriggers](https://csstriggers.com/) 上查看该属性对渲染管道的影响。
+
+![csstriggers](https://p5.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12020732991/a9a4/0f77/d104/f24fe4906a94ed627b110591e6a11f9e.jpg)
+
+### 5.2 谨慎使用 will-change
+
+我认为除非你的元素的真的存在某个属性马上会发生变化，例如 `transform`，你可以使用 `will-change: transform` 告知浏览器，根据您打算更改的元素，浏览器可能可以预先安排，元素的改变和渲染速度都会变得更快。可是这些属性可能会给你带来一些副作用，我们来看一个[demo](https://pk2tw.csb.app/)。
+
+![will-change](https://p5.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12020739250/aa55/837e/a76f/f07cd35c3c4af8adda9ecb1263ea10e0.jpg)
+
+任何带有 `position: fixed` 或者 `position: absolute` 的子元素将会相对于设置了 `will-change: transform` 的元素进行相对定位。所以在你使用的时候需要确保这种意料之外 ` containing block  ` 不会对你造成影响。除此之外浏览器用来为 `will-change` 属性做的更进一步的优化常常会耗费更多的资源，如果你将它施加在过多属性上显然是一个浪费，更甚者非常过度的使用可能会造成页面相应速度的变慢或者直接崩溃。
+
+### 5.3 减小合成层绘制区域
+
+合成层的绘制区域大小，很大程度上影响了它的内存占用，我们来下面这个例子：
+
+![绘制区域](https://p5.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12020744075/d478/b489/2335/37fe8342906bbf1a0e1ae1e2eb367473.png)
+
+可以看到 `A` 的尺寸是 `B` 的 5 倍，我们通过 `transform: scale(5)` 放大 `B` 到 200 × 200 像素，但是它们内存占用上却相差了 `25` 倍之多。在用户看不到任何区别的前提下，你能够节省大量的内存。当然这个例子只适用于这种纯色的场景，我们需要看到的是绘制区域对于内存占有的影响。
+
+![绘制区域](https://p5.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12020745246/e637/0e7c/7688/88286812060aa59257cbbf3e9390672b.jpg)![绘制区域](https://p6.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12020662592/6961/0755/c153/bac57b85089728db50861842618d7b59.jpg)
+
+## 相关资料
+
+*   [CSS GPU Animation: Doing It Right](https://www.smashingmagazine.com/2016/12/gpu-animation-doing-it-right/)
+*   [Stick to Compositor-Only Properties and Manage Layer Count ](https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count?hl=zh-cn)
+*   [Eliminate content repaints with the new Layers panel in Chrome](https://blog.logrocket.com/eliminate-content-repaints-with-the-new-layers-panel-in-chrome-e2c306d4d752/?gi=cd6271834cea)
+*   [无线性能优化：Composite](https://fed.taobao.org/blog/taofed/do71ct/performance-composite/)
+*   [Layers and how to force them](https://dassur.ma/things/forcing-layers/)
+*   [GPU Accelerated Compositing in Chrome](http://www.chromium.org/developers/design-documents/gpu-accelerated-compositing-in-chrome?spm=taofed.bloginfo.blog.1.19585ac8R0XuLu)
+*   [Layers and how to force them](https://dassur.ma/things/forcing-layers/)
+*   [Inside look at modern web browser (part 3)](https://developers.google.com/web/updates/2018/09/inside-browser-part3)
+
+> 本文发布自 [网易云音乐大前端团队](https://github.com/x-orpheus)，文章未经授权禁止任何形式的转载。我们常年招收前端、iOS、Android，如果你准备换工作，又恰好喜欢云音乐，那就加入我们 grp.music-fe (at) corp.netease.com！
