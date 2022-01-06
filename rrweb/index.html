@@ -1,0 +1,285 @@
+<!DOCTYPE html><html lang="zh"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.625 -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}h1{margin-left:0;margin-right:0;margin-top:2.4375rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.21875rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h2{margin-left:0;margin-right:0;margin-top:1.625rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.40625rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:hsla(0,0%,0%,0.53);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}ul{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:0.85rem;line-height:1.625rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:1rem;line-height:1.625rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:calc(0.8125rem - 1px);padding-right:0;padding-top:0;margin-bottom:0.8125rem;border-left:4px solid hsla(0,0%,0%,0.13);color:hsla(0,0%,0%,0.53);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(0.8125rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}b{font-weight:600;}strong{font-weight:600;}dt{font-weight:600;}th{font-weight:600;}li{margin-bottom:calc(0.8125rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}li > ul{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(0.8125rem / 2);}code{font-size:0.85rem;line-height:1.625rem;}kbd{font-size:0.85rem;line-height:1.625rem;}samp{font-size:0.85rem;line-height:1.625rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.08333rem;padding-right:1.08333rem;padding-top:0.8125rem;padding-bottom:calc(0.8125rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}h3,h4,h5,h6{margin-bottom:0.8125rem;margin-top:1.625rem;}ol,ul{margin-left:2.03125rem;}li>ol,li>ul{margin-left:2.03125rem;}a{color:#4078c0;text-decoration:none;}a:hover,a:active{text-decoration:underline;}</style><title data-react-helmet="true">rrweb 带你还原问题现场 | 云音乐大前端专栏</title><style type="text/css">.gatsby-resp-image-image{width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;color:transparent;}</style><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#dd001b"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><meta name="generator" content="Gatsby 2.15.7"/><meta data-react-helmet="true" name="description" content="为了快速定位并解决CMS使用过程中遇到的问题，开发了问题一键上报插件，用于还原问题现场。本文会简要阐述问题上报插件的设计，以问题上报插件作为一个入口去探索rrweb库的实现原理，主要会从事件监听、DOM 序列化、自定义计时器三方面去着重阐述。"/><meta data-react-helmet="true" property="og:title" content="rrweb 带你还原问题现场"/><meta data-react-helmet="true" property="og:description" content="为了快速定位并解决CMS使用过程中遇到的问题，开发了问题一键上报插件，用于还原问题现场。本文会简要阐述问题上报插件的设计，以问题上报插件作为一个入口去探索rrweb库的实现原理，主要会从事件监听、DOM 序列化、自定义计时器三方面去着重阐述。"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="云音乐大前端团队"/><meta data-react-helmet="true" name="twitter:title" content="rrweb 带你还原问题现场"/><meta data-react-helmet="true" name="twitter:description" content="为了快速定位并解决CMS使用过程中遇到的问题，开发了问题一键上报插件，用于还原问题现场。本文会简要阐述问题上报插件的设计，以问题上报插件作为一个入口去探索rrweb库的实现原理，主要会从事件监听、DOM 序列化、自定义计时器三方面去着重阐述。"/><style data-href="/styles.a8f6e12462010344bfaf.css">@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:200;src:local("Source Code Pro Extra Light "),local("Source Code Pro-Extra Light"),url(/static/source-code-pro-latin-200-41568fe7927570e049a6cb707930f353.woff2) format("woff2"),url(/static/source-code-pro-latin-200-568dcb298a36f14317fdcddf8eded62f.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:300;src:local("Source Code Pro Light "),local("Source Code Pro-Light"),url(/static/source-code-pro-latin-300-248b2236ba6bb9d2745a4908bc9c4568.woff2) format("woff2"),url(/static/source-code-pro-latin-300-43fcfcf552695ff0976d7d03a29835c4.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:400;src:local("Source Code Pro Regular "),local("Source Code Pro-Regular"),url(/static/source-code-pro-latin-400-1c37ab07cfefc70a85445f49737ad28a.woff2) format("woff2"),url(/static/source-code-pro-latin-400-a4a08973559a45aba173184ea065addf.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:500;src:local("Source Code Pro Medium "),local("Source Code Pro-Medium"),url(/static/source-code-pro-latin-500-67f6c1995acae33eacb1af1807c0e8c8.woff2) format("woff2"),url(/static/source-code-pro-latin-500-a39fc2de145c00ef5898c77b15c27517.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:600;src:local("Source Code Pro SemiBold "),local("Source Code Pro-SemiBold"),url(/static/source-code-pro-latin-600-bf5d453754c3bd3e0fc9bcdc979048f1.woff2) format("woff2"),url(/static/source-code-pro-latin-600-c021e440e993ff26de945242222960a6.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:700;src:local("Source Code Pro Bold "),local("Source Code Pro-Bold"),url(/static/source-code-pro-latin-700-b46da14cbd07b2f1f5ca74069d59318e.woff2) format("woff2"),url(/static/source-code-pro-latin-700-c86a17b160684a125455d36f4733ad85.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:900;src:local("Source Code Pro Black "),local("Source Code Pro-Black"),url(/static/source-code-pro-latin-900-e985b6f17d53c2780c3c49722984a52e.woff2) format("woff2"),url(/static/source-code-pro-latin-900-b0d773d996cad7ea914d35d16dd0f3ec.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:400;src:local("Noto Sans Regular "),local("Noto Sans-Regular"),url(/static/noto-sans-latin-400-175853ded2a4e2249d37c46ca0ca33c5.woff2) format("woff2"),url(/static/noto-sans-latin-400-e7ccb0aa43af9fb7fae4d1bdc23a099b.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:400;src:local("Noto Sans Regular italic"),local("Noto Sans-Regularitalic"),url(/static/noto-sans-latin-400italic-baa3ec09eb827b4f10593032d1cf2a88.woff2) format("woff2"),url(/static/noto-sans-latin-400italic-14425b1ebbce551302a950b083b6c14e.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:700;src:local("Noto Sans Bold "),local("Noto Sans-Bold"),url(/static/noto-sans-latin-700-43750a193b8ff0b4e929323a72d79301.woff2) format("woff2"),url(/static/noto-sans-latin-700-a8edfe7bbf3b01666adc30c118cc5223.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:700;src:local("Noto Sans Bold italic"),local("Noto Sans-Bolditalic"),url(/static/noto-sans-latin-700italic-bc98820a9bf62004a88ef07e012e3ce3.woff2) format("woff2"),url(/static/noto-sans-latin-700italic-0e19737ff39f96eb1ff99e463fa457a4.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><link as="script" rel="preload" href="/styles-6045eaf6464b90d3e4fc.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js"/><link as="script" rel="preload" href="/app-0c9a63a3aef9e813df5b.js"/><link as="script" rel="preload" href="/commons-8d9941e7328683a5eecb.js"/><link as="script" rel="preload" href="/webpack-runtime-2742ada98d46151d1c6f.js"/><link as="fetch" rel="preload" href="/page-data/rrweb/page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:39rem;padding:2.4375rem 1.21875rem;font-family:&quot;Source Code Pro&quot;, &quot;Noto Sans CJK SC&quot;"><header><h1 style="font-size:2.2974rem;line-height:3.25rem;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:#DD001B" href="/">云音乐大前端专栏</a></h1></header><main><article><header><h1 style="margin-top:1.625rem;margin-bottom:0;color:#001E26">rrweb 带你还原问题现场</h1><p style="font-size:0.87055rem;line-height:1.625rem;display:block;margin-bottom:1.625rem">2022-01-06</p></header><section><p><img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/12204956629/603d/3a1b/3855/f840616524854851802a795016600354.jpg" alt="Baker_Street"></p>
+<blockquote>
+<p>本文作者：<a href="https://juejin.cn/user/3861140566978014">吴硕硕</a></p>
+</blockquote>
+<h1>背景</h1>
+<p>云音乐内部有许多内容管理系统 (Content Management System，CMS)，用来支撑业务的运营配置等工作，运营同学在使用过程中遇到问题时，期望开发人员可以及时给予反馈并解决问题；痛点是开发人员没有问题现场，很难去快速定位到问题，通常的场景是：</p>
+<ul>
+<li>运营同学 Watson：「Sherlock，我在配置 mlog 标签的时候提示该标签不存在，快帮我看下，急。」</li>
+<li>开发同学 Sherlock：「不慌，我看看。」<em>（打开测试环境的运营管理后台，一顿操作，一切非常的正常…）</em></li>
+<li>开发同学 Sherlock：「我这儿正常的啊，你的工位在哪，我去你那看看」</li>
+<li>运营同学 Watson：「我在北京…」</li>
+<li>开发同学 Sherlock：「我在杭州…」</li>
+</ul>
+<p>为了对运营同学在使用中遇到的相关问题及时给予反馈，尽快定位并解决 CMS 用户遇到的使用问题，设计实现了问题一键上报插件，用于还原问题现场，主要包括录制和展示两部分：</p>
+<ul>
+<li>ThemisRecord 插件：上报用户基础信息、用户权限、API 请求 &#x26; 结果、错误堆栈、录屏</li>
+<li>倾听平台承接展示：显示录屏回放、用户、请求和错误堆栈信息</li>
+</ul>
+<h1>上报流程</h1>
+<p>问题一键上报插件设计的主要流程如下图所示，在录屏期间，插件需要分别收集用户基础信息、API 请求数据、错误堆栈信息和录屏信息，并将数据上传到 NOS 云端和倾听平台。
+<img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/12204634442/66d0/2f60/b77e/b1ab6c69b7f554f502cbe452c12a3dc0.png" alt="插件设计">
+在整个上报的流程中，如何实现操作录屏和回放是一个难点，经过调研，发现 <a href="https://github.com/rrweb-io/rrweb">rrweb</a> 开源库可以很好的满足我们的需求。rrweb 库支持的场景有录屏回放、自定义事件、console 录制播放等多种场景，其中录屏回放是最常用的使用场景，具体使用详见<a href="https://github.com/rrweb-io/rrweb/blob/master/docs/recipes/index.zh_CN.md">场景示例</a>。</p>
+<p>本文主要介绍的是 rrweb 库的录屏回放实现原理。</p>
+<h1>rrweb 库</h1>
+<p>rrweb 主要由 <code class="language-text">rrweb</code> 、 <code class="language-text">rrweb-player</code> 和 <code class="language-text">rrweb-snapshot</code> 三个库组成：</p>
+<ul>
+<li>rrweb：提供了 record 和 replay 两个方法；record 方法用来记录页面上 DOM 的变化，replay 方法支持根据时间戳去还原 DOM 的变化。</li>
+<li>rrweb-player：基于 svelte 模板实现，为 rrweb 提供了回放的 GUI 工具，支持暂停、倍速播放、拖拽时间轴等功能。内部调用了 rrweb 的提供的 replay 等方法。</li>
+<li>rrweb-snapshot：包括 snapshot 和 rebuilding 两大特性，snapshot 用来序列化 DOM 为增量快照，rebuilding 负责将增量快照还原为 DOM。</li>
+</ul>
+<p>了解 rrweb 库的原理，可以从下面几个关键问题入手：</p>
+<ul>
+<li>如何实现事件监听</li>
+<li>如何序列化 DOM</li>
+<li>如何实现自定义计时器</li>
+</ul>
+<h2>如何实现事件监听</h2>
+<p>基于 rrweb 去实现录屏，通常会使用下面的方式去记录 event，通过 emit 回调方法可以拿到 DOM 变化对应所有 event。拿到 event 后，可以根据业务需求去做处理，例如我们的一键上报插件会上传到云端，开发者可以在倾听平台拉取云端的数据并回放。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">let</span> events <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+rrweb<span class="token punctuation">.</span><span class="token function">record</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment">// emit option is required</span>
+  <span class="token function">emit</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// push event into the events array</span>
+    events<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>event<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p><code class="language-text">record</code> 方法内部会根据事件类型去初始化事件的监听，例如 DOM 元素变化、鼠标移动、鼠标交互、滚动等都有各自专属的事件监听方法，本文主要关注的是 DOM 元素变化的监听和处理流程。</p>
+<p>要实现对 DOM 元素变化的监听，离不开浏览器提供的 <code class="language-text">MutationObserver</code> API，该 API 会在一系列 DOM 变化后，通过<strong>批量异步</strong>的方式去触发回调，并将 DOM 变化通过 <code class="language-text">MutationRecord</code> 数组传给回调方法。详细的 <code class="language-text">MutationObserver</code> 介绍可以前往 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MutationObserver">MDN</a> 查看。</p>
+<p>rrweb 内部也是基于该 API 去实现监听，回调方法为 <code class="language-text">MutationBuffer</code> 类提供的 <code class="language-text">processMutations</code> 方法：</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">  <span class="token keyword">const</span> observer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MutationObserver</span><span class="token punctuation">(</span>
+    mutationBuffer<span class="token punctuation">.</span><span class="token function">processMutations</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span>mutationBuffer<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p><code class="language-text">mutationBuffer.processMutations</code> 方法会根据 <code class="language-text">MutationRecord.type</code> 值做不同的处理：</p>
+<ul>
+<li><code class="language-text">type === &#39;attributes&#39;</code>: 代表 DOM 属性变化，所有属性变化的节点会记录在 <code class="language-text">this.attributes</code> 数组中，结构为 <code class="language-text">{ node: Node, attributes: {} }</code>，attributes 中仅记录本次变化涉及到的属性；</li>
+<li><code class="language-text">type === &#39;characterData&#39;</code>: 代表 characterData 节点变化，会记录在 <code class="language-text">this.texts</code> 数组中，结构为 <code class="language-text">{ node: Node, value: string }</code>，value 为 characterData 节点的最新值；</li>
+<li><code class="language-text">type === &#39;childList&#39;</code>: 代表子节点树 childList 变化，比起前面两种类型，处理会较为复杂。</li>
+</ul>
+<h3>childList 增量快照</h3>
+<p>childList 发生变化时，若每次都完整记录整个 DOM 树，数据会非常庞大，显然不是一个可行的方案，所以，rrweb 采用了增量快照的处理方式。</p>
+<p>有三个关键的 Set：<code class="language-text">addedSet</code>、 <code class="language-text">movedSet</code>、 <code class="language-text">droppedSet</code>，对应三种节点操作：新增、移动、删除，这点和 <code class="language-text">React diff</code> 机制相似。此处使用 Set 结构，实现了对 DOM 节点的去重处理。</p>
+<h3>节点新增</h3>
+<p>遍历 <code class="language-text">MutationRecord.addedNodes</code> 节点，将未被序列化的节点添加到 <code class="language-text">addedSet</code> 中，并且若该节点存在于被删除集合 <code class="language-text">droppedSet</code> 中，则从 <code class="language-text">droppedSet</code> 中移除。</p>
+<p>示例：创建节点 n1、n2，将 n2 append 到 n1 中，再将 n1 append 到 body 中。</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">body
+  n1
+    n2</code></pre></div>
+<p>上述节点操作只会生成一条 <code class="language-text">MutationRecord</code> 记录，即增加 n1，「n2 append 到 n1」的过程不会生成<code class="language-text">MutationRecord</code> 记录，所以在遍历 <code class="language-text">MutationRecord.addedNodes</code> 节点，需要去遍历其子节点，不然 n2 节点就会被遗漏。</p>
+<p>遍历完所有 <code class="language-text">MutationRecord</code> 记录数组，会统一对 <code class="language-text">addedSet</code> 中的节点做序列化处理，每个节点序列化处理的结果是：</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">export</span> type addedNodeMutation <span class="token operator">=</span> <span class="token punctuation">{</span>
+  parentId<span class="token punctuation">:</span> number<span class="token punctuation">;</span>
+  nextId<span class="token punctuation">:</span> number <span class="token operator">|</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  node<span class="token punctuation">:</span> serializedNodeWithId<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>DOM 的关联关系是通过 <code class="language-text">parentId</code> 和 <code class="language-text">nextId</code> 建立起来的，若该 DOM 节点的父节点、或下一个兄弟节点尚未被序列化，则该节点无法被准确定位，所以需要先将其存储下来，最后处理。
+<img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/12204726077/a5b3/d9db/a0b3/e15da6d76c10db3e0fedf304af4a2e54.png" alt="双向链表"></p>
+<p>rrweb 使用了一个双向链表 <code class="language-text">addList</code> 用来存储父节点尚未被添加的节点，向 <code class="language-text">addList</code> 中插入节点时：</p>
+<ol>
+<li>若 DOM 节点的 previousSibling 已存在于链表中，则插入在 <code class="language-text">node.previousSibling</code> 节点后</li>
+<li>若 DOM 节点的 nextSibling 已存在于链表中，则插入在 <code class="language-text">node.nextSibling</code> 节点前</li>
+<li>都不在，则插入链表的头部</li>
+</ol>
+<p>通过这种添加方式，可以保证兄弟节点的顺序，DOM 节点的 <code class="language-text">nextSibling</code> 一定会在该节点的后面，<code class="language-text">previousSibling</code> 一定在该节点的前面；<code class="language-text">addedSet</code> 序列化处理完成后，会对 <code class="language-text">addList</code> 链表进行倒序遍历，这样可以保证 DOM 节点的 <code class="language-text">nextSibling</code> 一定是在 DOM 节点之前被序列化，下次序列化 DOM 节点的时候，就可以拿到 <code class="language-text">nextId</code>。</p>
+<h3>节点移动</h3>
+<p>遍历 <code class="language-text">MutationRecord.addedNodes</code> 节点，若记录的节点有 <code class="language-text">__sn</code> 属性，则添加到 <code class="language-text">movedSet</code> 中。有 <code class="language-text">__sn</code> 属性代表是已经被序列化处理过的 DOM 节点，即意味着是对节点的移动。</p>
+<p>在对 <code class="language-text">movedSet</code> 中的节点序列化处理之前，会判断其父节点是否已被移除：</p>
+<ol>
+<li>父节点被移除，则无需处理，跳过；</li>
+<li>父节点未被移除，对该节点进行序列化。</li>
+</ol>
+<h3>节点删除</h3>
+<p>遍历 <code class="language-text">MutationRecord.removedNodes</code> 节点：</p>
+<ol>
+<li>若该节点是本次新增节点，则忽略该节点，并且从 <code class="language-text">addedSet</code> 中移除该节点，同时记录到 <code class="language-text">droppedSet</code> 中，在处理新增节点的时候需要用到：虽然我们移除了该节点，但其子节点可能还存在于 <code class="language-text">addedSet</code> 中，在处理 <code class="language-text">addedSet</code> 节点时，会判断其祖先节点是否已被移除；</li>
+<li>需要删除的节点记录在 <code class="language-text">this.removes</code> 中，记录了 parentId 和节点 id。</li>
+</ol>
+<h2>如何序列化 DOM</h2>
+<p><code class="language-text">MutationBuffer</code> 实例会调用 <code class="language-text">snapshot</code> 的 <code class="language-text">serializeNodeWithId</code> 方法对 DOM 节点进行序列化处理。
+<code class="language-text">serializeNodeWithId</code> 内部调用 <code class="language-text">serializeNode</code> 方法，根据 <code class="language-text">nodeType</code> 对 Document、Doctype、Element、Text、CDATASection、Comment 等不同类型的 node 进行序列化处理，其中的关键是对 Element 的序列化处理:</p>
+<ul>
+<li>遍历元素的 <code class="language-text">attributes</code> 属性，并且调用 <code class="language-text">transformAttribute</code> 方法将资源路径处理为绝对路径；</li>
+</ul>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> value <span class="token punctuation">}</span> <span class="token keyword">of</span> Array<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token punctuation">(</span>n <span class="token keyword">as</span> HTMLElement<span class="token punctuation">)</span><span class="token punctuation">.</span>attributes<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        attributes<span class="token punctuation">[</span>name<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">transformAttribute</span><span class="token punctuation">(</span>doc<span class="token punctuation">,</span> tagName<span class="token punctuation">,</span> name<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span></code></pre></div>
+<ul>
+<li>通过检查元素是否包含 <code class="language-text">blockClass</code> 类名，或是否匹配 <code class="language-text">blockSelector</code> 选择器，去判断元素是否需要被隐藏；为了保证元素隐藏不会影响页面布局，会给返回一个同等宽高的空元素；</li>
+</ul>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">    <span class="token keyword">const</span> needBlock <span class="token operator">=</span> <span class="token function">_isBlockedElement</span><span class="token punctuation">(</span>
+        n <span class="token keyword">as</span> HTMLElement<span class="token punctuation">,</span>
+        blockClass<span class="token punctuation">,</span>
+        blockSelector<span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<ul>
+<li>区分外链 style 文件和内联 style，对 CSS 样式序列化，并对 css 样式中引用资源的相对路径转换为绝对路径；对于外链文件，通过 CSSStyleSheet 实例的 cssRules 读取所有的样式，拼接成一个字符串，放到 <code class="language-text">_cssText</code> 属性中；</li>
+</ul>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">    <span class="token keyword">if</span> <span class="token punctuation">(</span>tagName <span class="token operator">===</span> <span class="token string">'link'</span> <span class="token operator">&amp;&amp;</span> inlineStylesheet<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// document.styleSheets 获取所有的外链style</span>
+        <span class="token keyword">const</span> stylesheet <span class="token operator">=</span> Array<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>doc<span class="token punctuation">.</span>styleSheets<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">s</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> s<span class="token punctuation">.</span>href <span class="token operator">===</span> <span class="token punctuation">(</span>n <span class="token keyword">as</span> HTMLLinkElement<span class="token punctuation">)</span><span class="token punctuation">.</span>href<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 获取该条css文件对应的所有rule的字符串</span>
+        <span class="token keyword">const</span> cssText <span class="token operator">=</span> <span class="token function">getCssRulesString</span><span class="token punctuation">(</span>stylesheet <span class="token keyword">as</span> CSSStyleSheet<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>cssText<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">delete</span> attributes<span class="token punctuation">.</span>rel<span class="token punctuation">;</span>
+            <span class="token keyword">delete</span> attributes<span class="token punctuation">.</span>href<span class="token punctuation">;</span>
+            <span class="token comment">// 将css文件中资源路径转换为绝对路径</span>
+            attributes<span class="token punctuation">.</span>_cssText <span class="token operator">=</span> <span class="token function">absoluteToStylesheet</span><span class="token punctuation">(</span> 
+                cssText<span class="token punctuation">,</span>
+                stylesheet<span class="token operator">!</span><span class="token punctuation">.</span>href<span class="token operator">!</span><span class="token punctuation">,</span>
+            <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span></code></pre></div>
+<ul>
+<li>对用户输入数据调用 <code class="language-text">maskInputValue</code> 方法进行加密处理；</li>
+<li>将 canvas 转换为 base64 图片保存，记录 media 当前播放的时间、元素的滚动位置等；</li>
+<li>返回一个序列化后的对象 <code class="language-text">serializedNode</code>，其中包含前面处理过的 attributes 属性，序列化的关键是每个节点都会有唯一的 id，其中 <code class="language-text">rootId</code> 代表所属 document 的 id，帮助我们在回放的时候识别根节点。</li>
+</ul>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> NodeType<span class="token punctuation">.</span>Element<span class="token punctuation">,</span>
+        tagName<span class="token punctuation">,</span>
+        attributes<span class="token punctuation">,</span>
+        childNodes<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        isSVG<span class="token punctuation">,</span>
+        needBlock<span class="token punctuation">,</span>
+        rootId<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<h3>Event 时间戳</h3>
+<p>拿到序列化后的 DOM 节点，会统一调用<code class="language-text">wrapEvent</code>方法给事件添加上时间戳，在回放的时候需要用到。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">wrapEvent</span><span class="token punctuation">(</span><span class="token parameter">e<span class="token punctuation">:</span> event</span><span class="token punctuation">)</span><span class="token punctuation">:</span> eventWithTime <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>e<span class="token punctuation">,</span>
+    timestamp<span class="token punctuation">:</span> Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3>序列化 id</h3>
+<p><code class="language-text">serializeNodeWithId</code> 方法在序列化的时候会从 DOM 节点的 <code class="language-text">__sn.id</code> 属性中读取 id，若不存在，就调用 genId 生成新的 id，并赋值给 <code class="language-text">__sn.id</code> 属性，该 id 是用来唯一标识 DOM 节点，通过 id 建立起 <code class="language-text">id -&gt; DOM</code> 的映射关系，帮助我们在回放的时候找到对应的 DOM 节点。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">genId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> number <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> _id<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> serializedNode <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">assign</span><span class="token punctuation">(</span>_serializedNode<span class="token punctuation">,</span> <span class="token punctuation">{</span> id <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>若 DOM 节点存在子节点，则会递归调用 <code class="language-text">serializeNodeWithId</code> 方法，最后会返回一个下面这样的 tree 数据结构：</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> NodeType<span class="token punctuation">.</span>Document<span class="token punctuation">,</span>
+    childNodes<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        <span class="token punctuation">{</span>
+            type<span class="token punctuation">:</span> NodeType<span class="token punctuation">.</span>Element<span class="token punctuation">,</span>
+            tagName<span class="token punctuation">,</span>
+            attributes<span class="token punctuation">,</span>
+            childNodes<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+                <span class="token comment">//...</span>
+            <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            isSVG<span class="token punctuation">,</span>
+            needBlock<span class="token punctuation">,</span>
+            rootId<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    rootId<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<h2>如何实现自定义计时器</h2>
+<p><img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/12269671785/a676/40d2/f7ed/6d8280be8fea2510b196d649bf24457c.png" alt="replay">
+回放的过程中为了支持进度条的随意拖拽，以及回放速度的设置（如上图所示），自定义实现了高精度计时器 Timer ，关键属性和方法为：</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">export</span> declare <span class="token keyword">class</span> <span class="token class-name">Timer</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 回放初始位置，对应进度条拖拽到的任意时间点</span>
+    timeOffset<span class="token punctuation">:</span> number<span class="token punctuation">;</span>
+    <span class="token comment">// 回放的速度</span>
+    speed<span class="token punctuation">:</span> number<span class="token punctuation">;</span>
+    <span class="token comment">// 回放Action队列</span>
+    <span class="token keyword">private</span> actions<span class="token punctuation">;</span>
+    <span class="token comment">// 添加回放Action队列</span>
+    <span class="token function">addActions</span><span class="token punctuation">(</span>actions<span class="token punctuation">:</span> actionWithDelay<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span><span class="token punctuation">;</span>
+    <span class="token comment">// 开始回放</span>
+    <span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span><span class="token punctuation">;</span>
+    <span class="token comment">// 设置回放速度</span>
+    <span class="token function">setSpeed</span><span class="token punctuation">(</span>speed<span class="token punctuation">:</span> number<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3>回放入口</h3>
+<p>通过 Replayer 提供的 <code class="language-text">play</code> 方法可以将上文记录的事件在 iframe 中进行回放。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> replayer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">rrweb<span class="token punctuation">.</span>Replayer</span><span class="token punctuation">(</span>events<span class="token punctuation">)</span><span class="token punctuation">;</span>
+replayer<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>第一步，初始化 <code class="language-text">rrweb.Replayer</code> 实例时，会创建一个 iframe 作为承载事件回放的容器，再分别调用创建两个 service： <code class="language-text">createPlayerService</code> 用于处理事件回放的逻辑，<code class="language-text">createSpeedService</code> 用于控制回放的速度。</p>
+<p>第二步，会调用 <code class="language-text">replayer.play()</code> 方法，去触发 <code class="language-text">PLAY</code> 事件类型，开始事件回放的处理流程。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// this.service 为 createPlayerService 创建的回放控制service实例</span>
+<span class="token comment">// timeOffset 值为鼠标拖拽后的时间偏移量</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>service<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">{</span> type<span class="token punctuation">:</span> <span class="token string">'PLAY'</span><span class="token punctuation">,</span> payload<span class="token punctuation">:</span> <span class="token punctuation">{</span> timeOffset <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<h3>基线时间戳生成</h3>
+<p><img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/12204711165/3e3f/fd0a/61d4/96c6b64a1357f664ef04497b4dd30ba7.png" alt="时间轴"></p>
+<p>回放支持随意拖拽的关键在于传入时间偏移量 <code class="language-text">timeOffset</code> 参数：</p>
+<ul>
+<li>回放的总时长 = events[n].timestamp - events[0].timestamp，<code class="language-text">n</code> 为事件队列总长度减一；</li>
+<li>时间轴的总时长为回放的总时长，鼠标拖拽的起始位置对应时间轴上的坐标为<code class="language-text">timeOffset</code>；</li>
+<li>根据初始事件的 <code class="language-text">timestamp</code> 和 <code class="language-text">timeOffset</code> 计算出拖拽后的 <code class="language-text">基线时间戳(baselineTime)</code>；</li>
+<li>再从所有的事件队列中根据事件的 <code class="language-text">timestamp</code> 截取 <code class="language-text">基线时间戳(baselineTime)</code> 后的事件队列，即需要回放的事件队列。</li>
+</ul>
+<h3>回放 Action 队列转换</h3>
+<p>拿到事件队列后，需要遍历事件队列，根据事件类型转换为对应的回放 Action，并且添加到自定义计时器 Timer 的 Action 队列中。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">actions<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token function-variable function">doAction</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        <span class="token function">castFn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    delay<span class="token punctuation">:</span> event<span class="token punctuation">.</span>delay<span class="token operator">!</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<ul>
+<li><code class="language-text">doAction</code> 为回放的时候要调用的方法，会根据不同的 <code class="language-text">EventType</code> 去做回放处理，例如 DOM 元素的变化对应增量事件 <code class="language-text">EventType.IncrementalSnapshot</code>。若是增量事件类型，回放 Action 会调用 <code class="language-text">applyIncremental</code> 方法去应用增量快照，根据序列化后的节点数据构建出实际的 DOM 节点，为前面序列化 DOM 的反过程，并且添加到iframe容器中。</li>
+<li><code class="language-text">delay</code> = event.timestamp - baselineTime，为当前事件的时间戳相对于<code class="language-text">基线时间戳</code>的差值</li>
+</ul>
+<h3>requestAnimationFrame 定时回放</h3>
+<p>Timer 自定义计时器是一个<strong>高精度</strong>计时器，主要是因为 <code class="language-text">start</code> 方法内部使用了 <code class="language-text">requestAnimationFrame</code> 去异步处理队列的定时回放；与浏览器原生的 <code class="language-text">setTimeout</code> 和 <code class="language-text">setInterval</code> 相比，<code class="language-text">requestAnimationFrame</code> 不会被主线程任务阻塞，而执行 <code class="language-text">setTimeout</code> 、 <code class="language-text">setInterval</code> 都有可能会有被阻塞。</p>
+<p>其次，使用了 <code class="language-text">performance.now()</code> 时间函数去计算当前已播放时长；<code class="language-text">performance.now()</code>会返回一个用浮点数表示的、精度高达微秒级的时间戳，精度高于其他可用的时间类函数，例如 <code class="language-text">Date.now()</code>只能返回毫秒级别。</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"> <span class="token keyword">public</span> <span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>timeOffset <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token comment">// performance.timing.navigationStart + performance.now() 约等于 Date.now()</span>
+    <span class="token keyword">let</span> lastTimestamp <span class="token operator">=</span> performance<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// Action 队列</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> actions <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> self <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+    <span class="token keyword">function</span> <span class="token function">check</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> time <span class="token operator">=</span> performance<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">// self.timeOffset为当前播放时长：已播放时长 * 播放速度(speed) 累加而来</span>
+      <span class="token comment">// 之所以是累加，因为在播放的过程中，速度可能会更改多次</span>
+      self<span class="token punctuation">.</span>timeOffset <span class="token operator">+=</span> <span class="token punctuation">(</span>time <span class="token operator">-</span> lastTimestamp<span class="token punctuation">)</span> <span class="token operator">*</span> self<span class="token punctuation">.</span>speed<span class="token punctuation">;</span>
+      lastTimestamp <span class="token operator">=</span> time<span class="token punctuation">;</span>
+      <span class="token comment">// 遍历 Action 队列</span>
+      <span class="token keyword">while</span> <span class="token punctuation">(</span>actions<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> action <span class="token operator">=</span> actions<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token comment">// 差值是相对于`基线时间戳`的，当前已播放 {timeOffset}ms</span>
+        <span class="token comment">// 所以需要播放所有「差值 &lt;= 当前播放时长」的 action</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>self<span class="token punctuation">.</span>timeOffset <span class="token operator">>=</span> action<span class="token punctuation">.</span>delay<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          actions<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          action<span class="token punctuation">.</span><span class="token function">doAction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+          <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>actions<span class="token punctuation">.</span>length <span class="token operator">></span> <span class="token number">0</span> <span class="token operator">||</span> self<span class="token punctuation">.</span>liveMode<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        self<span class="token punctuation">.</span>raf <span class="token operator">=</span> <span class="token function">requestAnimationFrame</span><span class="token punctuation">(</span>check<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>raf <span class="token operator">=</span> <span class="token function">requestAnimationFrame</span><span class="token punctuation">(</span>check<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span></code></pre></div>
+<p>完成回放 Action 队列转换后，会调用 <code class="language-text">timer.start()</code> 方法去按照正确的时间间隔依次执行回放。在每次 <code class="language-text">requestAnimationFrame</code> 回调中，会正序遍历 Action 队列，若当前 Action 相对于<code class="language-text">基线时间戳</code>的差值小于当前的播放时长，则说明该 Action 在本次异步回调中需要被触发，会调用 <code class="language-text">action.doAction</code> 方法去实现本次增量快照的回放。回放过的 Action 会从队列中删除，保证下次 <code class="language-text">requestAnimationFrame</code> 回调不会重新执行。</p>
+<h1>总结</h1>
+<p>在了解了「如何实现事件监听」、「如何序列化 DOM」、「如何实现自定义计时器」这几个关键问题后，我们基本掌握了 rrweb 的工作流程，除此之外，rrweb 在回放的时候还使用的 iframe 的沙盒模式，去实现对一些 JS 行为的限制，感兴趣的同学可以进一步去了解。</p>
+<p>总之，基于 rrweb 可以方便地帮助我们实现录屏回放功能，例如现在在 CMS 业务中落地使用的一键上报功能，通过结合 API 请求、错误堆栈信息和录屏回放功能，可以帮助开发对问题进行定位并解决，让你也成为一个 Sherlock。</p>
+<blockquote>
+<p>本文发布自 <a href="https://github.com/x-orpheus">网易云音乐大前端团队</a>，文章未经授权禁止任何形式的转载。我们常年招收前端、iOS、Android，如果你准备换工作，又恰好喜欢云音乐，那就加入我们 grp.music-fe (at) corp.netease.com！</p>
+</blockquote></section><hr style="margin-bottom:1.625rem"/></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/android-privacy-2/">← 上一篇</a></li><li></li></ul></nav><div id="disqus_thread"></div></main></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-46698359-8', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/rrweb/";window.webpackCompilationHash="5b8b6eacb9e535c1bd67";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-0c9a63a3aef9e813df5b.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-51d272fe0618a2665c13.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js"],"component---src-pages-404-js":["/component---src-pages-404-js-e9fc057fd683384561c6.js"],"component---src-pages-index-js":["/component---src-pages-index-js-48dc264068dece189e1b.js"]};/*]]>*/</script><script src="/webpack-runtime-2742ada98d46151d1c6f.js" async=""></script><script src="/commons-8d9941e7328683a5eecb.js" async=""></script><script src="/app-0c9a63a3aef9e813df5b.js" async=""></script><script src="/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js" async=""></script><script src="/styles-6045eaf6464b90d3e4fc.js" async=""></script></body></html>
