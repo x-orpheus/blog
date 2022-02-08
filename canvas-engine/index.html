@@ -1,0 +1,475 @@
+<!DOCTYPE html><html lang="zh"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.625 -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}h1{margin-left:0;margin-right:0;margin-top:2.4375rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.21875rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h2{margin-left:0;margin-right:0;margin-top:1.625rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.40625rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:hsla(0,0%,0%,0.53);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}ul{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:0.85rem;line-height:1.625rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:1rem;line-height:1.625rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:calc(0.8125rem - 1px);padding-right:0;padding-top:0;margin-bottom:0.8125rem;border-left:4px solid hsla(0,0%,0%,0.13);color:hsla(0,0%,0%,0.53);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(0.8125rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}b{font-weight:600;}strong{font-weight:600;}dt{font-weight:600;}th{font-weight:600;}li{margin-bottom:calc(0.8125rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}li > ul{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(0.8125rem / 2);}code{font-size:0.85rem;line-height:1.625rem;}kbd{font-size:0.85rem;line-height:1.625rem;}samp{font-size:0.85rem;line-height:1.625rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.08333rem;padding-right:1.08333rem;padding-top:0.8125rem;padding-bottom:calc(0.8125rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}h3,h4,h5,h6{margin-bottom:0.8125rem;margin-top:1.625rem;}ol,ul{margin-left:2.03125rem;}li>ol,li>ul{margin-left:2.03125rem;}a{color:#4078c0;text-decoration:none;}a:hover,a:active{text-decoration:underline;}</style><title data-react-helmet="true">动手打造一款 canvas 排版引擎 | 云音乐大前端专栏</title><style type="text/css">.gatsby-resp-image-image{width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;color:transparent;}</style><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#dd001b"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d8c4c3e0da7a96b81c222f3b61a1543f"/><meta name="generator" content="Gatsby 2.15.7"/><meta data-react-helmet="true" name="description" content="在canvas中进行排版布局的一些实践，方案在web以及各类小程序如微信小程序上适用。"/><meta data-react-helmet="true" property="og:title" content="动手打造一款 canvas 排版引擎"/><meta data-react-helmet="true" property="og:description" content="在canvas中进行排版布局的一些实践，方案在web以及各类小程序如微信小程序上适用。"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="云音乐大前端团队"/><meta data-react-helmet="true" name="twitter:title" content="动手打造一款 canvas 排版引擎"/><meta data-react-helmet="true" name="twitter:description" content="在canvas中进行排版布局的一些实践，方案在web以及各类小程序如微信小程序上适用。"/><style data-href="/styles.a8f6e12462010344bfaf.css">@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:200;src:local("Source Code Pro Extra Light "),local("Source Code Pro-Extra Light"),url(/static/source-code-pro-latin-200-41568fe7927570e049a6cb707930f353.woff2) format("woff2"),url(/static/source-code-pro-latin-200-568dcb298a36f14317fdcddf8eded62f.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:300;src:local("Source Code Pro Light "),local("Source Code Pro-Light"),url(/static/source-code-pro-latin-300-248b2236ba6bb9d2745a4908bc9c4568.woff2) format("woff2"),url(/static/source-code-pro-latin-300-43fcfcf552695ff0976d7d03a29835c4.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:400;src:local("Source Code Pro Regular "),local("Source Code Pro-Regular"),url(/static/source-code-pro-latin-400-1c37ab07cfefc70a85445f49737ad28a.woff2) format("woff2"),url(/static/source-code-pro-latin-400-a4a08973559a45aba173184ea065addf.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:500;src:local("Source Code Pro Medium "),local("Source Code Pro-Medium"),url(/static/source-code-pro-latin-500-67f6c1995acae33eacb1af1807c0e8c8.woff2) format("woff2"),url(/static/source-code-pro-latin-500-a39fc2de145c00ef5898c77b15c27517.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:600;src:local("Source Code Pro SemiBold "),local("Source Code Pro-SemiBold"),url(/static/source-code-pro-latin-600-bf5d453754c3bd3e0fc9bcdc979048f1.woff2) format("woff2"),url(/static/source-code-pro-latin-600-c021e440e993ff26de945242222960a6.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:700;src:local("Source Code Pro Bold "),local("Source Code Pro-Bold"),url(/static/source-code-pro-latin-700-b46da14cbd07b2f1f5ca74069d59318e.woff2) format("woff2"),url(/static/source-code-pro-latin-700-c86a17b160684a125455d36f4733ad85.woff) format("woff")}@font-face{font-family:Source Code Pro;font-style:normal;font-display:swap;font-weight:900;src:local("Source Code Pro Black "),local("Source Code Pro-Black"),url(/static/source-code-pro-latin-900-e985b6f17d53c2780c3c49722984a52e.woff2) format("woff2"),url(/static/source-code-pro-latin-900-b0d773d996cad7ea914d35d16dd0f3ec.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:400;src:local("Noto Sans Regular "),local("Noto Sans-Regular"),url(/static/noto-sans-latin-400-175853ded2a4e2249d37c46ca0ca33c5.woff2) format("woff2"),url(/static/noto-sans-latin-400-e7ccb0aa43af9fb7fae4d1bdc23a099b.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:400;src:local("Noto Sans Regular italic"),local("Noto Sans-Regularitalic"),url(/static/noto-sans-latin-400italic-baa3ec09eb827b4f10593032d1cf2a88.woff2) format("woff2"),url(/static/noto-sans-latin-400italic-14425b1ebbce551302a950b083b6c14e.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:normal;font-display:swap;font-weight:700;src:local("Noto Sans Bold "),local("Noto Sans-Bold"),url(/static/noto-sans-latin-700-43750a193b8ff0b4e929323a72d79301.woff2) format("woff2"),url(/static/noto-sans-latin-700-a8edfe7bbf3b01666adc30c118cc5223.woff) format("woff")}@font-face{font-family:Noto Sans;font-style:italic;font-display:swap;font-weight:700;src:local("Noto Sans Bold italic"),local("Noto Sans-Bolditalic"),url(/static/noto-sans-latin-700italic-bc98820a9bf62004a88ef07e012e3ce3.woff2) format("woff2"),url(/static/noto-sans-latin-700italic-0e19737ff39f96eb1ff99e463fa457a4.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><link as="script" rel="preload" href="/styles-b616adb5385f6f59f201.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js"/><link as="script" rel="preload" href="/app-0c9a63a3aef9e813df5b.js"/><link as="script" rel="preload" href="/commons-8d9941e7328683a5eecb.js"/><link as="script" rel="preload" href="/webpack-runtime-2742ada98d46151d1c6f.js"/><link as="fetch" rel="preload" href="/page-data/canvas-engine/page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:39rem;padding:2.4375rem 1.21875rem;font-family:&quot;Source Code Pro&quot;, &quot;Noto Sans CJK SC&quot;"><header><h1 style="font-size:2.2974rem;line-height:3.25rem;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:#DD001B" href="/">云音乐大前端专栏</a></h1></header><main><article><header><h1 style="margin-top:1.625rem;margin-bottom:0;color:#001E26">动手打造一款 canvas 排版引擎</h1><p style="font-size:0.87055rem;line-height:1.625rem;display:block;margin-bottom:1.625rem">2022-02-08</p></header><section><p><img src="https://p5.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12859709732/d4f1/d1a0/9fae/a6d80481df8c678777a4717188b4c57e.jpeg" alt="题图"></p>
+<blockquote>
+<p>图片来源：<a href="https://unsplash.com">https://unsplash.com</a></p>
+</blockquote>
+<blockquote>
+<p>本文作者：<a href="https://github.com/Gitjinfeiyang">金飞扬</a></p>
+</blockquote>
+<h1>背景</h1>
+<blockquote>
+<p><a href="https://codesandbox.io/s/demo-forked-k1p71?file=/main.js">在线示例</a></p>
+</blockquote>
+<blockquote>
+<p><a href="https://gitjinfeiyang.github.io/easy-canvas/example/ui.html">Demo</a></p>
+</blockquote>
+<p>作为前端开发尤其是偏 c 端的前端开发者（如微信小程序），相信大家都碰到过分享活动图片、分享海报图类似的功能</p>
+<p><img src="https://p5.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12334261622/9534/3641/c805/ced2da0ffdcd5b2db1ff0890a842f49d.png" alt="分享图"></p>
+<p>一般这种需求的解决方案大体上可以分为以下几种：</p>
+<ol>
+<li>依赖服务端，比如写一个 <code class="language-text">node</code> 服务，用 <code class="language-text">puppeteer</code> 访问提前写好的网页来截图。</li>
+<li>直接使用 <code class="language-text">CanvasRenderingContext2D</code> 的 api 或者使用辅助绘图的工具如 <code class="language-text">react-canvas</code> 等来绘制。</li>
+<li>使用前端页面截图框架，比如 <code class="language-text">html2canvas</code>、<code class="language-text">dom2image</code>，用 html 将页面结构写好，再在需要的时候调用框架 api 截图</li>
+</ol>
+<p><em>方案分析：</em></p>
+<ol>
+<li>依赖服务端这种方案会消耗一定的服务端资源，尤其截图这种服务，对 cpu 以及带宽的消耗都是很大的，因此在一些可能高并发或者图片比较大的场景用这种方案体验会比较差，等待时间很长，这种方案的优点是还原度非常高，由于服务端无头浏览器版本是确定的，所以可以确保所见即所得，并且从开发上来说，无其他学习成本，如果业务还不是很大访问量不高用这种方案是最可靠的。</li>
+<li>这种方案比较硬核，比较费时费力，大量的代码来计算布局的位置，文字是否换行等等，并且当开发完成后，如果 ui 后续有一些调整，又要在茫茫代码中寻找你要修改的那个它。 这个方案的优点是细节很可控，理论上各种功能都可以完成，如果头发够用的话。</li>
+<li>这应该也是目前 web 端使用最广的一种方案了，截止目前 <code class="language-text">html2canvas</code> star 数量已经 25k。<code class="language-text">html2canvas</code> 的原理简单来说就是遍历 dom 结构中的属性然后转化到 canvas 上来渲染出来，所以它必然是依赖宿主环境的，那么在一些老旧的浏览器上可能会遇到兼容性问题，当然如果是开发中就遇到了还好，毕竟我们是万能的前端开发(狗头)，可以通过一些 hack 手段来规避，但是 c 端产品会运行在各种各样的设备上，很难避免发布后在其他用户设备上兼容问题，并且出了问题除非用户上报，一般难以监控到，并且在国内小程序用户量基数很大，这个方案也不能在小程序中使用。所以这个方案看似一片祥和，但是会有一些兼容的问题。</li>
+</ol>
+<p>在这几年不同的工作中，基本都遇到了需要分享图片的需求，虽然需求一般都不大频次不高，但是印象中每次做都不是很顺畅，上面几种方案也都试过了，多多少少都有一些问题。</p>
+<p><em>萌生想法：</em></p>
+<p>在一次需求评审中了解到在后续迭代有 ui 统一调整的规划，并且会涉及到几个分享图片的功能，当时的业务是涉及到小程序以及 h5 的。会后打开代码，看到了像山一样的分享图片代码，并且穿插着各种兼容胶水代码，如此庞大的代码只是为了生成一个小卡片的布局，如果是 html 布局，应该 100 行就能写完，当时就想着怎么来进行重构。</p>
+<p>鉴于开发时间还很充裕，我在想有没有其他更便捷、可靠、通用一点的解决方案，并且自己对这块也一直很感兴趣，秉持着学习的态度，于是萌生了自己写一个库的想法，经过考虑后我选择了 <code class="language-text">react-canvas</code> 的实现思路，但是<code class="language-text">react-canvas</code>依赖于<code class="language-text">React</code>框架，为了保持通用性，我们本次开发的引擎不依赖特定web框架、不依赖 dom 的 api，能根据类似 css 的样式表来生成布局渲染，并且支持进阶功能可以进行交互。</p>
+<p>在梳理了要做的功能后，一个简易的 canvas 排版引擎浮现脑海。</p>
+<h1>什么是排版引擎</h1>
+<p><img src="https://p6.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12334804050/d560/5e9b/43d3/9bd6a60120196895773c9c6aa567bd44.jpeg" alt="排版引擎"></p>
+<blockquote>
+<p>排版引擎（layout engine），也称为浏览器引擎（browser engine）、页面渲染引擎（rendering engine）或样版引擎，它是一种软件组件，负责获取标记式内容（如 HTML、XML 及图像文件等等）、整理信息（如 CSS 及 XSL 等），并将排版后的内容输出至显示器或打印机。所有网页浏览器、电子邮件客户端、电子阅读器以及其它需要根据表示性的标记语言（Presentational markup）来显示内容的应用程序都需要排版引擎。</p>
+</blockquote>
+<p>摘自 Wikipedia 对浏览器排版引擎的描述，对于前端同学来说这些概念应该是比较熟悉的，常见的排版引擎比如 webkit、Gecko 等。</p>
+<h1>设计</h1>
+<h2>目标</h2>
+<p>本次需求承载了以下几个目标：</p>
+<ol>
+<li>框架支持“文档流布局”，这也是我们的核心需求，不需要开发者指定元素的位置，以及自动宽高。</li>
+<li>过程式调用转为声明式调用，即不需要调用繁琐的 api 来绘制图形，只需要编写 template 就可以生成图形。</li>
+<li>跨平台，这里主要是指可以在 web 以及各种小程序上运行，不依赖特定框架。</li>
+<li>支持交互，即可以增加事件，并且可以对 UI 进行修改。</li>
+</ol>
+<p>总结下来就是在可以在 canvas 里写“网页”。</p>
+<h2>api 设计</h2>
+<p>在最初的设想里，打算使用<code class="language-text">类似 vue template 语法</code>来作为结构样式数据，但是这么做会增加编译成本，对于我想要实现的核心功能来说它的起点有点太远了。在权衡过后，最终打算使用<code class="language-text">类似 React createElement 的语法 + Javascript style object</code>的形式的 api，优先实现核心功能。</p>
+<p>另外需要注意的是，我们的目标不是在 canvas 里实现浏览器标准，而是尽可能贴近 css 的 api，以提供一套方案能实现文档流布局。</p>
+<p>目标 api 长这样</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// 创建图层</span>
+<span class="token keyword">const</span> layer <span class="token operator">=</span> lib<span class="token punctuation">.</span><span class="token function">createLayer</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 创建节点树</span>
+<span class="token comment">// c(tag,options,children)</span>
+<span class="token keyword">const</span> node <span class="token operator">=</span> lib<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">c</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">c</span><span class="token punctuation">(</span>
+    <span class="token string">"view"</span><span class="token punctuation">,</span> <span class="token comment">// 节点名</span>
+    <span class="token punctuation">{</span>
+      styles<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        backgroundColor<span class="token punctuation">:</span> <span class="token string">"#000"</span><span class="token punctuation">,</span>
+        fontSize<span class="token punctuation">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
+        padding<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// 样式</span>
+      attrs<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// 属性 比如src</span>
+      on<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token function">click</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// 事件 如click load</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token function">c</span><span class="token punctuation">(</span><span class="token string">"text"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">"Hello World"</span><span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token comment">// 子节点</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 挂载节点</span>
+node<span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span>layer<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>如上所示，api 的核心在于创建节点的三个参数：</p>
+<ol>
+<li><code class="language-text">tagName</code> 节点名，这里我们支持基本的元素，像<code class="language-text">view</code>,<code class="language-text">image</code>,<code class="language-text">text</code>,<code class="language-text">scroll-view</code>等，另外还支持自定义标签，通过全局<code class="language-text">component</code>api 来注册一个新的组件，利于扩展。</li>
+</ol>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">button</span><span class="token punctuation">(</span><span class="token parameter">c<span class="token punctuation">,</span> text</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">c</span><span class="token punctuation">(</span>
+    <span class="token string">"view"</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      styles<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// ...</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    text
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 注册一个自定义标签</span>
+lib<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token string">"button"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">opt<span class="token punctuation">,</span> children<span class="token punctuation">,</span> c</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">button</span><span class="token punctuation">(</span>c<span class="token punctuation">,</span> children<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 使用</span>
+<span class="token keyword">const</span> node <span class="token operator">=</span> lib<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">c</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">c</span><span class="token punctuation">(</span><span class="token string">"view"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">c</span><span class="token punctuation">(</span><span class="token string">"button"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">"这是全局组件"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<ol start="2">
+<li><code class="language-text">options</code>，即标签的参数，支持<code class="language-text">styles</code>,<code class="language-text">attrs</code>,<code class="language-text">on</code>，分别为<em>样式</em>、<em>属性</em>、<em>事件</em></li>
+<li><code class="language-text">children</code>，即子节点，同时也可以是文字。</li>
+</ol>
+<p>我们期望执行以上 api 后可以在 canvas 中渲染出文字，并且点击后可以响应相应事件。</p>
+<h2>流程架构</h2>
+<p><img src="https://p6.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12334261619/4105/2a0a/b747/c8b68a238d2515ba8adb82bc80ebb7be.jpeg" alt="架构图"></p>
+<p>框架的首次渲染将按以下流程执行，后面也会按照这个顺序进行讲解：</p>
+<p><img src="https://p6.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12849379315/4a60/8f35/e568/5b36e37fa5336059d4178fad1a685e65.png" alt="流程图"></p>
+<p>下面会将流程图中的关键细节进行讲述，代码中涉及到一些算法以及数据结构需要注意。</p>
+<h1>模块细节</h1>
+<h2>预处理</h2>
+<p>在拿到视图模型（即开发者通过<code class="language-text">createElement</code>api 编写的模型）后，需要首先对其进行预处理，这一步是为了过滤用户输入，用户输入的模型只是告诉框架意图的目标，并不能直接拿来使用：</p>
+<ol>
+<li>
+<p>节点预处理</p>
+<ul>
+<li>支持简写字符串，这一步需要将字符串转为<code class="language-text">Text</code>对象</li>
+<li>由于我们后面需要频繁访问兄弟节点以及父节点，所以这一步将兄弟节点以及父节点都保存在当前节点，并且标记出所在父容器中的位置，这一点很重要，这个概念类似于 React 中的<code class="language-text">Fiber</code>结构，在后续计算中频繁使用到，并且为我们实现<code class="language-text">可中断渲染</code>打下了基础。</li>
+</ul>
+</li>
+<li>
+<p>样式预处理</p>
+<ul>
+<li>一些样式是支持多种简写方式的，需要将其转换为目标值。如<code class="language-text">padding:[10,20]</code>，在预处理器中需要转换成<code class="language-text">paddingLeft</code>、<code class="language-text">paddingRight</code>、<code class="language-text">paddingTop</code>、<code class="language-text">paddingBottom</code>4 个值。</li>
+<li>设置节点默认值，如<code class="language-text">view</code>节点默认<code class="language-text">display</code>属性为<code class="language-text">block</code></li>
+<li>继承值处理，如<code class="language-text">fontSize</code>属性默认继承父级</li>
+</ul>
+</li>
+<li>异常值处理，用户填写了不符合预期的值在这一步进行提醒。</li>
+<li>初始化事件挂载、资源请求等。</li>
+<li>其他为后续计算以及渲染的准备工作（后面会讲到）。</li>
+</ol>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token function">initStyles</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_extendStyles</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_completeStyles</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_initRenderStyles</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h2>布局处理</h2>
+<p>在上一步预处理过后，我们就得到了一个带有完整样式的节点树，接下来需要计算布局，计算布局分为尺寸和位置的计算，这里需要注意的是，流程里为什么要先计算尺寸呢？仔细思考一下，如果我们先计算位置，像文字，图片这种之后的节点，是需要在上一个尺寸位置计算完毕再去参考计算。所以这一步是所有节点原地计算尺寸完毕后，再计算所有节点的位置。</p>
+<p>整个过程如下动画。</p>
+<p><img src="https://p5.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12334260988/3b1a/b3b2/48b7/0db1a79b5f2d52bd7309730d8913f107.gif" alt="盒模型"></p>
+<h3>计算尺寸</h3>
+<p>更专业一点的说法应该是计算盒模型，说到盒模型大家应该是耳熟能详了，基础面试几乎必问的。</p>
+<p><img src="https://mdn.mozillademos.org/files/16558/box-model.png" alt="盒模型"></p>
+<blockquote>
+<p>图片来源：<a href="https://mdn.mozillademos.org/files/16558/box-model.png">https://mdn.mozillademos.org/files/16558/box-model.png</a></p>
+</blockquote>
+<p>在 css 中，可以通过<code class="language-text">box-sizing</code>属性来使用不同的盒模型，但是我们本次不支持调整，默认为<code class="language-text">border-box</code>。</p>
+<p>对于一个节点，他的尺寸可以简化为几种情况：</p>
+<ol>
+<li>参考父节点，如<code class="language-text">width:50%</code>。</li>
+<li>设置了具体值，如<code class="language-text">width:100px</code>。</li>
+<li>参考子节点，如<code class="language-text">width:fit-content</code>，另外像<code class="language-text">image</code> <code class="language-text">text</code>节点也是由内容决定尺寸。</li>
+</ol>
+<p>梳理好这几种模式之后就可以开始遍历计算了，对于一个树我们有多种遍历模式。</p>
+<p><em>广度优先遍历</em>:</p>
+<p><img src="https://p5.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12467000387/9b65/ab96/4c82/0b3bd29a20953b186e58181963dfa7b8.png" alt="广度优先遍历"></p>
+<p><em>深度优先遍历</em>:</p>
+<p><img src="https://p5.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12467000388/f211/991a/ed38/60314594a970f2fef2118b4dacf62cfb.png" alt="深度优先遍历"></p>
+<p>这里我们对上面几种情况分别做考虑：</p>
+<ol>
+<li>因为是参考父节点所以需要从父到子遍历。</li>
+<li>没有遍历顺序要求。</li>
+<li>父节点需要等所有子节点计算完成后再进行计算，因此需要广度优先遍历，并且是从子到父。</li>
+</ol>
+<p>这里出现了一个问题，第 1 种和第 3 种所需遍历方式出现了冲突，但是回过头来看预处理部分正是从父到子的遍历，因此 1、2 部分计算尺寸的任务可以提前在预处理部分计算好，这样到达这一步的时候只需要计算第3部分，即根据子节点计算。</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">Element</span> <span class="token keyword">extends</span> <span class="token class-name">TreeNode</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+
+  <span class="token comment">// 父节点计算高度</span>
+  <span class="token function">_initWidthHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> width<span class="token punctuation">,</span> height<span class="token punctuation">,</span> display <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>styles<span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isAuto</span><span class="token punctuation">(</span>width<span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token function">isAuto</span><span class="token punctuation">(</span>height<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 这一步需要遍历，判断一下</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>layout <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_measureLayout</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_InFlexBox</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>line<span class="token punctuation">.</span><span class="token function">refreshWidthHeight</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>display <span class="token operator">===</span> <span class="token constant">STYLES</span><span class="token punctuation">.</span><span class="token constant">DISPLAY</span><span class="token punctuation">.</span><span class="token constant">INLINE_BLOCK</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 如果是inline-block  这里仅计算高度</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_bindLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 计算自身的高度</span>
+  <span class="token function">_measureLayout</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> width <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// 需要考虑原本的宽度</span>
+    <span class="token keyword">let</span> height <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_getChildrenInFlow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">child</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token comment">// calc width and height</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">{</span> width<span class="token punctuation">,</span> height <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>代码部分就是遍历在文档流中的直接子节点来累加高度以及宽度，另外处理上比较麻烦的是对于一行会有多个节点的情况，比如<code class="language-text">inline-block</code>和<code class="language-text">flex</code>，这里增加了<code class="language-text">Line</code>对象来辅助管理，在<code class="language-text">Line</code>实例中会对当前行内的对象进行管理，子节点会绑定到一个行实例，直到这个<code class="language-text">Line</code>实例达到最大限制无法加入，父节点计算尺寸时如果读取到<code class="language-text">Line</code>则直接读取所在行的实例。</p>
+<p>这里<code class="language-text">Text</code> <code class="language-text">Image</code>等自身有内容的节点就需要继承后重写<code class="language-text">_measureLayout</code>方法，<code class="language-text">Text</code>在内部计算换行后的宽度与高度，<code class="language-text">Image</code>则计算缩放后的尺寸。</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">Text</span> <span class="token keyword">extends</span> <span class="token class-name">Element</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 根据设置的文字大小等来计算换行后的尺寸</span>
+  <span class="token function">_measureLayout</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_calcLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_layout<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3>计算位置</h3>
+<p>计算完尺寸后就可以计算位置了，这里遍历方式需要从父到子进行广度优先遍历，对于一个元素来说，只要确定了父元素以及上一个元素的位置，就可以确定自身的位置。</p>
+<p>这一步只需要考虑根据父节点已经上一个节点的位置来确认自身的位置，如果不在文档流中则根据最近的参考节点进行定位。</p>
+<p>相对复杂的是如果是绑定了<code class="language-text">Line</code>实例的节点，则在<code class="language-text">Line</code>实例内部进行计算，在<code class="language-text">Line</code>内部的计算则是类似的，不过需要另外处理对齐方式以及自动换行等逻辑。</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// 代码仅保留核心逻辑</span>
+<span class="token function">_initPosition</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 初始化ctx位置</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_isInFlow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 不在文档流中处理</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_isFlex</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_isInlineBlock</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>line<span class="token punctuation">.</span><span class="token function">refreshElementPosition</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>x <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_getContainerLayout</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>contentX
+      <span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_getPreLayout</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>y <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_getPreLayout</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>height
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span></code></pre></div>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">Line</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 计算对齐</span>
+  <span class="token function">refreshXAlign</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>end<span class="token punctuation">.</span>parent<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> offsetX <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>outerWidth <span class="token operator">-</span> <span class="token keyword">this</span><span class="token punctuation">.</span>width<span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>parent<span class="token punctuation">.</span>renderStyles<span class="token punctuation">.</span>textAlign <span class="token operator">===</span> <span class="token string">"center"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      offsetX <span class="token operator">=</span> offsetX <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>parent<span class="token punctuation">.</span>renderStyles<span class="token punctuation">.</span>textAlign <span class="token operator">===</span> <span class="token string">"left"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      offsetX <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>offsetX <span class="token operator">=</span> offsetX<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>好了这一步完成后布局处理器的工作就完成了，接下来框架会将节点输入渲染器进行渲染。</p>
+<h2>渲染器</h2>
+<p>对于绘制单个节点来说分为以下几个步骤：</p>
+<ul>
+<li>绘制阴影,因为阴影是在外面的，所以需要在裁剪之前绘制</li>
+<li>绘制裁剪以及边框</li>
+<li>绘制背景</li>
+<li>绘制子节点以及内容，如 <code class="language-text">Text</code> 和 <code class="language-text">Image</code></li>
+</ul>
+<p>对于渲染单个节点来说，功能比较常规，渲染器基本功能是根据输入来绘制不同的图形、文字、图片，因此我们只需要实现这些 api 就可以了，然后将节点的样式通过这些 api 按顺序来渲染出来，这里又说到顺序了，那么渲染这一步我们应该按照什么顺序呢。这里给出答案<em>深度优先遍历</em>。</p>
+<p>canvas 默认合成模式下，在同一位置绘制，后渲染的会覆盖在上面，也就是说后渲染的节点的<code class="language-text">z-index</code>更大。（由于复杂度原因，目前没有实现像浏览器<em>合成层</em>的处理，暂时是不支持手动设置<code class="language-text">z-index</code>的。）</p>
+<p>另外我们还需要考虑一种情况，如何去实现<code class="language-text">overflow:hidden</code>效果呢，比如圆角，在 canvas 中超出的内容我们需要进行裁剪显示，但是仅仅对父节点裁剪是不符合需求的，在浏览器中父节点的裁剪效果是可以对子节点生效的。</p>
+<p>在 canvas 中一个完整的裁剪过程调用是这样的.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// save ctx status</span>
+ctx<span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// do clip</span>
+ctx<span class="token punctuation">.</span><span class="token function">clip</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// do something like paint...</span>
+
+<span class="token comment">// restore ctx status</span>
+ctx<span class="token punctuation">.</span><span class="token function">restore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//</span></code></pre></div>
+<p>需要了解的是，<code class="language-text">CanvasRenderingContext2D</code>中的状态以栈的数据结构保存，当我们多次执行<code class="language-text">save</code>后，每执行一次<code class="language-text">restore</code>就会恢复到最近的一次状态</p>
+<p><img src="https://p5.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12334262478/ba21/4778/496c/6743257609d66d02d2f0d6136ac1bdd2.png" alt="CanvasRenderingContext2D.save()"></p>
+<p>也就是说只有在<code class="language-text">clip</code>到<code class="language-text">restore</code>这个过程内绘制的内容才会被裁减，因此如果要实现父节点裁剪对子节点也生效，我们不能在渲染一个节点后马上<code class="language-text">restore</code>，需要等到内部子节点都渲染完后再调用。</p>
+<p>下面通过图片讲解</p>
+<p><img src="https://p5.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12334261624/fcfe/db82/33dc/59a0b65cef5efe49357365c8b2310859.png" alt="渲染"></p>
+<p>如图，数字是渲染顺序</p>
+<ul>
+<li>绘制节点 1，由于还有子节点，所以不能马上 restore</li>
+<li>绘制节点 2，还有子节点，绘制节点 3，节点 3 没有子节点，因此执行 restore</li>
+<li>绘制节点 4，没有子节点，执行 restore，注意啦，此时节点 2 内的节点都已经绘制完毕，因此需要再次执行 restore，恢复到节点 1 的绘制上下文</li>
+<li>绘制节点 5，没有子节点，执行 restore，此时节点 1 内都绘制完毕，再次执行 restore</li>
+</ul>
+<p>由于我们在预处理中已经实现了<code class="language-text">Fiber</code>结构，并且知道节点所在父节点的位置，只需要在每个节点渲染完成后进行判断，需要调用多少次<code class="language-text">restore</code>。</p>
+<p>至此，经过漫长的 debug 以及重构，已经能正常将输入的节点渲染出来了，另外需要做的是增加对其他 css 属性的支持，此时内心已经是激动万分，但是看着控制台里输出的渲染节点，总觉得还能做点什么。</p>
+<p>对了！每个图形的模型都保存了，那是不是可以对这些模型进行修改以及交互呢，首先定一个小目标，实现事件系统。</p>
+<h2>事件处理器</h2>
+<p>canvas 中的图形并不能像 dom 元素那样响应事件，因此需要对 dom 事件进行代理，判断在 canvas 上发生事件的位置，再分发到对应的 canvas 图形节点。</p>
+<p>如果按照常规的事件总线设计思路，我们只需要将不同的事件保存在不同的<code class="language-text">List</code>结构中，在触发的时候遍历判断点是否在节点区域，但是这种方案肯定不行，究其原因还是性能问题。</p>
+<p>在浏览器中，事件的触发分为<em>捕获</em>与<em>冒泡</em>，也就是说要按照节点的层级从顶至下先执行<em>捕获</em>，触及到最深的节点后，再以相反的顺序执行<em>冒泡</em>过程，<code class="language-text">List</code>结构无法满足，遍历这个数据结构的时间复杂度会很高，体现到用户体验上就是操作有延迟。</p>
+<p>经过一阵的头脑风暴后想到事件其实也可以保存在树结构中，将有事件监听的节点抽离出来组成一个新的树，可以称之为“事件树”，而不是保存在原节点树上。</p>
+<p><img src="https://p6.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12334263220/8f8d/ef09/fabb/e22a62d5da464fe0b616e1c055109e75.png" alt="Event Tree"></p>
+<p>如图，在 1、2、3 节点挂载 click 事件，会在事件处理器内生成另一个回调树结构，在回调时只需要对这个树进行遍历，并且可以进行剪枝优化，如果父节点没有触发，则这个父节点下的子元素都不需要遍历，提高性能表现。</p>
+<p>另外一个重点就是判定事件点是否在元素内，对于这个问题，已经有了许多成熟的算法，如<em>射线法</em>：</p>
+<p>时间复杂度：O(n) 适用范围：任意多边形</p>
+<p>算法思想：
+以被测点 Q 为端点，向任意方向作射线（一般水平向右作射线），统计该射线与多边形的交点数。如果为奇数，Q 在多边形内；如果为偶数，Q 在多边形外。</p>
+<p>但是对于我们这个场景，除了圆角外都是矩形，而圆角处理起来会比较麻烦，因此初版都是使用矩形来进行判断，后续再作为优化点改进。</p>
+<p>按照这个思路就可以实现我们简易的事件处理器。</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">EventManager</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+
+  <span class="token comment">// 添加事件监听</span>
+  <span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token parameter">type<span class="token punctuation">,</span> callback<span class="token punctuation">,</span> element<span class="token punctuation">,</span> isCapture</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// ...</span>
+    <span class="token comment">// 构造回调树</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">addCallback</span><span class="token punctuation">(</span>callback<span class="token punctuation">,</span> element<span class="token punctuation">,</span> tree<span class="token punctuation">,</span> list<span class="token punctuation">,</span> isCapture<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 事件触发</span>
+  <span class="token function">_emit</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> tree <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">[</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>e<span class="token punctuation">.</span>type<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">Tree</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>tree<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 遍历树，检查是否回调
+     * 如果父级没有被触发，则子级也不需要检查，跳到下个同级节点
+     * 执行capture回调，将on回调添加到stack
+     */</span>
+    <span class="token keyword">const</span> callbackList <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> curArr <span class="token operator">=</span> tree<span class="token punctuation">.</span><span class="token function">_getChildren</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>curArr<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">walkArray</span><span class="token punctuation">(</span>curArr<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">node<span class="token punctuation">,</span> callBreak<span class="token punctuation">,</span> isEnd</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>
+          node<span class="token punctuation">.</span>element<span class="token punctuation">.</span><span class="token function">isVisible</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">isPointInElement</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>relativeX<span class="token punctuation">,</span> e<span class="token punctuation">.</span>relativeY<span class="token punctuation">,</span> node<span class="token punctuation">.</span>element<span class="token punctuation">)</span>
+        <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          node<span class="token punctuation">.</span><span class="token function">runCapture</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          callbackList<span class="token punctuation">.</span><span class="token function">unshift</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token comment">// 同级后面节点不需要执行了</span>
+          <span class="token function">callBreak</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          curArr <span class="token operator">=</span> node<span class="token punctuation">.</span><span class="token function">_getChildren</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>isEnd<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 到最后一个还是没监测到，结束</span>
+          curArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * 执行on回调，从子到父
+     */</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> callbackList<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>e<span class="token punctuation">.</span>currentTarget<span class="token punctuation">)</span> e<span class="token punctuation">.</span>currentTarget <span class="token operator">=</span> callbackList<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>element<span class="token punctuation">;</span>
+      callbackList<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">runCallback</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">// 处理阻止冒泡逻辑</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>e<span class="token punctuation">.</span>cancelBubble<span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>事件处理器完成后，可以来实现一个<code class="language-text">scroll-view</code>了，内部实现原理是用两个 view，外部固定宽高，内部可以撑开，外部通过事件处理器注册事件来控制渲染的<code class="language-text">transform</code>值，需要注意的是，<code class="language-text">transform</code>渲染后，子元素的位置就不在原来的位置了，所以如果在子元素挂载了事件会偏移，这里在<code class="language-text">scroll-view</code>内部注册了相应的捕获事件，当事件传入<code class="language-text">scroll-view</code>内部后，修改事件实例的相对位置，来纠正偏移。</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">ScrollView</span> <span class="token keyword">extends</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">options<span class="token punctuation">,</span> children</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// ...</span>
+    <span class="token comment">// 内部再初始化一个scroll-view，高度自适应，外层宽高固定</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>_scrollView <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">View</span><span class="token punctuation">(</span>options<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token keyword">this</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// ...</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 为自己注册事件</span>
+  <span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 注册捕获事件，修改事件的相对位置</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>eventManager<span class="token punctuation">.</span><span class="token constant">EVENTS</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">eventName</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>eventManager<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span>
+        eventName<span class="token punctuation">,</span>
+        <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>direction<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token string">"y"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            e<span class="token punctuation">.</span>relativeY <span class="token operator">-=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>currentScrollY<span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>direction<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token string">"x"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            e<span class="token punctuation">.</span>relativeX <span class="token operator">-=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>currentScrollX<span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>_scrollView<span class="token punctuation">,</span>
+        <span class="token boolean">true</span>
+      <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 处理滚动</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>eventManager<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"mousewheel"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token comment">// do scroll...</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// ...</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h2>重排重绘</h2>
+<p>除了生成静态布局功能外，框架也有重绘重排的过程，当修改了节点的属性后会触发，内部提供了<code class="language-text">setStyle</code>,<code class="language-text">appendChild</code>等 api 来修改样式或者结构，会根据属性值来确认是否需要重排，如修改<code class="language-text">width</code>会触发重排后重绘，修改<code class="language-text">backgroundColor</code>则只会触发重绘,比如 scroll-view 滚动时，只是改变了 transform 值，只会进行重绘。</p>
+<h2>兼容性</h2>
+<p>虽然框架本身不依赖 dom，直接基于<code class="language-text">CanvasRenderingContext2D</code>进行绘制，但是一些场景下仍需要作兼容性处理，下面举几个例子。</p>
+<ul>
+<li>微信小程序平台绘制图片 api 与标准不同，因此在 image 组件判断了平台，如果是微信则调用微信特定 api 进行获取</li>
+<li>微信小程序平台设置字体粗细在 iOS 真机上不生效，内部判断平台后，会将文字绘制两次，第二次在第一次基础上进行偏移，形成加粗效果。</li>
+</ul>
+<h2>自定义渲染</h2>
+<p>虽然框架本身已经支持大部分场景的布局，但是业务需求场景复杂多变，所以提供了自定义绘制的能力，即只进行布局，绘制方法交给开发者自行调用，提供更高的灵活性。</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript">engine<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">c</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">c</span><span class="token punctuation">(</span><span class="token string">"view"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token function">render</span><span class="token punctuation">(</span><span class="token parameter">ctx<span class="token punctuation">,</span> canvas<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 这里可以获取到ctx以及布局信息，开发者绘制自定义内容</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<h1>web 框架中使用</h1>
+<p>虽然 api 本身相对简单，但是仍然需要写一些重复的代码，结构复杂的时候不便于阅读。</p>
+<p>当在现代 web 框架中使用时，可以采用相应的框架版本，比如 vue 版本，内部会将 vue 节点转换为 api 调用，使用起来会更易于阅读，但是需要注意，由于内部会有节点转换过程，相比直接使用会有性能损耗，在结构复杂时差异会较明显。</p>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i-canvas</span> <span class="token attr-name">:width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>300<span class="token punctuation">"</span></span> <span class="token attr-name">:height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>600<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i-scroll-view</span> <span class="token attr-name">:styles</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>{height:600}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i-view</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i-image</span>
+        <span class="token attr-name">:src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>imageSrc<span class="token punctuation">"</span></span>
+        <span class="token attr-name">:styles</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>styles.image<span class="token punctuation">"</span></span>
+        <span class="token attr-name">mode</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>aspectFill<span class="token punctuation">"</span></span>
+      <span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i-image</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i-view</span> <span class="token attr-name">:styles</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>styles.title<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i-text</span><span class="token punctuation">></span></span>Hello World<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i-text</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i-view</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i-view</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i-scroll-view</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i-canvas</span><span class="token punctuation">></span></span></code></pre></div>
+<h1>调试</h1>
+<p>鉴于业务场景比较简单，框架目前提供的调试工具还比较基础，通过设置<code class="language-text">debug</code>参数可以开启节点布局的调试，框架会将所有节点的布局绘制出来，如果需要查看单个节点的布局，需要通过挂载事件后打印到控制台进行调试。后续核心功能完善后会提供更全面的可视化调试工具。</p>
+<h1>成果</h1>
+<p>经过亲身体验，在一般页面的开发效率上，已经与写 html 不相上下，这里为了展示成果，我写了一个简单的组件库 demo 页。</p>
+<p><img src="https://p5.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12334260990/2812/5614/fb67/1b21997c3528fa750459ad06d6e21319.png" alt="在canvas中开发组件库"></p>
+<blockquote>
+<p><a href="https://github.com/Gitjinfeiyang/easy-canvas">源码</a></p>
+</blockquote>
+<blockquote>
+<p><a href="https://gitjinfeiyang.github.io/easy-canvas/example/ui.html">组件库Demo</a></p>
+</blockquote>
+<h1>性能</h1>
+<p>框架在经过几次重构后已经取得了不错的表现，性能表现如下</p>
+<p><img src="https://p6.music.126.net/obj/wonDlsKUwrLClGjCm8Kx/12334260989/039d/c99d/b4f7/ef4f95bc62133ac4468ab5fba28ee532.png" alt="性能测试"></p>
+<p>已经做了的优化：</p>
+<ul>
+<li>遍历算法优化</li>
+<li>数据结构优化</li>
+<li>
+<p>scroll-view 重绘优化</p>
+<ul>
+<li>scroll-view 重绘只渲染范围内的元素</li>
+<li>scroll-view 可视范围外的元素不会渲染</li>
+</ul>
+</li>
+<li>图片实例缓存，虽然有 http 缓存，但是对于同样的图片会产生多个实例，内部做了实例缓存</li>
+</ul>
+<p>待优化：</p>
+<ul>
+<li>可中断渲染，由于我们已经实现了类似<code class="language-text">Fiber</code>结构，所以后续有需要加上这个特性也比较方便</li>
+<li>预处理器还需要增强，增强对于用户输入的样式与结构的兼容，增强健壮性</li>
+</ul>
+<h1>总结</h1>
+<p>从最初想实现一个简单的图片渲染功能，最后实现了一个简易的 canvas 排版引擎，虽然实现的 feature 有限并且还有不少细节与 bug 需要修复，但是已经具有基本的布局以及交互能力，其中还是踩了不少坑，重构了很多次，同时也不禁感叹浏览器排版引擎的强大。并且从中也体会到了算法与数据结构的魅力，良好的设计是性能高、维护性佳的基石，也获得不少乐趣。</p>
+<p>另外这种模式经过完善后个人觉得还是有不少想象力，除了简单的图片生成，还可以用于 h5 游戏的列表布局、海量数据的表格渲染等场景，另外后期还有一个想法，目前社区渲染这块已经有很多做的不错的库，所以想将布局以及计算换行、图片缩放等功能独立出来一个单独的工具库，通过集成其他库来进行渲染。</p>
+<p>本人表达能力有限，可能还是有很多细节没有得到澄清，也欢迎大家评论交流。</p>
+<h1>感谢阅读</h1>
+<blockquote>
+<p>本文发布自 <a href="https://github.com/x-orpheus">网易云音乐大前端团队</a>，文章未经授权禁止任何形式的转载。我们常年招收前端、iOS、Android，如果你准备换工作，又恰好喜欢云音乐，那就加入我们 grp.music-fe(at)corp.netease.com！</p>
+</blockquote></section><hr style="margin-bottom:1.625rem"/></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/unified/">← 上一篇</a></li><li></li></ul></nav><div id="disqus_thread"></div></main></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-46698359-8', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/canvas-engine/";window.webpackCompilationHash="1e825c60dab279e74de2";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-0c9a63a3aef9e813df5b.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-51d272fe0618a2665c13.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js"],"component---src-pages-404-js":["/component---src-pages-404-js-e9fc057fd683384561c6.js"],"component---src-pages-index-js":["/component---src-pages-index-js-48dc264068dece189e1b.js"]};/*]]>*/</script><script src="/webpack-runtime-2742ada98d46151d1c6f.js" async=""></script><script src="/commons-8d9941e7328683a5eecb.js" async=""></script><script src="/app-0c9a63a3aef9e813df5b.js" async=""></script><script src="/component---src-templates-blog-post-js-788c454dbed28c00f3b8.js" async=""></script><script src="/styles-b616adb5385f6f59f201.js" async=""></script></body></html>
